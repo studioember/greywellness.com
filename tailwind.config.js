@@ -7,17 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        logo: [
-          '"IBM Plex Mono"',
-          "ui-monospace",
-          "SFMono-Regular",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          '"Liberation Mono"',
-          '"Courier New"',
-          "monospace",
-        ],
+        sans: ['"Poppins"', "ui-sans-serif", "system-ui", "sans-serif"],
+        logo: ['"Poppins"', '"Nunito"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--bg))",

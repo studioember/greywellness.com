@@ -5,54 +5,54 @@
 /* app/theme.css */
 :root {
   /* Base */
-  --bg: 28 100% 97%; /* ember-cream */
-  --fg: 224 28% 12%;
+  --bg: 216 22% 91%; /* silver-grey */
+  --fg: 324 11% 17%; /* dark plum */
 
   /* Brand */
-  --primary: 18 76% 46%; /* ember */
-  --primary-foreground: 0 0% 100%;
+  --primary: 43.4 89% 45.5%; /* gold #DBA20D */
+  --primary-foreground: 324 11.4% 17.3%; /* dark plum on gold */
 
-  --accent: 38 94% 57%; /* gold */
-  --accent-foreground: 18 80% 18%;
+  --accent: 271 24% 79%; /* soft lavender */
+  --accent-foreground: 324 11% 17%;
 
   /* Secondary */
-  --secondary: 24 85% 54%; /* flame */
+  --secondary: 271 24% 70%; /* deeper lavender */
   --secondary-foreground: 0 0% 100%;
 
   /* Destructive */
-  --destructive: 3 100% 35%; /* crimson */
+  --destructive: 0 72% 40%;
   --destructive-foreground: 0 0% 100%;
 
   /* Surfaces */
   --card: 0 0% 100%;
-  --card-foreground: 224 28% 12%;
-  --border: 24 30% 86%;
-  --muted: 24 18% 68%;
+  --card-foreground: 324 11% 17%;
+  --border: 271 15% 86%;
+  --muted: 271 10% 55%;
 }
 
 [data-theme="dark"] {
   /* Base */
-  --bg: 224 77% 22%; /* midnight */
-  --fg: 0 0% 100%;
+  --bg: 293 38% 8%; /* near-black purple */
+  --fg: 216 22% 95%;
 
   /* Brand */
-  --primary: 18 76% 46%; /* ember */
+  --primary: 322 38% 52%; /* lighter plum for dark bg */
   --primary-foreground: 0 0% 100%;
 
-  --accent: 38 94% 57%; /* gold */
-  --accent-foreground: 18 80% 18%;
+  --accent: 271 24% 79%; /* soft lavender */
+  --accent-foreground: 324 11% 17%;
 
   /* Secondary */
-  --secondary: 24 85% 54%; /* flame */
+  --secondary: 271 24% 70%;
   --secondary-foreground: 0 0% 100%;
 
   /* Destructive */
-  --destructive: 3 100% 35%; /* crimson */
+  --destructive: 0 72% 40%;
   --destructive-foreground: 0 0% 100%;
 
   /* Surfaces */
-  --card: 224 77% 18%;
-  --card-foreground: 0 0% 100%;
-  --border: 224 50% 30%;
-  --muted: 224 28% 55%;
+  --card: 324 15% 13%;
+  --card-foreground: 0 0% 95%;
+  --border: 324 15% 25%;
+  --muted: 271 15% 60%;
 }

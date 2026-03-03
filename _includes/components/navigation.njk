@@ -1,25 +1,22 @@
 {% block navigation %}
-  <navigation>
-    <nav class="flex items-center my-4 mx-12 font-logo">
-      <div class="flex gap-4">
-        <a href="/" class="flex items-center gap-3 text-lg font-semibold font-logo text-foreground hover:text-primary transition-colors">
-          <img src="/assets/img/logo-clear-small.png" alt="Studio Ember logo" class="h-10 w-auto" width="40" height="40" loading="lazy" decoding="async" />
-          <span class="hidden sm:inline">Studio Ember</span>
-        </a>
-      </div>
-      <div class="flex-grow"></div>
-      <div class="ml-auto flex items-center gap-4">
-        <a href="/posts/" class="text-foreground hover:text-primary transition-colors">Blog</a>
+  <navigation class="block bg-[#31272d]">
+    <nav class="flex items-center h-20 max-w-7xl mx-auto px-8">
+      <a href="/" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
+        <img src="/assets/img/LOGO_GW_HORIZONTAL_1_1080PX.png" alt="Grey Wellness logo" class="h-12 w-auto" height="48" loading="lazy" decoding="async" />
+      </a>
+      <div class="flex-1"></div>
+      <div class="flex items-center gap-8">
+        <a href="/posts/" class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase">Blog</a>
         <div class="relative">
           <button
             type="button"
-            class="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+            class="flex items-center gap-1.5 text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
             aria-haspopup="true"
             aria-expanded="false"
             data-pages-toggle
           >
             <span>Pages</span>
-            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="h-3.5 w-3.5 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path
                 fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.24 4.5a.75.75 0 0 1-1.08 0l-4.24-4.5a.75.75 0 0 1 .02-1.06z"
@@ -28,15 +25,15 @@
             </svg>
           </button>
           <div
-            class="absolute right-0 z-20 mt-2 hidden w-56 rounded-md border border-foreground/20 bg-foreground/5 backdrop-blur shadow-lg"
+            class="absolute right-0 z-20 mt-3 hidden w-48 rounded-lg border border-white/10 bg-[#31272d] shadow-xl ring-1 ring-black/10"
             data-pages-menu
           >
-            <ul class="py-2">
+            <ul class="py-1.5">
               {% for page in collections.pages %}
                 <li>
                   <a
                     href="{{ page.url }}"
-                    class="block px-4 py-2 text-sm text-foreground/90 hover:text-primary hover:bg-foreground/5 transition-colors"
+                    class="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/8 transition-colors"
                   >
                     {{ page.data.title or page.fileSlug }}
                   </a>
