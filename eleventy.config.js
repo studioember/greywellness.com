@@ -24,8 +24,10 @@ export default async function (eleventyConfig) {
   });
 
   // Shortcodes
-  eleventyConfig.addShortcode("scheduleButton", function (text = "Request Appointment") {
-    return `<a
+  eleventyConfig.addShortcode(
+    "scheduleButton",
+    function (text = "Request Appointment") {
+      return `<a
       href="https://monicagrey.clientsecure.me"
       class="sp-schedule-btn"
       data-spwidget-scope-id="91b66555-a746-4aaf-97af-68173f0eab96"
@@ -34,11 +36,16 @@ export default async function (eleventyConfig) {
       data-spwidget-scope-global
       data-spwidget-autobind
     >${text}</a>`;
-  });
+    },
+  );
 
   // Filters
   eleventyConfig.addFilter("dateSimple", function (date) {
     return moment(date).format("LLL");
+  });
+
+  eleventyConfig.addFilter("dateISO", function (date) {
+    return moment(date).toISOString().split("T")[0];
   });
 
   return {

@@ -4,7 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if title %}{{ title }} · {% endif %}{{ site.name or 'Site' }}</title>
+    {# ── Page title ── #}
+    {% if meta_title %}
+      {% set _page_title = meta_title %}
+    {% elif title %}
+      {% set _page_title = title ~ " · " ~ site.name %}
+    {% else %}
+      {% set _page_title = site.name %}
+    {% endif %}
+    {% set _page_desc = description or site.description %}
+    {% set _page_url  = site.url ~ page.url %}
+    {% set _og_image  = site.url ~ "/assets/img/og-image.jpg" %}
+
+    <title>{{ _page_title }}</title>
+
+    {# ── Core SEO ── #}
+    <meta name="description" content="{{ _page_desc }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ _page_url }}">
+
+    {# ── Open Graph ── #}
+    <meta property="og:type"        content="{{ og_type or 'website' }}">
+    <meta property="og:url"         content="{{ _page_url }}">
+    <meta property="og:title"       content="{{ _page_title }}">
+    <meta property="og:description" content="{{ _page_desc }}">
+    <meta property="og:image"       content="{{ _og_image }}">
+    <meta property="og:site_name"   content="{{ site.name }}">
+    <meta property="og:locale"      content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+
+    {# ── Twitter Card ── #}
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="{{ _page_title }}">
+    <meta name="twitter:description" content="{{ _page_desc }}">
+    <meta name="twitter:image"       content="{{ _og_image }}">
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">

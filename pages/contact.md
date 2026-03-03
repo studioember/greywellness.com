@@ -1,7 +1,8 @@
 ---
 title: Contact
 title_hidden: false
-description: Ready to take the next step? Schedule an appointment or reach out with any questions.
+meta_title: "Schedule an Appointment | Grey Wellness"
+description: "Ready to sleep better? Schedule a consultation with Monica Grey, bilingual CBT-I therapist. New clients welcome. Therapy available in English and Spanish."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
