@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "mcp__PDF_Tools_-_Analyze__Extract__Fill__Compare__read_pdf_content"
+      "mcp__PDF_Tools_-_Analyze__Extract__Fill__Compare__read_pdf_content",
+      "WebFetch(domain:support.simplepractice.com)",
+      "WebFetch(domain:www.monicagrey.com)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

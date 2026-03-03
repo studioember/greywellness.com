@@ -15,7 +15,5 @@ description: ""
   <p class="text-xl md:text-2xl text-muted max-w-2xl leading-relaxed mb-10">
     Holistic wellness rooted in balance, intention, and lasting well-being.
   </p>
-  <a href="/contact/" class="inline-flex items-center bg-primary text-primary-foreground px-8 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
-    Get in touch
-  </a>
+  {% scheduleButton "Get in touch" %}
 </section>
