@@ -1,8 +1,8 @@
 {% block navigation %}
   <navigation class="block bg-[#31272d]">
     <nav class="flex items-center h-20 max-w-7xl mx-auto pr-8">
-      <a href="/" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
-        <img src="/assets/img/logo.png" alt="Grey Wellness logo" class="h-34 w-auto" loading="lazy" decoding="async" />
+      <a href="{{ '/' | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
+        <img src="{{ '/assets/img/logo.png' | url }}" alt="Grey Wellness logo" class="h-34 w-auto" loading="lazy" decoding="async" />
       </a>
       <div class="flex-1"></div>
       <div class="flex items-center gap-8">

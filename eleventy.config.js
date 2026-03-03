@@ -40,4 +40,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("dateSimple", function (date) {
     return moment(date).format("LLL");
   });
+
+  return {
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
+  };
 }
