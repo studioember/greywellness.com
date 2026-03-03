@@ -1,5 +1,6 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { RenderPlugin } from "@11ty/eleventy";
 import moment from "moment";
 
 export default async function (eleventyConfig) {
@@ -12,6 +13,7 @@ export default async function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(RenderPlugin);
 
   // Collections
   eleventyConfig.addCollection("pages", function (collectionApi) {
