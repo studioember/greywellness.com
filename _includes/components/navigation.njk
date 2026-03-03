@@ -1,11 +1,16 @@
 {% block navigation %}
   <navigation class="block bg-[#31272d]">
-    <nav class="flex items-center h-20 max-w-7xl mx-auto pr-8">
+    <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
       <a href="{{ '/' | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
-        <img src="{{ '/assets/img/logo.png' | url }}" alt="Grey Wellness logo" class="h-34 w-auto" loading="lazy" decoding="async" />
+        {# Mobile: icon only #}
+        <img src="{{ '/assets/img/logo-small.png' | url }}" alt="Grey Wellness logo" class="h-10 w-auto md:hidden" loading="lazy" decoding="async" />
+        {# Desktop: full logo #}
+        <img src="{{ '/assets/img/logo.png' | url }}" alt="Grey Wellness logo" class="h-34 w-auto hidden md:block" loading="lazy" decoding="async" />
       </a>
       <div class="flex-1"></div>
-      <div class="flex items-center gap-8">
+
+      {# Desktop nav items #}
+      <div class="hidden md:flex items-center gap-8">
         <div class="relative">
           <button
             type="button"
@@ -41,6 +46,7 @@
             </ul>
           </div>
         </div>
+
         <a
           href="https://monicagrey.clientsecure.me"
           class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity"
@@ -53,44 +59,89 @@
           Schedule
         </a>
       </div>
+
+      {# Mobile nav items #}
+      <div class="flex md:hidden items-center gap-2">
+        <a
+          href="https://monicagrey.clientsecure.me"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
+        >
+          Schedule
+        </a>
+        <button
+          type="button"
+          class="flex items-center justify-center w-9 h-9 text-white/70 hover:text-white transition-colors rounded-md hover:bg-white/8"
+          aria-label="Open menu"
+          aria-expanded="false"
+          data-mobile-toggle
+        >
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-open-icon>
+            <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+          <svg class="w-5 h-5 hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-close-icon>
+            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    {# Mobile dropdown menu #}
+    <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
+      <ul class="py-2 px-4">
+        {% for page in collections.pages %}
+          <li>
+            <a
+              href="{{ page.url }}"
+              class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
+            >
+              {{ page.data.title or page.fileSlug }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </navigation>
+
   <script>
     (() => {
+      // Desktop: Explore dropdown
       const toggle = document.querySelector("[data-pages-toggle]");
       const menu = document.querySelector("[data-pages-menu]");
-      if (!toggle || !menu) return;
+      if (toggle && menu) {
+        const closeMenu = () => {
+          menu.classList.add("hidden");
+          toggle.setAttribute("aria-expanded", "false");
+        };
+        const openMenu = () => {
+          menu.classList.remove("hidden");
+          toggle.setAttribute("aria-expanded", "true");
+        };
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          menu.classList.contains("hidden") ? openMenu() : closeMenu();
+        });
+        document.addEventListener("click", (e) => {
+          if (!menu.contains(e.target) && !toggle.contains(e.target)) closeMenu();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMenu();
+        });
+      }
 
-      const closeMenu = () => {
-        menu.classList.add("hidden");
-        toggle.setAttribute("aria-expanded", "false");
-      };
-
-      const openMenu = () => {
-        menu.classList.remove("hidden");
-        toggle.setAttribute("aria-expanded", "true");
-      };
-
-      toggle.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (menu.classList.contains("hidden")) {
-          openMenu();
-        } else {
-          closeMenu();
-        }
-      });
-
-      document.addEventListener("click", (event) => {
-        if (!menu.contains(event.target) && !toggle.contains(event.target)) {
-          closeMenu();
-        }
-      });
-
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          closeMenu();
-        }
-      });
+      // Mobile: hamburger menu
+      const mobileToggle = document.querySelector("[data-mobile-toggle]");
+      const mobileMenu = document.querySelector("[data-mobile-menu]");
+      const openIcon = document.querySelector("[data-mobile-open-icon]");
+      const closeIcon = document.querySelector("[data-mobile-close-icon]");
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => {
+          const isOpen = !mobileMenu.classList.contains("hidden");
+          mobileMenu.classList.toggle("hidden");
+          mobileToggle.setAttribute("aria-expanded", String(!isOpen));
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        });
+      }
     })();
   </script>
 {% endblock %}
