@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{% if title %}{{ title }} · {% endif %}{{ site.name or 'Site' }}</title>
+
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap">
+
+    <!-- Color Scheme -->
     <script>
       (() => {
         const root = document.documentElement;
@@ -25,6 +31,18 @@
         media.addEventListener("change", applyTheme);
       })();
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B4KP12KBL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4B4KP12KBL');
+    </script>
+
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="/assets/css/generated/tailwind.css">
     <link rel="stylesheet" href="/assets/css/theme/theme.css">
   </head>
