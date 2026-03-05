@@ -62,12 +62,12 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
   <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 py-32 md:py-44">
     <div class="max-w-xl">
       <p class="text-[#DBA20D] text-sm font-semibold tracking-widest uppercase mb-4">Mónica Grey, LCPC</p>
-      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
-        Rest is possible.<br>
+      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
+        Better is possible.<br>
         Let's get you there.
       </h1>
       <p class="text-white/70 text-lg md:text-xl leading-relaxed mb-10">
-        Bilingual CBT-I therapist helping adults break the cycle of insomnia, anxiety, and chronic stress — without relying on medication long-term.
+        Bilingual therapist supporting adults through trauma, insomnia, stress, and the unique challenges of navigating life between cultures.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
         <div>{% scheduleButton "Request Appointment" %}</div>
@@ -131,10 +131,10 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 <!-- CTA Banner -->
 <section class="bg-[#31272d] py-16 px-4 -mx-4 sm:-mx-6">
   <div class="max-w-2xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to sleep better?</h2>
-    <p class="text-white/60 text-lg mb-8">Most people see meaningful improvement within 6–8 weeks. Let's find out what's possible for you.</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Something brought you here today.</h2>
+    <p class="text-white/60 text-lg mb-8">I'm glad you're here. Let's talk.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      {% scheduleButton "Request Appointment" %}
+      {% scheduleButton "Schedule your free consultation" %}
     </div>
   </div>
 </section>
