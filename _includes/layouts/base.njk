@@ -97,7 +97,7 @@
       <header class="mb-8">
         <h1 class="text-3xl md:text-5xl font-bold tracking-tight">{{ title }}</h1>
         {# Description #}
-        {% if description %}
+        {% if description and description_hidden != true %}
           <p class="mt-8 text-muted">{{ description }}</p>
         {% endif %}
         {# Date #}

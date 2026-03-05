@@ -32,8 +32,8 @@ jobs:
 
       - name: Build
         run: yarn build
-        env:
-          ELEVENTY_PATH_PREFIX: /greywellness.com/
+        # env:
+        #   ELEVENTY_PATH_PREFIX: /greywellness.com/
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -2,7 +2,7 @@
 title: About
 title_hidden: false
 meta_title: "About Mónica Grey, MS, LCPC, NCC | CBT-I Therapist in Bethesda | Grey Wellness"
-description: "Meet Mónica Grey, a bilingual CBT-I therapist in Bethesda, MD specializing in insomnia, anxiety, and trauma. Evidence-based care in English and Spanish."
+description: "Meet Mónica Grey, a bilingual CBT-I therapist specializing in insomnia, anxiety, and trauma. Evidence-based care in English and Spanish."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
