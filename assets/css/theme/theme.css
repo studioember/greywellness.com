@@ -3,6 +3,11 @@ html {
   background-color: hsl(var(--bg));
 }
 
+/* Offset anchor scroll targets to account for sticky nav */
+a[id] {
+  scroll-margin-top: 6rem;
+}
+
 :root {
   /* Base */
   --bg: 216 22% 91%; /* silver-grey */

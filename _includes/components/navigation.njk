@@ -1,5 +1,5 @@
 {% block navigation %}
-  <navigation class="block bg-[#31272d]">
+  <navigation class="block bg-[#31272d] sticky top-0 z-50">
     <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
       <a href="{{ '/' | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
         {# Mobile: icon only #}
@@ -11,62 +11,48 @@
 
       {# Desktop nav items #}
       <div class="hidden md:flex items-center gap-8">
-        <div class="relative">
-          <button
-            type="button"
-            class="flex items-center gap-1.5 text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
-            aria-haspopup="true"
-            aria-expanded="false"
-            data-pages-toggle
-          >
-            <span>Explore</span>
-            <svg class="h-3.5 w-3.5 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.24 4.5a.75.75 0 0 1-1.08 0l-4.24-4.5a.75.75 0 0 1 .02-1.06z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            class="absolute right-0 z-20 mt-3 hidden w-48 rounded-lg border border-white/10 bg-[#31272d] shadow-xl ring-1 ring-black/10"
-            data-pages-menu
-          >
-            <ul class="py-1.5">
-              {% for page in collections.pages %}
-                <li>
-                  <a
-                    href="{{ page.url | url }}"
-                    class="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/8 transition-colors"
-                  >
-                    {{ page.data.title or page.fileSlug }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+        {% for page in collections.pages %}
+          {% if page.fileSlug != "contact" %}
+            <a
+              href="{{ page.url | url }}"
+              class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
+            >
+              {{ page.data.title or page.fileSlug }}
+            </a>
+          {% endif %}
+        {% endfor %}
 
         <a
-          href="https://monicagrey.clientsecure.me"
+          href="{{ '/pages/contact/' | url }}"
           class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity"
-          data-spwidget-scope-id="91b66555-a746-4aaf-97af-68173f0eab96"
-          data-spwidget-scope-uri="monicagrey"
-          data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
-          data-spwidget-scope-global
-          data-spwidget-autobind
         >
-          Schedule
+          Contact
+        </a>
+        <a
+          href="https://monicagrey.clientsecure.me/sign-in"
+          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Client Portal
         </a>
       </div>
 
       {# Mobile nav items #}
       <div class="flex md:hidden items-center gap-2">
         <a
-          href="https://monicagrey.clientsecure.me"
+          href="{{ '/pages/contact/' | url }}"
           class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
         >
-          Schedule
+          Contact
+        </a>
+        <a
+          href="https://monicagrey.clientsecure.me/sign-in"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors whitespace-nowrap"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Login
         </a>
         <button
           type="button"
@@ -89,14 +75,16 @@
     <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
       <ul class="py-2 px-4">
         {% for page in collections.pages %}
-          <li>
-            <a
-              href="{{ page.url | url }}"
-              class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
-            >
-              {{ page.data.title or page.fileSlug }}
-            </a>
-          </li>
+          {% if page.fileSlug != "contact" %}
+            <li>
+              <a
+                href="{{ page.url | url }}"
+                class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
+              >
+                {{ page.data.title or page.fileSlug }}
+              </a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -104,30 +92,6 @@
 
   <script>
     (() => {
-      // Desktop: Explore dropdown
-      const toggle = document.querySelector("[data-pages-toggle]");
-      const menu = document.querySelector("[data-pages-menu]");
-      if (toggle && menu) {
-        const closeMenu = () => {
-          menu.classList.add("hidden");
-          toggle.setAttribute("aria-expanded", "false");
-        };
-        const openMenu = () => {
-          menu.classList.remove("hidden");
-          toggle.setAttribute("aria-expanded", "true");
-        };
-        toggle.addEventListener("click", (e) => {
-          e.preventDefault();
-          menu.classList.contains("hidden") ? openMenu() : closeMenu();
-        });
-        document.addEventListener("click", (e) => {
-          if (!menu.contains(e.target) && !toggle.contains(e.target)) closeMenu();
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
-      }
-
       // Mobile: hamburger menu
       const mobileToggle = document.querySelector("[data-mobile-toggle]");
       const mobileMenu = document.querySelector("[data-mobile-menu]");

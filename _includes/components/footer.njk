@@ -1,3 +1,4 @@
+{% from "macros/contact-button.njk" import contactButton %}
 {% block footer %}
   <footer class="border-t border-border mt-16">
     <div class="mx-auto max-w-5xl px-4 sm:px-6 py-10">
@@ -10,16 +11,17 @@
           <p class="text-sm text-muted">
             Holistic wellness rooted in balance, intention, and lasting well-being.
           </p>
+          <div class="inline-block px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity">
+            {{ contactButton(text="Send a Message") }}
+          </div>
         </div>
         <div class="space-y-3">
           <p class="text-sm font-semibold text-foreground">Contact</p>
           <ul class="space-y-2 text-sm text-muted">
-            <li>
-              <a href="{{ '/pages/contact/' | url }}" class="hover:text-primary transition-colors">Schedule a Consultation</a>
-            </li>
-            <li>
-              <a href="{{ '/pages/services/' | url }}" class="hover:text-primary transition-colors">Services</a>
-            </li>
+            <li>7315 Wisconsin Avenue, Suite 400W<br>Bethesda MD 20814</li>
+            <li><a href="tel:+12402038879" class="hover:text-primary transition-colors">Office: 240-203-8879</a></li>
+            <li class="hover:text-primary transition-colors">Fax: 240-627-2513</li>
+            <li><a href="mailto:contact@greywellness.com?subject=Inquiry" class="hover:text-primary transition-colors">contact@greywellness.com</a></li>
           </ul>
         </div>
         <div class="space-y-3">
@@ -27,6 +29,9 @@
           <ul class="space-y-2 text-sm text-muted">
             <li>
               <a href="{{ '/pages/about/' | url }}" class="hover:text-primary transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="{{ '/pages/services/' | url }}" class="hover:text-primary transition-colors">Services</a>
             </li>
           </ul>
         </div>
