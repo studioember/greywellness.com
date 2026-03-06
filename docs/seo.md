@@ -33,7 +33,7 @@ Every tag is rendering perfectly. Here's the full breakdown of what was done and
 
 ### Content (highest SEO impact)
 - [ ] **Services page** — Currently empty; needs: CBT-I explained, what to expect session-by-session, session length/frequency, insurance/rates, bilingual availability, CTA
-- [ ] **About/Bio page** — Monica's credentials, her Colombian Latina background, why CBT-I, bilingual identity — this page alone can rank for `[name] therapist` searches
+- [ ] **About/Bio page** — Mónica's credentials, her Colombian Latina background, why CBT-I, bilingual identity — this page alone can rank for `[name] therapist` searches
 - [ ] **FAQ page** — "What is CBT-I?", "How many sessions?", "Do you take insurance?", "Do you offer therapy in Spanish?" — these are exact search queries
 
 ### Blog (long-tail keyword capture)
