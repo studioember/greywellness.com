@@ -3,7 +3,9 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
   "features": {},
   "postCreateCommand": "npm install -g yarn && yarn install",
+  "postStartCommand": "yarn dev",
   "forwardPorts": [8080],
+  "appPort": 8080,
   "portsAttributes": {
     "8080": {
       "label": "Eleventy dev server",

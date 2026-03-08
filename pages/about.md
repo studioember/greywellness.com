@@ -8,8 +8,6 @@ date_hidden: true
 layout: layouts/base.njk
 ---
 
-## Compassionate, evidence-based care for sleep, anxiety, and trauma.
-
 <div class="not-prose mt-12 flex flex-col items-center gap-4">
   <img
     src="{{ '/assets/img/headshot.jpg' | url }}"
@@ -25,6 +23,10 @@ layout: layouts/base.njk
     <p class="text-sm text-muted">Johns Hopkins University</p>
   </div>
 </div>
+
+<hr>
+
+## Compassionate, evidence-based care for sleep, anxiety, and trauma.
 
 **About Me**
 
