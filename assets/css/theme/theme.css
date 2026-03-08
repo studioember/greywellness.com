@@ -32,7 +32,7 @@ a[id] {
   --card: 0 0% 100%;
   --card-foreground: 324 11% 17%;
   --border: 271 15% 86%;
-  --muted: 271 10% 55%;
+  --muted: 271 10% 38%;
 }
 
 [data-theme="dark"] {
@@ -59,7 +59,7 @@ a[id] {
   --card: 324 15% 13%;
   --card-foreground: 0 0% 95%;
   --border: 324 15% 25%;
-  --muted: 271 15% 60%;
+  --muted: 271 15% 74%;
 }
 
 pre {

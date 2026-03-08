@@ -132,7 +132,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 <section class="bg-[#31272d] py-16 px-4 -mx-4 sm:-mx-6">
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Something brought you here today.</h2>
-    <p class="text-white/60 text-lg mb-8">I'm glad you're here. Let's talk.</p>
+    <p class="text-white/80 text-lg mb-8">I'm glad you're here. Let's talk.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       {% scheduleButton "Schedule your free consultation" %}
     </div>

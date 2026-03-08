@@ -20,7 +20,9 @@ layout: layouts/base.njk
   />
   <div class="text-center">
     <p class="font-semibold text-foreground">Mónica Grey, MS, LCPC, NCC</p>
-    <p class="text-sm text-muted">CBT-I Therapist</p>
+    <p class="text-sm text-muted">Psychotherapist</p>
+    <p class="text-sm text-muted">M.S. in Mental Health Counseling</p>
+    <p class="text-sm text-muted">Johns Hopkins University</p>
   </div>
 </div>
 
