@@ -205,26 +205,38 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
     padding-top: 0.75rem;
   }
 
-  .cbti-flyer .cta-btn a {
-    display: inline-block !important;
-    width: auto !important;
+  .cbti-flyer .cta-email-btn {
+    display: inline-block;
     margin-top: 0.75rem;
-    padding: 8px 20px !important;
-    background: var(--lavender) !important;
-    color: var(--plum) !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 8.5pt !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.06em !important;
-    text-transform: uppercase !important;
-    border-radius: 6px !important;
-    text-decoration: none !important;
-    border: none !important;
+    padding: 8px 20px;
+    background: var(--lavender);
+    color: var(--plum);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-decoration: none;
     cursor: pointer;
-    text-align: left !important;
   }
-  .cbti-flyer .cta-btn a:hover {
+  .cbti-flyer .cta-email-btn:hover {
     opacity: 0.85;
+  }
+  .cbti-flyer .cta-also {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--lavender);
+    opacity: 0.75;
+    line-height: 1.7;
+  }
+  .cbti-flyer .cta-also-link {
+    color: var(--lavender);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .cbti-flyer .cta-also-link:hover {
+    opacity: 1;
   }
 
   @media print {
@@ -293,11 +305,12 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
     <div class="cta">
       <p class="cta-eyebrow">Register &amp; Inquire</p>
       <p class="cta-name">Mónica Grey, LCPC</p>
-      <div class="cta-contact">
-        contact@greywellness.com<br>
-        240-203-8879
-      </div>
-      <div class="cta-btn">{% contactButton "Send a Message" %}</div>
+      <a class="cta-email-btn" href="mailto:contact@greywellness.com?subject=CBT-i%20Group%20Therapy%20Registration">Register Now</a>
+      <p class="cta-also">You can also reach me directly to register:<br>
+        <a class="cta-also-link" href="mailto:contact@greywellness.com?subject=CBT-i%20Group%20Therapy%20Registration">contact@greywellness.com</a>
+        &nbsp;·&nbsp;
+        <a class="cta-also-link" href="tel:+12402038879">240-203-8879</a>
+      </p>
     </div>
 
     <p class="footer">Space is limited &nbsp;·&nbsp; Small group format</p>
@@ -317,10 +330,10 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
       });
     });
 
-    flyer.querySelector('.sp-contact-btn')?.addEventListener('click', () => {
+    flyer.querySelector('.cta-email-btn')?.addEventListener('click', () => {
       gtag('event', 'contact_click', {
         event_category: 'cbti_group_therapy',
-        event_label: 'Send a Message'
+        event_label: 'Email Registration'
       });
     });
   })();
