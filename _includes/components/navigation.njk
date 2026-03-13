@@ -12,7 +12,7 @@
       {# Desktop nav items #}
       <div class="hidden md:flex items-center gap-8">
         {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" %}
+          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
             <a
               href="{{ page.url | url }}"
               class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
@@ -75,7 +75,7 @@
     <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
       <ul class="py-2 px-4">
         {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" %}
+          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
             <li>
               <a
                 href="{{ page.url | url }}"

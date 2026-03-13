@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "dev",
-      "runtimeExecutable": "yarn",
-      "runtimeArgs": ["dev"],
+      "runtimeExecutable": "/opt/homebrew/Cellar/node/25.8.1/bin/node",
+      "runtimeArgs": ["/opt/homebrew/Cellar/yarn/1.22.22/libexec/bin/yarn.js", "dev"],
       "port": 8080
     }
   ]
