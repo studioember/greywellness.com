@@ -21,23 +21,18 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
     --gray-lt: #aaaaaa;
     --body-txt: #444444;
 
-    background: #ddd8e2;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 40px 16px 60px;
     font-family: 'Nunito', sans-serif;
   }
 
   .cbti-flyer .page {
-    width: 8.5in;
-    max-width: 100%;
-    min-height: 11in;
+    max-width: 720px;
+    margin: 0 auto;
     background: #ffffff;
-    padding: 0.72in 0.75in;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 40px rgba(0,0,0,0.18);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   }
 
   .cbti-flyer .tag {
@@ -45,114 +40,129 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
     border: 1px solid var(--wine);
     color: var(--wine);
     font-family: 'Nunito', sans-serif;
-    font-size: 7pt;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    padding: 3px 12px;
+    padding: 4px 12px;
     border-radius: 20px;
-    margin-bottom: 0.22in;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
     align-self: flex-start;
+    white-space: nowrap;
   }
 
   .cbti-flyer .headline {
     font-family: 'Poppins', sans-serif;
     line-height: 1.0;
-    margin-bottom: 0.14in;
+    margin-bottom: 0.75rem;
   }
   .cbti-flyer .line-plain {
     display: block;
-    font-size: 42pt;
+    font-size: clamp(2rem, 8vw, 3.25rem);
     font-weight: 700;
     color: var(--plum);
   }
   .cbti-flyer .line-italic {
     display: block;
-    font-size: 34pt;
+    font-size: clamp(1.6rem, 6.5vw, 2.6rem);
     font-weight: 300;
     font-style: italic;
     color: var(--wine);
-    margin-top: 0.01in;
+    margin-top: 0.05rem;
   }
 
   .cbti-flyer .subhead {
     font-family: 'Poppins', sans-serif;
-    font-size: 9pt;
+    font-size: 0.7rem;
     font-weight: 400;
     color: var(--gray-mid);
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    margin-bottom: 0.10in;
+    margin-bottom: 0.5rem;
   }
   .cbti-flyer .accent-rule {
     width: 32px;
     height: 2px;
     background: var(--wine);
-    margin-bottom: 0.26in;
+    margin-bottom: 1.25rem;
   }
 
   .cbti-flyer .body-copy {
-    font-size: 9.5pt;
+    font-size: 0.9rem;
     line-height: 1.65;
     color: var(--body-txt);
-    margin-bottom: 0.26in;
+    margin-bottom: 1.25rem;
   }
 
   .cbti-flyer .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.10in;
-    margin-bottom: 0.26in;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
   }
   .cbti-flyer .card {
     background: var(--light-bg);
-    border: 0.75px solid var(--border);
+    border: 1px solid var(--border);
     border-radius: 6px;
-    padding: 0.10in 0.13in;
+    padding: 0.6rem 0.75rem;
     display: flex;
     flex-direction: column;
-    min-height: 0.72in;
+    min-height: 4rem;
   }
   .cbti-flyer .card-label {
-    font-size: 6.5pt;
+    font-size: 0.6rem;
     font-weight: 700;
     color: var(--gray-lt);
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    margin-bottom: 0.04in;
+    margin-bottom: 0.2rem;
   }
   .cbti-flyer .card-value {
     font-family: 'Poppins', sans-serif;
-    font-size: 13pt;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--plum);
     line-height: 1.15;
     flex: 1;
   }
   .cbti-flyer .card-sub {
-    font-size: 8.5pt;
+    font-size: 0.75rem;
     color: var(--gray-mid);
-    margin-top: 0.04in;
+    margin-top: 0.2rem;
+  }
+  .cbti-flyer .card-cal-link {
+    display: inline-block;
+    margin-top: 0.35rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wine);
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .cbti-flyer .card-cal-link:hover {
+    opacity: 1;
   }
 
   .cbti-flyer .topics-label {
-    font-size: 6.5pt;
+    font-size: 0.6rem;
     font-weight: 700;
     color: var(--gray-lt);
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    margin-bottom: 0.12in;
+    margin-bottom: 0.6rem;
   }
   .cbti-flyer .topics {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
-    margin-bottom: 0.26in;
+    margin-bottom: 1.25rem;
   }
   .cbti-flyer .topic-pill {
     border: 1px solid var(--plum);
     color: var(--plum);
-    font-size: 8.5pt;
+    font-size: 0.75rem;
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 20px;
@@ -162,37 +172,59 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
   .cbti-flyer .cta {
     background: var(--plum);
     border-radius: 10px;
-    padding: 0.17in 0.20in 0.18in;
-    margin-bottom: 0.22in;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
   }
   .cbti-flyer .cta-eyebrow {
-    font-size: 6.5pt;
+    font-size: 0.6rem;
     font-weight: 700;
     color: var(--gray-mid);
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    margin-bottom: 0.07in;
+    margin-bottom: 0.4rem;
   }
   .cbti-flyer .cta-name {
     font-family: 'Poppins', sans-serif;
-    font-size: 16pt;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 0.08in;
+    margin-bottom: 0.4rem;
     line-height: 1.1;
   }
   .cbti-flyer .cta-contact {
-    font-size: 10pt;
+    font-size: 0.875rem;
     color: var(--lavender);
     line-height: 1.75;
   }
 
   .cbti-flyer .footer {
     text-align: center;
-    font-size: 8pt;
+    font-size: 0.75rem;
     color: var(--gray-lt);
     margin-top: auto;
-    padding-top: 0.10in;
+    padding-top: 0.75rem;
+  }
+
+  .cbti-flyer .cta-btn a {
+    display: inline-block !important;
+    width: auto !important;
+    margin-top: 0.75rem;
+    padding: 8px 20px !important;
+    background: var(--lavender) !important;
+    color: var(--plum) !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 8.5pt !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    border: none !important;
+    cursor: pointer;
+    text-align: left !important;
+  }
+  .cbti-flyer .cta-btn a:hover {
+    opacity: 0.85;
   }
 
   @media print {
@@ -230,7 +262,8 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
       <div class="card">
         <div class="card-label">Starts</div>
         <div class="card-value">Wed, April 22</div>
-        <div class="card-sub">7:00 PM</div>
+        <div class="card-sub">7:00 PM ET</div>
+        <a class="card-cal-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=CBT-I+Group+Therapy+%E2%80%93+Grey+Wellness&dates=20250422T230000Z%2F20250423T000000Z&details=6-week+virtual+CBT-I+Group+Therapy+with+Grey+Wellness.%0A%0ARegister+%26+inquire%3A%0Acontact%40greywellness.com+%7C+240-203-8879%0A%0AMore+info%3A+https%3A%2F%2Fgreywellness.com%2Fpages%2Fworkshops%2Fcbt-i-group-therapy%2F&location=Virtual+%E2%80%93+Secure+Telehealth&recur=RRULE:FREQ%3DWEEKLY%3BCOUNT%3D6" target="_blank" rel="noopener noreferrer">+ Add to Calendar</a>
       </div>
       <div class="card">
         <div class="card-label">Program</div>
@@ -264,9 +297,31 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
         contact@greywellness.com<br>
         240-203-8879
       </div>
+      <div class="cta-btn">{% contactButton "Send a Message" %}</div>
     </div>
 
     <p class="footer">Space is limited &nbsp;·&nbsp; Small group format</p>
 
   </div>
 </div>
+
+<script>
+  (() => {
+    const flyer = document.querySelector('.cbti-flyer');
+    if (!flyer || typeof gtag === 'undefined') return;
+
+    flyer.querySelector('.card-cal-link')?.addEventListener('click', () => {
+      gtag('event', 'add_to_calendar', {
+        event_category: 'cbti_group_therapy',
+        event_label: 'CBT-I Group Therapy – April 22'
+      });
+    });
+
+    flyer.querySelector('.sp-contact-btn')?.addEventListener('click', () => {
+      gtag('event', 'contact_click', {
+        event_category: 'cbti_group_therapy',
+        event_label: 'Send a Message'
+      });
+    });
+  })();
+</script>
