@@ -11,16 +11,35 @@
 
       {# Desktop nav items #}
       <div class="hidden md:flex items-center gap-8">
-        {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
-            <a
-              href="{{ page.url | url }}"
-              class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
-            >
-              {{ page.data.title or page.fileSlug }}
+        <a href="{{ '/pages/about/' | url }}" class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase">About</a>
+
+        {# Services dropdown #}
+        <div class="relative" data-dropdown>
+          <button
+            type="button"
+            class="flex items-center gap-1 text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
+            aria-expanded="false"
+            data-dropdown-toggle
+          >
+            Services
+            <svg class="w-3.5 h-3.5 mt-0.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-dropdown-chevron>
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 rounded-xl bg-[#31272d] border border-white/10 shadow-xl py-1 hidden" data-dropdown-menu>
+            <a href="{{ '/pages/services/' | url }}" class="block px-4 py-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+              What We Treat
             </a>
-          {% endif %}
-        {% endfor %}
+            <a href="{{ '/pages/how-we-work/' | url }}" class="block px-4 py-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+              How We Work
+            </a>
+            <a href="{{ '/pages/groups/' | url }}" class="block px-4 py-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+              Groups
+            </a>
+          </div>
+        </div>
+
+        <a href="{{ '/pages/investment/' | url }}" class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase">Investment</a>
 
         <a
           href="{{ '/pages/contact/' | url }}"
@@ -74,18 +93,21 @@
     {# Mobile dropdown menu #}
     <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
       <ul class="py-2 px-4">
-        {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
-            <li>
-              <a
-                href="{{ page.url | url }}"
-                class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
-              >
-                {{ page.data.title or page.fileSlug }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li>
+          <a href="{{ '/pages/about/' | url }}" class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5">About</a>
+        </li>
+        <li>
+          <a href="{{ '/pages/services/' | url }}" class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5">What We Treat</a>
+        </li>
+        <li>
+          <a href="{{ '/pages/how-we-work/' | url }}" class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5">How We Work</a>
+        </li>
+        <li>
+          <a href="{{ '/pages/groups/' | url }}" class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5">Groups</a>
+        </li>
+        <li>
+          <a href="{{ '/pages/investment/' | url }}" class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5">Investment</a>
+        </li>
       </ul>
     </div>
   </navigation>
@@ -104,6 +126,34 @@
           mobileToggle.setAttribute("aria-expanded", String(!isOpen));
           openIcon.classList.toggle("hidden");
           closeIcon.classList.toggle("hidden");
+        });
+      }
+
+      // Desktop: Services dropdown
+      const dropdown = document.querySelector("[data-dropdown]");
+      if (dropdown) {
+        const toggle = dropdown.querySelector("[data-dropdown-toggle]");
+        const menu = dropdown.querySelector("[data-dropdown-menu]");
+        const chevron = dropdown.querySelector("[data-dropdown-chevron]");
+
+        const open = () => {
+          menu.classList.remove("hidden");
+          toggle.setAttribute("aria-expanded", "true");
+          chevron.style.transform = "rotate(180deg)";
+        };
+        const close = () => {
+          menu.classList.add("hidden");
+          toggle.setAttribute("aria-expanded", "false");
+          chevron.style.transform = "";
+        };
+
+        toggle.addEventListener("click", () => {
+          menu.classList.contains("hidden") ? open() : close();
+        });
+
+        // Close when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!dropdown.contains(e.target)) close();
         });
       }
     })();

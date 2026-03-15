@@ -6,6 +6,7 @@ description: "Meet Mónica Grey, a bilingual CBT-I therapist specializing in ins
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
+hidden_from_nav: true
 ---
 
 <div class="not-prose mt-12 flex flex-col items-center gap-4">

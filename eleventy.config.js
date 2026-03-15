@@ -25,6 +25,12 @@ export default async function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("groups", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("pages/groups/**/*.{md,njk,html}")
+      .filter(item => item.data.status !== undefined);
+  });
+
   // Shortcodes
   eleventyConfig.addShortcode(
     "scheduleButton",
