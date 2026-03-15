@@ -66,7 +66,7 @@ Para facilitar este proceso, nos asociamos con Mentaya. Usa la herramienta a con
 <iframe width="100%" height=350 style="border:none;border-radius:20px;max-width:600px;margin:auto;display:block;" onload="const resize=() => this.height=this.clientWidth >= 600?350:590;resize();window.addEventListener('resize', resize);" src="https://app.mentaya.com/public/practices/Pq2FnJsy2h701kzicyOz/eligibility/widget" title="Verificar elegibilidad con Mentaya"></iframe>
 <br>
 
-## Escala Móvil
+## Tarifa Reducida
 
 Creemos que el costo no debe ser la razón por la que alguien no reciba apoyo. Hay un número limitado de lugares de tarifa reducida disponibles según el caso. Si la asequibilidad es una preocupación, por favor menciónalo durante tu consulta gratuita y haremos lo posible por encontrar algo que funcione para ti.
 
