@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ lang | default('en') }}" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,14 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ _page_url }}">
 
+    {# ── hreflang (i18n alternate links) ── #}
+    <link rel="alternate" hreflang="{{ lang | default('en') }}" href="{{ _page_url }}">
+    {% set _locale_alternates = page.url | locale_links %}
+    {% for _alt in _locale_alternates %}
+    <link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | locale_url('en') }}">
+
     {# ── Open Graph ── #}
     <meta property="og:type"        content="{{ og_type or 'website' }}">
     <meta property="og:url"         content="{{ _page_url }}">
@@ -30,8 +38,10 @@
     <meta property="og:description" content="{{ _page_desc }}">
     <meta property="og:image"       content="{{ _og_image }}">
     <meta property="og:site_name"   content="{{ site.name }}">
-    <meta property="og:locale"      content="en_US">
-    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale"      content="{{ locale | default('en_US') }}">
+    {% for _alt in _locale_alternates %}
+    <meta property="og:locale:alternate" content="{{ 'en_US' if _alt.lang == 'en' else 'es_ES' }}">
+    {% endfor %}
 
     {# ── Twitter Card ── #}
     <meta name="twitter:card"        content="summary_large_image">

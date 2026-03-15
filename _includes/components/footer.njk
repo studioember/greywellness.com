@@ -1,5 +1,9 @@
 {% from "macros/contact-button.njk" import contactButton %}
 {% block footer %}
+  {# Resolve locale-specific data for this render #}
+  {% set _lang = lang | default("en") %}
+  {% set _t = i18n[_lang] %}
+
   <footer class="border-t border-border mt-16">
     <div class="mx-auto max-w-5xl px-4 sm:px-6 py-10">
       <div class="grid gap-8 md:grid-cols-3">
@@ -9,14 +13,14 @@
             <span>Grey Wellness</span>
           </div>
           <p class="text-sm text-muted">
-            Holistic wellness rooted in balance, intention, and lasting well-being.
+            {{ _t.footer_tagline }}
           </p>
           <div class="inline-block px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity">
-            {{ contactButton(text="Send a Message") }}
+            {{ contactButton(text=_t.footer_send_message) }}
           </div>
         </div>
         <div class="space-y-3">
-          <p class="text-sm font-semibold text-foreground">Contact</p>
+          <p class="text-sm font-semibold text-foreground">{{ _t.footer_contact_label }}</p>
           <ul class="space-y-2 text-sm text-muted">
             <li>7315 Wisconsin Avenue, Suite 400W<br>Bethesda MD 20814</li>
             <li><a href="tel:+12402038879" class="hover:text-primary transition-colors">Office: 240-203-8879</a></li>
@@ -25,20 +29,20 @@
           </ul>
         </div>
         <div class="space-y-3">
-          <p class="text-sm font-semibold text-foreground">Company</p>
+          <p class="text-sm font-semibold text-foreground">{{ _t.footer_company }}</p>
           <ul class="space-y-2 text-sm text-muted">
             <li>
-              <a href="{{ '/pages/about/' | url }}" class="hover:text-primary transition-colors">About Us</a>
+              <a href="{{ '/en/pages/about/' | locale_url | url }}" class="hover:text-primary transition-colors">{{ _t.footer_about }}</a>
             </li>
             <li>
-              <a href="{{ '/pages/services/' | url }}" class="hover:text-primary transition-colors">Services</a>
+              <a href="{{ '/en/pages/services/' | locale_url | url }}" class="hover:text-primary transition-colors">{{ _t.footer_services }}</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
-        <p>© <span data-footer-year></span> Grey Wellness LLC. All rights reserved.</p>
-        <p>Built with Eleventy and Tailwind.</p>
+        <p>© <span data-footer-year></span> Grey Wellness LLC. {{ _t.footer_rights }}</p>
+        <p>{{ _t.footer_built_with }}</p>
       </div>
     </div>
   </footer>

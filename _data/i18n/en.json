@@ -1,0 +1,17 @@
+{
+  "nav_about": "About",
+  "nav_services": "Services",
+  "nav_contact": "Contact",
+  "nav_client_portal": "Client Portal",
+  "nav_login": "Login",
+  "footer_about": "About Us",
+  "footer_services": "Services",
+  "footer_tagline": "Holistic wellness rooted in balance, intention, and lasting well-being.",
+  "footer_contact_label": "Contact",
+  "footer_send_message": "Send a Message",
+  "footer_company": "Company",
+  "footer_rights": "All rights reserved.",
+  "footer_built_with": "Built with Eleventy and Tailwind.",
+  "lang_other_code": "ES",
+  "lang_other_label": "Español"
+}

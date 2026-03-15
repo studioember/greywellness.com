@@ -72,7 +72,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <div class="flex flex-col sm:flex-row gap-4">
         <div>{% scheduleButton "Request Appointment" %}</div>
         <a
-          href="{{ '/pages/services/' | url }}"
+          href="{{ '/en/pages/services/' | locale_url }}"
           class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center"
         >
           See Services
@@ -94,7 +94,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 
   <div class="grid sm:grid-cols-2 gap-6">
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/pages/services/' | url }}#sleep-insomnia" class="absolute inset-0 z-10" aria-label="Learn more about Sleep & Insomnia therapy"></a>
+      <a href="{{ '/en/pages/services/' | locale_url }}#sleep-insomnia" class="absolute inset-0 z-10" aria-label="Learn more about Sleep & Insomnia therapy"></a>
       <div class="absolute top-0 left-0 right-0 h-1 bg-[#DBA20D]"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#DBA20D]/15 text-2xl">🌙</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Sleep & Insomnia</h3>
@@ -102,7 +102,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <span class="text-[#DBA20D] text-sm font-semibold tracking-wide group-hover:underline">Learn more →</span>
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/pages/services/' | url }}#trauma" class="absolute inset-0 z-10" aria-label="Learn more about Trauma therapy"></a>
+      <a href="{{ '/en/pages/services/' | locale_url }}#trauma" class="absolute inset-0 z-10" aria-label="Learn more about Trauma therapy"></a>
       <div class="absolute top-0 left-0 right-0 h-1 bg-accent"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/30 text-2xl">🤝</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Trauma</h3>
@@ -110,7 +110,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 30% 50%)">Learn more →</span>
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/pages/services/' | url }}#childhood-adverse-experiences" class="absolute inset-0 z-10" aria-label="Learn more about Childhood Adverse Experiences therapy"></a>
+      <a href="{{ '/en/pages/services/' | locale_url }}#childhood-adverse-experiences" class="absolute inset-0 z-10" aria-label="Learn more about Childhood Adverse Experiences therapy"></a>
       <div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/20 text-2xl">🌱</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Childhood Adverse Experiences</h3>
@@ -118,7 +118,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 30% 50%)">Learn more →</span>
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/pages/services/' | url }}#stress-management" class="absolute inset-0 z-10" aria-label="Learn more about Stress Management therapy"></a>
+      <a href="{{ '/en/pages/services/' | locale_url }}#stress-management" class="absolute inset-0 z-10" aria-label="Learn more about Stress Management therapy"></a>
       <div class="absolute top-0 left-0 right-0 h-1" style="background: hsl(271 20% 62%)"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl text-2xl" style="background: hsl(271 20% 62% / 0.15)">⚖️</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Stress Management</h3>

@@ -1,0 +1,17 @@
+{
+  "nav_about": "Acerca de",
+  "nav_services": "Servicios",
+  "nav_contact": "Contacto",
+  "nav_client_portal": "Portal del Cliente",
+  "nav_login": "Iniciar sesión",
+  "footer_about": "Acerca de nosotros",
+  "footer_services": "Servicios",
+  "footer_tagline": "Bienestar holístico basado en el equilibrio, la intención y el bienestar duradero.",
+  "footer_contact_label": "Contacto",
+  "footer_send_message": "Enviar un mensaje",
+  "footer_company": "Empresa",
+  "footer_rights": "Todos los derechos reservados.",
+  "footer_built_with": "Desarrollado con Eleventy y Tailwind.",
+  "lang_other_code": "EN",
+  "lang_other_label": "English"
+}
