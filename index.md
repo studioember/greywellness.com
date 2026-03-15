@@ -146,8 +146,8 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- CTA Banner -->
-<section class="cta-banner bg-surface-warm -mx-4 sm:-mx-6">
-  {# Wave at top of CTA #}
+<section class="cta-banner bg-surface-warm -mx-4 sm:-mx-6 -mb-10">
+  <!-- Wave at top of CTA -->
   <div class="wave-divider -mt-16 relative z-10 overflow-hidden" aria-hidden="true">
     <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
       <rect width="1440" height="80" class="wave-bg" />
@@ -168,4 +168,6 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" class="wave-surface-warm" />
     </svg>
   </div>
+  <!-- Spacer: covers main's pb-10 so no body-bg bleeds between CTA and footer -->
+  <div class="bg-surface h-10" aria-hidden="true"></div>
 </section>
