@@ -82,8 +82,7 @@ a[id] {
 .is-safari .wave-divider        { display: none; }
 .is-safari .cta-banner          { padding-top: 4rem; }
 
-/* Wave fills — opaque two-layer SVG, fully Safari-compatible */
-.wave-hero-overlay { fill: hsl(var(--hero-overlay)); }
+/* Wave fills — explicit CSS fill property for Safari compatibility */
 .wave-bg           { fill: hsl(var(--bg)); }
 .wave-surface-warm { fill: hsl(var(--surface-warm)); }
 .wave-surface      { fill: hsl(var(--surface)); }

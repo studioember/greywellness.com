@@ -95,7 +95,6 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 <!-- Wave: Hero → Services -->
 <div class="wave-divider -mt-16 relative z-10 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
   <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
-    <rect width="1440" height="80" class="wave-hero-overlay" />
     <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" class="wave-bg" />
   </svg>
 </div>
@@ -147,7 +146,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- CTA Banner -->
-<section class="cta-banner bg-surface-warm pb-16 -mx-4 sm:-mx-6">
+<section class="cta-banner bg-surface-warm -mx-4 sm:-mx-6">
   {# Wave at top of CTA #}
   <div class="wave-divider -mt-16 relative z-10 overflow-hidden" aria-hidden="true">
     <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
@@ -155,19 +154,18 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
       <path d="M0,50 C360,10 720,70 1080,30 C1260,10 1380,50 1440,40 L1440,80 L0,80 Z" class="wave-surface-warm" />
     </svg>
   </div>
-  <div class="pt-8 px-4 max-w-2xl mx-auto text-center">
+  <div class="pt-8 pb-16 px-4 max-w-2xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Something brought you here today.</h2>
     <p class="text-muted text-lg mb-8">I'm glad you're here. Let's talk.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       {% scheduleButton "Schedule your free consultation" %}
     </div>
   </div>
+  <!-- Wave: CTA bottom → Footer -->
+  <div class="wave-divider overflow-hidden" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12">
+      <rect width="1440" height="80" class="wave-surface" />
+      <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" class="wave-surface-warm" />
+    </svg>
+  </div>
 </section>
-
-<!-- Wave: CTA → Footer -->
-<div class="wave-divider -mt-1 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12">
-    <rect width="1440" height="80" class="wave-surface" />
-    <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" class="wave-surface-warm" />
-  </svg>
-</div>
