@@ -14,8 +14,8 @@ a[id] {
   --fg: 20 12% 20%; /* warm charcoal */
 
   /* Brand */
-  --primary: 16 75% 58%; /* coral/peach */
-  --primary-foreground: 0 0% 100%; /* white on coral */
+  --primary: 43 89% 45%; /* deep gold #dba20d */
+  --primary-foreground: 20 12% 12%; /* dark text on gold */
 
   --accent: 340 30% 80%; /* dusty rose/blush */
   --accent-foreground: 20 12% 20%;
@@ -49,8 +49,8 @@ a[id] {
   --fg: 38 15% 94%; /* warm light cream */
 
   /* Brand */
-  --primary: 16 65% 62%; /* lighter coral for dark bg */
-  --primary-foreground: 0 0% 100%;
+  --primary: 43 85% 52%; /* gold, lightened for dark bg */
+  --primary-foreground: 20 12% 12%; /* dark text on gold */
 
   --accent: 340 25% 65%; /* dusty rose (darker mode) */
   --accent-foreground: 20 12% 20%;
