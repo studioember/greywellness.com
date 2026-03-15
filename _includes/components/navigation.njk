@@ -1,5 +1,5 @@
 {% block navigation %}
-  <navigation class="block bg-[#31272d] sticky top-0 z-50">
+  <navigation class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
     <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
       <a href="{{ '/' | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
         {# Mobile: icon only #}
@@ -15,7 +15,7 @@
           {% if page.fileSlug != "contact" %}
             <a
               href="{{ page.url | url }}"
-              class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
+              class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
             >
               {{ page.data.title or page.fileSlug }}
             </a>
@@ -24,13 +24,13 @@
 
         <a
           href="{{ '/pages/contact/' | url }}"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity"
+          class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
         >
           Contact
         </a>
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors"
+          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -42,13 +42,13 @@
       <div class="flex md:hidden items-center gap-2">
         <a
           href="{{ '/pages/contact/' | url }}"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
         >
           Contact
         </a>
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors whitespace-nowrap"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +56,7 @@
         </a>
         <button
           type="button"
-          class="flex items-center justify-center w-9 h-9 text-white/70 hover:text-white transition-colors rounded-md hover:bg-white/8"
+          class="flex items-center justify-center w-9 h-9 text-nav-fg/70 hover:text-nav-fg transition-colors rounded-md hover:bg-nav-fg/8"
           aria-label="Open menu"
           aria-expanded="false"
           data-mobile-toggle
@@ -72,14 +72,14 @@
     </nav>
 
     {# Mobile dropdown menu #}
-    <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
+    <div class="hidden md:hidden border-t border-border" data-mobile-menu>
       <ul class="py-2 px-4">
         {% for page in collections.pages %}
           {% if page.fileSlug != "contact" %}
             <li>
               <a
                 href="{{ page.url | url }}"
-                class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
+                class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border last:border-0"
               >
                 {{ page.data.title or page.fileSlug }}
               </a>
