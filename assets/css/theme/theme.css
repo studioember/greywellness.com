@@ -78,6 +78,10 @@ a[id] {
   --sage: 150 15% 48%;
 }
 
+/* Safari fallback: hide waves, use straight section breaks */
+.is-safari .wave-divider        { display: none; }
+.is-safari .cta-banner          { padding-top: 4rem; }
+
 /* Wave fills — opaque two-layer SVG, fully Safari-compatible */
 .wave-hero-overlay { fill: hsl(var(--hero-overlay)); }
 .wave-bg           { fill: hsl(var(--bg)); }
