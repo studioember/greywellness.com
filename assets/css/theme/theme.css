@@ -82,6 +82,10 @@ a[id] {
 .wave-fill-bg svg           { fill: hsl(var(--bg)); }
 .wave-fill-surface-warm svg { fill: hsl(var(--surface-warm)); }
 
+/* Wave C two-layer: rect fills footer bg, path fills CTA bg */
+.wave-rect-surface      { fill: hsl(var(--surface)); }
+.wave-path-surface-warm { fill: hsl(var(--surface-warm)); }
+
 pre {
   background-color: hsl(var(--card));
 }
