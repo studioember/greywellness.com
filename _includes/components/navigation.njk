@@ -10,11 +10,13 @@
 
   <navigation class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
     <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
-      <a href="{{ _homeUrl | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
-        {# Mobile: icon only #}
-        <img src="{{ '/assets/img/logo-small.png' | url }}" alt="Grey Wellness logo" class="h-10 w-auto md:hidden" loading="lazy" decoding="async" />
-        {# Desktop: full logo #}
-        <img src="{{ '/assets/img/logo.png' | url }}" alt="Grey Wellness logo" class="h-34 w-auto hidden md:block" loading="lazy" decoding="async" />
+      <a href="{{ _homeUrl | url }}" class="flex items-center ml-4 hover:opacity-80 transition-opacity shrink-0">
+        {# Icon: dark.png in light mode, light.png in dark mode #}
+        <img src="{{ '/assets/img/logo-small-dark.png' | url }}" alt="Grey Wellness" class="h-14 w-auto dark-hidden" loading="lazy" decoding="async" />
+        <img src="{{ '/assets/img/logo-small-light.png' | url }}" alt="Grey Wellness" class="h-14 w-auto dark-block" loading="lazy" decoding="async" />
+        {# Text: dark.png in light mode, light.png in dark mode #}
+        <img src="{{ '/assets/img/logo-text-dark.png' | url }}" alt="" class="h-16 w-auto dark-hidden" loading="lazy" decoding="async" aria-hidden="true" />
+        <img src="{{ '/assets/img/logo-text-light.png' | url }}" alt="" class="h-16 w-auto dark-block" loading="lazy" decoding="async" aria-hidden="true" />
       </a>
       <div class="flex-1"></div>
 

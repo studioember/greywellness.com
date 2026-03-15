@@ -15,7 +15,8 @@
       "Bash(git push -u origin claude/vigorous-moore)",
       "Bash(gh pr:*)",
       "Bash(brew list gh)",
-      "Bash(/opt/homebrew/bin/gh pr:*)"
+      "Bash(/opt/homebrew/bin/gh pr:*)",
+      "Bash(yarn build:css)"
     ]
   }
 }

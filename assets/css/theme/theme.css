@@ -39,7 +39,7 @@ a[id] {
   --surface-warm: 38 40% 93%; /* warm peach-cream */
   --nav-bg: 0 0% 100%;
   --nav-fg: 20 12% 25%;
-  --hero-overlay: 20 30% 18%; /* warm dark brown */
+  --hero-overlay: 260 40% 18%; /* deep purple-indigo, harmonizes with lavender blobs */
   --sage: 150 22% 62%; /* muted sage green */
 }
 
@@ -74,9 +74,15 @@ a[id] {
   --surface-warm: 20 15% 14%;
   --nav-bg: 271 25% 12%;
   --nav-fg: 38 15% 90%;
-  --hero-overlay: 20 25% 8%; /* warm dark brown — distinct from purple --bg */
+  --hero-overlay: 260 40% 8%; /* deep purple-indigo — harmonizes with lavender blobs */
   --sage: 150 15% 48%;
 }
+
+/* Theme-aware visibility helpers (keyed to [data-theme="dark"] attribute) */
+.dark-hidden { display: block; }
+.dark-block  { display: none; }
+[data-theme="dark"] .dark-hidden { display: none; }
+[data-theme="dark"] .dark-block  { display: block; }
 
 /* Safari fallback: hide waves, use straight section breaks */
 .is-safari .wave-divider        { display: none; }
