@@ -145,16 +145,15 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
   </div>
 </section>
 
-<!-- Wave: Services → CTA -->
-<div class="-mb-1 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16 fill-surface-warm">
-    <path d="M0,50 C360,10 720,70 1080,30 C1260,10 1380,50 1440,40 L1440,80 L0,80 Z" />
-  </svg>
-</div>
-
 <!-- CTA Banner -->
-<section class="bg-surface-warm py-16 px-4 -mx-4 sm:-mx-6">
-  <div class="max-w-2xl mx-auto text-center">
+<section class="bg-surface-warm pb-16 -mx-4 sm:-mx-6">
+  {# Wave at top of CTA, same pattern as Wave A #}
+  <div class="-mt-16 relative z-10 overflow-hidden" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16 fill-surface-warm">
+      <path d="M0,50 C360,10 720,70 1080,30 C1260,10 1380,50 1440,40 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+  <div class="pt-8 px-4 max-w-2xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Something brought you here today.</h2>
     <p class="text-muted text-lg mb-8">I'm glad you're here. Let's talk.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -164,7 +163,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- Wave: CTA → Footer -->
-<div class="-mt-1 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
+<div class="-mt-1 overflow-hidden -mx-4 sm:-mx-6 bg-surface-warm" aria-hidden="true">
   <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12 fill-surface">
     <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" />
   </svg>
