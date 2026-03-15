@@ -72,6 +72,11 @@
 
         applyTheme();
         media.addEventListener("change", applyTheme);
+
+        // Safari fallback: hide wave dividers, use straight-line section breaks
+        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+          root.classList.add("is-safari");
+        }
       })();
     </script>
 
@@ -142,8 +147,8 @@
       .sp-schedule-btn {
         display: inline-block;
         padding: 14px 32px;
-        color: #31272d !important;
-        background: #DBA20D;
+        color: hsl(var(--primary-foreground)) !important;
+        background: hsl(var(--primary));
         border: 0;
         border-radius: 6px;
         font-size: 1rem;

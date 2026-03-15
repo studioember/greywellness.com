@@ -8,7 +8,7 @@
   {# Language switcher: get alternate locale links for the current page #}
   {% set _langAlternates = page.url | locale_links %}
 
-  <navigation class="block bg-[#31272d] sticky top-0 z-50">
+  <navigation class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
     <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
       <a href="{{ _homeUrl | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
         {# Mobile: icon only #}
@@ -24,7 +24,7 @@
           {% if navPage.fileSlug != "contact" %}
             <a
               href="{{ navPage.url | url }}"
-              class="text-sm font-medium text-white/70 hover:text-white transition-colors tracking-wide uppercase"
+              class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
             >
               {{ navPage.data.title or navPage.fileSlug }}
             </a>
@@ -33,14 +33,14 @@
 
         <a
           href="{{ _contactUrl | url }}"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity"
+          class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
         >
           {{ _t.nav_contact }}
         </a>
 
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors"
+          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -49,14 +49,14 @@
 
         {# Language switcher #}
         {% if _langAlternates.length %}
-          <div class="flex items-center gap-1 border-l border-white/20 pl-4">
-            <span class="text-xs font-bold text-white uppercase tracking-wider">{{ _lang | upper }}</span>
+          <div class="flex items-center gap-1 border-l border-nav-fg/20 pl-4">
+            <span class="text-xs font-bold text-nav-fg uppercase tracking-wider">{{ _lang | upper }}</span>
             {% for _alt in _langAlternates %}
-            <span class="text-white/30 text-xs">|</span>
+            <span class="text-nav-fg/30 text-xs">|</span>
             <a
               href="{{ _alt.url | url }}"
               hreflang="{{ _alt.lang }}"
-              class="text-xs font-bold text-white/50 uppercase tracking-wider hover:text-white transition-colors"
+              class="text-xs font-bold text-nav-fg/50 uppercase tracking-wider hover:text-nav-fg transition-colors"
               aria-label="{{ _t.lang_other_label }}"
             >{{ _alt.lang | upper }}</a>
             {% endfor %}
@@ -72,7 +72,7 @@
           <a
             href="{{ _alt.url | url }}"
             hreflang="{{ _alt.lang }}"
-            class="px-2 py-1 text-xs font-bold text-white/50 uppercase tracking-wider border border-white/20 rounded hover:text-white hover:border-white/40 transition-colors"
+            class="px-2 py-1 text-xs font-bold text-nav-fg/50 uppercase tracking-wider border border-border rounded hover:text-nav-fg hover:border-nav-fg/40 transition-colors"
             aria-label="{{ _t.lang_other_label }}"
           >{{ _alt.lang | upper }}</a>
           {% endfor %}
@@ -80,13 +80,13 @@
 
         <a
           href="{{ _contactUrl | url }}"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-[#DBA20D] text-[#31272d] rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
         >
           {{ _t.nav_contact }}
         </a>
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-white/50 border border-white/20 rounded-md hover:text-white/80 hover:border-white/40 transition-colors whitespace-nowrap"
+          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors whitespace-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -94,7 +94,7 @@
         </a>
         <button
           type="button"
-          class="flex items-center justify-center w-9 h-9 text-white/70 hover:text-white transition-colors rounded-md hover:bg-white/8"
+          class="flex items-center justify-center w-9 h-9 text-nav-fg/70 hover:text-nav-fg transition-colors rounded-md hover:bg-nav-fg/8"
           aria-label="Open menu"
           aria-expanded="false"
           data-mobile-toggle
@@ -110,14 +110,14 @@
     </nav>
 
     {# Mobile dropdown menu #}
-    <div class="hidden md:hidden border-t border-white/10" data-mobile-menu>
+    <div class="hidden md:hidden border-t border-border" data-mobile-menu>
       <ul class="py-2 px-4">
         {% for navPage in _currentPages %}
           {% if navPage.fileSlug != "contact" %}
             <li>
               <a
                 href="{{ navPage.url | url }}"
-                class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5 last:border-0"
+                class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border last:border-0"
               >
                 {{ navPage.data.title or navPage.fileSlug }}
               </a>
@@ -127,7 +127,7 @@
         <li>
           <a
             href="{{ _contactUrl | url }}"
-            class="block py-3 text-sm text-white/70 hover:text-white transition-colors border-b border-white/5"
+            class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border"
           >
             {{ _t.nav_contact }}
           </a>

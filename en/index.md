@@ -54,14 +54,24 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </script>
 
 <!-- Hero -->
-<section class="relative bg-[#31272d] overflow-hidden -mx-4 sm:-mx-6 -mt-10">
+<section class="relative bg-hero overflow-hidden -mx-4 sm:-mx-6 -mt-10">
   <img src="{{ '/assets/img/hero.jpg' | url }}" alt="Hummingbird in flight against a moody sky" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" decoding="async">
 
-  <div class="absolute inset-0 bg-gradient-to-r from-[#31272d]/90 via-[#31272d]/70 to-transparent"></div>
+  <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(var(--hero-overlay) / 0.92), hsl(var(--hero-overlay) / 0.65), transparent)"></div>
+
+  {# Brand blob decorative element — from brand identity guide #}
+  <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" class="absolute -right-16 top-0 h-72 w-60 md:-right-8 md:h-[520px] md:w-[420px]" fill="hsl(var(--secondary))" fill-opacity="0.25">
+      <path d="M160,28 C208,8 268,42 275,102 C282,162 252,212 218,242 C255,262 272,308 248,345 C224,382 172,382 134,360 C96,338 76,295 94,256 C64,240 36,202 44,158 C52,114 94,90 126,74 C104,54 94,18 124,6 C144,0 150,38 160,28Z" />
+    </svg>
+    <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="absolute -left-8 bottom-4 h-32 w-28 md:h-44 md:w-40" fill="hsl(var(--secondary))" fill-opacity="0.15">
+      <path d="M95,20 C130,6 168,30 172,72 C176,114 152,150 120,165 C140,178 148,205 128,215 C108,225 82,214 66,196 C50,178 56,152 72,138 C46,126 20,98 28,64 C36,30 70,30 95,20Z" />
+    </svg>
+  </div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 py-32 md:py-44">
     <div class="max-w-xl">
-      <p class="text-[#DBA20D] text-sm font-semibold tracking-widest uppercase mb-4">Mónica Grey, LCPC</p>
+      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Mónica Grey, LCPC</p>
       <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
         Better is possible.<br>
         Let's get you there.
@@ -82,6 +92,13 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
   </div>
 </section>
 
+<!-- Wave: Hero → Services -->
+<div class="wave-divider -mt-16 relative z-10 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
+    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" class="wave-bg" />
+  </svg>
+</div>
+
 <!-- Services -->
 <section class="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
   <div class="mb-12 text-center">
@@ -95,23 +112,23 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
   <div class="grid sm:grid-cols-2 gap-6">
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
       <a href="{{ '/en/pages/services/' | locale_url }}#sleep-insomnia" class="absolute inset-0 z-10" aria-label="Learn more about Sleep & Insomnia therapy"></a>
-      <div class="absolute top-0 left-0 right-0 h-1 bg-[#DBA20D]"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#DBA20D]/15 text-2xl">🌙</span></div>
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/15 text-2xl">🌙</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Sleep & Insomnia</h3>
       <p class="text-muted leading-relaxed mb-5">CBT-I is the gold-standard treatment for chronic insomnia. Together, we identify the thoughts and patterns keeping you awake and replace them with ones that support real, lasting rest.</p>
-      <span class="text-[#DBA20D] text-sm font-semibold tracking-wide group-hover:underline">Learn more →</span>
+      <span class="text-primary text-sm font-semibold tracking-wide group-hover:underline">Learn more →</span>
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
       <a href="{{ '/en/pages/services/' | locale_url }}#trauma" class="absolute inset-0 z-10" aria-label="Learn more about Trauma therapy"></a>
-      <div class="absolute top-0 left-0 right-0 h-1 bg-accent"></div>
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-accent"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/30 text-2xl">🤝</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Trauma</h3>
       <p class="text-muted leading-relaxed mb-5">Trauma isn't a sign of weakness — it's the nervous system doing its best to protect you. We work at a pace that feels safe, gradually helping your body release what it's been holding.</p>
-      <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 30% 50%)">Learn more →</span>
+      <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(340 35% 50%)">Learn more →</span>
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
       <a href="{{ '/en/pages/services/' | locale_url }}#childhood-adverse-experiences" class="absolute inset-0 z-10" aria-label="Learn more about Childhood Adverse Experiences therapy"></a>
-      <div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
       <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/20 text-2xl">🌱</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Childhood Adverse Experiences</h3>
       <p class="text-muted leading-relaxed mb-5">Early experiences shape how we move through the world as adults. Understanding where patterns come from is the first step toward building a life that feels stable, safe, and genuinely yours.</p>
@@ -119,22 +136,38 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
     </div>
     <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
       <a href="{{ '/en/pages/services/' | locale_url }}#stress-management" class="absolute inset-0 z-10" aria-label="Learn more about Stress Management therapy"></a>
-      <div class="absolute top-0 left-0 right-0 h-1" style="background: hsl(271 20% 62%)"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl text-2xl" style="background: hsl(271 20% 62% / 0.15)">⚖️</span></div>
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-sage"></div>
+      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-sage/15 text-2xl">⚖️</span></div>
       <h3 class="text-xl font-bold text-foreground mb-3">Stress Management</h3>
       <p class="text-muted leading-relaxed mb-5">Chronic stress stops being useful and starts being harmful. We work to understand what's driving it, how it shows up in your body, and what tools will help you build real, lasting resilience.</p>
-      <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 20% 52%)">Learn more →</span>
+      <span class="text-sage text-sm font-semibold tracking-wide group-hover:underline">Learn more →</span>
     </div>
   </div>
 </section>
 
 <!-- CTA Banner -->
-<section class="bg-[#31272d] py-16 px-4 -mx-4 sm:-mx-6">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Something brought you here today.</h2>
-    <p class="text-white/80 text-lg mb-8">I'm glad you're here. Let's talk.</p>
+<section class="cta-banner bg-surface-warm -mx-4 sm:-mx-6 -mb-10">
+  <!-- Wave at top of CTA -->
+  <div class="wave-divider -mt-16 relative z-10 overflow-hidden" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
+      <rect width="1440" height="80" class="wave-bg" />
+      <path d="M0,50 C360,10 720,70 1080,30 C1260,10 1380,50 1440,40 L1440,80 L0,80 Z" class="wave-surface-warm" />
+    </svg>
+  </div>
+  <div class="pt-8 pb-16 px-4 max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Something brought you here today.</h2>
+    <p class="text-muted text-lg mb-8">I'm glad you're here. Let's talk.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       {% scheduleButton "Schedule your free consultation" %}
     </div>
   </div>
+  <!-- Wave: CTA bottom → Footer -->
+  <div class="wave-divider overflow-hidden" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12">
+      <rect width="1440" height="80" class="wave-surface" />
+      <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" class="wave-surface-warm" />
+    </svg>
+  </div>
+  <!-- Spacer: covers main's pb-10 so no body-bg bleeds between CTA and footer -->
+  <div class="bg-surface h-10" aria-hidden="true"></div>
 </section>
