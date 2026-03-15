@@ -41,6 +41,12 @@ export default {
 
         border: "hsl(var(--border))",
         muted: "hsl(var(--muted))",
+
+        surface: "hsl(var(--surface))",
+        "surface-warm": "hsl(var(--surface-warm))",
+        sage: "hsl(var(--sage))",
+        "nav-bg": "hsl(var(--nav-bg))",
+        "nav-fg": "hsl(var(--nav-fg))",
       },
     },
   },
