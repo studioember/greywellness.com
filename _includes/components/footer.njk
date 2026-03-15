@@ -32,10 +32,10 @@
           <p class="text-sm font-semibold text-foreground">{{ _t.footer_company }}</p>
           <ul class="space-y-2 text-sm text-muted">
             <li>
-              <a href="{{ '/en/pages/about/' | locale_url | url }}" class="hover:text-primary transition-colors">{{ _t.footer_about }}</a>
+              <a href="{{ '/' + _lang + '/pages/about/' | url }}" class="hover:text-primary transition-colors">{{ _t.footer_about }}</a>
             </li>
             <li>
-              <a href="{{ '/en/pages/services/' | locale_url | url }}" class="hover:text-primary transition-colors">{{ _t.footer_services }}</a>
+              <a href="{{ '/' + _lang + '/pages/treatment/' | url }}" class="hover:text-primary transition-colors">{{ _t.footer_services }}</a>
             </li>
           </ul>
         </div>

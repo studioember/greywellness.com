@@ -1,12 +1,25 @@
 ---
 layout: layouts/base.njk
-lang: en
 title: CBT-I Group Therapy
 title_hidden: true
 no_prose: true
 full_width: true
 hidden_from_nav: true
 description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program to overcome chronic insomnia without medication.
+tagline: Overcome chronic insomnia without medication
+start_date: "April 22, 2026"
+schedule: "Wednesdays at 7:00 PM ET"
+sessions: 8
+format: Virtual
+price: "$75 / session"
+status: open
+emoji: "🌙"
+topics:
+  - Sleep restriction
+  - Stimulus control
+  - Sleep hygiene
+  - Relaxation techniques
+  - Cognitive restructuring
 ---
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap">
@@ -276,7 +289,7 @@ description: CBT-I Group Therapy with Grey Wellness — a 6-week virtual program
         <div class="card-label">Starts</div>
         <div class="card-value">Wed, April 22</div>
         <div class="card-sub">7:00 PM ET</div>
-        <a class="card-cal-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=CBT-I+Group+Therapy+%E2%80%93+Grey+Wellness&dates=20260422T230000Z%2F20260423T000000Z&details=6-week+virtual+CBT-I+Group+Therapy+with+Grey+Wellness.%0A%0ARegister+%26+inquire%3A%0Acontact%40greywellness.com+%7C+240-203-8879%0A%0AMore+info%3A+https%3A%2F%2Fgreywellness.com%2Fpages%2Fworkshops%2Fcbt-i-group-therapy%2F&location=Virtual+%E2%80%93+Secure+Telehealth&recur=RRULE:FREQ%3DWEEKLY%3BCOUNT%3D6" target="_blank" rel="noopener noreferrer">+ Add to Calendar</a>
+        <a class="card-cal-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=CBT-I+Group+Therapy+%E2%80%93+Grey+Wellness&dates=20260422T230000Z%2F20260423T000000Z&details=6-week+virtual+CBT-I+Group+Therapy+with+Grey+Wellness.%0A%0ARegister+%26+inquire%3A%0Acontact%40greywellness.com+%7C+240-203-8879%0A%0AMore+info%3A+https%3A%2F%2Fgreywellness.com%2Fen%2Fpages%2Fgroups%2Fcbt-i-group-therapy%2F&location=Virtual+%E2%80%93+Secure+Telehealth&recur=RRULE:FREQ%3DWEEKLY%3BCOUNT%3D6" target="_blank" rel="noopener noreferrer">+ Add to Calendar</a>
       </div>
       <div class="card">
         <div class="card-label">Program</div>

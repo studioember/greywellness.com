@@ -16,7 +16,11 @@
       "Bash(gh pr:*)",
       "Bash(brew list gh)",
       "Bash(/opt/homebrew/bin/gh pr:*)",
-      "Bash(yarn build:css)"
+      "Bash(yarn build:css)",
+      "Bash(git fetch:*)",
+      "Bash(npx eleventy:*)",
+      "Bash(grep -L \"^lang:\" /Users/Nate/Developer/projects/github/studioember/greywellness.com/es/pages/*.md)",
+      "Bash(grep -r \"mailto:\\\\|href=\\\\|src=\" /Users/Nate/Developer/projects/github/studioember/greywellness.com/en/pages/*.md /Users/Nate/Developer/projects/github/studioember/greywellness.com/es/pages/*.md)"
     ]
   }
 }

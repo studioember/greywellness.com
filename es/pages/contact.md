@@ -9,13 +9,11 @@ date_hidden: true
 layout: layouts/base.njk
 ---
 
-<!-- TODO: Translate content from en/pages/contact.md -->
-
 ## Consulta Gratuita
 
 Comenzar con la terapia es un gran paso, y encontrar a la persona adecuada es importante. Por eso ofrezco una consulta gratuita de 15 minutos antes de cualquier otra cosa.
 
-Nos reuniremos por videollamada, a menos que prefieras de otra manera, y este tiempo es simplemente para conocernos un poco. Tendrás la oportunidad de compartir lo que te trae a la terapia, hacer cualquier pregunta que tengas y hacerte una idea de cómo trabajo.
+Nos reuniremos por videollamada, a menos que prefieras de otra manera, y este tiempo es simplemente para conocernos un poco. Tendrás la oportunidad de compartir lo que te trae a la terapia, hacer cualquier pregunta que tengas y hacerte una idea de cómo trabajo. Compartiré un poco sobre mi experiencia y formación para que puedas conocer quién soy y cómo me acerco al trabajo terapéutico.
 
 No hay presión para tomar una decisión en la llamada. Genuinamente te animo a tomarte tu tiempo, y si se siente bien, a hablar con otros terapeutas antes de comprometerte. Este es un proceso profundamente personal y mereces sentirte seguro y cómodo con quien elijas trabajar.
 

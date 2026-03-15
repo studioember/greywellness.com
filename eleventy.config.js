@@ -40,6 +40,19 @@ export default async function (eleventyConfig) {
       });
   });
 
+  // Group therapy pages (excludes the index listing page itself)
+  eleventyConfig.addCollection("groups_en", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("en/pages/groups/*.{md,njk,html}")
+      .filter((p) => !p.inputPath.endsWith("/index.md"));
+  });
+
+  eleventyConfig.addCollection("groups_es", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("es/pages/groups/*.{md,njk,html}")
+      .filter((p) => !p.inputPath.endsWith("/index.md"));
+  });
+
   // Shortcodes
   eleventyConfig.addShortcode(
     "scheduleButton",

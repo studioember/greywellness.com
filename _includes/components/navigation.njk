@@ -3,9 +3,11 @@
   {# Resolve locale-specific data for this render #}
   {% set _lang = lang | default("en") %}
   {% set _t = i18n[_lang] %}
-  {% set _currentPages = collections["pages_" + _lang] %}
-  {% set _contactUrl = "/en/pages/contact/" | locale_url %}
-  {% set _homeUrl = "/en/" | locale_url %}
+  {% set _contactUrl = "/" + _lang + "/pages/contact/" %}
+  {% set _homeUrl = "/" + _lang + "/" %}
+  {% set _aboutUrl = "/" + _lang + "/pages/about/" %}
+  {% set _servicesUrl = "/" + _lang + "/pages/treatment/" %}
+  {% set _investmentUrl = "/" + _lang + "/pages/investment/" %}
   {# Language switcher: get alternate locale links for the current page #}
   {% set _langAlternates = page.url | locale_links %}
 
@@ -18,16 +20,37 @@
 
       {# Desktop nav items #}
       <div class="hidden md:flex items-center gap-6">
-        {% for navPage in _currentPages %}
-          {% if navPage.fileSlug != "contact" %}
-            <a
-              href="{{ navPage.url | url }}"
-              class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
-            >
-              {{ navPage.data.title or navPage.fileSlug }}
+        <a href="{{ _aboutUrl | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
+          {{ _t.nav_about }}
+        </a>
+        <div class="relative" data-dropdown>
+          <button
+            type="button"
+            class="flex items-center gap-1 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
+            aria-expanded="false"
+            data-dropdown-toggle
+          >
+            {{ _t.nav_services }}
+            <svg class="w-3.5 h-3.5 mt-0.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-dropdown-chevron>
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 min-w-max rounded-xl bg-nav-bg border border-border shadow-xl py-1 hidden" data-dropdown-menu>
+            <a href="{{ _servicesUrl | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_services_what_we_treat }}
             </a>
-          {% endif %}
-        {% endfor %}
+            <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_services_how_we_work }}
+            </a>
+            <a href="{{ "/" + _lang + "/pages/groups/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_services_groups }}
+            </a>
+          </div>
+        </div>
+
+        <a href="{{ _investmentUrl | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
+          {{ _t.nav_investment }}
+        </a>
 
         <a
           href="{{ _contactUrl | url }}"
@@ -110,23 +133,33 @@
     {# Mobile dropdown menu #}
     <div class="hidden md:hidden border-t border-border" data-mobile-menu>
       <ul class="py-2 px-4">
-        {% for navPage in _currentPages %}
-          {% if navPage.fileSlug != "contact" %}
-            <li>
-              <a
-                href="{{ navPage.url | url }}"
-                class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border last:border-0"
-              >
-                {{ navPage.data.title or navPage.fileSlug }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
         <li>
-          <a
-            href="{{ _contactUrl | url }}"
-            class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border"
-          >
+          <a href="{{ _aboutUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+            {{ _t.nav_about }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ _servicesUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
+            {{ _t.nav_services_what_we_treat }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
+            {{ _t.nav_services_how_we_work }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ "/" + _lang + "/pages/groups/" | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
+            {{ _t.nav_services_groups }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ _investmentUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+            {{ _t.nav_investment }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ _contactUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
             {{ _t.nav_contact }}
           </a>
         </li>
@@ -148,6 +181,33 @@
           mobileToggle.setAttribute("aria-expanded", String(!isOpen));
           openIcon.classList.toggle("hidden");
           closeIcon.classList.toggle("hidden");
+        });
+      }
+
+      // Desktop: Services dropdown
+      const dropdown = document.querySelector("[data-dropdown]");
+      if (dropdown) {
+        const toggle = dropdown.querySelector("[data-dropdown-toggle]");
+        const menu = dropdown.querySelector("[data-dropdown-menu]");
+        const chevron = dropdown.querySelector("[data-dropdown-chevron]");
+
+        const open = () => {
+          menu.classList.remove("hidden");
+          toggle.setAttribute("aria-expanded", "true");
+          chevron.style.transform = "rotate(180deg)";
+        };
+        const close = () => {
+          menu.classList.add("hidden");
+          toggle.setAttribute("aria-expanded", "false");
+          chevron.style.transform = "";
+        };
+
+        toggle.addEventListener("click", () => {
+          menu.classList.contains("hidden") ? open() : close();
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!dropdown.contains(e.target)) close();
         });
       }
     })();

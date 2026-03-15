@@ -1,6 +1,10 @@
 {
   "nav_about": "About",
   "nav_services": "Services",
+  "nav_investment": "Investment",
+  "nav_services_what_we_treat": "What We Treat",
+  "nav_services_how_we_work": "How We Work",
+  "nav_services_groups": "Groups",
   "nav_contact": "Contact",
   "nav_client_portal": "Client Portal",
   "nav_login": "Login",

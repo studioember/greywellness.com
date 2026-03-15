@@ -8,8 +8,6 @@ date_hidden: true
 layout: layouts/base.njk
 ---
 
-<!-- TODO: Translate content from en/pages/about.md -->
-
 <div class="not-prose mt-12 flex flex-col items-center gap-4">
   <img
     src="{{ '/assets/img/headshot.jpg' | url }}"
@@ -40,10 +38,20 @@ Me convertí en psicoterapeuta porque creo que las cosas que cargamos desde la i
 
 Gran parte de mi trabajo se centra en el sueño, el trauma y el estrés, no como cajas separadas, sino como partes profundamente conectadas de cómo funcionamos. Muchas de las personas con las que trabajo son adultos capaces y de alto rendimiento que parecen estar bien por fuera pero están silenciosamente agotados. Han intentado seguir adelante. Están cansados de solo manejar la situación.
 
+Si has pasado años sin poder dormir, repasando pensamientos que no puedes apagar, trabajo específicamente con personas que luchan contra el insomnio, llegando a la raíz de lo que te mantiene despierto en lugar de solo tratar el síntoma.
+
+Si creciste en un entorno que se sentía impredecible, caótico o simplemente no lo suficientemente seguro, esas experiencias tempranas tienen una forma de aparecer en la adultez de maneras que pueden sentirse confusas. La ansiedad, el perfeccionismo, la forma en que te preparas para que las cosas salgan mal — todo comenzó en algún lugar. Lo trabajamos a un ritmo que se siente manejable, con compasión y sin juicio.
+
+Y si el estrés crónico o el agotamiento se ha convertido en tu punto de partida, trabajamos en formas prácticas y concretas de ayudarte a sentirte tú mismo de nuevo, no una versión aguada de ti mismo que solo intenta sobrevivir la semana.
+
 **Cómo Trabajo**
 
-Mi base es la Terapia Cognitivo-Conductual, combinada con la atención plena y un profundo respeto por quién eres como persona completa. Soy estructurada y orientada a objetivos, pero la terapia conmigo nunca es rígida ni fría. Me importa tu progreso y también me importas tú.
+Mi base es la Terapia Cognitivo-Conductual, combinada con la atención plena y un profundo respeto por quién eres como persona completa. Soy estructurada y orientada a objetivos, pero la terapia conmigo nunca es rígida ni fría. Me importa tu progreso y también me importas tú. Trabajaremos duro juntos, y también habrá espacio para la honestidad, el humor y la humanidad.
+
+Soy directa. Valoro la evidencia. Y respeto profundamente el coraje que se necesita para mirar tus propios patrones y decidir que quieres algo diferente.
 
 **Con Quién Trabajo Mejor**
 
 Trabajo con adultos que navegan experiencias no resueltas de la infancia, insomnio, estrés crónico y el peso particular que viene con la inmigración, la identidad cultural y ser el primero. Ofrezco terapia en inglés y español, y para muchos de mis clientes hispanohablantes, poder hacer este trabajo en su primer idioma marca toda la diferencia.
+
+No tienes que seguir funcionando con lo mínimo. No tienes que seguir repitiendo los mismos patrones. Y no tienes que hacerlo solo. Si estás listo para hacer algo al respecto, sería un honor trabajar contigo.

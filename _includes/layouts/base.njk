@@ -29,7 +29,9 @@
     {% for _alt in _locale_alternates %}
     <link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}">
     {% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | locale_url('en') }}">
+    {% set _xdefault_url = page.url %}
+    {% for _alt in _locale_alternates %}{% if _alt.lang == "en" %}{% set _xdefault_url = _alt.url %}{% endif %}{% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ _xdefault_url }}">
 
     {# ── Open Graph ── #}
     <meta property="og:type"        content="{{ og_type or 'website' }}">
