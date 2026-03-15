@@ -163,7 +163,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- Wave: CTA → Footer -->
-<div class="-mt-1 overflow-hidden -mx-4 sm:-mx-6 text-surface-warm" aria-hidden="true">
+<div class="-mt-1 overflow-hidden -mx-4 sm:-mx-6 text-surface-warm bg-surface" aria-hidden="true">
   <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12" fill="currentColor">
     <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" />
   </svg>
