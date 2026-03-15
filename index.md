@@ -59,6 +59,16 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 
   <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(var(--hero-overlay) / 0.92), hsl(var(--hero-overlay) / 0.65), transparent)"></div>
 
+  {# Brand blob decorative element — from brand identity guide #}
+  <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" class="absolute -right-16 top-0 h-72 w-60 md:-right-8 md:h-[520px] md:w-[420px]" fill="hsl(var(--secondary))" fill-opacity="0.25">
+      <path d="M160,28 C208,8 268,42 275,102 C282,162 252,212 218,242 C255,262 272,308 248,345 C224,382 172,382 134,360 C96,338 76,295 94,256 C64,240 36,202 44,158 C52,114 94,90 126,74 C104,54 94,18 124,6 C144,0 150,38 160,28Z" />
+    </svg>
+    <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="absolute -left-8 bottom-4 h-32 w-28 md:h-44 md:w-40" fill="hsl(var(--secondary))" fill-opacity="0.15">
+      <path d="M95,20 C130,6 168,30 172,72 C176,114 152,150 120,165 C140,178 148,205 128,215 C108,225 82,214 66,196 C50,178 56,152 72,138 C46,126 20,98 28,64 C36,30 70,30 95,20Z" />
+    </svg>
+  </div>
+
   <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 py-32 md:py-44">
     <div class="max-w-xl">
       <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Mónica Grey, LCPC</p>
@@ -83,7 +93,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- Wave: Hero → Services -->
-<div class="-mt-16 relative z-10 overflow-hidden" aria-hidden="true">
+<div class="-mt-16 relative z-10 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
   <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16 fill-bg">
     <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" />
   </svg>
@@ -136,7 +146,7 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- Wave: Services → CTA -->
-<div class="-mb-1 overflow-hidden" aria-hidden="true">
+<div class="-mb-1 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
   <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16 fill-surface-warm">
     <path d="M0,50 C360,10 720,70 1080,30 C1260,10 1380,50 1440,40 L1440,80 L0,80 Z" />
   </svg>
@@ -154,8 +164,8 @@ description: "Mónica Grey is a bilingual therapist specializing in CBT-I—the 
 </section>
 
 <!-- Wave: CTA → Footer -->
-<div class="-mt-1 overflow-hidden" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12 fill-bg">
+<div class="-mt-1 overflow-hidden -mx-4 sm:-mx-6" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-12 fill-surface">
     <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,0 L0,0 Z" />
   </svg>
 </div>
