@@ -78,13 +78,11 @@ a[id] {
   --sage: 150 15% 48%;
 }
 
-/* Wave SVG fill — explicit CSS property for Safari compatibility */
-.wave-fill-bg svg           { fill: hsl(var(--bg)); }
-.wave-fill-surface-warm svg { fill: hsl(var(--surface-warm)); }
-
-/* Wave C two-layer: rect fills footer bg, path fills CTA bg */
-.wave-rect-surface      { fill: hsl(var(--surface)); }
-.wave-path-surface-warm { fill: hsl(var(--surface-warm)); }
+/* Wave fills — opaque two-layer SVG, fully Safari-compatible */
+.wave-hero-overlay { fill: hsl(var(--hero-overlay)); }
+.wave-bg           { fill: hsl(var(--bg)); }
+.wave-surface-warm { fill: hsl(var(--surface-warm)); }
+.wave-surface      { fill: hsl(var(--surface)); }
 
 pre {
   background-color: hsl(var(--card));
