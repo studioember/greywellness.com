@@ -5,7 +5,17 @@
       "WebFetch(domain:support.simplepractice.com)",
       "WebFetch(domain:www.monicagrey.com)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(ls /Users/Nate/Developer/projects/github/studioember/greywellness.com/README*)"
+      "Bash(ls /Users/Nate/Developer/projects/github/studioember/greywellness.com/README*)",
+      "WebFetch(domain:www.11ty.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.guido-flohr.net)",
+      "Bash(yarn build:eleventy)",
+      "Bash(npx eleventy)",
+      "Bash(git commit:*)",
+      "Bash(git push -u origin claude/vigorous-moore)",
+      "Bash(gh pr:*)",
+      "Bash(brew list gh)",
+      "Bash(/opt/homebrew/bin/gh pr:*)"
     ]
   }
 }
