@@ -78,6 +78,10 @@ a[id] {
   --sage: 150 15% 48%;
 }
 
+/* Wave SVG fill — explicit CSS property for Safari compatibility */
+.wave-fill-bg svg           { fill: hsl(var(--bg)); }
+.wave-fill-surface-warm svg { fill: hsl(var(--surface-warm)); }
+
 pre {
   background-color: hsl(var(--card));
 }
