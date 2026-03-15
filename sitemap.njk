@@ -3,19 +3,29 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {%- for item in collections.all %}
   {%- if item.data.sitemap != false and
          "CLAUDE" not in item.url and
          "README" not in item.url and
          "__" not in item.url %}
+  {%- set _itemAlternates = item.url | locale_links %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
+    {# hreflang: self reference #}
+    <xhtml:link rel="alternate" hreflang="{{ item.data.lang | default('en') }}" href="{{ site.url }}{{ item.url }}"/>
+    {# hreflang: alternate locales #}
+    {%- for _alt in _itemAlternates %}
+    <xhtml:link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}"/>
+    {%- endfor %}
+    {# hreflang: x-default points to English version #}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ item.url | locale_url('en') }}"/>
     {%- if item.date %}
     <lastmod>{{ item.date | dateISO }}</lastmod>
     {%- endif %}
-    <changefreq>{% if item.url == "/" %}weekly{% else %}monthly{% endif %}</changefreq>
-    <priority>{% if item.url == "/" %}1.0{% elif "/pages/" in item.url %}0.8{% else %}0.6{% endif %}</priority>
+    <changefreq>{% if "/en/" in item.url and item.fileSlug == "index" %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if item.fileSlug == "index" and "/en/" in item.url %}1.0{% elif "/en/pages/" in item.url %}0.8{% elif "/es/" in item.url %}0.7{% else %}0.6{% endif %}</priority>
   </url>
   {%- endif %}
   {%- endfor %}

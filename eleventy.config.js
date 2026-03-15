@@ -1,6 +1,6 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import { RenderPlugin } from "@11ty/eleventy";
+import { I18nPlugin, RenderPlugin } from "@11ty/eleventy";
 import moment from "moment";
 
 export default async function (eleventyConfig) {
@@ -14,15 +14,30 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(RenderPlugin);
+  eleventyConfig.addPlugin(I18nPlugin, {
+    defaultLanguage: "en",
+    errorMode: "allow-fallback",
+  });
 
-  // Collections
-  eleventyConfig.addCollection("pages", function (collectionApi) {
-    const pages = collectionApi.getFilteredByGlob("pages/**/*.{md,njk,html}");
-    return pages.sort((a, b) => {
-      const aTitle = (a.data?.title || a.fileSlug || "").toLowerCase();
-      const bTitle = (b.data?.title || b.fileSlug || "").toLowerCase();
-      return aTitle.localeCompare(bTitle);
-    });
+  // Collections — locale-specific pages for use in navigation
+  eleventyConfig.addCollection("pages_en", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("en/pages/**/*.{md,njk,html}")
+      .sort((a, b) => {
+        const aTitle = (a.data?.title || a.fileSlug || "").toLowerCase();
+        const bTitle = (b.data?.title || b.fileSlug || "").toLowerCase();
+        return aTitle.localeCompare(bTitle);
+      });
+  });
+
+  eleventyConfig.addCollection("pages_es", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("es/pages/**/*.{md,njk,html}")
+      .sort((a, b) => {
+        const aTitle = (a.data?.title || a.fileSlug || "").toLowerCase();
+        const bTitle = (b.data?.title || b.fileSlug || "").toLowerCase();
+        return aTitle.localeCompare(bTitle);
+      });
   });
 
   // Shortcodes

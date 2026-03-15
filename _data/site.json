@@ -3,5 +3,6 @@
   "url": "https://greywellness.com",
   "description": "Bilingual CBT-I therapist helping adults overcome insomnia, anxiety, and sleep problems. Therapy in English and Spanish.",
   "author": "Mónica Grey",
-  "locale": "en_US"
+  "locale": "en_US",
+  "languages": ["en", "es"]
 }

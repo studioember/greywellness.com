@@ -11,7 +11,7 @@ layout: layouts/base.njk
 <a id="sleep-insomnia"></a>
 ## Sleep & Insomnia
 
-Insomnia isn't just about having trouble falling asleep. It can look like waking up in the middle of the night and not being able to get back to sleep, rising too early, or never feeling truly rested no matter how many hours you log. Over time, poor sleep affects your concentration, your mood, your immune system, and your ability to cope with everyday stress. 
+Insomnia isn't just about having trouble falling asleep. It can look like waking up in the middle of the night and not being able to get back to sleep, rising too early, or never feeling truly rested no matter how many hours you log. Over time, poor sleep affects your concentration, your mood, your immune system, and your ability to cope with everyday stress.
 
 There is a way forward. Together, we work to identify the thoughts, habits, and patterns keeping you awake and replace them with ones that actually support rest. The approach is evidence-based and personalized to you, and many people see meaningful improvement without relying on medication long-term.
 

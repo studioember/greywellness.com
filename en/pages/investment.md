@@ -28,7 +28,7 @@ I believe financial barriers should not stand in the way of getting support. A l
 
 ## Questions?
 
-If you have any questions about finances, feel free to [reach out](/pages/contact). I am happy to talk it through before you commit to anything.
+If you have any questions about finances, feel free to [reach out](/en/pages/contact). I am happy to talk it through before you commit to anything.
 
 <div class="not-prose mt-8 flex flex-col items-center gap-3 text-center">
   <p class="text-base font-medium text-foreground">Ready to get started?</p>

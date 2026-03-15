@@ -1,7 +1,16 @@
 {% block navigation %}
+  {# Resolve locale-specific data for this render #}
+  {% set _lang = lang | default("en") %}
+  {% set _t = i18n[_lang] %}
+  {% set _currentPages = collections["pages_" + _lang] %}
+  {% set _contactUrl = "/en/pages/contact/" | locale_url %}
+  {% set _homeUrl = "/en/" | locale_url %}
+  {# Language switcher: get alternate locale links for the current page #}
+  {% set _langAlternates = page.url | locale_links %}
+
   <navigation class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
     <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
-      <a href="{{ '/' | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
+      <a href="{{ _homeUrl | url }}" class="flex items-center hover:opacity-80 transition-opacity shrink-0">
         {# Mobile: icon only #}
         <img src="{{ '/assets/img/logo-small.png' | url }}" alt="Grey Wellness logo" class="h-10 w-auto md:hidden" loading="lazy" decoding="async" />
         {# Desktop: full logo #}
@@ -10,41 +19,70 @@
       <div class="flex-1"></div>
 
       {# Desktop nav items #}
-      <div class="hidden md:flex items-center gap-8">
-        {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
+      <div class="hidden md:flex items-center gap-6">
+        {% for navPage in _currentPages %}
+          {% if navPage.fileSlug != "contact" %}
             <a
-              href="{{ page.url | url }}"
+              href="{{ navPage.url | url }}"
               class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
             >
-              {{ page.data.title or page.fileSlug }}
+              {{ navPage.data.title or navPage.fileSlug }}
             </a>
           {% endif %}
         {% endfor %}
 
         <a
-          href="{{ '/pages/contact/' | url }}"
+          href="{{ _contactUrl | url }}"
           class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
         >
-          Contact
+          {{ _t.nav_contact }}
         </a>
+
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
           class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Client Portal
+          {{ _t.nav_client_portal }}
         </a>
+
+        {# Language switcher #}
+        {% if _langAlternates.length %}
+          <div class="flex items-center gap-1 border-l border-nav-fg/20 pl-4">
+            <span class="text-xs font-bold text-nav-fg uppercase tracking-wider">{{ _lang | upper }}</span>
+            {% for _alt in _langAlternates %}
+            <span class="text-nav-fg/30 text-xs">|</span>
+            <a
+              href="{{ _alt.url | url }}"
+              hreflang="{{ _alt.lang }}"
+              class="text-xs font-bold text-nav-fg/50 uppercase tracking-wider hover:text-nav-fg transition-colors"
+              aria-label="{{ _t.lang_other_label }}"
+            >{{ _alt.lang | upper }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
 
       {# Mobile nav items #}
       <div class="flex md:hidden items-center gap-2">
+        {# Language switcher (mobile) #}
+        {% if _langAlternates.length %}
+          {% for _alt in _langAlternates %}
+          <a
+            href="{{ _alt.url | url }}"
+            hreflang="{{ _alt.lang }}"
+            class="px-2 py-1 text-xs font-bold text-nav-fg/50 uppercase tracking-wider border border-border rounded hover:text-nav-fg hover:border-nav-fg/40 transition-colors"
+            aria-label="{{ _t.lang_other_label }}"
+          >{{ _alt.lang | upper }}</a>
+          {% endfor %}
+        {% endif %}
+
         <a
-          href="{{ '/pages/contact/' | url }}"
+          href="{{ _contactUrl | url }}"
           class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
         >
-          Contact
+          {{ _t.nav_contact }}
         </a>
         <a
           href="https://monicagrey.clientsecure.me/sign-in"
@@ -52,7 +90,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Login
+          {{ _t.nav_login }}
         </a>
         <button
           type="button"
@@ -74,18 +112,26 @@
     {# Mobile dropdown menu #}
     <div class="hidden md:hidden border-t border-border" data-mobile-menu>
       <ul class="py-2 px-4">
-        {% for page in collections.pages %}
-          {% if page.fileSlug != "contact" and not page.data.hidden_from_nav %}
+        {% for navPage in _currentPages %}
+          {% if navPage.fileSlug != "contact" %}
             <li>
               <a
-                href="{{ page.url | url }}"
+                href="{{ navPage.url | url }}"
                 class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border last:border-0"
               >
-                {{ page.data.title or page.fileSlug }}
+                {{ navPage.data.title or navPage.fileSlug }}
               </a>
             </li>
           {% endif %}
         {% endfor %}
+        <li>
+          <a
+            href="{{ _contactUrl | url }}"
+            class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border"
+          >
+            {{ _t.nav_contact }}
+          </a>
+        </li>
       </ul>
     </div>
   </navigation>
