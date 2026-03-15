@@ -293,7 +293,7 @@ topics:
       </div>
       <div class="card">
         <div class="card-label">Program</div>
-        <div class="card-value">6 Weeks</div>
+        <div class="card-value">8 Weeks</div>
         <div class="card-sub">Weekly virtual sessions</div>
       </div>
       <div class="card">
