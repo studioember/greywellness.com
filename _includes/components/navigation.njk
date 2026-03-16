@@ -85,9 +85,8 @@
         {% endif %}
       </div>
 
-      {# Mobile nav items #}
+      {# Mobile nav items: language switcher + hamburger only #}
       <div class="flex md:hidden items-center gap-2">
-        {# Language switcher (mobile) #}
         {% if _langAlternates.length %}
           {% for _alt in _langAlternates %}
           <a
@@ -98,21 +97,6 @@
           >{{ _alt.lang | upper }}</a>
           {% endfor %}
         {% endif %}
-
-        <a
-          href="{{ _contactUrl | url }}"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
-        >
-          {{ _t.nav_contact }}
-        </a>
-        <a
-          href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-3 py-1.5 text-xs font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors whitespace-nowrap"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ _t.nav_login }}
-        </a>
         <button
           type="button"
           class="flex items-center justify-center w-9 h-9 text-nav-fg/70 hover:text-nav-fg transition-colors rounded-md hover:bg-nav-fg/8"
@@ -130,37 +114,62 @@
       </div>
     </nav>
 
-    {# Mobile dropdown menu #}
-    <div class="hidden md:hidden border-t border-border" data-mobile-menu>
+    {# Mobile dropdown menu — mirrors desktop structure #}
+    <div class="hidden md:hidden border-t border-border bg-nav-bg shadow-lg" data-mobile-menu>
       <ul class="py-2 px-4">
         <li>
-          <a href="{{ _aboutUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+          <a href="{{ _aboutUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
             {{ _t.nav_about }}
           </a>
         </li>
         <li>
-          <a href="{{ _servicesUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
-            {{ _t.nav_services_what_we_treat }}
-          </a>
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase"
+            aria-expanded="false"
+            data-mobile-services-toggle
+          >
+            {{ _t.nav_services }}
+            <svg class="w-3.5 h-3.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-services-chevron>
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul class="hidden pl-4" data-mobile-services-menu>
+            <li>
+              <a href="{{ _servicesUrl | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_services_what_we_treat }}
+              </a>
+            </li>
+            <li>
+              <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_services_how_we_work }}
+              </a>
+            </li>
+            <li>
+              <a href="{{ "/" + _lang + "/pages/groups/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_services_groups }}
+              </a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
-            {{ _t.nav_services_how_we_work }}
-          </a>
-        </li>
-        <li>
-          <a href="{{ "/" + _lang + "/pages/groups/" | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border pl-4">
-            {{ _t.nav_services_groups }}
-          </a>
-        </li>
-        <li>
-          <a href="{{ _investmentUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+          <a href="{{ _investmentUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
             {{ _t.nav_investment }}
           </a>
         </li>
         <li>
-          <a href="{{ _contactUrl | url }}" class="block py-3 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+          <a href="{{ _contactUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
             {{ _t.nav_contact }}
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://monicagrey.clientsecure.me/sign-in"
+            class="block py-3 text-sm font-medium text-nav-fg/50 hover:text-nav-fg transition-colors tracking-wide uppercase"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ _t.nav_client_portal }}
           </a>
         </li>
       </ul>
@@ -181,6 +190,21 @@
           mobileToggle.setAttribute("aria-expanded", String(!isOpen));
           openIcon.classList.toggle("hidden");
           closeIcon.classList.toggle("hidden");
+        });
+      }
+
+      // Mobile: Services sub-menu
+      const mobileServicesToggle = document.querySelector("[data-mobile-services-toggle]");
+      const mobileServicesMenu = document.querySelector("[data-mobile-services-menu]");
+      const mobileServicesChevron = document.querySelector("[data-mobile-services-chevron]");
+      if (mobileServicesToggle && mobileServicesMenu) {
+        mobileServicesToggle.addEventListener("click", () => {
+          const isOpen = !mobileServicesMenu.classList.contains("hidden");
+          mobileServicesMenu.classList.toggle("hidden");
+          mobileServicesToggle.setAttribute("aria-expanded", String(!isOpen));
+          if (mobileServicesChevron) {
+            mobileServicesChevron.style.transform = isOpen ? "" : "rotate(180deg)";
+          }
         });
       }
 
