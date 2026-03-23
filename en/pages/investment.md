@@ -40,10 +40,10 @@ We believe you should know what therapy costs before you ever book a call. No su
 
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
-      <p class="font-semibold text-foreground">CBT-I Program <span class="text-sm font-normal text-muted">· 4 sessions over 8 weeks</span></p>
+      <p class="font-semibold text-foreground">CBT-I Program <span class="text-sm font-normal text-muted">· 8 sessions</span></p>
       <span class="text-xl font-bold text-foreground">$230 <span class="text-sm font-normal text-muted">/ session</span></span>
     </div>
-    <p class="text-sm text-muted mt-2 leading-relaxed">A structured program for chronic insomnia using Cognitive Behavioral Therapy for Insomnia (CBT-I), the gold-standard, evidence-based treatment. Sessions are every two weeks and build on each other. Most people see meaningful improvement by the end of the program, without relying on medication long-term.</p>
+    <p class="text-sm text-muted mt-2 leading-relaxed">A structured program for chronic insomnia using Cognitive Behavioral Therapy for Insomnia (CBT-I), the gold-standard, evidence-based treatment. Sessions build on each other. Most people see meaningful improvement by the end of the program, without relying on medication long-term.</p>
   </div>
 
   <a href="{{ '/en/pages/groups/' | url }}" class="block rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
