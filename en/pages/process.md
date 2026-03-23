@@ -24,7 +24,7 @@ hidden_from_nav: true
     <div class="mt-4 space-y-4 text-muted leading-relaxed">
       <p>CBT-I is the gold-standard treatment for chronic insomnia. It is recommended as the first-line approach before sleep medication, and research consistently shows it produces longer-lasting results.</p>
       <p>Rather than treating the symptom, CBT-I addresses the thoughts and behaviors that are keeping you awake. It works by retraining the brain's association with sleep, reducing the anxiety around bedtime, and building habits that actually support rest.</p>
-      <p>The program at Grey Wellness runs for 4 sessions over 8 weeks, with appointments every two weeks. Most people notice meaningful improvement within the program, and the skills stay with you long after it ends.</p>
+      <p>The program at Grey Wellness runs for 8 sessions. Most people notice meaningful improvement within the program, and the skills stay with you long after it ends.</p>
     </div>
   </div>
 
