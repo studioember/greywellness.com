@@ -297,7 +297,7 @@ topics:
         <div class="card-sub">Weekly virtual sessions</div>
       </div>
       <div class="card">
-        <div class="card-label">Investment</div>
+        <div class="card-label">Rates</div>
         <div class="card-value">$75 / session</div>
       </div>
       <div class="card">
