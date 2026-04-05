@@ -111,3 +111,11 @@ code {
 [data-theme="dark"] code {
   background-color: black;
 }
+
+/* Override SimplePractice widget display so flex centering works */
+.sp-schedule-btn,
+.sp-contact-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

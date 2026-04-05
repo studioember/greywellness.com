@@ -30,18 +30,25 @@
             aria-expanded="false"
             data-dropdown-toggle
           >
-            {{ _t.nav_services }}
+            {{ _t.nav_specialties }}
             <svg class="w-3.5 h-3.5 mt-0.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-dropdown-chevron>
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
           </button>
           <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 min-w-max rounded-xl bg-nav-bg border border-border shadow-xl py-1 hidden" data-dropdown-menu>
-            <a href="{{ _servicesUrl | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
-              {{ _t.nav_services_what_we_treat }}
+            <a href="{{ "/" + _lang + "/pages/sleep/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_specialties_sleep }}
             </a>
-            <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
-              {{ _t.nav_services_how_we_work }}
+            <a href="{{ "/" + _lang + "/pages/trauma/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_specialties_trauma }}
             </a>
+            <a href="{{ "/" + _lang + "/pages/childhood-experiences/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_specialties_ace }}
+            </a>
+            <a href="{{ "/" + _lang + "/pages/stress/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_specialties_stress }}
+            </a>
+            <div class="my-1 border-t border-border"></div>
             <a href="{{ "/" + _lang + "/pages/groups/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
               {{ _t.nav_services_groups }}
             </a>
@@ -129,20 +136,30 @@
             aria-expanded="false"
             data-mobile-services-toggle
           >
-            {{ _t.nav_services }}
+            {{ _t.nav_specialties }}
             <svg class="w-3.5 h-3.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-services-chevron>
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
           </button>
           <ul class="hidden pl-4" data-mobile-services-menu>
             <li>
-              <a href="{{ _servicesUrl | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
-                {{ _t.nav_services_what_we_treat }}
+              <a href="{{ "/" + _lang + "/pages/sleep/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_specialties_sleep }}
               </a>
             </li>
             <li>
-              <a href="{{ "/" + _lang + "/pages/process/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
-                {{ _t.nav_services_how_we_work }}
+              <a href="{{ "/" + _lang + "/pages/trauma/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_specialties_trauma }}
+              </a>
+            </li>
+            <li>
+              <a href="{{ "/" + _lang + "/pages/childhood-experiences/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_specialties_ace }}
+              </a>
+            </li>
+            <li>
+              <a href="{{ "/" + _lang + "/pages/stress/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_specialties_stress }}
               </a>
             </li>
             <li>
