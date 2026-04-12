@@ -63,7 +63,7 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
 
     {% if preload_hero %}
-    <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" fetchpriority="high">
+    <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" type="image/webp" fetchpriority="high">
     {% endif %}
 
     <!-- Color Scheme -->
@@ -169,6 +169,6 @@
       .sp-schedule-btn:hover { opacity: 0.9; }
       .sp-schedule-btn:active { opacity: 0.75; }
     </style>
-    <script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
+    <script defer src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
   </body>
 </html>
