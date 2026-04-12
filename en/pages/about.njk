@@ -14,19 +14,22 @@ no_prose: true
 
   <!-- Hero -->
   <div class="flex flex-col md:flex-row items-center gap-10 py-12">
-    <img
-      src="{{ '/assets/img/headshot.jpg' | url }}"
-      alt="Mónica Grey"
-      class="h-52 w-52 shrink-0 rounded-full object-cover object-top shadow-lg"
-      width="208"
-      height="208"
-    />
+    <picture class="block h-52 w-52 shrink-0 rounded-full overflow-hidden shadow-lg">
+      <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+      <img
+        src="{{ '/assets/img/headshot.jpg' | url }}"
+        alt="Mónica Grey"
+        class="w-full h-full object-cover object-top"
+        width="208"
+        height="208"
+      />
+    </picture>
     <div>
-      <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-2">Psychotherapist</p>
+      <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Psychotherapist</p>
       <h1 class="text-4xl font-bold text-foreground mb-3">Mónica Grey, MS, LCPC, NCC</h1>
       <p class="text-lg text-muted leading-relaxed">Therapist. Traveler. Cat mom.</p>
       <p class="mt-4 text-muted leading-relaxed">Bilingual therapy in English and Spanish for adults navigating insomnia, trauma, stress, and life between cultures. All sessions are virtual.</p>
-      <a href="{{ '/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-[#DBA20D] text-[#31272d] text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Book a Free Consultation</a>
+      <a href="{{ '/' + (lang | default('en')) + '/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Book a Free Consultation</a>
     </div>
   </div>
 
@@ -34,7 +37,7 @@ no_prose: true
 
   <!-- My Story -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">My Story</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">My Story</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">The things we carry deserve more than a coping strategy.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>I am a Latina immigrant, born in Bogota and raised in Barrancabermeja, Colombia. I built my life and career in the United States carrying everything that journey meant. That experience is not just a detail about me. It is at the heart of how I work. I understand what it means to straddle two worlds, to carry expectations that were never spoken out loud, and to spend years being strong before you ever learn it is okay not to be.</p>
@@ -46,7 +49,7 @@ no_prose: true
 
   <!-- Credentials -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Education & Credentials</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Education & Credentials</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div class="rounded-xl border border-border bg-card px-6 py-5">
         <p class="text-2xl mb-3">🎓</p>
@@ -73,13 +76,13 @@ no_prose: true
 
   <!-- Sleep Passion -->
   <div class="py-8">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-3">Why Sleep</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-3">Why Sleep</p>
     <p class="text-muted leading-relaxed">Sleep is a passion, not just a specialty. I genuinely believe the world would be a better place if everybody slept better. Rest is not a luxury. It is the foundation everything else is built on, and that belief shapes everything about the way I work.</p>
   </div>
 
   <!-- What to Expect -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">My Style</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">My Style</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">What to expect in our sessions.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>Honestly? I get a little nervous too on our consultation call. Meeting someone new for the first time is vulnerable on both sides. What I bring to that call is the same thing I bring to every session: genuine curiosity about you, warmth, and a real commitment to making our time together worthwhile.</p>
@@ -92,7 +95,7 @@ no_prose: true
 
   <!-- Outside the Office -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Outside the Office</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Outside the Office</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">A little more about me.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>Outside of work, I am always planning the next trip with my husband, and yes, sometimes the cats come too. Gigi and Pola are my two cats. They are not HIPAA trained, but they do crash sessions occasionally.</p>
@@ -103,12 +106,12 @@ no_prose: true
   </div>
 
   <!-- CTA -->
-  <div class="rounded-2xl bg-[#31272d] text-white px-8 py-10 my-4 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <div class="rounded-2xl bg-foreground text-background px-8 py-10 my-4 flex flex-col sm:flex-row items-center justify-between gap-6">
     <div>
       <p class="text-xl font-bold">Ready to get started?</p>
-      <p class="text-white/70 mt-1 text-sm">A 15-minute free consultation is the first step.</p>
+      <p class="opacity-70 mt-1 text-sm">A 15-minute free consultation is the first step.</p>
     </div>
-    <a href="{{ '/pages/contact/' | url }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-[#DBA20D] text-[#31272d] text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Book a Free Consultation</a>
+    <a href="{{ '/' + (lang | default('en')) + '/pages/contact/' | url }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Book a Free Consultation</a>
   </div>
 
 </div>

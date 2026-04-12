@@ -154,13 +154,16 @@ no_prose: true
   <div class="py-20">
     <p class="text-xs font-bold uppercase tracking-widest mb-6" style="color: hsl(340 60% 50%)">Your Therapist</p>
     <div class="flex items-center gap-5 mb-6">
-      <img
-        src="{{ '/assets/img/headshot.jpg' | url }}"
-        alt="Mónica Grey, trauma-informed therapist"
-        class="h-20 w-20 shrink-0 rounded-full object-cover object-top shadow-md"
-        width="80"
-        height="80"
-      />
+      <picture>
+        <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+        <img
+          src="{{ '/assets/img/headshot.jpg' | url }}"
+          alt="Mónica Grey, trauma-informed therapist"
+          class="h-20 w-20 shrink-0 rounded-full object-cover object-top shadow-md"
+          width="80"
+          height="80"
+        />
+      </picture>
       <div>
         <h2 class="text-xl font-bold text-foreground">Mónica Grey, MS, LCPC, NCC</h2>
         <div class="flex flex-wrap gap-2 mt-2">

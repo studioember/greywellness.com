@@ -4,6 +4,7 @@ no_prose: true
 full_width: true
 title_hidden: true
 date_hidden: true
+preload_hero: true
 ---
 {% set _lang = lang | default("en") %}
 {% set _t = i18n[_lang] %}
@@ -53,7 +54,10 @@ date_hidden: true
 
 <!-- Hero -->
 <section class="relative bg-hero overflow-hidden -mx-4 sm:-mx-6 -mt-10">
-  <img src="{{ '/assets/img/hero.jpg' | url }}" alt="{{ _t.home_hero_img_alt }}" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" decoding="async">
+  <picture>
+    <source srcset="{{ '/assets/img/hero.webp' | url }}" type="image/webp">
+    <img src="{{ '/assets/img/hero.jpg' | url }}" alt="{{ _t.home_hero_img_alt }}" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" decoding="async" fetchpriority="high">
+  </picture>
 
   <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(var(--hero-overlay) / 0.92), hsl(var(--hero-overlay) / 0.65), transparent)"></div>
 

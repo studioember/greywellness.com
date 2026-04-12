@@ -14,19 +14,22 @@ no_prose: true
 
   <!-- Hero -->
   <div class="flex flex-col md:flex-row items-center gap-10 py-12">
-    <img
-      src="{{ '/assets/img/headshot.jpg' | url }}"
-      alt="Mónica Grey"
-      class="h-52 w-52 shrink-0 rounded-full object-cover object-top shadow-lg"
-      width="208"
-      height="208"
-    />
+    <picture class="block h-52 w-52 shrink-0 rounded-full overflow-hidden shadow-lg">
+      <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+      <img
+        src="{{ '/assets/img/headshot.jpg' | url }}"
+        alt="Mónica Grey"
+        class="w-full h-full object-cover object-top"
+        width="208"
+        height="208"
+      />
+    </picture>
     <div>
-      <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-2">Psicoterapeuta</p>
+      <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Psicoterapeuta</p>
       <h1 class="text-4xl font-bold text-foreground mb-3">Mónica Grey, MS, LCPC, NCC</h1>
       <p class="text-lg text-muted leading-relaxed">Terapeuta. Viajera. Mamá gatuna.</p>
       <p class="mt-4 text-muted leading-relaxed">Terapia bilingüe en inglés y español para personas adultas que navegan el insomnio, el trauma, el estrés y la vida entre culturas. Todas las sesiones son virtuales.</p>
-      <a href="{{ '/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-[#DBA20D] text-[#31272d] text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
+      <a href="{{ '/es/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
     </div>
   </div>
 
@@ -34,7 +37,7 @@ no_prose: true
 
   <!-- Mi Historia -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Mi Historia</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Mi Historia</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">Lo que cargamos merece más que una estrategia de afrontamiento.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>Soy una inmigrante latina, nacida en Bogotá y criada en Barrancabermeja, Colombia. Construí mi vida y carrera en los Estados Unidos cargando todo lo que ese viaje significó. Esa experiencia no es solo un detalle sobre mí, está en el corazón de cómo trabajo. Entiendo lo que significa estar entre dos mundos, cargar expectativas que nunca se dijeron en voz alta, y pasar años siendo fuerte antes de aprender que está bien no serlo.</p>
@@ -46,7 +49,7 @@ no_prose: true
 
   <!-- Educación y Credenciales -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Educación y Credenciales</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Educación y Credenciales</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div class="rounded-xl border border-border bg-card px-6 py-5">
         <p class="text-2xl mb-3">🎓</p>
@@ -73,13 +76,13 @@ no_prose: true
 
   <!-- Por Qué el Sueño -->
   <div class="py-8">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-3">Por Qué el Sueño</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-3">Por Qué el Sueño</p>
     <p class="text-muted leading-relaxed">El sueño es una pasión, no solo una especialidad. Genuinamente creo que el mundo sería un lugar mejor si todos durmieran mejor. El descanso no es un lujo. Es la base sobre la que se construye todo lo demás, y esa creencia da forma a todo sobre la manera en que trabajo.</p>
   </div>
 
   <!-- Mi Estilo -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Mi Estilo</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Mi Estilo</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">Qué esperar en nuestras sesiones.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>¿Honestamente? Yo también me pongo un poco nerviosa en la primera llamada. Conocer a alguien nuevo por primera vez es vulnerable para ambas partes. Lo que traigo a esa llamada es lo mismo que traigo a cada sesión: curiosidad genuina por ti, calidez y un compromiso real de que nuestro tiempo juntos valga la pena.</p>
@@ -91,7 +94,7 @@ no_prose: true
 
   <!-- Fuera del Consultorio -->
   <div class="py-12">
-    <p class="text-xs font-bold uppercase tracking-widest text-[#DBA20D] mb-4">Fuera del Consultorio</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Fuera del Consultorio</p>
     <h2 class="text-2xl font-bold text-foreground mb-6">Un poco más sobre mí.</h2>
     <div class="space-y-4 text-muted leading-relaxed">
       <p>Fuera del trabajo, siempre estoy planeando el próximo viaje con mi esposo, y sí, a veces los gatos también vienen. Gigi y Pola son mis dos gatas. No están entrenadas con HIPAA, pero sí se cuelan en las sesiones de vez en cuando.</p>
@@ -102,12 +105,12 @@ no_prose: true
   </div>
 
   <!-- CTA -->
-  <div class="rounded-2xl bg-[#31272d] text-white px-8 py-10 my-4 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <div class="rounded-2xl bg-foreground text-background px-8 py-10 my-4 flex flex-col sm:flex-row items-center justify-between gap-6">
     <div>
       <p class="text-xl font-bold">¿Empezamos?</p>
-      <p class="text-white/70 mt-1 text-sm">Una consulta gratuita de 15 minutos es el primer paso.</p>
+      <p class="opacity-70 mt-1 text-sm">Una consulta gratuita de 15 minutos es el primer paso.</p>
     </div>
-    <a href="{{ '/pages/contact/' | url }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-[#DBA20D] text-[#31272d] text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
+    <a href="{{ '/es/pages/contact/' | url }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
   </div>
 
 </div>

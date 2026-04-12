@@ -11,8 +11,8 @@
   {# Language switcher: get alternate locale links for the current page #}
   {% set _langAlternates = page.url | locale_links %}
 
-  <navigation class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
-    <nav class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
+  <nav aria-label="Main navigation" class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
+    <div class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
       <a href="{{ _homeUrl | url }}" class="flex items-center ml-4 hover:opacity-80 transition-opacity shrink-0">
         {{ logo() }}
       </a>
@@ -28,6 +28,7 @@
             type="button"
             class="flex items-center gap-1 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase"
             aria-expanded="false"
+            aria-controls="desktop-services-menu"
             data-dropdown-toggle
           >
             {{ _t.nav_specialties }}
@@ -35,7 +36,7 @@
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
           </button>
-          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 min-w-max rounded-xl bg-nav-bg border border-border shadow-xl py-1 hidden" data-dropdown-menu>
+          <div id="desktop-services-menu" class="absolute top-full left-1/2 -translate-x-1/2 mt-2 min-w-max rounded-xl bg-nav-bg border border-border shadow-xl py-1 hidden" data-dropdown-menu>
             <a href="{{ "/" + _lang + "/pages/sleep/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
               {{ _t.nav_specialties_sleep }}
             </a>
@@ -109,6 +110,7 @@
           class="flex items-center justify-center w-9 h-9 text-nav-fg/70 hover:text-nav-fg transition-colors rounded-md hover:bg-nav-fg/8"
           aria-label="Open menu"
           aria-expanded="false"
+          aria-controls="mobile-menu"
           data-mobile-toggle
         >
           <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-open-icon>
@@ -119,10 +121,10 @@
           </svg>
         </button>
       </div>
-    </nav>
+    </div>
 
     {# Mobile dropdown menu — mirrors desktop structure #}
-    <div class="hidden md:hidden border-t border-border bg-nav-bg shadow-lg" data-mobile-menu>
+    <nav id="mobile-menu" aria-label="Mobile navigation" class="hidden md:hidden border-t border-border bg-nav-bg shadow-lg" data-mobile-menu>
       <ul class="py-2 px-4">
         <li>
           <a href="{{ _aboutUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
@@ -134,6 +136,7 @@
             type="button"
             class="flex items-center justify-between w-full py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase"
             aria-expanded="false"
+            aria-controls="mobile-services-menu"
             data-mobile-services-toggle
           >
             {{ _t.nav_specialties }}
@@ -141,7 +144,7 @@
               <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
             </svg>
           </button>
-          <ul class="hidden pl-4" data-mobile-services-menu>
+          <ul id="mobile-services-menu" class="hidden pl-4" data-mobile-services-menu>
             <li>
               <a href="{{ "/" + _lang + "/pages/sleep/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
                 {{ _t.nav_specialties_sleep }}
@@ -190,8 +193,8 @@
           </a>
         </li>
       </ul>
-    </div>
-  </navigation>
+    </nav>
+  </nav>
 
   <script>
     (() => {
