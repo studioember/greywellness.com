@@ -12,7 +12,7 @@ schedule: "Miércoles a las 7:00 PM ET"
 sessions: 8
 format: Virtual
 price: "$75 / sesión"
-status: open
+status: closed
 emoji: "🌙"
 topics:
   - Restricción del sueño

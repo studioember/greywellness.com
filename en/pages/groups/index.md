@@ -46,14 +46,58 @@ hidden_from_nav: true
 
 {% else %}
 
-<div class="mt-10 rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
-  <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/15 text-3xl mb-5">🌿</span>
-  <h2 class="text-2xl font-bold text-foreground mb-3">No groups are running right now.</h2>
-  <p class="text-muted leading-relaxed max-w-md mx-auto mb-6">New groups are offered periodically. Join the waitlist and we will reach out when something that might be a good fit becomes available.</p>
-  <a href="{{ '/en/pages/contact/' | url }}" class="inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity">
-    Join the Waitlist
-  </a>
+<div class="mt-10 rounded-2xl border border-border bg-card p-10 shadow-sm">
+  <div class="text-center mb-6">
+    <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/15 text-3xl mb-5">🌿</span>
+    <h2 class="text-2xl font-bold text-foreground mb-3">No groups running right now.</h2>
+    <p class="text-muted leading-relaxed max-w-md mx-auto">We offer new groups periodically. Leave your info below and we will reach out when something opens up.</p>
+  </div>
+  <form id="groups-waitlist-form" class="max-w-sm space-y-4">
+    <div>
+      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-name">Name and last name</label>
+      <input id="waitlist-name" type="text" required class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your full name">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-phone">Phone number</label>
+      <input id="waitlist-phone" type="tel" class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="(555) 555-5555">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-email">Email address</label>
+      <input id="waitlist-email" type="email" required class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="you@example.com">
+    </div>
+    <button type="submit" class="w-full px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity">
+      Be the First to Know
+    </button>
+  </form>
+  <div id="groups-waitlist-success" class="hidden mt-6">
+    <p class="text-foreground font-semibold text-lg">You're on the list!</p>
+    <p class="text-muted text-sm mt-1">We'll reach out as soon as a new group becomes available.</p>
+  </div>
 </div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+  (() => {
+    const form = document.getElementById('groups-waitlist-form');
+    const success = document.getElementById('groups-waitlist-success');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new FormData();
+      data.append('entry.1808749521', document.getElementById('waitlist-name').value);
+      data.append('entry.1028409400', document.getElementById('waitlist-phone').value);
+      data.append('entry.734005541', document.getElementById('waitlist-email').value);
+      fetch('https://docs.google.com/forms/d/e/1FAIpQLScvmC31qtendNyPLQbQ4h-uWnCCyFI0r7okga1hnUGHYBN7_A/formResponse', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data
+      });
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+      confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+    });
+  })();
+</script>
 
 {% endif %}
 

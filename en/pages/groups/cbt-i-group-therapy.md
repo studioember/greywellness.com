@@ -12,7 +12,7 @@ schedule: "Wednesdays at 7:00 PM ET"
 sessions: 8
 format: Virtual
 price: "$75 / session"
-status: open
+status: closed
 emoji: "🌙"
 topics:
   - Sleep restriction
