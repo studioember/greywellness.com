@@ -25,7 +25,9 @@ no_prose: true
         Chronic insomnia is not a willpower problem. It is not who you are. It is a treatable condition, and the most effective treatment is not a pill. It is therapy.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        {% scheduleButton "Book a Free Consultation" %}
+        <a href="#contact-form" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity text-center">
+          Book a Free Consultation
+        </a>
         <a href="#what-is-cbti" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center">
           How CBT-I Works →
         </a>
@@ -318,16 +320,33 @@ no_prose: true
     </div>
   </div>
 
-  <!-- Final CTA -->
-  <div class="rounded-2xl px-8 py-12 text-center my-4" style="background: hsl(var(--hero-overlay))">
-    <p class="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">You've been tired long enough.</p>
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Let's get your sleep back.</h2>
-    <p class="text-white/70 mb-8 max-w-xl mx-auto">The free consultation is 15 minutes. You'll talk through what's been going on and we'll figure out together if CBT-I is the right fit. No commitment, no pressure.</p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      {% scheduleButton "Book My Free Consultation" %}
-      <a href="{{ '/en/pages/contact/' | url }}" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors">
-        Send a Message Instead
-      </a>
+  <!-- Contact Form -->
+  <div id="contact-form" class="py-12 my-4">
+    <div class="text-center mb-8">
+      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">You've been tired long enough.</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Let's get your sleep back.</h2>
+      <p class="text-muted max-w-xl mx-auto">The free consultation is 15 minutes. Fill out the form below and we'll be in touch within 1–2 business days.</p>
+    </div>
+    <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+      {% from 'macros/google-form.njk' import googleForm %}
+      {% set contactFields = [
+        { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+        { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+        { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+        { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+      ] %}
+      {{ googleForm(
+        formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+        fields=contactFields,
+        uid="sleep-en",
+        submitLabel="Send Message",
+        successTitle="Message sent!",
+        successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+        gaEventName="contact_form_submitted",
+        gaEventCategory="contact",
+        gaEventLabel="service_sleep_en",
+        adsConversion=""
+      ) }}
     </div>
   </div>
 

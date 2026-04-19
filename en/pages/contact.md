@@ -40,7 +40,7 @@ There is no pressure to make a decision on the call. I genuinely encourage you t
   submitLabel="Send Message",
   successTitle="Message sent!",
   successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
-  gaEventName="contact_form_submit",
+  gaEventName="contact_form_submitted",
   gaEventCategory="contact",
   gaEventLabel="contact_page_en",
   adsConversion=""

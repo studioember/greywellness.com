@@ -23,7 +23,9 @@ no_prose: true
         El trauma no es debilidad. Es lo que ocurre cuando una experiencia es demasiado para que el sistema nervioso la procese solo. No tienes que seguir cargando con esto.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        {% scheduleButton "Reservar Consulta Gratuita" %}
+        <a href="#contact-form" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity text-center">
+          Reservar Consulta Gratuita
+        </a>
         <a href="#como-trabajamos" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center">
           Cómo Trabajamos →
         </a>
@@ -147,16 +149,33 @@ no_prose: true
     </div>
   </div>
 
-  <!-- Final CTA -->
-  <div class="rounded-2xl px-8 py-12 text-center my-4" style="background: hsl(var(--hero-overlay))">
-    <p class="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Lo sobreviviste. Ahora sanémoslo.</p>
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Mereces más que solo seguir adelante.</h2>
-    <p class="text-white/70 mb-8 max-w-xl mx-auto">La consulta gratuita dura 15 minutos. Hablaremos de lo que has estado cargando y veremos si somos un buen equipo. Sin compromiso, sin presión.</p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      {% scheduleButton "Reservar Mi Consulta Gratuita" %}
-      <a href="{{ '/es/pages/contact/' | url }}" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors">
-        Enviar un Mensaje
-      </a>
+  <!-- Contact Form -->
+  <div id="contact-form" class="py-12 my-4">
+    <div class="text-center mb-8">
+      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Lo sobreviviste. Ahora sanémoslo.</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Mereces más que solo seguir adelante.</h2>
+      <p class="text-muted max-w-xl mx-auto">La consulta gratuita dura 15 minutos. Completa el formulario y te contactaremos en 1–2 días hábiles.</p>
+    </div>
+    <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+      {% from 'macros/google-form.njk' import googleForm %}
+      {% set contactFields = [
+        { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+        { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+        { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+        { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false }
+      ] %}
+      {{ googleForm(
+        formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+        fields=contactFields,
+        uid="trauma-es",
+        submitLabel="Enviar Mensaje",
+        successTitle="¡Mensaje enviado!",
+        successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles.",
+        gaEventName="contact_form_submitted",
+        gaEventCategory="contact",
+        gaEventLabel="service_trauma_es",
+        adsConversion=""
+      ) }}
     </div>
   </div>
 

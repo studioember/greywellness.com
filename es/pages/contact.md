@@ -40,7 +40,7 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
   submitLabel="Enviar Mensaje",
   successTitle="¡Mensaje enviado!",
   successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles.",
-  gaEventName="contact_form_submit",
+  gaEventName="contact_form_submitted",
   gaEventCategory="contact",
   gaEventLabel="contact_page_es",
   adsConversion=""
