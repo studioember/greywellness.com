@@ -7,6 +7,7 @@ description_hidden: true
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
 
 ## Consulta Gratuita
@@ -19,12 +20,35 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
 
 ---
 
-<div class="max-w-2xl mx-auto px-6 text-center">
-  <p class="text-lg text-[--muted] mb-10">
-    Cuando te sientas listo y seguro de tu decisión, hacer una cita es sencillo. Estaré aquí cuando sea el momento adecuado para ti.
+<div class="max-w-2xl mx-auto px-6">
+  <p class="text-lg text-muted mb-8">
+    Cuando te sientas listo, completa el formulario a continuación y nos pondremos en contacto contigo en 1–2 días hábiles.
   </p>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
-    {% contactButton "Enviar un<br>Mensaje" %}
-    {% scheduleButton "Solicitar<br>Cita" %}
+
+<div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+{% from 'macros/google-form.njk' import googleForm %}
+{% set contactFields = [
+  { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+  { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+  { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+  { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false }
+] %}
+{{ googleForm(
+  formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+  fields=contactFields,
+  uid="contact-es",
+  submitLabel="Enviar Mensaje",
+  successTitle="¡Mensaje enviado!",
+  successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles.",
+  gaEventName="contact_form_submit",
+  gaEventCategory="contact",
+  gaEventLabel="contact_page_es",
+  adsConversion=""
+) }}
+</div>
+
+  <div class="mt-10 pt-8 border-t border-border text-center">
+    <p class="text-sm text-muted mb-4">¿Prefieres reservar directamente?</p>
+    {% scheduleButton "Solicitar Cita" %}
   </div>
 </div>

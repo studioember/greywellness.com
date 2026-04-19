@@ -87,7 +87,7 @@ preload_hero: true
         {{ _t.home_hero_subtitle }}
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <div>{% scheduleButton _t.home_hero_cta_schedule %}</div>
+        <div><a href="{{ '/' + _lang + '/pages/contact/' | url }}" class="sp-schedule-btn">{{ _t.home_hero_cta_schedule }}</a></div>
         <a
           href="{{ '/' + _lang + '/pages/treatment/' }}"
           class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center"
@@ -193,7 +193,7 @@ preload_hero: true
     <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">{{ _t.home_cta_heading }}</h2>
     <p class="text-muted text-lg mb-8">{{ _t.home_cta_subtitle }}</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      {% scheduleButton _t.home_cta_schedule %}
+      <a href="{{ '/' + _lang + '/pages/contact/' | url }}" class="sp-schedule-btn">{{ _t.home_cta_schedule }}</a>
     </div>
   </div>
   <!-- Wave: CTA bottom → Footer -->

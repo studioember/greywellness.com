@@ -7,6 +7,7 @@ description_hidden: true
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
 
 ## Free Consultation
@@ -19,12 +20,35 @@ There is no pressure to make a decision on the call. I genuinely encourage you t
 
 ---
 
-<div class="max-w-2xl mx-auto px-6 text-center">
-  <p class="text-lg text-[--muted] mb-10">
-    When you feel ready and sure about your decision, booking an appointment is simple. I will be here when the time is right for you.
+<div class="max-w-2xl mx-auto px-6">
+  <p class="text-lg text-muted mb-8">
+    When you feel ready, fill out the form below and we will be in touch within 1–2 business days.
   </p>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
-    {% contactButton "Send a<br>Message" %}
-    {% scheduleButton "Request<br>Appointment" %}
+
+<div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+{% from 'macros/google-form.njk' import googleForm %}
+{% set contactFields = [
+  { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+  { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+  { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+  { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+] %}
+{{ googleForm(
+  formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+  fields=contactFields,
+  uid="contact-en",
+  submitLabel="Send Message",
+  successTitle="Message sent!",
+  successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+  gaEventName="contact_form_submit",
+  gaEventCategory="contact",
+  gaEventLabel="contact_page_en",
+  adsConversion=""
+) }}
+</div>
+
+  <div class="mt-10 pt-8 border-t border-border text-center">
+    <p class="text-sm text-muted mb-4">Prefer to book directly?</p>
+    {% scheduleButton "Request Appointment" %}
   </div>
 </div>
