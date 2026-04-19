@@ -1,5 +1,5 @@
 {% macro googleForm(formResponseId, fields, uid="gf", submitLabel="Submit", successTitle="You're on the list!", successBody="We'll be in touch.") %}
-<form id="gf-{{ uid }}-form" class="max-w-sm space-y-4">
+<form id="gf-{{ uid }}-form" class="w-full max-w-lg mx-auto space-y-4">
 {% for field in fields %}{% set fieldId = "gf-" + uid + "-" + loop.index0 %}
 <div>
 <label class="block text-sm font-medium text-foreground mb-1" for="{{ fieldId }}">{{ field.label }}</label>
