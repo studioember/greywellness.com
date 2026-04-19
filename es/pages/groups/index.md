@@ -8,13 +8,14 @@ date_hidden: true
 layout: layouts/base.njk
 no_prose: true
 hidden_from_nav: true
+templateEngineOverride: njk,md
 ---
 
 <p class="text-muted text-lg leading-relaxed">La terapia grupal ofrece algo que la terapia individual no puede: la experiencia de trabajar algo junto a personas que realmente lo entienden. Los grupos en Grey Wellness son pequeños, estructurados y dirigidos por una terapeuta licenciada.</p>
 
-{% assign activeGroups = collections.groups_es %}
+{% set activeGroups = collections.groups_es %}
 
-{% if activeGroups.size > 0 %}
+{% if activeGroups | length > 0 %}
 
 <div class="not-prose mt-10 space-y-6">
   {% for group in activeGroups %}
@@ -52,52 +53,21 @@ hidden_from_nav: true
     <h2 class="text-2xl font-bold text-foreground mb-3">No hay grupos en este momento.</h2>
     <p class="text-muted leading-relaxed max-w-md mx-auto">Ofrecemos nuevos grupos periódicamente. Deja tu información abajo y nos comunicamos contigo cuando haya algo disponible.</p>
   </div>
-  <form id="groups-waitlist-form" class="max-w-sm space-y-4">
-    <div>
-      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-name">Nombre y apellido</label>
-      <input id="waitlist-name" type="text" required class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Su nombre completo">
-    </div>
-    <div>
-      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-phone">Número de teléfono</label>
-      <input id="waitlist-phone" type="tel" class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="(555) 555-5555">
-    </div>
-    <div>
-      <label class="block text-sm font-medium text-foreground mb-1" for="waitlist-email">Correo electrónico</label>
-      <input id="waitlist-email" type="email" required class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="usted@ejemplo.com">
-    </div>
-    <button type="submit" class="w-full px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity">
-      Sé la Primera en Saberlo
-    </button>
-  </form>
-  <div id="groups-waitlist-success" class="hidden mt-6">
-    <p class="text-foreground font-semibold text-lg">¡Ya estás en la lista!</p>
-    <p class="text-muted text-sm mt-1">Te avisaremos en cuanto haya un nuevo grupo disponible.</p>
-  </div>
+  {% from 'macros/google-form.njk' import googleForm %}
+  {% set waitlistFields = [
+    { label: "Nombre y apellido", placeholder: "Su nombre completo", type: "text", entry: "entry.1808749521", required: true },
+    { label: "Número de teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1028409400", required: false },
+    { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.734005541", required: true }
+  ] %}
+  {{ googleForm(
+    formResponseId="1FAIpQLScvmC31qtendNyPLQbQ4h-uWnCCyFI0r7okga1hnUGHYBN7_A",
+    fields=waitlistFields,
+    uid="groups-waitlist",
+    submitLabel="Sé la Primera en Saberlo",
+    successTitle="¡Ya estás en la lista!",
+    successBody="Te avisaremos en cuanto haya un nuevo grupo disponible."
+  ) }}
 </div>
-
-<script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-<script>
-  (() => {
-    const form = document.getElementById('groups-waitlist-form');
-    const success = document.getElementById('groups-waitlist-success');
-    if (!form) return;
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const data = new FormData();
-      data.append('entry.1808749521', document.getElementById('waitlist-name').value);
-      data.append('entry.1028409400', document.getElementById('waitlist-phone').value);
-      data.append('entry.734005541', document.getElementById('waitlist-email').value);
-      fetch('https://docs.google.com/forms/d/e/1FAIpQLScvmC31qtendNyPLQbQ4h-uWnCCyFI0r7okga1hnUGHYBN7_A/formResponse', {
-        method: 'POST',
-        mode: 'no-cors',
-        body: data
-      });
-      form.classList.add('hidden');
-      success.classList.remove('hidden');
-      confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
-    });
-  })();
-</script>
 
 {% endif %}
 

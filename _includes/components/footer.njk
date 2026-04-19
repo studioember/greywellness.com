@@ -1,4 +1,3 @@
-{% from "macros/contact-button.njk" import contactButton %}
 {% from "macros/logo.njk" import logo %}
 {% block footer %}
   {# Resolve locale-specific data for this render #}
@@ -15,14 +14,11 @@
           <p class="text-sm text-muted">
             {{ _t.footer_tagline }}
           </p>
-          <div class="inline-block px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity">
-            {{ contactButton(text=_t.footer_send_message) }}
-          </div>
+          <a href="{{ '/' + _lang + '/pages/contact/' | url }}" class="inline-block px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity">{{ _t.footer_send_message }}</a>
         </div>
         <div class="space-y-3">
           <p class="text-sm font-semibold text-foreground">{{ _t.footer_contact_label }}</p>
           <ul class="space-y-2 text-sm text-muted">
-            <li>7315 Wisconsin Avenue, Suite 400W<br>Bethesda MD 20814</li>
             <li><a href="tel:+12402038879" class="hover:text-primary transition-colors">Office: 240-203-8879</a></li>
             <li class="hover:text-primary transition-colors">Fax: 240-627-2513</li>
             <li><a href="mailto:contact@greywellness.com?subject=Inquiry" class="hover:text-primary transition-colors">contact@greywellness.com</a></li>
