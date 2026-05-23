@@ -1,0 +1,138 @@
+---
+layout: layouts/landing.njk
+meta_title: "Terapeuta de TCC-I para el Insomnio | Grey Wellness — Maryland"
+description: "Por fin, duerme toda la noche. La TCC-I es el tratamiento de primera línea recomendado para el insomnio crónico, sin medicamentos. Terapeuta bilingüe en Maryland. Consulta gratuita de 15 min."
+lp_noindex: false
+lang: es
+eleventyExcludeFromCollections: true
+---
+{% from 'macros/google-form.njk' import googleForm %}
+
+<!-- Hero + Form -->
+<section class="py-14 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+      <!-- Left: Copy -->
+      <div>
+        <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Especialista en TCC-I · Maryland</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight mb-6">
+          Por fin, duerme<br>toda la noche.
+        </h1>
+        <p class="text-lg text-muted leading-relaxed mb-8">
+          La Terapia Cognitivo-Conductual para el Insomnio (TCC-I) es el <strong class="text-foreground">tratamiento de primera línea recomendado</strong> para el insomnio crónico, avalado por la Academia Americana de Medicina del Sueño. Sin medicamentos, sin dependencia. Un enfoque probado para recuperar tus noches.
+        </p>
+
+        <!-- Quick stats -->
+        <div class="flex gap-4 mb-8">
+          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+            <p class="text-2xl font-bold text-primary">2–3 semanas</p>
+            <p class="text-xs text-muted mt-1">Muchas personas sienten mejoría pronto</p>
+          </div>
+          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+            <p class="text-2xl font-bold text-primary">6–8 sesiones</p>
+            <p class="text-xs text-muted mt-1">Curso completo típico</p>
+          </div>
+        </div>
+
+        <!-- Trust signals -->
+        <ul class="space-y-3 mb-10">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Recomendado primero por la Academia Americana de Medicina del Sueño.</strong> La TCC-I supera a los medicamentos para dormir en resultados a largo plazo.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Sin medicamentos ni efectos secundarios.</strong> Aborda la causa raíz, no solo los síntomas.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Sesiones bilingües</strong> disponibles en español e inglés.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Consulta gratuita de 15 minutos.</strong> Sin compromiso, solo una conversación.</span>
+          </li>
+        </ul>
+
+        <!-- Therapist intro -->
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-card border border-border">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center text-2xl">
+            🌙
+          </div>
+          <div>
+            <p class="font-semibold text-foreground text-sm">Mónica Grey, LCPC</p>
+            <p class="text-muted text-sm mt-1 leading-relaxed">
+              Terapeuta licenciada en Maryland especializada exclusivamente en TCC-I. Trabaja con adultos agotados por el insomnio que están listos para un enfoque que cambie el patrón, no solo los síntomas. Sesiones disponibles en inglés y español.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div id="contacto" class="bg-card rounded-2xl border border-border p-8 shadow-sm lg:sticky lg:top-8">
+        <h2 class="text-xl font-bold text-foreground mb-2">Solicita tu consulta gratuita</h2>
+        <p class="text-sm text-muted mb-6">Completa el formulario y me pondré en contacto contigo en 1–2 días hábiles.</p>
+
+        {% set lpFields = [
+          { label: "Nombre", placeholder: "Tu nombre completo", type: "text", entry: "entry.1227396429", required: true },
+          { label: "Correo electrónico", placeholder: "tu@correo.com", type: "email", entry: "entry.530090678", required: true },
+          { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+          { label: "¿Qué te quita el sueño?", placeholder: "Cuéntame un poco sobre tus problemas para dormir (opcional)", type: "textarea", entry: "entry.965605968", required: false }
+        ] %}
+        {{ googleForm(
+          formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+          fields=lpFields,
+          uid="lp-insomnia-es",
+          submitLabel="Solicitar Consulta Gratuita",
+          successTitle="¡Listo!",
+          successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles para programar tu consulta gratuita.",
+          gaEventName="lp_form_submitted",
+          gaEventCategory="landing_page",
+          gaEventLabel="insomnia_es",
+          adsConversion=""
+        ) }}
+
+        <p class="text-xs text-muted text-center mt-4">Sin spam. Sin presión. Solo una conversación.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- What is CBT-I -->
+<section class="py-14 px-4 sm:px-6 bg-card border-y border-border">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Sobre el Tratamiento</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-6">¿Qué es la TCC-I?</h2>
+    <p class="text-muted leading-relaxed mb-4">
+      La TCC-I (Terapia Cognitivo-Conductual para el Insomnio) es un programa estructurado que te ayuda a identificar y reemplazar los pensamientos y comportamientos que causan o empeoran los problemas de sueño. A diferencia de los medicamentos, aborda la <em>causa raíz</em> del insomnio.
+    </p>
+    <p class="text-muted leading-relaxed mb-8">
+      Es el <strong class="text-foreground">tratamiento de primera línea</strong> recomendado por la Academia Americana de Medicina del Sueño y el Colegio Americano de Médicos, por encima de la medicación. Muchas personas notan una mejoría real en las primeras dos a tres semanas. El programa completo generalmente toma entre 6 y 8 sesiones.
+    </p>
+    <div class="grid sm:grid-cols-3 gap-6 text-left mt-8">
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Identificar el patrón</p>
+        <p class="text-muted text-sm">Analizamos qué está impulsando tu insomnio: pensamientos acelerados, malos hábitos de sueño, ansiedad, o una combinación de todo.</p>
+      </div>
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Reentrena tu cerebro</p>
+        <p class="text-muted text-sm">Con técnicas cognitivas y conductuales comprobadas, reconstruimos tu relación con el sueño para que la cama vuelva a sentirse segura.</p>
+      </div>
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Un sueño que dura</p>
+        <p class="text-muted text-sm">La mayoría de las personas siente cambios reales en 2 a 3 semanas. Hacia la sesión 6 a 8, muchas ya duermen toda la noche. Y a diferencia de la medicación, esos resultados permanecen contigo después del tratamiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="py-16 px-4 sm:px-6 text-center">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">¿Lista para volver a dormir?</h2>
+    <p class="text-muted mb-8">Probablemente ya hayas intentado consejos de higiene del sueño, melatonina o incluso medicación. La TCC-I es diferente porque cambia el patrón, no solo los síntomas. La llamada gratuita es solo una conversación para ver si somos una buena combinación.</p>
+    <a href="#contacto" class="sp-schedule-btn">Solicitar Consulta Gratuita</a>
+  </div>
+</section>

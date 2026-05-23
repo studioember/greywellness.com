@@ -1,0 +1,128 @@
+{% from "macros/logo.njk" import logo %}
+<!doctype html>
+<html lang="{{ lang | default('en') }}" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if meta_title %}
+      {% set _page_title = meta_title %}
+    {% elif title %}
+      {% set _page_title = title ~ " · " ~ site.name %}
+    {% else %}
+      {% set _page_title = site.name %}
+    {% endif %}
+    {% set _page_desc = description or site.description %}
+    {% set _page_url  = site.url ~ page.url %}
+    {% set _og_image  = site.url ~ "/assets/img/og-image.jpg" %}
+
+    <title>{{ _page_title }}</title>
+
+    <meta name="description" content="{{ _page_desc }}">
+    {% if lp_noindex %}
+    <meta name="robots" content="noindex, follow">
+    {% else %}
+    <meta name="robots" content="index, follow">
+    {% endif %}
+    <link rel="canonical" href="{{ _page_url }}">
+
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="{{ _page_url }}">
+    <meta property="og:title"       content="{{ _page_title }}">
+    <meta property="og:description" content="{{ _page_desc }}">
+    <meta property="og:image"       content="{{ _og_image }}">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | url }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
+
+    <!-- Color Scheme -->
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const applyTheme = () => {
+          const theme = media.matches ? "dark" : "light";
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+        };
+        applyTheme();
+        media.addEventListener("change", applyTheme);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020466610"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4B4KP12KBL');
+      gtag('config', 'AW-18020466610');
+    </script>
+
+    <link rel="stylesheet" href="{{ '/assets/css/generated/tailwind.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/theme/theme.css' | url }}">
+  </head>
+
+  <body class="bg-background text-foreground antialiased">
+
+    <!-- Minimal header: logo + phone only -->
+    <header class="border-b border-border bg-nav-bg py-3 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto flex items-center justify-between">
+        <a href="{{ ('/' + (lang | default('en')) + '/') | url }}" class="flex items-center hover:opacity-80 transition-opacity" aria-label="Grey Wellness home">
+          {{ logo(iconHeight="h-10", textHeight="h-12") }}
+        </a>
+        <a href="tel:+12402038879" class="text-sm font-semibold text-primary hover:opacity-80 transition-opacity">
+          240-203-8879
+        </a>
+      </div>
+    </header>
+
+    <main id="content">
+      {{ content | safe }}
+    </main>
+
+    <!-- Minimal footer -->
+    <footer class="border-t border-border bg-surface py-8 px-4 sm:px-6 mt-16">
+      <div class="max-w-5xl mx-auto text-center space-y-3 text-xs text-muted">
+        <p>© <span data-footer-year></span> Grey Wellness LLC. All rights reserved.</p>
+        <p class="max-w-xl mx-auto">
+          If you are in crisis or experiencing a psychiatric emergency, please call or text
+          <strong class="text-foreground">988</strong> (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .sp-schedule-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        color: hsl(var(--primary-foreground)) !important;
+        background: hsl(var(--primary));
+        border: 0;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+      .sp-schedule-btn:hover { opacity: 0.9; }
+    </style>
+    <script defer src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
+    <script>
+      (() => {
+        const year = document.querySelector("[data-footer-year]");
+        if (year) year.textContent = new Date().getFullYear();
+      })();
+    </script>
+  </body>
+</html>
