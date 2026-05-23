@@ -1,0 +1,138 @@
+---
+layout: layouts/landing.njk
+meta_title: "CBT-I Therapist for Insomnia | Grey Wellness — Maryland"
+description: "Finally sleep through the night. CBT-I is the recommended first-line treatment for chronic insomnia. Bilingual therapist in Maryland. Free 15-min consultation."
+lp_noindex: false
+lang: en
+eleventyExcludeFromCollections: true
+---
+{% from 'macros/google-form.njk' import googleForm %}
+
+<!-- Hero + Form -->
+<section class="py-14 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+      <!-- Left: Copy -->
+      <div>
+        <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">CBT-I Specialist · Maryland</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight mb-6">
+          Finally sleep<br>through the night.
+        </h1>
+        <p class="text-lg text-muted leading-relaxed mb-8">
+          Cognitive Behavioral Therapy for Insomnia (CBT-I) is the <strong class="text-foreground">recommended first-line treatment</strong> for chronic insomnia, endorsed by the American Academy of Sleep Medicine. No medication, no dependency. Just a proven approach that gives you back your nights.
+        </p>
+
+        <!-- Quick stats -->
+        <div class="flex gap-4 mb-8">
+          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+            <p class="text-2xl font-bold text-primary">2–3 weeks</p>
+            <p class="text-xs text-muted mt-1">Many feel early improvement</p>
+          </div>
+          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+            <p class="text-2xl font-bold text-primary">6–8 sessions</p>
+            <p class="text-xs text-muted mt-1">Typical complete course</p>
+          </div>
+        </div>
+
+        <!-- Trust signals -->
+        <ul class="space-y-3 mb-10">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Recommended first by the American Academy of Sleep Medicine.</strong> CBT-I outperforms sleep medication for long-term results.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Drug-free with no side effects.</strong> Addresses the root cause, not just the symptoms.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Bilingual sessions</strong> available in English and Spanish.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center text-primary text-xs font-bold">✓</span>
+            <span class="text-foreground text-sm"><strong>Free 15-minute consultation.</strong> No commitment, just a conversation.</span>
+          </li>
+        </ul>
+
+        <!-- Therapist intro -->
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-card border border-border">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center text-2xl">
+            🌙
+          </div>
+          <div>
+            <p class="font-semibold text-foreground text-sm">Mónica Grey, LCPC</p>
+            <p class="text-muted text-sm mt-1 leading-relaxed">
+              Licensed therapist in Maryland who specializes exclusively in CBT-I. She works with adults who are exhausted from not sleeping and ready for an approach that changes the pattern, not just the symptoms. Sessions available in English and Spanish.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div id="contact" class="bg-card rounded-2xl border border-border p-8 shadow-sm lg:sticky lg:top-8">
+        <h2 class="text-xl font-bold text-foreground mb-2">Request your free consultation</h2>
+        <p class="text-sm text-muted mb-6">Fill out the form and I'll be in touch within 1–2 business days.</p>
+
+        {% set lpFields = [
+          { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+          { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+          { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+          { label: "What's keeping you up at night?", placeholder: "Tell me a little about your sleep struggles (optional)", type: "textarea", entry: "entry.965605968", required: false }
+        ] %}
+        {{ googleForm(
+          formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+          fields=lpFields,
+          uid="lp-insomnia-en",
+          submitLabel="Request Free Consultation",
+          successTitle="You're all set!",
+          successBody="Thank you for reaching out. I'll be in touch within 1–2 business days to schedule your free consultation.",
+          gaEventName="lp_form_submitted",
+          gaEventCategory="landing_page",
+          gaEventLabel="insomnia_en",
+          adsConversion="7580866268"
+        ) }}
+
+        <p class="text-xs text-muted text-center mt-4">No spam. No pressure. Just a conversation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- What is CBT-I -->
+<section class="py-14 px-4 sm:px-6 bg-card border-y border-border">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">About the Treatment</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-6">What is CBT-I?</h2>
+    <p class="text-muted leading-relaxed mb-4">
+      CBT-I (Cognitive Behavioral Therapy for Insomnia) is a structured program that helps you identify and replace the thoughts and behaviors that cause or worsen sleep problems. Unlike sleep aids, it targets the <em>root cause</em> of insomnia.
+    </p>
+    <p class="text-muted leading-relaxed mb-8">
+      It's recommended as the <strong class="text-foreground">first-line treatment</strong> by the American Academy of Sleep Medicine and the American College of Physicians, ahead of medication. Many people notice real improvement within the first two to three weeks. A complete course typically takes 6–8 sessions.
+    </p>
+    <div class="grid sm:grid-cols-3 gap-6 text-left mt-8">
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Identify the pattern</p>
+        <p class="text-muted text-sm">We look at what's driving your sleeplessness: racing thoughts, poor sleep hygiene, anxiety, or a mix of everything.</p>
+      </div>
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Retrain your brain</p>
+        <p class="text-muted text-sm">Using proven cognitive and behavioral techniques, we rebuild your relationship with sleep so bed feels safe again.</p>
+      </div>
+      <div class="bg-background rounded-xl p-5 border border-border">
+        <p class="font-semibold text-foreground text-sm mb-2">Sleep that lasts</p>
+        <p class="text-muted text-sm">Most people feel meaningful changes within 2–3 weeks. By 6–8 sessions, many are sleeping through the night consistently. And unlike medication, those results stay with you after treatment ends.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="py-16 px-4 sm:px-6 text-center">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Ready to sleep again?</h2>
+    <p class="text-muted mb-8">You've probably already tried sleep hygiene tips, melatonin, or maybe even medication. CBT-I is different because it changes the pattern, not just the symptoms. The free call is just a conversation to see if we're a good fit.</p>
+    <a href="#contact" class="sp-schedule-btn">Request Free Consultation</a>
+  </div>
+</section>
