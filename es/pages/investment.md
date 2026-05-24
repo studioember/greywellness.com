@@ -6,6 +6,7 @@ description: "Conoce los honorarios de sesión, el reembolso de seguro fuera de 
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
 
 Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada. Sin sorpresas, sin letra pequeña. A continuación encontrarás nuestro listado completo de honorarios junto con información sobre el reembolso de seguro y las opciones de escala móvil.
@@ -74,9 +75,31 @@ Creemos que el costo no debe ser la razón por la que alguien no reciba apoyo. H
 
 Si tienes alguna pregunta sobre los honorarios o el seguro, no dudes en [contactarnos](/es/pages/contact). Con gusto lo conversamos antes de que te comprometas a nada.
 
-<div class="not-prose mt-8 flex flex-col items-center gap-3 text-center">
-  <p class="text-base font-medium text-foreground">¿Lista para empezar?</p>
-  <div class="w-full max-w-xs">
-    {% scheduleButton "Solicitar<br>Cita" %}
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">¿Lista para empezar?</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Conversemos.</h2>
+    <p class="text-muted max-w-xl mx-auto">Completa el formulario y nos pondremos en contacto en 1–2 días hábiles.</p>
+  </div>
+  <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="investment-es",
+      submitLabel="Enviar Mensaje",
+      successTitle="¡Mensaje enviado!",
+      successBody="Gracias por escribir. Me pondré en contacto en 1–2 días hábiles.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="investment_page_es",
+      adsConversion=""
+    ) }}
   </div>
 </div>

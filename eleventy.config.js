@@ -60,13 +60,8 @@ export default async function (eleventyConfig) {
     "scheduleButton",
     function (text = "Request Appointment") {
       return `<a
-      href="https://monicagrey.clientsecure.me"
+      href="#contact-form"
       class="sp-schedule-btn flex items-center justify-center w-full px-6 py-4 !text-sm font-medium tracking-wide uppercase no-underline rounded-md hover:opacity-90 transition-opacity"
-      data-spwidget-scope-id="91b66555-a746-4aaf-97af-68173f0eab96"
-      data-spwidget-scope-uri="monicagrey"
-      data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
-      data-spwidget-scope-global
-      data-spwidget-autobind
     >${text}</a>`;
     },
   );

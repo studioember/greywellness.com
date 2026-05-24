@@ -47,8 +47,4 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
 ) }}
 </div>
 
-  <div class="mt-10 pt-8 border-t border-border text-center">
-    <p class="text-sm text-muted mb-4">¿Prefieres reservar directamente?</p>
-    {% scheduleButton "Solicitar Cita" %}
-  </div>
 </div>

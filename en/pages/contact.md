@@ -47,8 +47,4 @@ There is no pressure to make a decision on the call. I genuinely encourage you t
 ) }}
 </div>
 
-  <div class="mt-10 pt-8 border-t border-border text-center">
-    <p class="text-sm text-muted mb-4">Prefer to book directly?</p>
-    {% scheduleButton "Request Appointment" %}
-  </div>
 </div>
