@@ -7,6 +7,7 @@ date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
 hidden_from_nav: true
+templateEngineOverride: njk,md
 ---
 
 <p class="text-muted text-lg leading-relaxed">We use evidence-based approaches, which means the methods we use have been studied and shown to work. Below is an overview of the modalities we draw from and what each one involves.</p>
@@ -93,4 +94,33 @@ hidden_from_nav: true
   <h3 class="text-2xl font-bold text-white mb-4">Let's find the right approach for you.</h3>
   <p class="text-white/70 mb-8 max-w-xl mx-auto">Every person is different. In your free consultation, we will talk through what you are experiencing and which approaches make the most sense for your goals.</p>
   {% scheduleButton "Schedule Free Consultation" %}
+</div>
+
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Ready when you are.</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Start the conversation.</h2>
+    <p class="text-muted max-w-xl mx-auto">Fill out the form below and we'll be in touch within 1–2 business days.</p>
+  </div>
+  <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="process-en",
+      submitLabel="Send Message",
+      successTitle="Message sent!",
+      successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="process_page_en",
+      adsConversion=""
+    ) }}
+  </div>
 </div>

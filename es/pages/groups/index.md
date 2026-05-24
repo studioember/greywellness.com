@@ -47,7 +47,7 @@ templateEngineOverride: njk,md
 
 {% else %}
 
-<div class="not-prose mt-10 rounded-2xl border border-border bg-card p-10 shadow-sm">
+<div id="contact-form" class="not-prose mt-10 rounded-2xl border border-border bg-card p-10 shadow-sm">
   <div class="text-center mb-6">
     <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/15 text-3xl mb-5">🌿</span>
     <h2 class="text-2xl font-bold text-foreground mb-3">No hay grupos en este momento.</h2>

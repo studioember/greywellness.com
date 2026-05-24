@@ -6,6 +6,7 @@ description: "Transparent pricing for therapy at Grey Wellness. Session fees, ou
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
 
 We believe you should know what therapy costs before you ever book a call. No surprises, no fine print. Below you will find our full fee schedule along with information about insurance reimbursement and sliding scale options.
@@ -74,9 +75,31 @@ We believe cost should not be the reason someone doesn't get support. A limited 
 
 If you have any questions about fees or insurance, feel free to [reach out](/en/pages/contact). We are happy to talk it through before you commit to anything.
 
-<div class="not-prose mt-8 flex flex-col items-center gap-3 text-center">
-  <p class="text-base font-medium text-foreground">Ready to get started?</p>
-  <div class="w-full max-w-xs">
-    {% scheduleButton "Request<br>Appointment" %}
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Ready to get started?</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Let's talk.</h2>
+    <p class="text-muted max-w-xl mx-auto">Fill out the form below and we'll be in touch within 1–2 business days.</p>
+  </div>
+  <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="investment-en",
+      submitLabel="Send Message",
+      successTitle="Message sent!",
+      successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="investment_page_en",
+      adsConversion=""
+    ) }}
   </div>
 </div>

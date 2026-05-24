@@ -7,6 +7,7 @@ date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
 hidden_from_nav: true
+templateEngineOverride: njk,md
 ---
 
 <p class="text-muted text-lg leading-relaxed">Utilizamos enfoques basados en evidencia, lo que significa que los métodos que usamos han sido estudiados y demostrados que funcionan. A continuación encontrará un resumen de las modalidades de las que nos valemos y lo que cada una implica.</p>
@@ -88,4 +89,33 @@ hidden_from_nav: true
   <h3 class="text-2xl font-bold text-white mb-4">Encontremos el enfoque adecuado para ti.</h3>
   <p class="text-white/70 mb-8 max-w-xl mx-auto">Cada persona es diferente. En tu consulta gratuita, hablaremos sobre lo que estás experimentando y qué enfoques tienen más sentido para tus objetivos.</p>
   {% scheduleButton "Agendar Consulta Gratuita" %}
+</div>
+
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Lista cuando lo estés.</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Comencemos la conversación.</h2>
+    <p class="text-muted max-w-xl mx-auto">Completa el formulario y nos pondremos en contacto en 1–2 días hábiles.</p>
+  </div>
+  <div class="rounded-2xl border border-border bg-card p-8 shadow-sm max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="process-es",
+      submitLabel="Enviar Mensaje",
+      successTitle="¡Mensaje enviado!",
+      successBody="Gracias por escribir. Me pondré en contacto en 1–2 días hábiles.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="process_page_es",
+      adsConversion=""
+    ) }}
+  </div>
 </div>
