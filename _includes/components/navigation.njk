@@ -7,7 +7,7 @@
   {% set _homeUrl = "/" + _lang + "/" %}
   {% set _aboutUrl = "/" + _lang + "/pages/about/" %}
   {% set _servicesUrl = "/" + _lang + "/pages/treatment/" %}
-  {% set _investmentUrl = "/" + _lang + "/pages/investment/" %}
+  {% set _investmentUrl = "/" + _lang + "/rates/" %}
   {# Language switcher: get alternate locale links for the current page #}
   {% set _langAlternates = page.url | locale_links %}
 
@@ -58,6 +58,10 @@
 
         <a href="{{ _investmentUrl | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
           {{ _t.nav_investment }}
+        </a>
+
+        <a href="{{ '/blog/' | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
+          Blog
         </a>
 
         <a
@@ -175,6 +179,11 @@
         <li>
           <a href="{{ _investmentUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
             {{ _t.nav_investment }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/blog/' | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
+            Blog
           </a>
         </li>
         <li>

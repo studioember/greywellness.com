@@ -1,0 +1,33 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<div class="not-prose mb-6">
+  <a href="{{ '/blog/' | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Back to Blog
+  </a>
+</div>
+
+{% if author or date %}
+<div class="not-prose flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-primary mb-6">
+  {% if date %}<span>{{ page.date | dateISO }}</span>{% endif %}
+  {% if date and author %}<span class="text-border">·</span>{% endif %}
+  {% if author %}<span>{{ author }}</span>{% endif %}
+</div>
+{% endif %}
+
+<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
+  {{ content | safe }}
+</article>
+
+<div class="not-prose mt-12 pt-8 border-t border-border">
+  <a href="{{ '/blog/' | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Back to Blog
+  </a>
+</div>
+{% endblock %}

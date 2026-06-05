@@ -40,6 +40,14 @@ export default async function (eleventyConfig) {
       });
   });
 
+  // Blog posts (excludes drafts)
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft)
+      .sort((a, b) => a.date - b.date);
+  });
+
   // Group therapy pages (excludes the index listing page itself; only shows status: open)
   eleventyConfig.addCollection("groups_en", function (collectionApi) {
     return collectionApi

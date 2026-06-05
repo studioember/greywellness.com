@@ -5,6 +5,7 @@ meta_title: "Therapy Fees, Insurance & Sliding Scale | Grey Wellness"
 description: "Transparent pricing for therapy at Grey Wellness. Session fees, out-of-network insurance reimbursement, and sliding scale options."
 date: "git Last Modified"
 date_hidden: true
+permalink: /en/rates/
 layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---

@@ -1,0 +1,37 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<div class="not-prose">
+  {% if collections.blog and collections.blog.length %}
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for post in collections.blog | reverse %}
+      <a href="{{ post.url | url }}" class="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md transition-shadow">
+        <div class="flex flex-col flex-1 p-6">
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-primary mb-3">
+            <span>{{ post.date | dateISO }}</span>
+            {% if post.data.author %}
+            <span class="text-border">·</span>
+            <span>{{ post.data.author }}</span>
+            {% endif %}
+          </div>
+          <h2 class="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-3">
+            {{ post.data.title }}
+          </h2>
+          {% if post.data.description %}
+          <p class="text-sm text-muted leading-relaxed flex-1">{{ post.data.description }}</p>
+          {% endif %}
+          <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+            Read more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">No posts yet. Check back soon.</p>
+  {% endif %}
+</div>
+{% endblock %}
