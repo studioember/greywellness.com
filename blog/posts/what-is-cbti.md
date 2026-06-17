@@ -2,16 +2,13 @@
 title: "What Is CBT-I and How Does It Work?"
 description: "CBT-I is the gold-standard treatment for chronic insomnia — but most people have never heard of it. Here's a plain-language breakdown of what it is, what it isn't, and why it works."
 date: 2026-04-22
-author: "Mónica Grey"
+author: "Mónica Grey, LCPC"
+category: "CBT-I"
+image_icon: "🧠"
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
-no_prose: true
 ---
-
-<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-li:text-foreground">
-
-# What Is CBT-I and How Does It Work?
 
 If you've struggled with insomnia — lying awake for hours, waking at 3am and unable to fall back asleep, dreading bedtime — you've probably tried things. Melatonin. Sleep hygiene tips. Maybe medication. And maybe none of it fully worked.
 
@@ -48,5 +45,3 @@ It's also effective for people with anxiety, depression, or chronic pain where i
 ---
 
 If you're curious whether CBT-I might be right for you, I offer free 15-minute consultations. You don't have to keep white-knuckling through the nights.
-
-</article>

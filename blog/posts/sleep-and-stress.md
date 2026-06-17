@@ -2,16 +2,13 @@
 title: "The Sleep-Stress Loop (And How to Break It)"
 description: "Stress causes poor sleep. Poor sleep makes you more reactive to stress. Breaking that cycle requires more than rest — it requires understanding how the loop works."
 date: 2026-03-10
-author: "Mónica Grey"
+author: "Mónica Grey, LCPC"
+category: "Stress & Anxiety"
+image_icon: "🌊"
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
-no_prose: true
 ---
-
-<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-li:text-foreground">
-
-# The Sleep-Stress Loop (And How to Break It)
 
 Most people understand that stress makes it hard to sleep. What's less understood is the other direction: poor sleep makes you more reactive to stress — and that feedback loop is one of the most common reasons insomnia becomes chronic.
 
@@ -48,5 +45,3 @@ This is where therapy becomes more effective than sleep hygiene tips alone.
 ---
 
 Breaking the loop takes more than one good night. But it's possible — and most people who commit to treatment see meaningful improvement within a few weeks.
-
-</article>

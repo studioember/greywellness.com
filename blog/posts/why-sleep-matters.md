@@ -2,16 +2,13 @@
 title: "Why Sleep Is the Foundation of Mental Health"
 description: "Poor sleep doesn't just leave you tired — it rewires how your brain processes stress, emotion, and memory. Here's what the research actually says."
 date: 2026-05-15
-author: "Mónica Grey"
+author: "Mónica Grey, LCPC"
+category: "Sleep Health"
+image_icon: "🌙"
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
-no_prose: true
 ---
-
-<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-li:text-foreground">
-
-# Why Sleep Is the Foundation of Mental Health
 
 Poor sleep doesn't just leave you tired. It changes how your brain works — how you regulate emotion, how you form memories, and how you respond to stress. This is not a metaphor. It is neuroscience.
 
@@ -38,5 +35,3 @@ Cognitive Behavioral Therapy for Insomnia (CBT-I) works not by sedating you, but
 ---
 
 If you've been struggling with sleep for weeks or months, it's worth taking seriously. Sleep is not a luxury. It is the foundation everything else is built on.
-
-</article>
