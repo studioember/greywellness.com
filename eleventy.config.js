@@ -41,23 +41,41 @@ export default async function (eleventyConfig) {
   });
 
   // Blog posts (excludes drafts)
-  eleventyConfig.addCollection("blog", function (collectionApi) {
+  eleventyConfig.addCollection("blog_en", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("blog/posts/**/*.{md,njk,html}")
+      .getFilteredByGlob("en/blog/posts/**/*.{md,njk,html}")
       .filter((p) => !p.data?.draft)
       .sort((a, b) => a.date - b.date);
   });
 
-  // Unique, sorted list of blog categories (used to generate category archive pages)
-  eleventyConfig.addCollection("blogCategories", function (collectionApi) {
-    const posts = collectionApi
-      .getFilteredByGlob("blog/posts/**/*.{md,njk,html}")
-      .filter((p) => !p.data?.draft);
+  eleventyConfig.addCollection("blog_es", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("es/blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft)
+      .sort((a, b) => a.date - b.date);
+  });
+
+  const getBlogCategories = (posts) => {
     const categories = new Set();
     posts.forEach((p) => {
       if (p.data?.category) categories.add(p.data.category);
     });
     return Array.from(categories).sort((a, b) => a.localeCompare(b));
+  };
+
+  // Unique, sorted list of blog categories (used to generate category archive pages)
+  eleventyConfig.addCollection("blogCategories_en", function (collectionApi) {
+    const posts = collectionApi
+      .getFilteredByGlob("en/blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft);
+    return getBlogCategories(posts);
+  });
+
+  eleventyConfig.addCollection("blogCategories_es", function (collectionApi) {
+    const posts = collectionApi
+      .getFilteredByGlob("es/blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft);
+    return getBlogCategories(posts);
   });
 
   // Group therapy pages (excludes the index listing page itself; only shows status: open)
