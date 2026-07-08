@@ -14,7 +14,7 @@
     {% endif %}
     {% set _page_desc = description or site.description %}
     {% set _page_url  = site.url ~ page.url %}
-    {% set _og_image  = site.url ~ "/assets/img/og-image.jpg" %}
+    {% set _og_image  = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
 
     <title>{{ _page_title }}</title>
 

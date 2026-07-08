@@ -27,6 +27,20 @@
   <hr class="mt-8 border-border">
 </header>
 
+{% if image %}
+<div class="not-prose mb-10 rounded-2xl overflow-hidden">
+  <img
+    src="{{ image | url }}"
+    alt="{{ image_alt | default('') }}"
+    class="w-full h-auto object-cover"
+    width="1920"
+    height="1080"
+    loading="eager"
+    fetchpriority="high"
+  />
+</div>
+{% endif %}
+
 <article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
   {{ content | safe }}
 </article>
