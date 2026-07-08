@@ -124,7 +124,7 @@
         {% endif %}
         {# Date #}
         {% if date_hidden != true %}
-          <p class="text-muted">{{ page.date | dateSimple }}</p>
+          <p class="text-muted">{{ page.date | dateSimple(lang | default('en')) }}</p>
         {% endif %}
         {# -------- #}
         <hr class="mt-8 border-border">

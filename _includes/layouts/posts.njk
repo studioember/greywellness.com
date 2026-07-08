@@ -15,7 +15,7 @@
 {%- for post in collections[key] -%}
   <li>
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    <div>{{ post.date | dateSimple }}</div>
+    <div>{{ post.date | dateSimple(lang | default('en')) }}</div>
   </li>
 {%- endfor -%}
 </ul>
