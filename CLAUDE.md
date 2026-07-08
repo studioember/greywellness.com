@@ -26,6 +26,13 @@ No test suite or linter is configured.
 - All content files use YAML frontmatter for layout, title, date, and navigation metadata
 - Dates use `date: "git Last Modified"` to pull from git history
 
+### Blog Images
+
+- All blog post images live in `assets/img/blog/` — never save them directly under `assets/img/` or `blog/`
+- Filenames should be SEO-friendly: lowercase, hyphenated, descriptive of the post's target keyword (e.g. `why-does-insomnia-happen.jpg`)
+- Reference the image in a post's frontmatter via `image: "/assets/img/blog/<filename>"` and provide `image_alt` with descriptive alt text — both `blog-post.njk` (hero image + og:image/twitter:image) and the blog/category listing cards read these fields
+- If an image's largest dimension (width or height) exceeds 1920px, resize it down so the largest side is 1920px before saving it to `assets/img/blog/`
+
 ### Templates
 
 - `_includes/layouts/base.njk` — Root HTML layout (head, theme script, nav, footer)
