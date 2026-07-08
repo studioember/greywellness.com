@@ -1,0 +1,39 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<div class="not-prose">
+  {% if collections.blog and collections.blog.length %}
+    <div class="divide-y divide-border">
+      {% for post in collections.blog | reverse %}
+      <article class="group flex gap-5 sm:gap-6 py-8 first:pt-0">
+        <a href="{{ post.url | url }}" class="shrink-0 w-24 h-24 sm:w-36 sm:h-36 rounded-xl overflow-hidden" tabindex="-1" aria-hidden="true">
+          {% if post.data.image %}
+          <img src="{{ post.data.image | url }}" alt="" class="w-full h-full object-cover" loading="lazy" width="144" height="144">
+          {% else %}
+          <div class="w-full h-full bg-gradient-to-br from-primary/15 to-accent/25 flex items-center justify-center text-3xl sm:text-5xl">
+            {{ post.data.image_icon | default("🌙") }}
+          </div>
+          {% endif %}
+        </a>
+        <div class="flex flex-col min-w-0 py-0.5">
+          {% if post.data.category %}
+          <a href="{{ ('/blog/category/' + (post.data.category | slugify) + '/') | url }}" class="inline-block w-fit text-xs font-bold uppercase tracking-widest text-primary hover:underline mb-2">{{ post.data.category }}</a>
+          {% endif %}
+          <h2 class="text-lg sm:text-xl font-bold text-foreground leading-snug">
+            <a href="{{ post.url | url }}" class="hover:text-primary transition-colors">{{ post.data.title }}</a>
+          </h2>
+          <p class="mt-1.5 text-sm text-muted">
+            {{ post.data.author }} on {{ post.date | dateLong }}
+          </p>
+          {% if post.data.description %}
+          <p class="mt-3 text-sm text-muted leading-relaxed">{{ post.data.description }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">No posts yet. Check back soon.</p>
+  {% endif %}
+</div>
+{% endblock %}

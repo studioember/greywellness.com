@@ -1,0 +1,47 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set _posts = collections.blog | reverse | byCategory(category) %}
+
+<div class="not-prose mb-6">
+  <a href="{{ '/blog/' | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Back to Blog
+  </a>
+</div>
+
+<div class="not-prose">
+  {% if _posts.length %}
+    <div class="divide-y divide-border">
+      {% for post in _posts %}
+      <article class="group flex gap-5 sm:gap-6 py-8 first:pt-0">
+        <a href="{{ post.url | url }}" class="shrink-0 w-24 h-24 sm:w-36 sm:h-36 rounded-xl overflow-hidden" tabindex="-1" aria-hidden="true">
+          {% if post.data.image %}
+          <img src="{{ post.data.image | url }}" alt="" class="w-full h-full object-cover" loading="lazy" width="144" height="144">
+          {% else %}
+          <div class="w-full h-full bg-gradient-to-br from-primary/15 to-accent/25 flex items-center justify-center text-3xl sm:text-5xl">
+            {{ post.data.image_icon | default("🌙") }}
+          </div>
+          {% endif %}
+        </a>
+        <div class="flex flex-col min-w-0 py-0.5">
+          <h2 class="text-lg sm:text-xl font-bold text-foreground leading-snug">
+            <a href="{{ post.url | url }}" class="hover:text-primary transition-colors">{{ post.data.title }}</a>
+          </h2>
+          <p class="mt-1.5 text-sm text-muted">
+            {{ post.data.author }} on {{ post.date | dateLong }}
+          </p>
+          {% if post.data.description %}
+          <p class="mt-3 text-sm text-muted leading-relaxed">{{ post.data.description }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">No posts in this topic yet. Check back soon.</p>
+  {% endif %}
+</div>
+{% endblock %}

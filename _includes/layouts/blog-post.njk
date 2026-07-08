@@ -1,0 +1,73 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set _lang = lang | default('en') %}
+{% set _contactUrl = '/' + _lang + '/pages/contact/' | url %}
+{% set _authorBio = author_bio or "Mónica is a bilingual immigrant therapist who works with clients in English and Spanish. She specializes in the treatment of insomnia and other sleep-related issues, as well as anxiety, trauma, and stress." %}
+
+<div class="not-prose mb-6">
+  <a href="{{ '/blog/' | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Back to Blog
+  </a>
+</div>
+
+<header class="not-prose mb-8">
+  {% if category %}
+  <a href="{{ ('/blog/category/' + (category | slugify) + '/') | url }}" class="inline-block w-fit text-xs font-bold uppercase tracking-widest text-primary hover:underline mb-3">{{ category }}</a>
+  {% endif %}
+  <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-foreground">{{ title }}</h1>
+  {% if author or date %}
+  <p class="mt-3 text-muted">
+    {% if author %}{{ author }}{% endif %}{% if author and date %} on {% endif %}{% if date %}{{ page.date | dateLong }}{% endif %}
+  </p>
+  {% endif %}
+  <hr class="mt-8 border-border">
+</header>
+
+<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
+  {{ content | safe }}
+</article>
+
+{# Author bio box #}
+{% if author %}
+<div class="not-prose mt-14 rounded-2xl border border-border bg-card p-6 sm:p-8">
+  <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+    <picture class="block h-20 w-20 shrink-0 rounded-full overflow-hidden shadow-sm">
+      <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+      <img
+        src="{{ '/assets/img/headshot.jpg' | url }}"
+        alt="{{ author }}"
+        class="w-full h-full object-cover object-top"
+        width="80"
+        height="80"
+      />
+    </picture>
+    <div>
+      <p class="font-semibold text-foreground">{{ author }}</p>
+      <p class="mt-2 text-sm text-muted leading-relaxed">{{ _authorBio }}</p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{# CTA #}
+<div class="not-prose mt-8 rounded-2xl bg-foreground text-background px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <div>
+    <p class="text-xl font-bold">Curious what feeling rested could be like?</p>
+    <p class="opacity-70 mt-1 text-sm">A free 15-minute consultation is a simple place to start.</p>
+  </div>
+  <a href="{{ _contactUrl }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Book a Free Consultation</a>
+</div>
+
+<div class="not-prose mt-12 pt-8 border-t border-border">
+  <a href="{{ '/blog/' | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    Back to Blog
+  </a>
+</div>
+{% endblock %}

@@ -5,6 +5,7 @@ meta_title: "Honorarios, Seguro y Escala Móvil | Grey Wellness"
 description: "Conoce los honorarios de sesión, el reembolso de seguro fuera de la red a través de Mentaya y las opciones de escala móvil en Grey Wellness."
 date: "git Last Modified"
 date_hidden: true
+permalink: /es/rates/
 layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---

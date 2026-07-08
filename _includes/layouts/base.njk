@@ -102,7 +102,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/theme/theme.css' | url }}">
   </head>
 
-  <body class="bg-background text-foreground antialiased">
+  <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
 {# Navigation - Start #}
     {% block navigation %}
     {% include 'components/navigation.njk' %}
@@ -110,9 +110,9 @@
     {# Navigation - End #}
 
     {% if full_width %}
-    <main id="content" class="mx-auto px-4 sm:px-6 py-10">
+    <main id="content" class="mx-auto px-4 sm:px-6 py-10 flex-1">
     {% else %}
-    <main id="content" class="mx-auto max-w-5xl px-4 sm:px-6 py-10">
+    <main id="content" class="mx-auto max-w-5xl px-4 sm:px-6 py-10 flex-1 w-full">
     {% endif %}
       {# Title - Start #}
       {% if title and title_hidden != true %}

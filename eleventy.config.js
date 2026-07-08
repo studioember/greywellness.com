@@ -40,6 +40,26 @@ export default async function (eleventyConfig) {
       });
   });
 
+  // Blog posts (excludes drafts)
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft)
+      .sort((a, b) => a.date - b.date);
+  });
+
+  // Unique, sorted list of blog categories (used to generate category archive pages)
+  eleventyConfig.addCollection("blogCategories", function (collectionApi) {
+    const posts = collectionApi
+      .getFilteredByGlob("blog/posts/**/*.{md,njk,html}")
+      .filter((p) => !p.data?.draft);
+    const categories = new Set();
+    posts.forEach((p) => {
+      if (p.data?.category) categories.add(p.data.category);
+    });
+    return Array.from(categories).sort((a, b) => a.localeCompare(b));
+  });
+
   // Group therapy pages (excludes the index listing page itself; only shows status: open)
   eleventyConfig.addCollection("groups_en", function (collectionApi) {
     return collectionApi
@@ -87,6 +107,22 @@ export default async function (eleventyConfig) {
   // Filters
   eleventyConfig.addFilter("dateSimple", function (date) {
     return moment(date).format("LLL");
+  });
+
+  eleventyConfig.addFilter("byCategory", function (posts, category) {
+    return (posts || []).filter((p) => p.data && p.data.category === category);
+  });
+
+  eleventyConfig.addFilter("slugify", function (str) {
+    return String(str)
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/[\s_]+/g, "-");
+  });
+
+  eleventyConfig.addFilter("dateLong", function (date) {
+    return moment.utc(date).format("LL");
   });
 
   eleventyConfig.addFilter("dateISO", function (date) {
