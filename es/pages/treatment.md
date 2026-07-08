@@ -41,6 +41,13 @@ hidden_from_nav: true
     <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(150 40% 40%)">Saber más →</span>
   </a>
 
+  <a href="{{ '/es/pages/anxiety/' | url }}" class="group block rounded-2xl border border-border bg-card p-8 shadow-sm hover:shadow-md transition-all duration-200">
+    <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl text-2xl mb-4" style="background: hsl(215 30% 20% / 0.12)">🌀</span>
+    <h2 class="text-xl font-bold text-foreground mb-3">Ansiedad</h2>
+    <p class="text-muted leading-relaxed mb-4">Tu mente no para. Tu cuerpo siempre está en alerta. La ansiedad no es un defecto de carácter — es un patrón, y los patrones pueden cambiar.</p>
+    <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(215 40% 45%)">Saber más →</span>
+  </a>
+
 </div>
 
 <div class="not-prose mt-16 rounded-2xl px-8 py-10 text-center" style="background: hsl(var(--hero-overlay))">
