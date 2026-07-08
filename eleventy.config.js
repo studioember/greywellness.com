@@ -2,6 +2,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { I18nPlugin, RenderPlugin } from "@11ty/eleventy";
 import moment from "moment";
+import "moment/locale/es.js";
 
 export default async function (eleventyConfig) {
   // Configure Eleventy
@@ -123,8 +124,8 @@ export default async function (eleventyConfig) {
   );
 
   // Filters
-  eleventyConfig.addFilter("dateSimple", function (date) {
-    return moment(date).format("LLL");
+  eleventyConfig.addFilter("dateSimple", function (date, lang) {
+    return moment(date).locale(lang || "en").format("LLL");
   });
 
   eleventyConfig.addFilter("byCategory", function (posts, category) {
@@ -139,8 +140,8 @@ export default async function (eleventyConfig) {
       .replace(/[\s_]+/g, "-");
   });
 
-  eleventyConfig.addFilter("dateLong", function (date) {
-    return moment.utc(date).format("LL");
+  eleventyConfig.addFilter("dateLong", function (date, lang) {
+    return moment.utc(date).locale(lang || "en").format("LL");
   });
 
   eleventyConfig.addFilter("dateISO", function (date) {

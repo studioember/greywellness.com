@@ -23,7 +23,7 @@
   <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-foreground">{{ title }}</h1>
   {% if author or date %}
   <p class="mt-3 text-muted">
-    {% if author %}{{ author }}{% endif %}{% if author and date %} {{ _t.blog_author_on }} {% endif %}{% if date %}{{ page.date | dateLong }}{% endif %}
+    {% if author %}{{ author }}{% endif %}{% if author and date %} {{ _t.blog_author_on }} {% endif %}{% if date %}{{ page.date | dateLong(_lang) }}{% endif %}
   </p>
   {% endif %}
   <hr class="mt-8 border-border">

@@ -53,11 +53,13 @@ Here's the part that actually explains why insomnia sticks around long after the
 
 These behaviors feel like solutions in the moment. In reality, they're the reason insomnia becomes chronic. The original stressor can be long gone, and you'll still be up every night, because your brain has quietly learned a new, terrible lesson: bed equals frustration, not rest.
 
-## Sarah's Story
+## Manuela's Story
 
-Sarah had always been "a light sleeper." As a kid, the smallest noise woke her up. In college, she was the one friend who could never nap on a road trip no matter how exhausted she was. Her mom was the same way, always awake before sunrise, always complaining about never getting real rest. It was just a family quirk. Nothing to worry about.
+*Manuela is a fictional composite created for illustration purposes. She is not a real client, and any resemblance to a real person is coincidental.*
 
-For years, it wasn't. Sarah slept a little lighter than everyone else, sure, but she slept. She held down a demanding job, had a social life, and never once thought of herself as "someone with a sleep problem."
+Manuela had always been "a light sleeper." As a kid, the smallest noise woke her up. In college, she was the one friend who could never nap on a road trip no matter how exhausted she was. Her mom was the same way, always awake before sunrise, always complaining about never getting real rest. It was just a family quirk. Nothing to worry about.
+
+For years, it wasn't. Manuela slept a little lighter than everyone else, sure, but she slept. She held down a demanding job, had a social life, and never once thought of herself as "someone with a sleep problem."
 
 Then, at 34, her marriage ended.
 
@@ -69,11 +71,11 @@ Her sleep had not gotten the memo.
 
 If anything, it got worse. She started going to bed at 9 PM, reasoning that more hours in bed meant more chances at sleep (spoiler: it did not). She napped most afternoons, running on fumes from the night before. She'd wake at 2 AM, immediately check the clock, do the grim math on how many hours she had left, and feel her heart rate spike right on cue. Some nights she dreaded the bed itself, a place that used to mean rest now felt like a battlefield she lost every single night. She started declining evening plans, just in case she needed to "save her energy" for sleep that never actually showed up.
 
-A year after the divorce, Sarah wasn't grieving a marriage anymore. She was exhausted, isolated, and quietly convinced something inside her was permanently broken.
+A year after the divorce, Manuela wasn't grieving a marriage anymore. She was exhausted, isolated, and quietly convinced something inside her was permanently broken.
 
-It wasn't. What happened to Sarah has a name, and it's a lot more common than people realize.
+It wasn't. What happened to Manuela has a name, and it's a lot more common than people realize.
 
-## Breaking Down Sarah's 3 P's
+## Breaking Down Manuela's 3 P's
 
 **Predisposing:** Lifelong light sleep, a tendency to overthink, family history of sleep issues. Dormant for over three decades, causing zero problems on its own.
 
@@ -81,7 +83,7 @@ It wasn't. What happened to Sarah has a name, and it's a lot more common than pe
 
 **Perpetuating:** Early bedtimes, afternoon naps, clock-watching, canceled plans, bedtime dread. These are what kept the insomnia alive long after the divorce itself stopped mattering. Her brain learned, through months of repetition, that the bed meant frustration, not rest.
 
-The divorce didn't cause Sarah's chronic insomnia. It just opened the door. What kept her up a year later was everything she'd unknowingly done trying to fix it.
+The divorce didn't cause Manuela's chronic insomnia. It just opened the door. What kept her up a year later was everything she'd unknowingly done trying to fix it.
 
 ## The Fix?
 
@@ -92,3 +94,9 @@ For now, if you've read this far and thought "okay but this is literally my life
 ---
 
 Have questions, or think this sounds a little too familiar? Reach out, let's talk about getting your nights (and your sanity) back.
+
+## References
+
+1. American Academy of Sleep Medicine. *International Classification of Sleep Disorders*, 3rd ed. Darien, IL: American Academy of Sleep Medicine; 2014.
+2. Spielman AJ, Caruso LS, Glovinsky PB. A behavioral perspective on insomnia treatment. *Psychiatric Clinics of North America*. 1987;10(4):541-553.
+3. Qaseem A, Kansagara D, Forciea MA, Cooke M, Denberg TD, for the Clinical Guidelines Committee of the American College of Physicians. Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of Physicians. *Annals of Internal Medicine*. 2016;165(2):125-133.
