@@ -8,6 +8,7 @@
   {% set _aboutUrl = "/" + _lang + "/pages/about/" %}
   {% set _servicesUrl = "/" + _lang + "/pages/treatment/" %}
   {% set _investmentUrl = "/" + _lang + "/rates/" %}
+  {% set _faqUrl = "/" + _lang + "/pages/faq/" %}
   {# Language switcher: get alternate locale links for the current page #}
   {% set _langAlternates = page.url | locale_links %}
 
@@ -46,6 +47,9 @@
             <a href="{{ "/" + _lang + "/pages/childhood-experiences/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
               {{ _t.nav_specialties_ace }}
             </a>
+            <a href="{{ "/" + _lang + "/pages/anxiety/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
+              {{ _t.nav_specialties_anxiety }}
+            </a>
             <a href="{{ "/" + _lang + "/pages/stress/" | url }}" class="block px-4 py-3 text-sm text-nav-fg/70 hover:text-nav-fg hover:bg-nav-fg/5 transition-colors whitespace-nowrap">
               {{ _t.nav_specialties_stress }}
             </a>
@@ -62,6 +66,8 @@
 
         <a href="{{ '/blog/' | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
           Blog
+        <a href="{{ _faqUrl | url }}" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
+          {{ _t.nav_faq }}
         </a>
 
         <a
@@ -165,6 +171,11 @@
               </a>
             </li>
             <li>
+              <a href="{{ "/" + _lang + "/pages/anxiety/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
+                {{ _t.nav_specialties_anxiety }}
+              </a>
+            </li>
+            <li>
               <a href="{{ "/" + _lang + "/pages/stress/" | url }}" class="block py-2.5 text-sm text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border">
                 {{ _t.nav_specialties_stress }}
               </a>
@@ -184,6 +195,8 @@
         <li>
           <a href="{{ '/blog/' | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
             Blog
+          <a href="{{ _faqUrl | url }}" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
+            {{ _t.nav_faq }}
           </a>
         </li>
         <li>
