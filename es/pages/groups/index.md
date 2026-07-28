@@ -1,6 +1,6 @@
 ---
 title: Grupos
-title_hidden: false
+title_hidden: true
 meta_title: "Terapia Grupal | Grey Wellness"
 description: "Sesiones de terapia grupal en Grey Wellness. Grupos pequeños, basados en evidencia y dirigidos por una terapeuta licenciada. Consulte las ofertas actuales."
 date: "git Last Modified"
@@ -11,7 +11,24 @@ hidden_from_nav: true
 templateEngineOverride: njk,md
 ---
 
-<p class="text-muted text-lg leading-relaxed">La terapia grupal ofrece algo que la terapia individual no puede: la experiencia de trabajar algo junto a personas que realmente lo entienden. Los grupos en Grey Wellness son pequeños, estructurados y dirigidos por una terapeuta licenciada.</p>
+<div class="rounded-2xl overflow-hidden mb-4 -mx-4 sm:-mx-6 px-6 sm:px-10 py-20 relative">
+  <img src="{{ '/assets/img/services/groups.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(150 25% 10% / 0.94), hsl(150 25% 10% / 0.72) 50%, hsl(150 25% 10% / 0.25) 80%, transparent 100%)"></div>
+  <div class="relative z-10 max-w-2xl">
+    <p class="text-sm font-semibold tracking-widest uppercase mb-4" style="color: hsl(150 40% 70%)">Grupos</p>
+    <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+      Terapia Grupal
+    </h1>
+    <p class="text-white/70 text-lg leading-relaxed mb-8">
+      La terapia grupal ofrece algo que la terapia individual no puede: la experiencia de trabajar algo junto a personas que realmente lo entienden. Los grupos en Grey Wellness son pequeños, estructurados y dirigidos por una terapeuta licenciada.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#contact-form" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity text-center">
+        Agendar Consulta Gratuita
+      </a>
+    </div>
+  </div>
+</div>
 
 {% set activeGroups = collections.groups_es %}
 

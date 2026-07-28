@@ -68,7 +68,7 @@ templateEngineOverride: njk,md
       "name": "I have insomnia, but I also struggle with other mental health issues. Can you help me?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Sleep, trauma, and stress are often deeply connected, and much of our work lives right at that overlap. Alongside CBT-I, we offer individual psychotherapy for trauma, adverse childhood experiences, stress and burnout, and anxiety. During your free consultation, we'll figure out together whether CBT-I, individual psychotherapy, or a combination of both fits your goals best."
+        "text": "Yes. Sleep, trauma, and anxiety are often deeply connected, and much of our work lives right at that overlap. Alongside CBT-I, we offer individual psychotherapy for trauma and anxiety. During your free consultation, we'll figure out together whether CBT-I, individual psychotherapy, or a combination of both fits your goals best."
       }
     },
     {
@@ -209,7 +209,7 @@ templateEngineOverride: njk,md
           I have insomnia, but I also struggle with other mental health issues. Can you help me?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">Yes. Sleep, trauma, and stress are often deeply connected, and much of our work lives right at that overlap. Alongside CBT-I, we offer individual psychotherapy for <a href="{{ '/en/pages/trauma/' | url }}" class="text-primary hover:underline">trauma</a>, <a href="{{ '/en/pages/childhood-experiences/' | url }}" class="text-primary hover:underline">adverse childhood experiences</a>, <a href="{{ '/en/pages/stress/' | url }}" class="text-primary hover:underline">stress and burnout</a>, and <a href="{{ '/en/pages/anxiety/' | url }}" class="text-primary hover:underline">anxiety</a>. During your free consultation, we'll figure out together whether CBT-I, individual psychotherapy, or a combination of both fits your goals best.</p>
+        <p class="mt-4 text-muted leading-relaxed">Yes. Sleep, trauma, and anxiety are often deeply connected, and much of our work lives right at that overlap. Alongside CBT-I, we offer individual psychotherapy for <a href="{{ '/en/pages/trauma/' | url }}" class="text-primary hover:underline">trauma</a> and <a href="{{ '/en/pages/anxiety/' | url }}" class="text-primary hover:underline">anxiety</a>. During your free consultation, we'll figure out together whether CBT-I, individual psychotherapy, or a combination of both fits your goals best.</p>
       </details>
 
     </div>
@@ -315,9 +315,12 @@ templateEngineOverride: njk,md
     {% from 'macros/google-form.njk' import googleForm %}
     {% set faqContactFields = [
       { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
-      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
       { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
-      { label: "Message / Note", placeholder: "What's on your mind? Include a few days and times that work for you.", type: "textarea", entry: "entry.965605968", required: false }
+      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
+      { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+      { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+      { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
     ] %}
     {{ googleForm(
       formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",

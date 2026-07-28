@@ -1,6 +1,6 @@
 ---
 title: Groups
-title_hidden: false
+title_hidden: true
 meta_title: "Group Therapy | Grey Wellness"
 description: "Small-group therapy sessions at Grey Wellness. Evidence-based, therapist-led groups on specific topics. See current and upcoming offerings."
 date: "git Last Modified"
@@ -11,7 +11,27 @@ hidden_from_nav: true
 templateEngineOverride: njk,md
 ---
 
-<p class="text-muted text-lg leading-relaxed">Group therapy offers something individual therapy cannot: the experience of working through something alongside people who truly get it. Groups at Grey Wellness are small, structured, and led by a licensed therapist.</p>
+<div class="rounded-2xl overflow-hidden mb-4 -mx-4 sm:-mx-6 px-6 sm:px-10 py-20 relative">
+  <img src="{{ '/assets/img/services/groups.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(150 25% 10% / 0.94), hsl(150 25% 10% / 0.72) 50%, hsl(150 25% 10% / 0.25) 80%, transparent 100%)"></div>
+  <div class="relative z-10 max-w-2xl">
+    <p class="text-sm font-semibold tracking-widest uppercase mb-4" style="color: hsl(150 40% 70%)">Groups</p>
+    <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+      Group Therapy
+    </h1>
+    <p class="text-white/70 text-lg leading-relaxed mb-8">
+      Group therapy offers something individual therapy cannot: the experience of working through something alongside people who truly get it. Groups at Grey Wellness are small, structured, and led by a licensed therapist.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#contact-form" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity text-center">
+        Schedule Free Consultation
+      </a>
+      <a href="#what-to-expect" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center">
+        What to Expect →
+      </a>
+    </div>
+  </div>
+</div>
 
 {% set activeGroups = collections.groups_en %}
 
@@ -71,7 +91,7 @@ templateEngineOverride: njk,md
 
 {% endif %}
 
-<div class="mt-14">
+<div id="what-to-expect" class="mt-14">
   <h2 class="text-xl font-bold text-foreground mb-6">What to expect from a group</h2>
   <div class="grid sm:grid-cols-2 gap-4">
     <div class="rounded-xl border border-border bg-card p-6 shadow-sm">

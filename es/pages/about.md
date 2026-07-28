@@ -28,7 +28,7 @@ no_prose: true
       <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Psicoterapeuta</p>
       <h1 class="text-4xl font-bold text-foreground mb-3">Mónica Grey, MS, LCPC, NCC</h1>
       <p class="text-lg text-muted leading-relaxed">Terapeuta. Viajera. Mamá gatuna.</p>
-      <p class="mt-4 text-muted leading-relaxed">Terapia bilingüe en inglés y español para personas adultas que navegan el insomnio, el trauma, el estrés y la vida entre culturas. Todas las sesiones son virtuales.</p>
+      <p class="mt-4 text-muted leading-relaxed">Terapia bilingüe en inglés y español para personas adultas que navegan el insomnio, el trauma, la ansiedad y la vida entre culturas. Todas las sesiones son virtuales.</p>
       <a href="{{ '/es/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
     </div>
   </div>
@@ -42,7 +42,7 @@ no_prose: true
     <div class="space-y-4 text-muted leading-relaxed">
       <p>Soy una inmigrante latina, nacida en Bogotá y criada en Barrancabermeja, Colombia. Construí mi vida y carrera en los Estados Unidos cargando todo lo que ese viaje significó. Esa experiencia no es solo un detalle sobre mí, está en el corazón de cómo trabajo. Entiendo lo que significa estar entre dos mundos, cargar expectativas que nunca se dijeron en voz alta, y pasar años siendo fuerte antes de aprender que está bien no serlo.</p>
       <p>Me convertí en psicoterapeuta porque creo que las cosas que cargamos desde la infancia, desde nuestras culturas, y desde años de simplemente sobrevivir merecen atención real, comprensión real y cambio real. No solo una manera de afrontar, sino una transformación verdadera.</p>
-      <p>Gran parte de mi trabajo se centra en el sueño, el trauma y el estrés como partes profundamente conectadas de cómo funcionamos. Muchas de las personas con las que trabajo son capaces, de alto rendimiento, y parecen estar bien por fuera, pero cargan un agotamiento silencioso. Han llegado al límite de solo manejar. Les ayudo a encontrar la raíz de lo que las tiene atascadas.</p>
+      <p>Gran parte de mi trabajo se centra en el sueño, el trauma y la ansiedad como partes profundamente conectadas de cómo funcionamos. Muchas de las personas con las que trabajo son capaces, de alto rendimiento, y parecen estar bien por fuera, pero cargan un agotamiento silencioso. Han llegado al límite de solo manejar. Les ayudo a encontrar la raíz de lo que las tiene atascadas.</p>
       <p>Soy directa. Valoro la evidencia. Y respeto profundamente el coraje que se necesita para mirar tus propios patrones y decidir que quieres algo diferente. La terapia conmigo es estructurada y orientada a objetivos, pero nunca rígida ni fría. Hay espacio para la honestidad, el humor y la humanidad.</p>
     </div>
   </div>

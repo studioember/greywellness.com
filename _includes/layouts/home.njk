@@ -116,38 +116,41 @@ preload_hero: true
     </p>
   </div>
 
-  <div class="grid sm:grid-cols-2 gap-6">
-    <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+  <div class="space-y-6">
+    <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+      <img src="{{ '/assets/img/services/sleep.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(260 45% 12% / 0.92), hsl(260 45% 12% / 0.5) 55%, hsl(260 45% 12% / 0.1) 100%)"></div>
       <a href="{{ '/' + _lang + '/pages/sleep/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_sleep_aria }}"></a>
-      <div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/15 text-2xl">🌙</span></div>
-      <h3 class="text-xl font-bold text-foreground mb-3">{{ _t.home_sleep_title }}</h3>
-      <p class="text-muted leading-relaxed mb-5">{{ _t.home_sleep_desc }}</p>
-      <span class="text-primary text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-primary z-10"></div>
+      <div class="relative min-h-[320px] md:min-h-[360px] flex flex-col justify-end p-8 md:p-10">
+        <h3 class="text-2xl font-bold text-white mb-3">{{ _t.home_sleep_title }}</h3>
+        <p class="text-white/85 leading-relaxed mb-5 max-w-2xl">{{ _t.home_sleep_desc }}</p>
+        <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+      </div>
     </div>
-    <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/' + _lang + '/pages/trauma/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_trauma_aria }}"></a>
-      <div class="absolute top-0 left-0 right-0 h-1.5 bg-accent"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/30 text-2xl">🤝</span></div>
-      <h3 class="text-xl font-bold text-foreground mb-3">{{ _t.home_trauma_title }}</h3>
-      <p class="text-muted leading-relaxed mb-5">{{ _t.home_trauma_desc }}</p>
-      <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(340 35% 50%)">{{ _t.home_learn_more }}</span>
-    </div>
-    <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/' + _lang + '/pages/childhood-experiences/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_cae_aria }}"></a>
-      <div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/20 text-2xl">🌱</span></div>
-      <h3 class="text-xl font-bold text-foreground mb-3">{{ _t.home_cae_title }}</h3>
-      <p class="text-muted leading-relaxed mb-5">{{ _t.home_cae_desc }}</p>
-      <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 30% 50%)">{{ _t.home_learn_more }}</span>
-    </div>
-    <div class="group relative bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
-      <a href="{{ '/' + _lang + '/pages/stress/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_stress_aria }}"></a>
-      <div class="absolute top-0 left-0 right-0 h-1.5 bg-sage"></div>
-      <div class="mb-4"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-sage/15 text-2xl">⚖️</span></div>
-      <h3 class="text-xl font-bold text-foreground mb-3">{{ _t.home_stress_title }}</h3>
-      <p class="text-muted leading-relaxed mb-5">{{ _t.home_stress_desc }}</p>
-      <span class="text-sage text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+        <img src="{{ '/assets/img/services/trauma.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(340 30% 10% / 0.92), hsl(340 30% 10% / 0.5) 55%, hsl(340 30% 10% / 0.1) 100%)"></div>
+        <a href="{{ '/' + _lang + '/pages/trauma/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_trauma_aria }}"></a>
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-accent z-10"></div>
+        <div class="relative min-h-[300px] flex flex-col justify-end p-8">
+          <h3 class="text-xl font-bold text-white mb-3">{{ _t.home_trauma_title }}</h3>
+          <p class="text-white/85 leading-relaxed mb-5">{{ _t.home_trauma_desc }}</p>
+          <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+        <img src="{{ '/assets/img/services/anxiety.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(215 30% 10% / 0.92), hsl(215 30% 10% / 0.5) 55%, hsl(215 30% 10% / 0.1) 100%)"></div>
+        <a href="{{ '/' + _lang + '/pages/anxiety/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_anxiety_aria }}"></a>
+        <div class="absolute top-0 left-0 right-0 h-1.5 z-10" style="background: hsl(215 30% 20%)"></div>
+        <div class="relative min-h-[300px] flex flex-col justify-end p-8">
+          <h3 class="text-xl font-bold text-white mb-3">{{ _t.home_anxiety_title }}</h3>
+          <p class="text-white/85 leading-relaxed mb-5">{{ _t.home_anxiety_desc }}</p>
+          <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

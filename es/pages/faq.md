@@ -68,7 +68,7 @@ templateEngineOverride: njk,md
       "name": "Tengo insomnio, pero también lucho con otros problemas de salud mental. ¿Pueden ayudarme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. El sueño, el trauma y el estrés suelen estar profundamente conectados, y gran parte de nuestro trabajo vive justo en esa intersección. Además de la TCC-I, ofrecemos psicoterapia individual para el trauma, las experiencias adversas en la infancia, el estrés y agotamiento, y la ansiedad. Durante tu consulta gratuita, definiremos juntos si la TCC-I, la psicoterapia individual, o una combinación de ambas se ajusta mejor a tus metas."
+        "text": "Sí. El sueño, el trauma y la ansiedad suelen estar profundamente conectados, y gran parte de nuestro trabajo vive justo en esa intersección. Además de la TCC-I, ofrecemos psicoterapia individual para el trauma y la ansiedad. Durante tu consulta gratuita, definiremos juntos si la TCC-I, la psicoterapia individual, o una combinación de ambas se ajusta mejor a tus metas."
       }
     },
     {
@@ -209,7 +209,7 @@ templateEngineOverride: njk,md
           Tengo insomnio, pero también lucho con otros problemas de salud mental. ¿Pueden ayudarme?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">Sí. El sueño, el trauma y el estrés suelen estar profundamente conectados, y gran parte de nuestro trabajo vive justo en esa intersección. Además de la TCC-I, ofrecemos psicoterapia individual para el <a href="{{ '/es/pages/trauma/' | url }}" class="text-primary hover:underline">trauma</a>, las <a href="{{ '/es/pages/childhood-experiences/' | url }}" class="text-primary hover:underline">experiencias adversas en la infancia</a>, el <a href="{{ '/es/pages/stress/' | url }}" class="text-primary hover:underline">estrés y agotamiento</a>, y la <a href="{{ '/es/pages/anxiety/' | url }}" class="text-primary hover:underline">ansiedad</a>. Durante tu consulta gratuita, definiremos juntos si la TCC-I, la psicoterapia individual, o una combinación de ambas se ajusta mejor a tus metas.</p>
+        <p class="mt-4 text-muted leading-relaxed">Sí. El sueño, el trauma y la ansiedad suelen estar profundamente conectados, y gran parte de nuestro trabajo vive justo en esa intersección. Además de la TCC-I, ofrecemos psicoterapia individual para el <a href="{{ '/es/pages/trauma/' | url }}" class="text-primary hover:underline">trauma</a> y la <a href="{{ '/es/pages/anxiety/' | url }}" class="text-primary hover:underline">ansiedad</a>. Durante tu consulta gratuita, definiremos juntos si la TCC-I, la psicoterapia individual, o una combinación de ambas se ajusta mejor a tus metas.</p>
       </details>
 
     </div>
@@ -315,9 +315,12 @@ templateEngineOverride: njk,md
     {% from 'macros/google-form.njk' import googleForm %}
     {% set faqContactFields = [
       { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
-      { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
       { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
-      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente? Incluye algunos días y horarios que te funcionen.", type: "textarea", entry: "entry.965605968", required: false }
+      { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false },
+      { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
+      { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+      { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
     ] %}
     {{ googleForm(
       formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
