@@ -13,7 +13,9 @@ no_prose: true
 <div class="not-prose">
 
   <!-- Hero -->
-  <div class="rounded-2xl overflow-hidden mb-4 -mx-4 sm:-mx-6 px-6 sm:px-10 py-20 relative" style="background: hsl(215 30% 20%)">
+  <div class="rounded-2xl overflow-hidden mb-4 -mx-4 sm:-mx-6 px-6 sm:px-10 py-20 relative">
+    <img src="{{ '/assets/img/services/anxiety.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(215 30% 12% / 0.94), hsl(215 30% 12% / 0.72) 50%, hsl(215 30% 12% / 0.25) 80%, transparent 100%)"></div>
     <div class="relative z-10 max-w-2xl">
       <p class="text-sm font-semibold tracking-widest uppercase mb-4" style="color: hsl(215 60% 70%)">Anxiety</p>
       <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
@@ -92,7 +94,8 @@ no_prose: true
   <!-- How we work -->
   <div id="how-we-work" class="py-20">
     <p class="text-xs font-bold uppercase tracking-widest mb-4" style="color: hsl(215 40% 45%)">How We Work</p>
-    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-8">You don't have to live inside the worry. We can change that together.</h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-6">You don't have to live inside the worry. We can change that together.</h2>
+    <p class="text-muted leading-relaxed mb-8 max-w-2xl">Our approach draws primarily on Cognitive Behavioral Therapy (CBT), the gold-standard, evidence-based treatment for anxiety, alongside Mindfulness-Based Stress Reduction (MBSR) to help calm and regulate the nervous system.</p>
     <div class="space-y-4">
       <div class="flex gap-5 rounded-xl border border-border bg-card p-6">
         <div class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background: hsl(215 30% 20% / 0.12); color: hsl(215 40% 45%)">1</div>
@@ -105,7 +108,7 @@ no_prose: true
         <div class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background: hsl(215 30% 20% / 0.12); color: hsl(215 40% 45%)">2</div>
         <div>
           <p class="font-semibold text-foreground mb-1">Calming the nervous system</p>
-          <p class="text-sm text-muted leading-relaxed">Before we work on thought patterns, your body needs to feel safe enough to engage. We use evidence-based somatic and regulation techniques to bring down the baseline level of activation and give you tools you can use in real time.</p>
+          <p class="text-sm text-muted leading-relaxed">Before we work on thought patterns, your body needs to feel safe enough to engage. We draw on Mindfulness-Based Stress Reduction (MBSR) and other somatic regulation techniques to bring down the baseline level of activation and give you tools you can use in real time.</p>
         </div>
       </div>
       <div class="flex gap-5 rounded-xl border border-border bg-card p-6">
@@ -169,9 +172,12 @@ no_prose: true
       {% from 'macros/google-form.njk' import googleForm %}
       {% set contactFields = [
         { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
-        { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
         { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
-        { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+        { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+        { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
+        { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+        { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+        { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
       ] %}
       {{ googleForm(
         formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",

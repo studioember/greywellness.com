@@ -1,8 +1,8 @@
 ---
 title: What We Treat
 title_hidden: false
-meta_title: "Therapy for Insomnia, Trauma & Stress | Grey Wellness"
-description: "Bilingual therapy for insomnia, trauma, adverse childhood experiences, and burnout. Learn what brings people to Grey Wellness and how life can look different."
+meta_title: "Therapy for Insomnia, Trauma & Anxiety | Grey Wellness"
+description: "Bilingual therapy for insomnia, trauma, and anxiety. Learn what brings people to Grey Wellness and how life can look different."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -24,28 +24,14 @@ templateEngineOverride: njk,md
   <a href="{{ '/en/pages/trauma/' | url }}" class="group block rounded-2xl border border-border bg-card p-8 shadow-sm hover:shadow-md transition-all duration-200" style="--hover-color: hsl(340 35% 50%)">
     <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/30 text-2xl mb-4">🤝</span>
     <h2 class="text-xl font-bold text-foreground mb-3">Trauma</h2>
-    <p class="text-muted leading-relaxed mb-4">Something happened, and part of you never fully moved on. You don't have to keep carrying it alone.</p>
+    <p class="text-muted leading-relaxed mb-4">Something happened, and part of you never fully moved on. We often use Cognitive Processing Therapy (CPT), typically 7–13 sessions. You don't have to keep carrying it alone.</p>
     <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(340 35% 50%)">Learn more →</span>
-  </a>
-
-  <a href="{{ '/en/pages/childhood-experiences/' | url }}" class="group block rounded-2xl border border-border bg-card p-8 shadow-sm hover:shadow-md transition-all duration-200">
-    <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/20 text-2xl mb-4">🌱</span>
-    <h2 class="text-xl font-bold text-foreground mb-3">Adverse Childhood Experiences</h2>
-    <p class="text-muted leading-relaxed mb-4">You grew up faster than you should have. What happened then still shows up now. Understanding that connection can change everything.</p>
-    <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(271 30% 50%)">Learn more →</span>
-  </a>
-
-  <a href="{{ '/en/pages/stress/' | url }}" class="group block rounded-2xl border border-border bg-card p-8 shadow-sm hover:shadow-md transition-all duration-200">
-    <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-sage/15 text-2xl mb-4">⚖️</span>
-    <h2 class="text-xl font-bold text-foreground mb-3">Stress Management & Burnout</h2>
-    <p class="text-muted leading-relaxed mb-4">You are always on. Your list never ends. Learning to manage stress is not about doing less — it is about feeling better.</p>
-    <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(150 40% 40%)">Learn more →</span>
   </a>
 
   <a href="{{ '/en/pages/anxiety/' | url }}" class="group block rounded-2xl border border-border bg-card p-8 shadow-sm hover:shadow-md transition-all duration-200">
     <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl text-2xl mb-4" style="background: hsl(215 30% 20% / 0.12)">🌀</span>
     <h2 class="text-xl font-bold text-foreground mb-3">Anxiety</h2>
-    <p class="text-muted leading-relaxed mb-4">Your mind won't stop. Your body is always on alert. Anxiety is not a character flaw — it is a pattern, and patterns can change.</p>
+    <p class="text-muted leading-relaxed mb-4">Your mind won't stop. Your body is always on alert. We draw on CBT and mindfulness-based stress reduction (MBSR) — anxiety is a pattern, and patterns can change.</p>
     <span class="text-sm font-semibold tracking-wide group-hover:underline" style="color: hsl(215 40% 45%)">Learn more →</span>
   </a>
 
@@ -68,9 +54,12 @@ templateEngineOverride: njk,md
     {% from 'macros/google-form.njk' import googleForm %}
     {% set contactFields = [
       { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
-      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
       { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
-      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false }
+      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
+      { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+      { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+      { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
     ] %}
     {{ googleForm(
       formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
