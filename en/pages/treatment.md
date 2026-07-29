@@ -58,7 +58,7 @@ templateEngineOverride: njk,md
       { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
       { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
       { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
-      { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+      { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
       { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
     ] %}
     {{ googleForm(

@@ -3,7 +3,7 @@
 {% for field in fields %}{% set fieldId = "gf-" + uid + "-" + loop.index0 %}
 <div>
 <label class="block text-sm font-medium text-foreground mb-1" for="{{ fieldId }}">{{ field.label }}{% if field.required %}<span class="text-red-500 ml-0.5">*</span>{% endif %}</label>
-{% if field.type == "textarea" %}<textarea id="{{ fieldId }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} rows="4" class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="{{ field.placeholder }}"></textarea>{% elif field.type == "select" %}<select id="{{ fieldId }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary"><option value="" disabled selected>{{ field.placeholder }}</option>{% for opt in field.options %}<option value="{{ opt.value | default(opt) }}">{{ opt.label | default(opt) }}</option>{% endfor %}</select>{% else %}<input id="{{ fieldId }}" type="{{ field.type }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="{{ field.placeholder }}">{% endif %}
+{% if field.type == "textarea" %}<textarea id="{{ fieldId }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} rows="4" class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="{{ field.placeholder }}"></textarea>{% elif field.type == "select" %}<select id="{{ fieldId }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary">{% if not field.default %}<option value="" disabled selected>{{ field.placeholder }}</option>{% endif %}{% for opt in field.options %}{% set optValue = opt.value | default(opt) %}<option value="{{ optValue }}"{{ " selected" if optValue == field.default }}>{{ opt.label | default(opt) }}</option>{% endfor %}</select>{% else %}<input id="{{ fieldId }}" type="{{ field.type }}" data-gf-entry="{{ field.entry }}" {{ "required" if field.required }} class="w-full rounded-md border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary" placeholder="{{ field.placeholder }}">{% endif %}
 </div>
 {% endfor %}
 <div class="cf-turnstile" data-sitekey="0x4AAAAAAC_XnSI6qqVsURDh" data-theme="auto"></div>
@@ -37,6 +37,9 @@
       }
       const data = new FormData();
       form.querySelectorAll('[data-gf-entry]').forEach(function(el) {
+        // Never send empty values: Google rejects the entire response (400) if an
+        // empty string is submitted for a multiple-choice/dropdown question.
+        if (!el.value) return;
         data.append(el.dataset.gfEntry, el.value);
       });
       fetch('https://docs.google.com/forms/d/e/{{ formResponseId }}/formResponse', {

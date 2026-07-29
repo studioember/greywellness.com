@@ -28,7 +28,8 @@
     "dev": "yarn run dev:eleventy & yarn run dev:css",
     "dev:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --watch --content \"./**/*.{njk,liquid,html,md}\"",
     "dev:eleventy": "eleventy --serve",
-    "build": "yarn build:css && yarn build:eleventy && yarn prettier --write \"output/site/**/*.html\"",
+    "build": "yarn build:css && yarn build:eleventy && yarn prettier --write \"output/site/**/*.html\" && yarn test:forms",
+    "test:forms": "node scripts/verify-forms.mjs",
     "build:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --minify --content \"./**/*.{njk,liquid,html,md}\"",
     "build:eleventy": "eleventy",
     "format:html": "prettier --write 'output/site/**/*.html'"
