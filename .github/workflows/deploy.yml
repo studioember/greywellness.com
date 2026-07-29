@@ -31,9 +31,15 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      # `yarn build` ends with `yarn test:forms`, which validates every rendered
+      # form against the live Google Form. It runs before the artifact upload, so
+      # a broken form blocks the deploy. FORMS_STRICT makes an unreachable form a
+      # failure rather than a skip — locally it stays a warning so offline builds
+      # still work.
       - name: Build
         run: yarn build
-        # env:
+        env:
+          FORMS_STRICT: '1'
         #   ELEVENTY_PATH_PREFIX: /greywellness.com/
 
       - uses: actions/upload-pages-artifact@v3
