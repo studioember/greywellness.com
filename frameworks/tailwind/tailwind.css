@@ -82,3 +82,9 @@
 .bg-surface        { background-color: hsl(var(--surface)); }
 .bg-surface-warm   { background-color: hsl(var(--surface-warm)); }
 .bg-hero           { background-color: hsl(var(--hero-overlay)); }
+
+/* Blog post floats: a side image may overhang its paragraph, but the next
+   section heading always starts on a clean line below it, and no float
+   escapes the article into the author bio below. */
+.prose h2 { clear: both; }
+.prose::after { content: ""; display: block; clear: both; }

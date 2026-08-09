@@ -250,6 +250,9 @@
   .z-50 {
     z-index: 50;
   }
+  .clear-both {
+    clear: both;
+  }
   .-mx-4 {
     margin-inline: calc(var(--spacing) * -4);
   }
@@ -2219,6 +2222,36 @@
       right: calc(var(--spacing) * -8);
     }
   }
+  .md\:float-left {
+    @media (width >= 48rem) {
+      float: left;
+    }
+  }
+  .md\:float-right {
+    @media (width >= 48rem) {
+      float: right;
+    }
+  }
+  .md\:mt-1 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:mt-2 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:mr-8 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:ml-8 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 8);
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2257,6 +2290,11 @@
   .md\:min-h-\[360px\] {
     @media (width >= 48rem) {
       min-height: 360px;
+    }
+  }
+  .md\:w-2\/5 {
+    @media (width >= 48rem) {
+      width: calc(2/5 * 100%);
     }
   }
   .md\:grid-cols-3 {
@@ -2450,6 +2488,14 @@
 }
 .bg-hero {
   background-color: hsl(var(--hero-overlay));
+}
+.prose h2 {
+  clear: both;
+}
+.prose::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 @property --tw-translate-x {
   syntax: "*";

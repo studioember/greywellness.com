@@ -29,7 +29,9 @@
   <hr class="mt-8 border-border">
 </header>
 
-{% if image %}
+{# `image` still drives og:image / the listing card even when the post opts out
+   of the full-width hero and places it inline instead. #}
+{% if image and hero_hidden != true %}
 <div class="not-prose mb-10 rounded-2xl overflow-hidden">
   <img
     src="{{ image | url }}"
