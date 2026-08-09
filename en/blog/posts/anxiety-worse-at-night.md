@@ -5,14 +5,19 @@ description: "Anxious thoughts hit the second your head touches the pillow? Here
 date: 2026-08-09
 author: "Mónica Grey, LCPC"
 category: "Anxiety"
-image: "/assets/img/blog/anxiety-worse-at-night.jpg"
-image_alt: "Woman lying awake in bed at night, anxious thoughts keeping her from falling asleep"
+image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
+image_alt: "Woman lying awake in bed at night pressing a pillow over her face, unable to sleep because of anxiety"
 image_icon: "🌙"
 og_type: "article"
+hero_hidden: true
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
 ---
+
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Woman lying awake in bed at night pressing a pillow over her face, unable to sleep because of anxiety" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 It's 3am. All day long you didn't think about the bills you have to pay, the car that's been 6 months past maintenance, or that screenshot you sent to the wrong person. But the second your head touches the pillow, these thoughts rush 1000 mph. Intrusive thoughts that showed up with no warning and no invitation. And we already know there's nothing worse than a guest you didn't invite. That guest arrived, and arrived loud, and shows no sign of leaving anytime soon.
 
@@ -24,9 +29,17 @@ In our [previous blog on why you wake up at 3 am](https://greywellness.com/en/bl
 
 ## The Prefrontal Cortex Clocked Out Hours Ago
 
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/nighttime-anxiety-racing-thoughts-in-bed.jpg" alt="Person buried under a white duvet in the morning, exhausted after a night of anxious, racing thoughts" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
+
 For anyone not familiar with the prefrontal cortex, think of it as the logical part of the brain, the one that puts the brakes on impulses and keeps things in perspective. The amygdala, on the other hand, is that fire alarm that sometimes goes off without any actual fire. What usually happens is that your prefrontal cortex needs to recharge by the end of the day, and the more tired you get, the less logical and reasonable you are. The amygdala, meanwhile, runs 24/7, because its job is to detect threats. Studies estimate the amygdala becomes up to 60% more reactive to negative stimuli when a person is sleep deprived, with less connection to the rational part of the brain, the one that's able to tell a false alarm from real danger.
 
 ## Distractions? Please.
+
+<figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
+  <img src="/assets/img/blog/scrolling-phone-in-bed-at-night-anxiety.jpg" alt="Person lying in bed in a dark room scrolling on their phone, the screen the only light in the room" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 To make things worse, distractions at night tend to shrink. You, your bed, silence, closed eyes. It's a huge shift from daytime, when you're constantly distracted by work, school, friends, family, TV, and when none of that's around, your phone. Distraction usually helps dissolve ruminating thoughts, which feels great in the moment. But sometimes distraction is really just avoidance. When you have thoughts you need to process and never give yourself the space to do it during the day, your brain is going to do it the moment you're no longer distracted, and that usually happens, guess when, when you go to bed. Does it all make more sense now?
 
@@ -44,6 +57,10 @@ Anxiety that keeps you up is a loop, which means improving your sleep cycle is o
 - **To-do list:** close out your day by writing down what you need to do tomorrow. If thoughts about tasks tend to show up in the middle of the night, keep pen and paper by your bed and write them down right there.
 - **Schedule worry time:** if you can't sleep because you're worried about something, block off time in your day just for worrying. If the problem has a solution, you'll find it more easily the next day; and if it doesn't, lying awake turning it over in your head isn't going to give you one either.
 - **Only get into bed when you're actually drowsy and ready to sleep:** I know, I sound like a broken record, but it's one of the most effective techniques out there.
+
+<figure class="not-prose clear-both mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-2">
+  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Woman in a robe reading a book by candlelight with a cup of tea, a calm wind-down routine before bed" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Having anxiety and insomnia doesn't mean you have to live with them. There's a way out. Don't live in the loop. You deserve so much more.
 

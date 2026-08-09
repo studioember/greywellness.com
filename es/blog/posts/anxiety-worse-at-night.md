@@ -5,14 +5,19 @@ description: "¿Los pensamientos llegan justo cuando apoyas la cabeza en la almo
 date: 2026-08-09
 author: "Mónica Grey, LCPC"
 category: "Ansiedad"
-image: "/assets/img/blog/anxiety-worse-at-night.jpg"
-image_alt: "Mujer despierta en la cama de noche, con pensamientos de ansiedad que no la dejan dormir"
+image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
+image_alt: "Mujer despierta en la cama de noche apretando una almohada sobre su cara, sin poder dormir por la ansiedad"
 image_icon: "🌙"
 og_type: "article"
+hero_hidden: true
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
 ---
+
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Mujer despierta en la cama de noche apretando una almohada sobre su cara, sin poder dormir por la ansiedad" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Son las 3am. Durante todo el día no pensaste en las cuentas por pagar, en el carro que hace 6 meses tenías que llevar a mantenimiento, o en ese pantallazo que enviaste a la persona equivocada. Pero en el momento en que tu cabeza toca la almohada, aquí vienen estos pensamientos a mil por hora. Pensamientos intrusivos que llegaron sin alerta y sin invitación. Y ya sabemos que no hay nada peor que una visita que no has invitado. Esa visita llegó, y llegó bien ruidosa, y no da señales de querer irse pronto.
 
@@ -24,9 +29,17 @@ En [nuestro blog anterior sobre por qué te despiertas a las 3 am](https://greyw
 
 ## La corteza prefrontal terminó su turno hace horas
 
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/nighttime-anxiety-racing-thoughts-in-bed.jpg" alt="Persona tapada con un edredón blanco por la mañana, agotada tras una noche de pensamientos acelerados por la ansiedad" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
+
 Para quienes no están familiarizados con la corteza prefrontal, piensen en esta como la parte lógica del cerebro, la que frena los impulsos y pone las cosas en perspectiva. La amígdala, en cambio, es esa alarma contra incendios que a veces se dispara sin que haya fuego real. Lo que sucede por lo general es que tu corteza prefrontal necesita recargar al final del día, y entre más cansadx te sientas, menos lógicx y razonable eres. La amígdala, en cambio, tiene horario 24/7, porque su trabajo es detectar alertas. Estudios estiman que la amígdala se vuelve hasta un 60% más reactiva a estímulos negativos cuando a una persona le falta sueño, y que además hay menos conexión con la parte racional, la que es capaz de distinguir una falsa alarma de un peligro real.
 
 ## ¿Distracciones? Por favor
+
+<figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
+  <img src="/assets/img/blog/scrolling-phone-in-bed-at-night-anxiety.jpg" alt="Persona acostada en la cama en un cuarto oscuro mirando el celular, con la pantalla como única luz" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Para rematar, las distracciones durante la noche tienden a disminuir. Tú, tu camita, silencio, ojos cerrados. Es un cambio enorme frente al día, cuando estás constantemente distraídx con el trabajo, el estudio, amigxs, familia, la tele, y cuando no hay nada de eso, la vieja confiable: el celular. La distracción por lo general ayuda a disipar los pensamientos rumiantes, lo cual es genial en el momento. Sin embargo, a veces distracción también significa evitación. Cuando tienes pensamientos que procesar y no te das el espacio de hacerlo durante el día, tu cerebro lo va a hacer cuando ya no estés distraídx, y por lo general eso sucede, adivina, cuando te vas a la cama. ¿Ahora tiene más sentido?
 
@@ -44,6 +57,10 @@ La ansiedad que no te deja dormir es un bucle, lo que significa que mejorar tu c
 - **To-do list:** haz un cierre del día escribiendo lo que tienes que hacer mañana. Si por lo general te vienen pensamientos en medio de la noche sobre qué tienes que hacer, mantén papel y lápiz al lado de tu cama y escríbelos ahí.
 - **Agenda tiempo para preocuparte:** si no puedes dormir porque estás preocupadx por algo, agenda un espacio del día para eso. Si el problema tiene solución, la vas a encontrar más fácil al día siguiente; y si no la tiene, quedarte despierto dándole vueltas tampoco te la va a dar.
 - **Ve a la cama solo cuando estés somnolientx y listx para dormir:** ya sé que sueno como disco rayado, pero es una de las técnicas más efectivas que existen.
+
+<figure class="not-prose clear-both mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-2">
+  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Mujer en bata leyendo un libro a la luz de las velas con una taza de té, una rutina de transición tranquila antes de dormir" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Tener ansiedad e insomnio no significa que tengas que vivir con ellos. ¡Hay solución! No vivas en un bucle. Mereces mucho más.
 
