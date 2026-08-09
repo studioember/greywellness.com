@@ -30,7 +30,7 @@ In our [previous blog on why you wake up at 3 am](https://greywellness.com/en/bl
 ## The Prefrontal Cortex Clocked Out Hours Ago
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/nighttime-anxiety-racing-thoughts-in-bed.jpg" alt="Person buried under a white duvet in the morning, exhausted after a night of anxious, racing thoughts" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Woman lying in bed at night with the duvet pulled up over her face, eyes wide open and unable to sleep" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 For anyone not familiar with the prefrontal cortex, think of it as the logical part of the brain, the one that puts the brakes on impulses and keeps things in perspective. The amygdala, on the other hand, is that fire alarm that sometimes goes off without any actual fire. What usually happens is that your prefrontal cortex needs to recharge by the end of the day, and the more tired you get, the less logical and reasonable you are. The amygdala, meanwhile, runs 24/7, because its job is to detect threats. Studies estimate the amygdala becomes up to 60% more reactive to negative stimuli when a person is sleep deprived, with less connection to the rational part of the brain, the one that's able to tell a false alarm from real danger.

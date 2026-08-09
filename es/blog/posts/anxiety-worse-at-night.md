@@ -30,7 +30,7 @@ En [nuestro blog anterior sobre por qué te despiertas a las 3 am](https://greyw
 ## La corteza prefrontal terminó su turno hace horas
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/nighttime-anxiety-racing-thoughts-in-bed.jpg" alt="Persona tapada con un edredón blanco por la mañana, agotada tras una noche de pensamientos acelerados por la ansiedad" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Mujer acostada en la cama de noche tapándose la cara con el edredón, con los ojos bien abiertos y sin poder dormir" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Para quienes no están familiarizados con la corteza prefrontal, piensen en esta como la parte lógica del cerebro, la que frena los impulsos y pone las cosas en perspectiva. La amígdala, en cambio, es esa alarma contra incendios que a veces se dispara sin que haya fuego real. Lo que sucede por lo general es que tu corteza prefrontal necesita recargar al final del día, y entre más cansadx te sientas, menos lógicx y razonable eres. La amígdala, en cambio, tiene horario 24/7, porque su trabajo es detectar alertas. Estudios estiman que la amígdala se vuelve hasta un 60% más reactiva a estímulos negativos cuando a una persona le falta sueño, y que además hay menos conexión con la parte racional, la que es capaz de distinguir una falsa alarma de un peligro real.
