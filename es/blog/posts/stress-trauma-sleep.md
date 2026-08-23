@@ -1,6 +1,7 @@
 ---
 title: "No Puedo Dormir Después de Algo Estresante: Cómo el Estrés y el Trauma Afectan Nuestro Sueño"
-description: "Descubre por qué el estrés y el trauma pueden dejarte con el cuerpo agotado pero la mente alerta, cómo el estrés crónico contribuye al insomnio y qué puede ayudarte."
+meta_title: "No Puedo Dormir Después de Algo Estresante | Trauma y Sueño"
+description: "¿No puedes dormir después de algo estresante o traumático? Descubre por qué sigues en alerta y qué tratamientos pueden ayudarte a descansar."
 date: 2026-08-23
 author: "Mónica Grey, LCPC"
 category: "Trauma"
@@ -61,7 +62,7 @@ Una habitación más fresca, menos tiempo frente a las pantallas o una mejor rut
 ## ¿Y Qué Ocurre con el Estrés Crónico?
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/chronic-stress-work-elisa-ventur.jpg" alt="Mujer inclinada frente a una computadora con una mano sobre la frente, abrumada por el estrés laboral crónico" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Mujer inclinada frente a una computadora con una mano sobre la frente, abrumada por el estrés laboral crónico" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Aquí aparece una tercera categoría que muchas veces se queda por fuera de la conversación.
@@ -90,7 +91,7 @@ A veces, el estrés es lo que inicia las malas noches, pero ciertos pensamientos
 ## Durante el Día Todo Está “Bien”... Hasta que Apagas la Luz
 
 <figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
-  <img src="/assets/img/blog/trauma-hypervigilance-night-greta-bartolini.jpg" alt="Silueta de una mujer sentada y despierta en la cama durante la noche, con luces cálidas al otro lado de la ventana" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/trauma-hypervigilance-at-night.jpg" alt="Silueta de una mujer sentada y despierta en la cama durante la noche, con luces cálidas al otro lado de la ventana" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Para muchas personas, el problema no es que su cuerpo haya olvidado cómo dormir. El problema son los pensamientos que aparecen tan pronto desaparecen las distracciones del día.
@@ -165,7 +166,7 @@ La consistencia suele ayudar más que esforzarte muchísimo en una sola noche. N
 ## Deja de Mirar el Reloj —Sí, Esa También Cuenta
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/checking-phone-in-bed-nubelson-fernandes.jpg" alt="Hombre acostado en la cama revisando su teléfono en vez de descansar" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Hombre acostado en la cama revisando su teléfono en vez de descansar" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Hay un comportamiento pequeño que merece su propia sección porque es muy común: revisar la hora cada vez que despiertas.
@@ -197,6 +198,8 @@ Tu cuerpo no está saboteando tu descanso. Está intentando terminar una convers
 Y ese apoyo debe encontrarte tal como eres. No deberías tener que traducir tu identidad, tu idioma ni tu experiencia a algo más familiar para que alguien pueda entenderte y ayudarte. Ya sea en español o en inglés, el objetivo es el mismo: que tu sistema nervioso pueda volver a sentir que descansar es seguro.
 
 No tienes que resolverlo solx.
+
+Si el estrés, el trauma, la ansiedad y el insomnio se están alimentando entre sí, no tienes que decidir solx por dónde empezar. En Grey Wellness ofrezco [terapia para el trauma](/es/pages/trauma/) y tratamiento especializado con [TCC-I para el insomnio](/es/pages/sleep/), con un plan que tiene en cuenta cómo ambos pueden estar afectándote. Puedes comenzar con una [consulta gratuita de 15 minutos](/es/pages/contact/) para conversar sobre el apoyo que mejor se adapte a ti.
 
 ---
 

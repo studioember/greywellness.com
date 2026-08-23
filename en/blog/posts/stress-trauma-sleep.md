@@ -1,6 +1,7 @@
 ---
 title: "I Can't Sleep After Something Stressful: How Stress and Trauma Affect Sleep"
-description: "Learn why stress and trauma can leave you tired but wired at night, how chronic stress can contribute to insomnia, and what can help your nervous system rest."
+meta_title: "Can't Sleep After Stress or Trauma? Why It Happens"
+description: "Can't sleep after something stressful or traumatic? Learn why you feel tired but wired, how stress affects sleep, and which treatments can help."
 date: 2026-08-23
 author: "Mónica Grey, LCPC"
 category: "Trauma"
@@ -61,7 +62,7 @@ A cooler room, less screen time, or a better bedtime routine may help, but they 
 ## What About Chronic Stress?
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/chronic-stress-work-elisa-ventur.jpg" alt="Woman leaning over a laptop with one hand on her forehead while feeling overwhelmed by chronic work stress" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Woman leaning over a laptop with one hand on her forehead while feeling overwhelmed by chronic work stress" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 There's a third category that often gets left out of this conversation.
@@ -90,7 +91,7 @@ Sometimes stress starts the bad nights, but certain thoughts and behaviors keep 
 ## Everything Is “Fine” During the Day... Until You Turn Off the Light
 
 <figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
-  <img src="/assets/img/blog/trauma-hypervigilance-night-greta-bartolini.jpg" alt="Silhouette of a woman sitting awake in bed at night while warm lights glow outside the window" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/trauma-hypervigilance-at-night.jpg" alt="Silhouette of a woman sitting awake in bed at night while warm lights glow outside the window" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 For many people, the problem isn't that their body has forgotten how to sleep. The problem is what happens when the distractions of the day disappear.
@@ -165,7 +166,7 @@ Consistency is usually more helpful than putting in enormous effort for one nigh
 ## Stop Checking the Clock—Yes, That Counts Too
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/checking-phone-in-bed-nubelson-fernandes.jpg" alt="Man lying in bed and checking his phone instead of resting" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Man lying in bed and checking his phone instead of resting" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 There's one small behavior that deserves its own section because it's so common: checking the time whenever you wake up.
@@ -197,6 +198,8 @@ Your body isn't sabotaging your rest. It's trying to finish a conversation that 
 That support should meet you as you are. You shouldn't have to translate your identity, language, or experience into something more familiar just to be understood and helped. Whether that support happens in English or Spanish, the goal is the same: helping your nervous system feel safe enough to rest again.
 
 You don't have to figure it out alone.
+
+If stress, trauma, anxiety, and insomnia are feeding one another, you don't have to decide which one to address on your own. At Grey Wellness, I offer bilingual [therapy for trauma](/en/pages/trauma/) and specialized [CBT-I treatment for insomnia](/en/pages/sleep/), with a plan that considers how both may be affecting you. You can start with a [free 15-minute consultation](/en/pages/contact/) to talk about what support might fit.
 
 ---
 
