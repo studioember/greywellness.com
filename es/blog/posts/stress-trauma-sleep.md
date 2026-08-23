@@ -60,6 +60,10 @@ Una habitación más fresca, menos tiempo frente a las pantallas o una mejor rut
 
 ## ¿Y Qué Ocurre con el Estrés Crónico?
 
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/chronic-stress-work-elisa-ventur.jpg" alt="Mujer inclinada frente a una computadora con una mano sobre la frente, abrumada por el estrés laboral crónico" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
+
 Aquí aparece una tercera categoría que muchas veces se queda por fuera de la conversación.
 
 El estrés crónico ocurre cuando las demandas no desaparecen o cuando una viene detrás de otra sin dejar suficiente tiempo para recuperarte: cuidar a un familiar enfermo, vivir con inseguridad económica, trabajar en un ambiente hostil, enfrentar discriminación, atravesar un proceso migratorio o sostener responsabilidades que nunca parecen terminar.
@@ -84,6 +88,10 @@ Esto no significa que el estrés crónico se convierta automáticamente en traum
 A veces, el estrés es lo que inicia las malas noches, pero ciertos pensamientos y comportamientos terminan manteniéndolas incluso cuando las circunstancias comienzan a mejorar. Si quieres entender cómo ocurre este proceso, puedes leer el artículo sobre [el Modelo de las 3P y el desarrollo del insomnio](/es/blog/posts/why-does-insomnia-happen/).
 
 ## Durante el Día Todo Está “Bien”... Hasta que Apagas la Luz
+
+<figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
+  <img src="/assets/img/blog/trauma-hypervigilance-night-greta-bartolini.jpg" alt="Silueta de una mujer sentada y despierta en la cama durante la noche, con luces cálidas al otro lado de la ventana" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Para muchas personas, el problema no es que su cuerpo haya olvidado cómo dormir. El problema son los pensamientos que aparecen tan pronto desaparecen las distracciones del día.
 
@@ -155,6 +163,10 @@ Un sistema nervioso que lleva tiempo en alerta probablemente no cambiará despu�
 La consistencia suele ayudar más que esforzarte muchísimo en una sola noche. No tienes que ejecutar una rutina perfecta. Necesitas señales suficientemente estables, repetidas con paciencia.
 
 ## Deja de Mirar el Reloj —Sí, Esa También Cuenta
+
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/checking-phone-in-bed-nubelson-fernandes.jpg" alt="Hombre acostado en la cama revisando su teléfono en vez de descansar" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 Hay un comportamiento pequeño que merece su propia sección porque es muy común: revisar la hora cada vez que despiertas.
 

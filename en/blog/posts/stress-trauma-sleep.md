@@ -60,6 +60,10 @@ A cooler room, less screen time, or a better bedtime routine may help, but they 
 
 ## What About Chronic Stress?
 
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/chronic-stress-work-elisa-ventur.jpg" alt="Woman leaning over a laptop with one hand on her forehead while feeling overwhelmed by chronic work stress" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
+
 There's a third category that often gets left out of this conversation.
 
 Chronic stress develops when demands don't go away, or when one follows another without giving you enough time to recover. It might come from caring for a sick relative, living with financial insecurity, working in a hostile environment, experiencing discrimination, navigating immigration, or carrying responsibilities that never seem to end.
@@ -84,6 +88,10 @@ This doesn't mean that chronic stress automatically becomes trauma. However, whe
 Sometimes stress starts the bad nights, but certain thoughts and behaviors keep them going even after life begins to settle down. You can learn more about that process in the article on [the 3P Model and how insomnia develops](/en/blog/posts/why-does-insomnia-happen/).
 
 ## Everything Is “Fine” During the Day... Until You Turn Off the Light
+
+<figure class="not-prose mb-6 md:float-left md:w-2/5 md:mr-8 md:mt-1">
+  <img src="/assets/img/blog/trauma-hypervigilance-night-greta-bartolini.jpg" alt="Silhouette of a woman sitting awake in bed at night while warm lights glow outside the window" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 For many people, the problem isn't that their body has forgotten how to sleep. The problem is what happens when the distractions of the day disappear.
 
@@ -155,6 +163,10 @@ A nervous system that has spent a long time on alert probably won't change after
 Consistency is usually more helpful than putting in enormous effort for one night. You don't need to perform a perfect routine. You need steady enough signals, repeated with patience.
 
 ## Stop Checking the Clock—Yes, That Counts Too
+
+<figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
+  <img src="/assets/img/blog/checking-phone-in-bed-nubelson-fernandes.jpg" alt="Man lying in bed and checking his phone instead of resting" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+</figure>
 
 There's one small behavior that deserves its own section because it's so common: checking the time whenever you wake up.
 
