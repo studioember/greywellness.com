@@ -64,4 +64,9 @@ Anxiety that keeps you up is a loop, which means improving your sleep cycle is o
 
 Having anxiety and insomnia doesn't mean you have to live with them. There's a way out. Don't live in the loop. You deserve so much more.
 
-If the nights keep looking like this, you don't have to figure it out alone. I work with adults on exactly this in [anxiety therapy](https://greywellness.com/en/pages/anxiety/) and [therapy for insomnia](https://greywellness.com/en/pages/sleep/), in English and Spanish.
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Nighttime Anxiety Keeping You Awake?</p>
+  <p class="text-foreground font-semibold text-base mb-1">Break the panic-insomnia cycle with evidence-based therapy.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">We help high-achieving adults soothe night panic, calm racing thoughts, and sleep peacefully through CBT-I and anxiety therapy. Virtual sessions across Maryland in English and Spanish.</p>
+  <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Schedule a Free 15-Minute Consultation →</a>
+</div>

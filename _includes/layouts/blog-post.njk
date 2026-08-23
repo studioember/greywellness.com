@@ -6,6 +6,41 @@
 {% set _blogUrl = '/' + _lang + '/blog/' %}
 {% set _contactUrl = '/' + _lang + '/pages/contact/' | url %}
 {% set _authorBio = author_bio or _t.blog_default_author_bio %}
+{% set _postImage = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (description or "") | dump | safe }},
+  "image": {{ _postImage | dump | safe }},
+  "inLanguage": {{ _lang | dump | safe }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "datePublished": "{{ page.date | dateISO }}",
+  "dateModified": "{{ page.date | dateISO }}",
+  "articleSection": {{ (category or "Insomnia & Sleep") | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": {{ (author or "Mónica Grey, MS, LCPC, NCC") | dump | safe }},
+    "jobTitle": "CBT-I Therapist & Licensed Clinical Professional Counselor",
+    "url": "{{ site.url }}/{{ _lang }}/pages/about/",
+    "sameAs": "https://www.psychologytoday.com/profile/1256952"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Grey Wellness",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/logo.png"
+    }
+  }
+}
+</script>
 
 <div class="not-prose mb-6">
   <a href="{{ _blogUrl | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">

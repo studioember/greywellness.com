@@ -91,9 +91,12 @@ La Terapia Cognitivo-Conductual para el Insomnio, más conocida como TCC-I, es l
 
 Por ahora, si has llegado hasta aquí leyendo y pensaste "vale, pero esto es literalmente mi vida", eso no es una coincidencia, y no es algo que tengas que enfrentar solx a fuerza de voluntad.
 
----
-
-¿Tienes preguntas, o sientes que esto te suena demasiado familiar? Escríbenos, hablemos de cómo recuperar tus noches (y tu cordura).
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿Listx para romper el ciclo del insomnio?</p>
+  <p class="text-foreground font-semibold text-base mb-1">Tu cerebro aprendió a estar alerta en la cama. La TCC-I le enseña a descansar.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">La TCC-I desactiva los factores perpetuantes que te mantienen despiertx. Nuestro programa estructurado de 8 sesiones te ayuda a recuperar un sueño profundo sin depender de pastillas. Sesiones virtuales en Maryland en español e inglés.</p>
+  <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda tu Consulta Gratuita de TCC-I →</a>
+</div>
 
 ## Referencias
 

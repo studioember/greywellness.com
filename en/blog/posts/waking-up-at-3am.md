@@ -49,3 +49,10 @@ Would you force yourself to eat more when you're already full? So why would you 
 - **Reframe your thoughts.** Waking up once in a blue moon doesn't mean you have insomnia. Don't stress about it! Those very worry-thoughts are part of what turns one bad night of sleep into insomnia. Let yourself believe that one night doesn't mean there's a problem. And if the sleepless nights keep piling up, see a sleep professional — like me!
 
 Waking up at 3 am every once in a while doesn't mean you have a problem. It means you're human! That doesn't make it any less stressful or tedious. Give yourself permission to normalize it, and to get help if it gets worse. Next time you wake up at 3 am, remember this article: there's nothing wrong with you. You're human!
+
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Waking Up at 3 AM Night After Night?</p>
+  <p class="text-foreground font-semibold text-base mb-1">You don't have to keep fighting with your ceiling alone.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">Cognitive Behavioral Therapy for Insomnia (CBT-I) is the gold-standard, medication-free approach that breaks the middle-of-the-night waking loop in just 6 to 8 sessions. Virtual care is available across Maryland in English and Spanish.</p>
+  <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Learn More About CBT-I Sleep Therapy →</a>
+</div>

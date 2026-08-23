@@ -49,3 +49,10 @@ No hay nada malo en tu cerebro ni en tu cuerpo. No se te olvidó dormir, y despe
 - **Replantea tus pensamientos.** Que te hayas despertado una vez cada luna azul no significa que tengas insomnio. ¡No te preocupes! Justamente estos pensamientos de preocupación son parte de lo que convierte una mala noche de sueño en insomnio. Permítete pensar que una sola noche no significa que haya un problema. Y si las noches sin dormir se repiten, consulta a unx profesional del sueño, ¡como yo!
 
 Despertarte a las 3 am de vez en cuando no significa que tengas un problema. ¡Significa que eres humanx! Eso no quita que sea estresante o tedioso. Date la oportunidad de normalizarlo y de buscar ayuda si empeora. La próxima vez que te despiertes a las 3 am, recuerda este artículo: no hay ningún problema contigo. ¡Eres humanx!
+
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿Despertándote a las 3 AM noche tras noche?</p>
+  <p class="text-foreground font-semibold text-base mb-1">No tienes que seguir lidiando con esto a solas.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">La Terapia Cognitivo Conductual para el Insomnio (TCC-I) es el tratamiento de referencia sin medicamentos para romper el ciclo de desvelos en solo 6 a 8 semanas. Sesiones virtuales en Maryland en español e inglés.</p>
+  <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Conoce la Terapia para el Insomnio (TCC-I) →</a>
+</div>

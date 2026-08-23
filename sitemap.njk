@@ -8,7 +8,9 @@ eleventyExcludeFromCollections: true
   {%- for item in collections.all %}
   {%- if item.data.sitemap != false and
          "CLAUDE" not in item.url and
+         "AGENTS" not in item.url and
          "README" not in item.url and
+         "workshops" not in item.url and
          "__" not in item.url %}
   {%- set _itemAlternates = item.url | locale_links %}
   <url>
@@ -24,8 +26,8 @@ eleventyExcludeFromCollections: true
     {%- if item.date %}
     <lastmod>{{ item.date | dateISO }}</lastmod>
     {%- endif %}
-    <changefreq>{% if "/en/" in item.url and item.fileSlug == "index" %}weekly{% else %}monthly{% endif %}</changefreq>
-    <priority>{% if item.fileSlug == "index" and "/en/" in item.url %}1.0{% elif "/en/pages/" in item.url %}0.8{% elif "/es/" in item.url %}0.7{% else %}0.6{% endif %}</priority>
+    <changefreq>{% if item.fileSlug == "index" %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if item.fileSlug == "index" %}1.0{% elif "/sleep/" in item.url or "/insomnia/" in item.url %}0.9{% elif "/pages/" in item.url %}0.8{% elif "/blog/" in item.url %}0.7{% else %}0.6{% endif %}</priority>
   </url>
   {%- endif %}
   {%- endfor %}

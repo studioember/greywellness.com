@@ -12,16 +12,70 @@ preload_hero: true
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MedicalOrganization"],
+  "@type": ["LocalBusiness", "MedicalBusiness", "MedicalOrganization"],
   "name": "Grey Wellness",
   "description": "{{ site.description }}",
   "url": "{{ site.url }}",
+  "telephone": "+1-240-203-8879",
+  "email": "contact@greywellness.com",
   "priceRange": "$$",
+  "image": "{{ site.url }}/assets/img/og-image.jpg",
+  "medicalSpecialty": ["SleepMedicine", "Psychiatric", "CommunityHealth"],
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Maryland",
+      "sameAs": "https://en.wikipedia.org/wiki/Maryland"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Montgomery County, Maryland"
+    },
+    {
+      "@type": "City",
+      "name": "Bethesda"
+    },
+    {
+      "@type": "City",
+      "name": "Rockville"
+    },
+    {
+      "@type": "City",
+      "name": "Silver Spring"
+    }
+  ],
+  "sameAs": [
+    "https://www.psychologytoday.com/profile/1256952",
+    "https://www.latinxtherapy.com",
+    "https://www.nbcc.org",
+    "https://mentaya.com",
+    "https://www.instagram.com/grey_wellness/",
+    "https://www.facebook.com/profile.php?id=61574329432986",
+    "https://www.linkedin.com/company/grey-wellness"
+  ],
   "founder": {
     "@type": "Person",
     "name": "Mónica Grey",
     "jobTitle": "{{ _t.home_schema_job_title }}",
-    "knowsLanguage": ["en", "es"]
+    "honorificSuffix": "MS, LCPC, NCC",
+    "knowsLanguage": ["en", "es"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Johns Hopkins University"
+    },
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Society of Behavioral Sleep Medicine"
+      },
+      {
+        "@type": "Organization",
+        "name": "National Board for Certified Counselors"
+      }
+    ],
+    "sameAs": [
+      "https://www.psychologytoday.com/profile/1256952"
+    ]
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -32,7 +86,8 @@ preload_hero: true
         "itemOffered": {
           "@type": "Service",
           "name": "{{ _t.home_schema_cbti_name }}",
-          "description": "{{ _t.home_schema_cbti_desc }}"
+          "description": "{{ _t.home_schema_cbti_desc }}",
+          "serviceType": "Cognitive Behavioral Therapy for Insomnia"
         }
       },
       {
@@ -40,7 +95,8 @@ preload_hero: true
         "itemOffered": {
           "@type": "Service",
           "name": "{{ _t.home_schema_anxiety_name }}",
-          "description": "{{ _t.home_schema_anxiety_desc }}"
+          "description": "{{ _t.home_schema_anxiety_desc }}",
+          "serviceType": "Anxiety & Stress Management"
         }
       }
     ]
