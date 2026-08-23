@@ -8,6 +8,7 @@ category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
 image_alt: "Woman lying awake in bed at night, physically exhausted but unable to relax after a stressful experience"
 image_icon: "🧠"
+og_type: "article"
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
@@ -116,7 +117,7 @@ Just as we confuse stress with trauma, we also tend to use *stress* and *anxiety
 
 Stress is usually related to a specific cause: a deadline, a conflict, an important decision, or a major life change. It generally decreases when the situation is resolved or you adjust to it.
 
-Anxiety can continue even after the original problem is gone. It may appear as constant worry, a persistent sense of threat, fear that something bad is about to happen, or the need to monitor and anticipate everything.
+Anxiety can continue even after the original problem is gone. It may appear as constant worry, a persistent sense of threat, fear that something bad is about to happen, or the need to monitor and anticipate everything (especially at night, when [anxiety feels much worse without daytime distractions](/en/blog/posts/anxiety-worse-at-night/)).
 
 Trauma-related sleep difficulties can share features of both. An experience—or series of experiences—activated the alarm, but the alert state continued afterward.
 
@@ -171,7 +172,7 @@ Consistency is usually more helpful than putting in enormous effort for one nigh
 
 There's one small behavior that deserves its own section because it's so common: checking the time whenever you wake up.
 
-3:47 a.m. Then 4:15. Then 4:52.
+3:47 a.m. Then 4:15. Then 4:52. (If this sounds familiar, read more about [why we wake up at 3 AM and how cortisol plays a role](/en/blog/posts/waking-up-at-3am/)).
 
 Every glance hands your brain a math problem: “If I fall asleep this exact second, I can still get three hours and eight minutes.” It also tells an already-alert nervous system that something important must be monitored. Neither one helps you sleep.
 
@@ -197,9 +198,12 @@ Your body isn't sabotaging your rest. It's trying to finish a conversation that 
 
 That support should meet you as you are. You shouldn't have to translate your identity, language, or experience into something more familiar just to be understood and helped. Whether that support happens in English or Spanish, the goal is the same: helping your nervous system feel safe enough to rest again.
 
-You don't have to figure it out alone.
-
-If stress, trauma, anxiety, and insomnia are feeding one another, you don't have to decide which one to address on your own. At Grey Wellness, I offer bilingual [therapy for trauma](/en/pages/trauma/) and specialized [CBT-I treatment for insomnia](/en/pages/sleep/), with a plan that considers how both may be affecting you. You can start with a [free 15-minute consultation](/en/pages/contact/) to talk about what support might fit.
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Stuck in Hyperarousal After Stress or Trauma?</p>
+  <p class="text-foreground font-semibold text-base mb-1">Calm your alert system and restore deep sleep with evidence-based therapy.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">We provide bilingual trauma-informed care (including CPT) and gold-standard CBT-I for insomnia so your brain and body can finally feel safe enough to rest. Virtual sessions across Maryland in English and Spanish.</p>
+  <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Schedule a Free 15-Minute Consultation →</a>
+</div>
 
 ---
 

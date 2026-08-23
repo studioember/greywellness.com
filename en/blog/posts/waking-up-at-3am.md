@@ -37,7 +37,7 @@ A study out of Harvard and UC Berkeley (Yoo et al., 2007) found that a single ni
 
 ## The problem isn't waking up at 3 am
 
-There's nothing wrong with your brain or your body. You haven't forgotten how to sleep, and waking up at 3 am doesn't mean you won't be able to sleep well again. The problem is what you do once you're awake at 3 am — that's what keeps you up. Want to learn more? Check out [our previous post about what contributes to develop insomnia](https://greywellness.com/en/blog/posts/why-does-insomnia-happen/).
+There's nothing wrong with your brain or your body. You haven't forgotten how to sleep, and waking up at 3 am doesn't mean you won't be able to sleep well again. The problem is what you do once you're awake at 3 am — that's what keeps you up. Want to learn more? Check out [our post about what contributes to developing insomnia](https://greywellness.com/en/blog/posts/why-does-insomnia-happen/) or [how stress and trauma keep the nervous system on alert at night](/en/blog/posts/stress-trauma-sleep/).
 
 ## So what do I do when I wake up at 3 am?
 

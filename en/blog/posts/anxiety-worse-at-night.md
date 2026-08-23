@@ -47,7 +47,7 @@ To make things worse, distractions at night tend to shrink. You, your bed, silen
 
 But it doesn't stop there. Anxiety and sleep feed off each other. On one hand, anxiety interferes with falling asleep; and once you're sleep deprived (whether from going many hours without sleep or from sleeping too little), your brain has a harder time regulating fear, which makes anxiety worse. Around 90% of people diagnosed with Generalized Anxiety Disorder also report sleep problems.
 
-That loop is exactly what turns a few rough nights into something that sticks around. If you want to see how that happens step by step, I broke it down in [why insomnia happens and the 3P model](https://greywellness.com/en/blog/posts/why-does-insomnia-happen/).
+That loop is exactly what turns a few rough nights into something that sticks around. If you want to see how that happens step by step, I broke it down in [why insomnia happens and the 3P model](https://greywellness.com/en/blog/posts/why-does-insomnia-happen/). And if your nighttime racing thoughts are tied to lingering stress or trauma hypervigilance, read our deep dive on [how stress and trauma affect sleep](/en/blog/posts/stress-trauma-sleep/).
 
 ## Okay, So What Do I Do About Anxiety at Night?
 

@@ -47,7 +47,7 @@ Para rematar, las distracciones durante la noche tienden a disminuir. Tú, tu ca
 
 Pero ahí no acaba todo. La ansiedad y el sueño se retroalimentan el uno al otro. Por un lado, la ansiedad interfiere con el inicio de tu sueño; y cuando te has desvelado (ya sea por pasar muchas horas sin dormir o por dormir muy poco), tu cerebro tiene más dificultad para regular el miedo, lo que hace que la ansiedad aumente. Alrededor del 90% de las personas con diagnóstico de ansiedad generalizada refieren también tener problemas de sueño.
 
-Ese bucle es justamente lo que convierte unas cuantas malas noches en algo que se queda. Si quieres ver cómo ocurre paso a paso, lo expliqué en [por qué ocurre el insomnio y el Modelo de las 3P](https://greywellness.com/es/blog/posts/why-does-insomnia-happen/).
+Ese bucle es justamente lo que convierte unas cuantas malas noches en algo que se queda. Si quieres ver cómo ocurre paso a paso, lo expliqué en [por qué ocurre el insomnio y el Modelo de las 3P](https://greywellness.com/es/blog/posts/why-does-insomnia-happen/). Y si tus pensamientos acelerados nocturnos están ligados a estrés persistente o hiperalerta por trauma, lee nuestra guía sobre [cómo el estrés y el trauma afectan nuestro descanso](/es/blog/posts/stress-trauma-sleep/).
 
 ## Bueno pues, ¿y entonces qué hago con la ansiedad en la noche?
 

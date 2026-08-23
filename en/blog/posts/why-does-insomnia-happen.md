@@ -41,7 +41,7 @@ The difference comes down to a layer of vulnerability most people don't know the
 
 ### 1. Predisposing Factors (the cards you were dealt)
 
-These are the traits that were quietly present long before insomnia ever showed up: genetics, an anxious or high-strung temperament, a family history of sleep problems, or a history of anxiety or trauma. Nobody chooses these. They just sit there in the background, doing nothing, for years. Maybe decades.
+These are the traits that were quietly present long before insomnia ever showed up: genetics, an anxious or high-strung temperament, a family history of sleep problems, or a [history of chronic stress or trauma](/en/blog/posts/stress-trauma-sleep/). Nobody chooses these. They just sit there in the background, doing nothing, for years. Maybe decades.
 
 ### 2. Precipitating Factors (the thing that lit the match)
 

@@ -41,7 +41,7 @@ La diferencia se reduce a una capa de vulnerabilidad que la mayoría de las pers
 
 ### 1. Factores Predisponentes (las cartas que te tocaron)
 
-Estos son los rasgos que ya estaban presentes silenciosamente mucho antes de que apareciera el insomnio: genética, un temperamento ansioso o nervioso, antecedentes familiares de problemas de sueño, o un historial de ansiedad o trauma. Nadie los elige. Simplemente están ahí en el fondo, sin hacer nada, durante años. Quizás décadas.
+Estos son los rasgos que ya estaban presentes silenciosamente mucho antes de que apareciera el insomnio: genética, un temperamento ansioso o nervioso, antecedentes familiares de problemas de sueño, o un [historial de estrés crónico o trauma](/es/blog/posts/stress-trauma-sleep/). Nadie los elige. Simplemente están ahí en el fondo, sin hacer nada, durante años. Quizás décadas.
 
 ### 2. Factores Precipitantes (lo que encendió la mecha)
 

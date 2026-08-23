@@ -37,7 +37,7 @@ Un estudio de la Universidad de Harvard y Berkeley (Yoo et al., 2007) mostró qu
 
 ## El problema no está en despertarte a las 3 am
 
-No hay nada malo en tu cerebro ni en tu cuerpo. No se te olvidó dormir, y despertarte a las 3 de la mañana no significa que no podrás volver a dormir bien. El problema es lo que haces cuando te despiertas a las 3 am, eso es lo que no te deja dormir. Si quieres aprender más sobre el tema, visita [nuestro blog anterior sobre que contribuye al desarrollo del insomnio](https://greywellness.com/es/blog/posts/why-does-insomnia-happen/).
+No hay nada malo en tu cerebro ni en tu cuerpo. No se te olvidó dormir, y despertarte a las 3 de la mañana no significa que no podrás volver a dormir bien. El problema es lo que haces cuando te despiertas a las 3 am, eso es lo que no te deja dormir. Si quieres aprender más sobre el tema, visita [nuestro blog sobre qué contribuye al desarrollo del insomnio](https://greywellness.com/es/blog/posts/why-does-insomnia-happen/) o [cómo el estrés y el trauma afectan nuestro descanso nocturno](/es/blog/posts/stress-trauma-sleep/).
 
 ## Entonces, ¿qué hago cuando me levanto a las 3 am?
 

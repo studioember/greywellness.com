@@ -8,6 +8,7 @@ category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
 image_alt: "Mujer despierta en la cama durante la noche, físicamente agotada pero sin poder relajarse después de una experiencia estresante"
 image_icon: "🧠"
+og_type: "article"
 layout: layouts/blog-post.njk
 date_hidden: true
 title_hidden: true
@@ -116,7 +117,7 @@ Así como confundimos el estrés con el trauma, también solemos usar *estrés* 
 
 El estrés suele estar relacionado con una causa concreta: una fecha límite, un conflicto, una decisión importante o un cambio de vida. Por lo general, disminuye cuando la situación se resuelve o cuando logras adaptarte.
 
-La ansiedad puede continuar aunque el problema original ya no esté presente. A veces aparece como preocupación constante, sensación de amenaza, temor a que algo malo vaya a ocurrir o necesidad de vigilar y anticipar todo.
+La ansiedad puede continuar aunque el problema original ya no esté presente. A veces aparece como preocupación constante, sensación de amenaza, temor a que algo malo vaya a ocurrir o necesidad de vigilar y anticipar todo (especialmente por la noche, cuando [la ansiedad suele empeorar al desaparecer las distracciones del día](/es/blog/posts/anxiety-worse-at-night/)).
 
 Las dificultades de sueño relacionadas con el trauma pueden compartir características con ambos. Hubo una experiencia o una serie de experiencias que activaron la alarma, pero el estado de alerta continuó después.
 
@@ -171,7 +172,7 @@ La consistencia suele ayudar más que esforzarte muchísimo en una sola noche. N
 
 Hay un comportamiento pequeño que merece su propia sección porque es muy común: revisar la hora cada vez que despiertas.
 
-3:47 a. m. Después, 4:15. Luego, 4:52.
+3:47 a. m. Después, 4:15. Luego, 4:52. (Si esto te ocurre con frecuencia, lee más sobre [por qué nos despertamos a las 3 am y el papel del cortisol](/es/blog/posts/despertarse-a-las-3-am/)).
 
 Cada vistazo le entrega a tu cerebro un problema matemático: “Si me duermo en este preciso instante, todavía puedo dormir tres horas y ocho minutos”. También le confirma a un sistema nervioso que ya está alerta que hay algo importante que debe continuar monitoreando. Ninguna de las dos cosas ayuda a dormir.
 
@@ -197,9 +198,12 @@ Tu cuerpo no está saboteando tu descanso. Está intentando terminar una convers
 
 Y ese apoyo debe encontrarte tal como eres. No deberías tener que traducir tu identidad, tu idioma ni tu experiencia a algo más familiar para que alguien pueda entenderte y ayudarte. Ya sea en español o en inglés, el objetivo es el mismo: que tu sistema nervioso pueda volver a sentir que descansar es seguro.
 
-No tienes que resolverlo solx.
-
-Si el estrés, el trauma, la ansiedad y el insomnio se están alimentando entre sí, no tienes que decidir solx por dónde empezar. En Grey Wellness ofrezco [terapia para el trauma](/es/pages/trauma/) y tratamiento especializado con [TCC-I para el insomnio](/es/pages/sleep/), con un plan que tiene en cuenta cómo ambos pueden estar afectándote. Puedes comenzar con una [consulta gratuita de 15 minutos](/es/pages/contact/) para conversar sobre el apoyo que mejor se adapte a ti.
+<div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿El Estrés o el Trauma No Te Dejan Descansar?</p>
+  <p class="text-foreground font-semibold text-base mb-1">Calma tu sistema de alerta y recupera un sueño reparador con terapia basada en evidencia.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">Ofrecemos terapia informada en trauma (incluyendo CPT) y TCC-I para el insomnio en español, ayudando a tu sistema nervioso a sentirse seguro para descansar. Sesiones virtuales en todo Maryland.</p>
+  <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda una Consulta Gratuita de 15 Minutos →</a>
+</div>
 
 ---
 
