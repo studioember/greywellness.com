@@ -1,0 +1,97 @@
+---
+title: Free Tools
+title_hidden: true
+meta_title: "Free Sleep and Anxiety Tools | Grey Wellness"
+description: "Free, bilingual tools from Grey Wellness to help you understand your sleep, make space for worry, and take a thoughtful next step. No account required."
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+no_prose: true
+---
+
+<div class="not-prose">
+  <section class="relative overflow-hidden rounded-2xl border border-border px-6 py-16 sm:px-10 md:py-20" style="background: linear-gradient(135deg, hsl(var(--hero-overlay)), hsl(var(--primary) / 0.72))">
+    <div class="absolute -right-16 -top-20 h-64 w-64 rounded-full bg-white/10" aria-hidden="true"></div>
+    <div class="absolute -bottom-24 right-28 h-52 w-52 rounded-full bg-secondary/20" aria-hidden="true"></div>
+    <div class="relative max-w-3xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-white/70">Free Tools</p>
+      <h1 class="text-3xl font-bold leading-tight text-white md:text-5xl">Understand what’s happening. Find your next step.</h1>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="mb-10 max-w-2xl">
+      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary">Choose a Tool</p>
+      <h2 class="mb-3 text-2xl font-bold text-foreground md:text-3xl">What would feel useful today?</h2>
+      <p class="leading-relaxed text-muted">Explore simple tools that can help you understand your sleep, support your mental health, and see what may help next.</p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <a href="{{ '/en/free-tools/sleep-diary/' | url }}" aria-label="Start the seven-day Sleep Diary" class="group relative block overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+        <div class="absolute inset-x-0 top-0 h-1.5 bg-primary"></div>
+        <div class="mb-5 flex items-start justify-between gap-4">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-2xl" aria-hidden="true">🌙</span>
+          <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Available now</span>
+        </div>
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-primary">Sleep</p>
+        <h3 class="mb-3 text-xl font-bold text-foreground">Sleep Diary</h3>
+        <p class="leading-relaxed text-muted">Track your nights for seven mornings and see patterns that are hard to notice when every night feels like a blur.</p>
+        <span class="mt-6 inline-flex items-center rounded-md bg-primary px-5 py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground transition-opacity group-hover:opacity-90">Start Sleep Diary →</span>
+      </a>
+
+      <article class="relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-sm">
+        <div class="absolute inset-x-0 top-0 h-1.5 bg-accent"></div>
+        <div class="mb-5 flex items-start justify-between gap-4">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/15 text-2xl" aria-hidden="true">📝</span>
+          <span class="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">Coming soon</span>
+        </div>
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-primary">Anxiety</p>
+        <h3 class="mb-1 text-xl font-bold text-foreground">Schedule Worry Time</h3>
+        <p class="mb-3 text-sm font-semibold text-primary">A worry parking lot for thoughts that keep circling</p>
+        <p class="leading-relaxed text-muted">Give a circling thought somewhere to land. Sort out what needs an action, what can wait until tomorrow, and what you do not have to solve from bed.</p>
+      </article>
+    </div>
+  </section>
+
+  <aside class="mb-12 flex max-w-3xl items-start gap-3 border-l-2 border-primary/40 pl-4 text-sm leading-relaxed text-muted">
+    <span aria-hidden="true">🔒</span>
+    <p><span class="font-semibold text-foreground">Your reflections belong to you.</span> These tools work without an account, and your personal entries stay in your browser.</p>
+  </aside>
+
+  <section class="mb-16 grid gap-10 rounded-2xl border border-border bg-card px-7 py-10 shadow-sm md:grid-cols-[0.85fr_1.15fr] md:px-10 md:py-12">
+    <div>
+      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary">Ready to Talk?</p>
+      <h2 class="mb-4 text-2xl font-bold text-foreground md:text-3xl">You don’t have to figure it out alone.</h2>
+      <p class="leading-relaxed text-muted">I offer a free 15-minute consultation so we can talk about what’s been going on, answer your questions, and see whether working together feels like a good fit. There’s no pressure to decide on the call.</p>
+      <p class="mt-4 text-sm leading-relaxed text-muted">Fill out the form and I’ll be in touch within 1–2 business days.</p>
+    </div>
+    <div class="rounded-xl border border-border bg-background p-6">
+      {% from 'macros/google-form.njk' import googleForm %}
+      {% set contactFields = [
+        { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+        { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+        { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+        { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
+        { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+        { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+        { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
+      ] %}
+      {{ googleForm(
+        formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+        fields=contactFields,
+        uid="free-tools-contact-en",
+        submitLabel="Request Free Consultation",
+        successTitle="Message sent!",
+        successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+        gaEventName="contact_form_submitted",
+        gaEventCategory="contact",
+        gaEventLabel="free_tools_en",
+        adsConversion=""
+      ) }}
+    </div>
+  </section>
+
+  <aside class="mb-8 border-t border-border pt-8 text-sm leading-relaxed text-muted">
+    <p><span class="font-semibold text-foreground">A gentle note:</span> These resources provide general education and reflection. They are not a diagnosis, medical advice, crisis support, or a substitute for care from a qualified professional.</p>
+  </aside>
+</div>
