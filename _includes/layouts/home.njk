@@ -24,6 +24,11 @@ preload_hero: true
   "areaServed": [
     {
       "@type": "State",
+      "name": "Virginia",
+      "sameAs": "https://en.wikipedia.org/wiki/Virginia"
+    },
+    {
+      "@type": "State",
       "name": "Maryland",
       "sameAs": "https://en.wikipedia.org/wiki/Maryland"
     },
@@ -207,6 +212,30 @@ preload_hero: true
           <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet Mónica -->
+<section class="py-20 px-4 sm:px-6 -mx-4 sm:-mx-6 bg-surface">
+  <div class="max-w-5xl mx-auto grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+    <div class="mx-auto w-full max-w-sm">
+      <picture class="block aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
+        <source srcset="{{ '/assets/img/monica-homepage.webp' | url }}" type="image/webp">
+        <img src="{{ '/assets/img/monica-homepage.jpg' | url }}" alt="Mónica Grey smiling in her office" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" width="900" height="1200">
+      </picture>
+    </div>
+    <div>
+      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">{{ _t.home_about_eyebrow }}</p>
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-foreground">{{ _t.home_about_heading }}</h2>
+      <p class="mt-5 text-muted text-lg leading-relaxed">{{ _t.home_about_body }}</p>
+      <ul class="mt-7 grid gap-3 sm:grid-cols-2" aria-label="{{ _t.home_authority_label }}">
+        <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">🎓</span><span class="text-sm font-semibold text-foreground">{{ _t.home_authority_hopkins }}</span></li>
+        <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">🌙</span><span class="text-sm font-semibold text-foreground">{{ _t.home_authority_stanford }}</span></li>
+        <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">📋</span><span class="text-sm font-semibold text-foreground">{{ _t.home_about_ncc }}</span></li>
+        <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">📍</span><span class="text-sm font-semibold text-foreground">{{ _t.home_authority_licensed }}</span></li>
+      </ul>
+      <a href="{{ '/' + _lang + '/pages/about/' | url }}" class="mt-7 inline-block text-sm font-bold uppercase tracking-wide text-primary hover:underline">{{ _t.home_about_cta }} →</a>
     </div>
   </div>
 </section>
