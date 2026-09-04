@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
 date: "git Last Modified"
-meta_title: "Grey Wellness | Terapeuta de Sueño, Trauma y Ansiedad — Inglés y Español"
-description: "Mónica Grey es una terapeuta bilingüe especializada en TCC-I, el tratamiento de referencia basado en evidencia para el insomnio. Ayudando a adultos a superar problemas de sueño, trauma y ansiedad. Terapia en inglés y español."
+meta_title: "Terapeuta de TCC-I en Virginia y Maryland | Grey Wellness"
+description: "Mónica Grey es terapeuta bilingüe de TCC-I y ayuda a personas adultas en Virginia y Maryland con insomnio crónico, trauma y ansiedad. Terapia en español e inglés."
 ---
