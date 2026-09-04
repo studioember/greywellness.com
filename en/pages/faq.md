@@ -2,7 +2,7 @@
 title: FAQ
 title_hidden: false
 meta_title: "CBT-I, Insomnia & Therapy FAQs | Grey Wellness"
-description: "Answers about CBT-I for insomnia, sleep medication tapering, fees and insurance, telehealth in Maryland, and getting started with bilingual therapy at Grey Wellness."
+description: "Answers about CBT-I for insomnia, fees, insurance, and bilingual telehealth therapy in Virginia and Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -76,7 +76,7 @@ templateEngineOverride: njk,md
       "name": "Are sessions virtual or in person?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All sessions are virtual, which means you can access care from wherever you are, with no commute, no waiting room, and no parking. Right now, we're able to see clients located in Maryland, with more states coming soon."
+        "text": "All sessions are virtual, with no commute, waiting room, or parking. We can work with clients who are physically located in Virginia or Maryland at the time of their session."
       }
     },
     {
@@ -225,7 +225,7 @@ templateEngineOverride: njk,md
           Are sessions virtual or in person?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">All sessions are virtual, which means you can access care from wherever you are, with no commute, no waiting room, and no parking. Right now, we're able to see clients located in Maryland. More states are on the way, so stay tuned.</p>
+        <p class="mt-4 text-muted leading-relaxed">All sessions are virtual, with no commute, waiting room, or parking. We can work with clients who are physically located in Virginia or Maryland at the time of their session.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">

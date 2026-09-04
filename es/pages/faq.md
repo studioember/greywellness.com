@@ -2,7 +2,7 @@
 title: Preguntas Frecuentes
 title_hidden: false
 meta_title: "Preguntas Frecuentes sobre TCC-I y Terapia | Grey Wellness"
-description: "Respuestas sobre la TCC-I para el insomnio, reducción de medicamentos para dormir, tarifas y seguro, telesalud en Maryland, y cómo comenzar terapia bilingüe en Grey Wellness."
+description: "Respuestas sobre la TCC-I para el insomnio, tarifas, seguro y terapia virtual bilingüe en Virginia y Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -76,7 +76,7 @@ templateEngineOverride: njk,md
       "name": "¿Las sesiones son virtuales o presenciales?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Todas las sesiones son virtuales, lo que significa que puedes acceder a la terapia desde donde estés, sin traslado, sin sala de espera, sin estacionamiento. Por ahora, podemos atender a clientes ubicados en Maryland. Más estados están por venir, así que mantente al tanto."
+        "text": "Todas las sesiones son virtuales, sin traslado, sala de espera ni estacionamiento. Podemos trabajar con clientes que se encuentren físicamente en Virginia o Maryland al momento de su sesión."
       }
     },
     {
@@ -225,7 +225,7 @@ templateEngineOverride: njk,md
           ¿Las sesiones son virtuales o presenciales?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">Todas las sesiones son virtuales, lo que significa que puedes acceder a la terapia desde donde estés, sin traslado, sin sala de espera, sin estacionamiento. Por ahora, podemos atender a clientes ubicados en Maryland. Más estados están por venir, así que mantente al tanto.</p>
+        <p class="mt-4 text-muted leading-relaxed">Todas las sesiones son virtuales, sin traslado, sala de espera ni estacionamiento. Podemos trabajar con clientes que se encuentren físicamente en Virginia o Maryland al momento de su sesión.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
