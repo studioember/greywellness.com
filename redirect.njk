@@ -7,7 +7,9 @@ sitemap: false
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Grey Wellness</title>
+    <title>{{ site.name }}</title>
+    <meta property="og:site_name" content="{{ site.name }}">
+    {% include 'components/website-schema.njk' %}
     <meta http-equiv="refresh" content="0; url=/en/">
     <link rel="canonical" href="{{ site.url }}/en/">
     <script>window.location.replace("/en/");</script>
