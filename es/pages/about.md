@@ -2,7 +2,7 @@
 title: Quién Soy
 title_hidden: true
 meta_title: "Quién Soy | Mónica Grey, MS, LCPC, NCC | Terapeuta TCC-I | Grey Wellness"
-description: "Conoce a Mónica Grey, terapeuta bilingüe formada en Johns Hopkins y especializada en TCC-I, insomnio, ansiedad y trauma en Virginia y Maryland."
+description: "Conoce a Mónica Grey, MS, LCPC, NCC, terapeuta bilingüe formada en Johns Hopkins y especializada en TCC-I, insomnio, ansiedad y trauma en Virginia y Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -18,7 +18,7 @@ no_prose: true
       <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
       <img
         src="{{ '/assets/img/headshot.jpg' | url }}"
-        alt="Mónica Grey"
+        alt="Mónica Grey, MS, LCPC, NCC"
         class="w-full h-full object-cover object-top"
         width="208"
         height="208"

@@ -318,7 +318,7 @@ topics:
 
     <div class="cta">
       <p class="cta-eyebrow">Register &amp; Inquire</p>
-      <p class="cta-name">Mónica Grey, LCPC</p>
+      <p class="cta-name">Mónica Grey, MS, LCPC, NCC</p>
       <a class="cta-email-btn" href="mailto:contact@greywellness.com?subject=CBT-i%20Group%20Therapy%20Registration">Register Now</a>
       <p class="cta-also">You can also reach me directly to register:<br>
         <a class="cta-also-link" href="mailto:contact@greywellness.com?subject=CBT-i%20Group%20Therapy%20Registration">contact@greywellness.com</a>

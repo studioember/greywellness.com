@@ -3,7 +3,7 @@ title: "No Puedo Dormir Después de Algo Estresante: Cómo el Estrés y el Traum
 meta_title: "No Puedo Dormir Después de Algo Estresante | Trauma y Sueño"
 description: "¿No puedes dormir después de algo estresante o traumático? Descubre por qué sigues en alerta y qué tratamientos pueden ayudarte a descansar."
 date: 2026-08-23
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
 image_alt: "Mujer despierta en la cama durante la noche, físicamente agotada pero sin poder relajarse después de una experiencia estresante"

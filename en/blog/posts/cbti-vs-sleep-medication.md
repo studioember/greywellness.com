@@ -3,7 +3,7 @@ title: "Do Sleeping Pills Work? CBT-I vs. Medication for Insomnia"
 meta_title: "Do Sleeping Pills Work? CBT-I vs. Medication | Grey Wellness"
 description: "Do sleeping pills work for chronic insomnia? See what the research says about medication vs. CBT-I, including long-term remission and 10-year outcomes."
 date: 2026-09-07
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnia"
 image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
 image_alt: "Woman lying awake in bed at night"

@@ -2,7 +2,7 @@
 title: Contacto
 title_hidden: false
 meta_title: "Contacto y Consulta Gratuita | Grey Wellness Bethesda"
-description: "Reserva una consulta gratuita de 15 minutos con Mónica Grey, terapeuta bilingüe de TCC-I. Sin compromiso. Nuevos clientes bienvenidos en inglés y español."
+description: "Reserva una consulta gratuita de 15 minutos con Mónica Grey, MS, LCPC, NCC, terapeuta bilingüe de TCC-I. Sin compromiso. Nuevos clientes bienvenidos en inglés y español."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true
