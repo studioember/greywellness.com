@@ -1,0 +1,36 @@
+{% set _banner_lang = lang | default("en") %}
+{% set _banner_text = i18n[_banner_lang] %}
+<aside data-virginia-banner aria-label="{{ _banner_text.virginia_banner_label }}" class="relative bg-primary text-primary-foreground">
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-1 px-12 py-3 text-center text-sm sm:flex-row sm:gap-4">
+    <p>{{ _banner_text.virginia_banner_body }}</p>
+    <a href="{{ ('/' + _banner_lang + '/pages/contact/') | url }}" class="shrink-0 rounded-sm font-semibold underline underline-offset-4 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+      {{ _banner_text.virginia_banner_cta }} <span aria-hidden="true">→</span>
+    </a>
+  </div>
+  <button type="button" data-dismiss-virginia-banner aria-label="{{ _banner_text.virginia_banner_dismiss }}" class="absolute right-2 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" hidden>
+    <span aria-hidden="true" class="text-2xl leading-none">×</span>
+  </button>
+</aside>
+<script>
+  (() => {
+    const banner = document.querySelector('[data-virginia-banner]');
+    if (!banner) return;
+    const cookieName = 'grey-wellness-virginia-banner-dismissed';
+    try {
+      if (document.cookie.split(';').some(cookie => cookie.trim() === `${cookieName}=1`)) {
+        banner.remove();
+        return;
+      }
+    } catch (_) {}
+
+    const dismiss = banner.querySelector('[data-dismiss-virginia-banner]');
+    dismiss.hidden = false;
+    dismiss.addEventListener('click', () => {
+      try {
+        const secure = location.protocol === 'https:' ? '; Secure' : '';
+        document.cookie = `${cookieName}=1; Max-Age=31536000; Path=/; SameSite=Lax${secure}`;
+      } catch (_) {}
+      banner.remove();
+    });
+  })();
+</script>

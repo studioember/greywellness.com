@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
 date: "git Last Modified"
-meta_title: "Virginia & Maryland CBT-I Therapist | Grey Wellness"
-description: "Mónica Grey is a bilingual CBT-I therapist helping adults in Virginia and Maryland with chronic insomnia, trauma, and anxiety. Therapy in English and Spanish."
+meta_title: "Grey Wellness | Virginia & Maryland CBT-I Therapist"
+description: "Grey Wellness offers therapy in English and Spanish with Mónica Grey for adults in Virginia and Maryland experiencing chronic insomnia, trauma, and anxiety."
 ---

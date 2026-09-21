@@ -9,6 +9,8 @@ preload_hero: true
 {% set _lang = lang | default("en") %}
 {% set _t = i18n[_lang] %}
 
+{% include 'components/website-schema.njk' %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,7 +84,7 @@ preload_hero: true
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 py-32 md:py-44">
     <div class="max-w-xl">
-      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Mónica Grey, LCPC</p>
+      <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">{{ site.name }}</p>
       <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
         {{ _t.home_hero_h1_line1 }}<br>
         {{ _t.home_hero_h1_line2 }}

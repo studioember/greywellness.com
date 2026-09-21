@@ -6,6 +6,12 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 Studio Ember marketing website — a static site built with **Eleventy (11ty) v4 alpha** and **Tailwind CSS v4**. Content is authored in Markdown with Nunjucks templating. No client-side framework; interactivity is vanilla JS.
 
+## Editorial Voice
+
+- Before drafting, translating, or substantially editing Grey Wellness website copy, blog posts, newsletters, or social content, read and follow `docs/voice-guide.md`.
+- Treat the published English and Spanish posts as primary voice examples. Preserve the clinical meaning while making each language sound natively written rather than translated sentence by sentence.
+- Never invent personal history, client details, credentials, clinical opinions, or citations for Mónica Grey.
+
 ## Commands
 
 - **`yarn dev`** — Start dev servers (Eleventy + Tailwind CSS watcher in parallel)
