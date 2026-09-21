@@ -3,7 +3,7 @@ title: "Why You Wake Up at 3 AM (and How to Fall Back Asleep)"
 meta_title: "Why You Wake Up at 3 AM (and How to Fall Back Asleep)"
 description: "Waking up at 3 am and can't fall back asleep? Here's why it happens and what to do about it, according to sleep science."
 date: 2026-07-27
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnia"
 image: "/assets/img/blog/waking-up-at-3am.jpg"
 image_alt: "Man lying awake in bed at night reading a book to fall back asleep"

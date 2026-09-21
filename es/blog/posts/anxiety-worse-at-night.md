@@ -3,7 +3,7 @@ title: "¿Por Qué Mi Ansiedad Empeora en la Noche?"
 meta_title: "Por Qué la Ansiedad Empeora en la Noche (y Cómo Romper el Ciclo)"
 description: "¿Los pensamientos llegan justo cuando apoyas la cabeza en la almohada? Descubre por qué la ansiedad empeora en la noche y qué hacer para dormir mejor."
 date: 2026-08-09
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Ansiedad"
 image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
 image_alt: "Mujer despierta en la cama de noche apretando una almohada sobre su cara, sin poder dormir por la ansiedad"

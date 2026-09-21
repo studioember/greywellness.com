@@ -2,7 +2,7 @@
 title: "Why Does Insomnia Happen? The 3 P's Behind Your 2 AM Staring Contest with the Ceiling"
 description: "Learn what insomnia actually is, why it happens, and how the 3P Model explains why some people can't shake it. Real talk from a CBT-I specialist."
 date: 2026-07-08
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnia"
 image: "/assets/img/blog/why-does-insomnia-happen.jpg"
 image_alt: "Woman sitting cross-legged on her bed at night, wide awake and staring toward the window"

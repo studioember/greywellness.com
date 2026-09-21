@@ -3,7 +3,7 @@ title: "Por Qué Te Despiertas a las 3 AM (y Cómo Volver a Dormir)"
 meta_title: "Por Qué Te Despiertas a las 3 AM (y Cómo Volver a Dormir)"
 description: "¿Te despiertas a las 3 am y no puedes volver a dormir? Descubre por qué pasa y qué hacer, según la ciencia del sueño."
 date: 2026-07-27
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/waking-up-at-3am.jpg"
 image_alt: "Hombre despierto en la cama de noche leyendo un libro para volver a dormirse"

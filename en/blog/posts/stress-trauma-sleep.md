@@ -3,7 +3,7 @@ title: "I Can't Sleep After Something Stressful: How Stress and Trauma Affect Sl
 meta_title: "Can't Sleep After Stress or Trauma? Why It Happens"
 description: "Can't sleep after something stressful or traumatic? Learn why you feel tired but wired, how stress affects sleep, and which treatments can help."
 date: 2026-08-23
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
 image_alt: "Woman lying awake in bed at night, physically exhausted but unable to relax after a stressful experience"

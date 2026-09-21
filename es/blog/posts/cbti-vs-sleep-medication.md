@@ -3,7 +3,7 @@ title: "¿Las pastillas para dormir funcionan? TCC-I vs. medicamentos para el in
 meta_title: "¿Las pastillas para dormir funcionan? TCC-I vs. medicamentos"
 description: "¿Las pastillas para dormir funcionan para el insomnio crónico? Conoce qué dice la evidencia sobre medicamentos, TCC-I y sus resultados a largo plazo."
 date: 2026-09-07
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
 image_alt: "Mujer despierta en la cama durante la noche"

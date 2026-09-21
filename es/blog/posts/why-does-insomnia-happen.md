@@ -2,7 +2,7 @@
 title: "¿Por Qué Ocurre el Insomnio? Las 3 P Detrás de Esas Trasnochadas con los Ojos Clavados en el Techo a las 2 AM"
 description: "Aprende qué es realmente el insomnio, por qué ocurre y cómo el Modelo de las 3P explica por qué a algunas personas les cuesta tanto superarlo. Te lo cuenta una especialista en TCC-I."
 date: 2026-07-08
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/why-does-insomnia-happen.jpg"
 image_alt: "Mujer sentada con las piernas cruzadas en su cama de noche, completamente despierta y mirando hacia la ventana"

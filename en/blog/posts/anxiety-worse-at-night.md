@@ -3,7 +3,7 @@ title: "Why Does My Anxiety Get Worse at Night?"
 meta_title: "Why Anxiety Gets Worse at Night (and How to Break the Loop)"
 description: "Anxious thoughts hit the second your head touches the pillow? Here's why anxiety gets worse at night, and four things you can do about it tonight."
 date: 2026-08-09
-author: "Mónica Grey, LCPC"
+author: "Mónica Grey, MS, LCPC, NCC"
 category: "Anxiety"
 image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
 image_alt: "Woman lying awake in bed at night pressing a pillow over her face, unable to sleep because of anxiety"
