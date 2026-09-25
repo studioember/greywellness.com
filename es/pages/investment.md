@@ -14,6 +14,8 @@ Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada.
 
 ## Honorarios de Sesión
 
+Terapia individual centrada en lo que es importante para ti. Trabajamos con enfoques basados en evidencia, como la terapia cognitivo-conductual (TCC) y la atención plena, teniendo en cuenta tus experiencias de trauma. Juntxs elegiremos la duración y frecuencia que se ajusten a tus necesidades, generalmente cada semana o cada dos semanas.
+
 <div class="not-prose mt-6 grid gap-3">
 
   <a href="{{ '/es/pages/contact/' | url }}" class="flex items-center justify-between rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
@@ -27,7 +29,7 @@ Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada.
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Evaluación de Nuevo Cliente <span class="text-sm font-normal text-muted">· 90 min</span></p>
-      <span class="text-xl font-bold text-foreground">$250</span>
+      <span class="text-xl font-bold text-foreground">$230</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Tu primera sesión completa. Hablaremos sobre lo que te trae, tu historial y lo que esperas obtener de la terapia. Al final, tendremos una idea compartida de por dónde empezar y cómo podría ser trabajar juntos.</p>
   </div>
@@ -35,15 +37,31 @@ Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada.
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 60 min</span></p>
-      <span class="text-xl font-bold text-foreground">$190 <span class="text-sm font-normal text-muted">/ sesión</span></span>
+      <span class="text-xl font-bold text-foreground">$190</span>
     </div>
-    <p class="text-sm text-muted mt-2 leading-relaxed">Sesiones individuales adaptadas a tus objetivos. Nos apoyamos en enfoques basados en evidencia como la TCC, la atención informada en trauma y el mindfulness, según lo que mejor se adapte a ti. Las sesiones son de 60 minutos y generalmente se programan semanal o quincenalmente.</p>
+    <p class="text-sm text-muted mt-2 leading-relaxed">Una hora para hablar de lo que te preocupa, explorar patrones y trabajar en tus objetivos de terapia con tiempo para profundizar.</p>
+  </div>
+
+  <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
+    <div class="flex items-center justify-between">
+      <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 45 min</span></p>
+      <span class="text-xl font-bold text-foreground">$150</span>
+    </div>
+    <p class="text-sm text-muted mt-2 leading-relaxed">Una sesión de 45 minutos para conversar sobre lo que estás viviendo, revisar tus avances y seguir trabajando en tus objetivos de terapia.</p>
+  </div>
+
+  <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
+    <div class="flex items-center justify-between">
+      <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 30 min</span></p>
+      <span class="text-xl font-bold text-foreground">$105</span>
+    </div>
+    <p class="text-sm text-muted mt-2 leading-relaxed">Una sesión más breve, centrada en un tema concreto. Un espacio para revisar tus avances, conversar sobre una preocupación puntual o retomar lo que has estado practicando.</p>
   </div>
 
   <a href="{{ '/es/pages/groups/' | url }}" class="block rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground group-hover:text-primary transition-colors">Terapia Grupal <span class="text-sm font-normal text-muted">· por sesión</span></p>
-      <span class="text-xl font-bold text-foreground">$75 <span class="text-sm font-normal text-muted">/ sesión</span></span>
+      <span class="text-xl font-bold text-foreground">$75</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Terapia en un entorno de grupo pequeño, facilitada por una terapeuta licenciada. Los grupos se realizan durante un número determinado de sesiones y se centran en un tema específico o experiencia compartida. Ver grupos actuales y próximos →</p>
   </a>

@@ -149,12 +149,15 @@ templateEngineOverride: njk,md
 
 <p class="text-muted text-lg leading-relaxed">Comenzar terapia trae muchas preguntas, especialmente cuando se trata de la TCC-I para el insomnio. Aquí están las respuestas a las que escuchamos con más frecuencia de clientes que buscan terapia bilingüe, basada en evidencia. Si la tuya no está aquí, tráela a tu consulta gratuita — con gusto la conversamos.</p>
 
-<div class="not-prose mt-12 space-y-12">
+<div class="not-prose mt-12 space-y-3">
 
   <!-- CBT-I & Sleep -->
-  <div id="tcc-i">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">TCC-I y Sueño</h2>
-    <div class="space-y-3">
+  <details id="tcc-i" class="group/topic rounded-2xl border border-border bg-card shadow-sm">
+    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 text-primary">
+      <h2 class="text-base font-semibold">TCC-I y Sueño</h2>
+      <svg class="w-4 h-4 shrink-0 transition-transform group-open/topic:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+    </summary>
+    <div class="space-y-3 px-4 pb-4">
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
@@ -205,12 +208,15 @@ templateEngineOverride: njk,md
       </details>
 
     </div>
-  </div>
+  </details>
 
   <!-- Other Mental Health & Support -->
-  <div id="salud-mental">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Otros Temas de Salud Mental</h2>
-    <div class="space-y-3">
+  <details id="salud-mental" class="group/topic rounded-2xl border border-border bg-card shadow-sm">
+    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 text-primary">
+      <h2 class="text-base font-semibold">Otros Temas de Salud Mental</h2>
+      <svg class="w-4 h-4 shrink-0 transition-transform group-open/topic:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+    </summary>
+    <div class="space-y-3 px-4 pb-4">
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
@@ -221,12 +227,15 @@ templateEngineOverride: njk,md
       </details>
 
     </div>
-  </div>
+  </details>
 
   <!-- Sessions & Logistics -->
-  <div id="logistica">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Sesiones y Logística</h2>
-    <div class="space-y-3">
+  <details id="logistica" class="group/topic rounded-2xl border border-border bg-card shadow-sm">
+    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 text-primary">
+      <h2 class="text-base font-semibold">Sesiones y Logística</h2>
+      <svg class="w-4 h-4 shrink-0 transition-transform group-open/topic:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+    </summary>
+    <div class="space-y-3 px-4 pb-4">
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
@@ -253,12 +262,15 @@ templateEngineOverride: njk,md
       </details>
 
     </div>
-  </div>
+  </details>
 
   <!-- Fees & Insurance -->
-  <div id="tarifas">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Tarifas y Seguro</h2>
-    <div class="space-y-3">
+  <details id="tarifas" class="group/topic rounded-2xl border border-border bg-card shadow-sm">
+    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 text-primary">
+      <h2 class="text-base font-semibold">Tarifas y Seguro</h2>
+      <svg class="w-4 h-4 shrink-0 transition-transform group-open/topic:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+    </summary>
+    <div class="space-y-3 px-4 pb-4">
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
@@ -293,12 +305,15 @@ templateEngineOverride: njk,md
       </details>
 
     </div>
-  </div>
+  </details>
 
   <!-- Getting Started -->
-  <div id="para-comenzar">
-    <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Para Comenzar</h2>
-    <div class="space-y-3">
+  <details id="para-comenzar" class="group/topic rounded-2xl border border-border bg-card shadow-sm">
+    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 text-primary">
+      <h2 class="text-base font-semibold">Para Comenzar</h2>
+      <svg class="w-4 h-4 shrink-0 transition-transform group-open/topic:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+    </summary>
+    <div class="space-y-3 px-4 pb-4">
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
@@ -325,7 +340,7 @@ templateEngineOverride: njk,md
       </details>
 
     </div>
-  </div>
+  </details>
 
 </div>
 

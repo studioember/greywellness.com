@@ -14,6 +14,8 @@ We believe you should know what therapy costs before you ever book a call. No su
 
 ## Session Fees
 
+Individual therapy focused on what matters to you. We use evidence-based approaches, including cognitive behavioral therapy (CBT) and mindfulness, with care that takes your experiences of trauma into account. Together, we’ll choose a session length and pace that fit your needs, usually meeting weekly or every other week.
+
 <div class="not-prose mt-6 grid gap-3">
 
   <a href="{{ '/en/pages/contact/' | url }}" class="flex items-center justify-between rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
@@ -27,7 +29,7 @@ We believe you should know what therapy costs before you ever book a call. No su
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">New Client Evaluation <span class="text-sm font-normal text-muted">· 90 min</span></p>
-      <span class="text-xl font-bold text-foreground">$250</span>
+      <span class="text-xl font-bold text-foreground">$230</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Your first full session. We will talk through what brings you in, your history, and what you are hoping to get out of therapy. By the end, we will have a shared sense of where to start and what working together could look like.</p>
   </div>
@@ -35,15 +37,31 @@ We believe you should know what therapy costs before you ever book a call. No su
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Individual Psychotherapy <span class="text-sm font-normal text-muted">· 60 min</span></p>
-      <span class="text-xl font-bold text-foreground">$190 <span class="text-sm font-normal text-muted">/ session</span></span>
+      <span class="text-xl font-bold text-foreground">$190</span>
     </div>
-    <p class="text-sm text-muted mt-2 leading-relaxed">One-on-one sessions tailored to your goals. We draw on evidence-based approaches including CBT, trauma-informed care, and mindfulness depending on what fits best for you. Sessions are 60 minutes and typically scheduled weekly or biweekly.</p>
+    <p class="text-sm text-muted mt-2 leading-relaxed">A full hour to talk through what’s on your mind, explore patterns, and work toward your therapy goals at a thoughtful pace.</p>
+  </div>
+
+  <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
+    <div class="flex items-center justify-between">
+      <p class="font-semibold text-foreground">Individual Psychotherapy <span class="text-sm font-normal text-muted">· 45 min</span></p>
+      <span class="text-xl font-bold text-foreground">$150</span>
+    </div>
+    <p class="text-sm text-muted mt-2 leading-relaxed">A 45-minute session with space to talk through current concerns, reflect on your progress, and continue working toward your therapy goals.</p>
+  </div>
+
+  <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
+    <div class="flex items-center justify-between">
+      <p class="font-semibold text-foreground">Individual Psychotherapy <span class="text-sm font-normal text-muted">· 30 min</span></p>
+      <span class="text-xl font-bold text-foreground">$105</span>
+    </div>
+    <p class="text-sm text-muted mt-2 leading-relaxed">A shorter session with a focused agenda. Time to check in on your progress, discuss a specific concern, or follow up on what you’ve been practicing.</p>
   </div>
 
   <a href="{{ '/en/pages/groups/' | url }}" class="block rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground group-hover:text-primary transition-colors">Group Therapy <span class="text-sm font-normal text-muted">· per session</span></p>
-      <span class="text-xl font-bold text-foreground">$75 <span class="text-sm font-normal text-muted">/ session</span></span>
+      <span class="text-xl font-bold text-foreground">$75</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Therapy in a small group setting, facilitated by a licensed therapist. Groups run for a set number of sessions and focus on a specific topic or shared experience. See current and upcoming groups →</p>
   </a>
