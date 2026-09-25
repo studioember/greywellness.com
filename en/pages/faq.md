@@ -105,6 +105,14 @@ templateEngineOverride: njk,md
     },
     {
       "@type": "Question",
+      "name": "What should I ask my insurance company about reimbursement for sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask whether your plan covers out-of-network mental health care by telehealth. Your insurer may ask for the procedure (CPT) codes. These are the codes to ask about, depending on the appointment: 90837: 60-minute psychotherapy session. 90834: 45-minute psychotherapy session. 90832: 30-minute psychotherapy session. 90791: initial psychiatric diagnostic evaluation. At Grey Wellness, this appointment typically lasts 90 minutes. For video sessions, ask whether your plan requires modifier 95. The requirements can vary by insurer; we can help confirm the billing details for your appointment. Also ask how much of your out-of-network deductible remains, whether it must be met before reimbursement begins, and what amount or percentage your plan reimburses. Check whether prior authorization is required and how to submit your superbill. A benefits check is not a guarantee of payment."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What if I can't afford the full fee?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -258,6 +266,22 @@ templateEngineOverride: njk,md
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
         <p class="mt-4 text-muted leading-relaxed">We're an out-of-network provider, so we don't bill insurance directly. Many plans offer out-of-network benefits that reimburse a portion of the cost, and we provide a superbill after each session that you can submit yourself. We also partner with Mentaya to make checking your benefits easier. See full details on the <a href="{{ '/en/pages/investment/' | url }}" class="text-primary hover:underline">rates page</a>.</p>
+      </details>
+
+      <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
+          What should I ask my insurance company about reimbursement for sessions?
+          <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+        </summary>
+        <p class="mt-4 text-muted leading-relaxed">Ask whether your plan covers out-of-network mental health care by telehealth. Your insurer may ask for the procedure (CPT) codes. These are the codes to ask about, depending on the appointment:</p>
+        <ul class="mt-4 list-disc pl-6 space-y-2 text-muted leading-relaxed">
+          <li><strong>90837:</strong> 60-minute psychotherapy session.</li>
+          <li><strong>90834:</strong> 45-minute psychotherapy session.</li>
+          <li><strong>90832:</strong> 30-minute psychotherapy session.</li>
+          <li><strong>90791:</strong> initial psychiatric diagnostic evaluation. At Grey Wellness, this appointment typically lasts 90 minutes.</li>
+        </ul>
+        <p class="mt-4 text-muted leading-relaxed">For video sessions, ask whether your plan requires modifier <strong>95</strong>. The requirements can vary by insurer; we can help confirm the billing details for your appointment.</p>
+        <p class="mt-4 text-muted leading-relaxed">Also ask how much of your out-of-network deductible remains, whether it must be met before reimbursement begins, and what amount or percentage your plan reimburses. Check whether prior authorization is required and how to submit your superbill. A benefits check is not a guarantee of payment.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">

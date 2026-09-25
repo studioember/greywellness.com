@@ -26,7 +26,7 @@ Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada.
 
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
-      <p class="font-semibold text-foreground">Evaluación de Nuevo Cliente</p>
+      <p class="font-semibold text-foreground">Evaluación de Nuevo Cliente <span class="text-sm font-normal text-muted">· 90 min</span></p>
       <span class="text-xl font-bold text-foreground">$250</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Tu primera sesión completa. Hablaremos sobre lo que te trae, tu historial y lo que esperas obtener de la terapia. Al final, tendremos una idea compartida de por dónde empezar y cómo podría ser trabajar juntos.</p>
@@ -35,17 +35,9 @@ Creemos que debes saber cuánto cuesta la terapia antes de reservar una llamada.
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 60 min</span></p>
-      <span class="text-xl font-bold text-foreground">$230 <span class="text-sm font-normal text-muted">/ sesión</span></span>
+      <span class="text-xl font-bold text-foreground">$190 <span class="text-sm font-normal text-muted">/ sesión</span></span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Sesiones individuales adaptadas a tus objetivos. Nos apoyamos en enfoques basados en evidencia como la TCC, la atención informada en trauma y el mindfulness, según lo que mejor se adapte a ti. Las sesiones son de 60 minutos y generalmente se programan semanal o quincenalmente.</p>
-  </div>
-
-  <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
-    <div class="flex items-center justify-between">
-      <p class="font-semibold text-foreground">Programa TCC-I <span class="text-sm font-normal text-muted">· 4 sesiones en 8 semanas</span></p>
-      <span class="text-xl font-bold text-foreground">$230 <span class="text-sm font-normal text-muted">/ sesión</span></span>
-    </div>
-    <p class="text-sm text-muted mt-2 leading-relaxed">Un programa estructurado para el insomnio crónico usando la Terapia Cognitivo-Conductual para el Insomnio (TCC-I), el tratamiento de referencia basado en evidencia. Las sesiones son cada dos semanas y se complementan entre sí. La mayoría de las personas notan una mejora significativa antes de terminar el programa, sin depender de medicación a largo plazo.</p>
   </div>
 
   <a href="{{ '/es/pages/groups/' | url }}" class="block rounded-xl border border-border bg-card px-6 py-4 shadow-sm hover:border-primary/50 hover:shadow-md transition-all group">
