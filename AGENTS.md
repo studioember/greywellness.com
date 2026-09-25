@@ -2,11 +2,20 @@
 
 This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
+## Starting New Code Requests
+
+- At the start of each new code request, check the current Git branch before making changes.
+- If the branch is not `main`, ask the user whether they want to fetch the latest remote changes and start from updated `origin/main` to avoid opening a PR based on outdated code. Wait for their answer before making code changes.
+- Do not repeat this question for follow-up edits within the same request, or when the user has already explicitly asked to start from freshly fetched `origin/main`.
+- Fetching alone does not update the current branch. If the user chooses to refresh, fetch `origin` and create a new branch from `origin/main`, preserving any existing uncommitted work. Never discard changes or reset a branch without explicit authorization.
+
 ## Project Overview
 
 Studio Ember marketing website — a static site built with **Eleventy (11ty) v4 alpha** and **Tailwind CSS v4**. Content is authored in Markdown with Nunjucks templating. No client-side framework; interactivity is vanilla JS.
 
 ## Commands
+
+- When working on the site, automatically start `yarn dev` early in the session and keep it running so the local preview is available. First check whether the site's development server is already running; reuse it instead of starting a duplicate. Confirm the preview URL once the server is ready.
 
 - **`yarn dev`** — Start dev servers (Eleventy + Tailwind CSS watcher in parallel)
 - **`yarn build`** — Production build: compiles CSS, builds HTML, formats with Prettier

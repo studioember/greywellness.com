@@ -1,6 +1,6 @@
 docs/
 **/__*.md
 README.md
-AGENTS.md
+**/AGENTS.md
 CLAUDE.md
 pages/workshops/

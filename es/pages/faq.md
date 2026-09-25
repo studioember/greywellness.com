@@ -105,6 +105,14 @@ templateEngineOverride: njk,md
     },
     {
       "@type": "Question",
+      "name": "¿Qué debo preguntarle a mi aseguradora sobre el reembolso de las sesiones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pregunta si tu plan cubre atención de salud mental por telesalud con profesionales fuera de la red. Es posible que te pidan los códigos de procedimiento (CPT). Estos son los códigos que puedes consultar según la cita: 90837: sesión de psicoterapia de 60 minutos. 90834: sesión de psicoterapia de 45 minutos. 90832: sesión de psicoterapia de 30 minutos. 90791: evaluación diagnóstica psiquiátrica inicial. En Grey Wellness, esta cita suele durar 90 minutos. Para las sesiones por video, pregunta si tu plan requiere el modificador 95. Los requisitos pueden variar según la aseguradora; podemos ayudarte a confirmar los datos de facturación de tu cita. Pregunta también cuánto te falta para cubrir el deducible fuera de la red, si debes completarlo antes de recibir reembolsos y qué monto o porcentaje te reembolsaría el plan. Confirma si necesitas autorización previa y cómo presentar tu factura detallada (superbill). Verificar los beneficios no garantiza el reembolso."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "¿Qué pasa si no puedo pagar la tarifa completa?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -258,6 +266,22 @@ templateEngineOverride: njk,md
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
         <p class="mt-4 text-muted leading-relaxed">Somos un proveedor fuera de la red, así que no facturamos directamente al seguro. Muchos planes ofrecen beneficios fuera de la red que reembolsan una parte del costo, y proporcionamos una superbill después de cada sesión que puedes presentar tú misma. También colaboramos con Mentaya para facilitar la verificación de tus beneficios. Consulta todos los detalles en la <a href="{{ '/es/pages/investment/' | url }}" class="text-primary hover:underline">página de tarifas</a>.</p>
+      </details>
+
+      <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
+          ¿Qué debo preguntarle a mi aseguradora sobre el reembolso de las sesiones?
+          <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+        </summary>
+        <p class="mt-4 text-muted leading-relaxed">Pregunta si tu plan cubre atención de salud mental por telesalud con profesionales fuera de la red. Es posible que te pidan los códigos de procedimiento (CPT). Estos son los códigos que puedes consultar según la cita:</p>
+        <ul class="mt-4 list-disc pl-6 space-y-2 text-muted leading-relaxed">
+          <li><strong>90837:</strong> sesión de psicoterapia de 60 minutos.</li>
+          <li><strong>90834:</strong> sesión de psicoterapia de 45 minutos.</li>
+          <li><strong>90832:</strong> sesión de psicoterapia de 30 minutos.</li>
+          <li><strong>90791:</strong> evaluación diagnóstica psiquiátrica inicial. En Grey Wellness, esta cita suele durar 90 minutos.</li>
+        </ul>
+        <p class="mt-4 text-muted leading-relaxed">Para las sesiones por video, pregunta si tu plan requiere el modificador <strong>95</strong>. Los requisitos pueden variar según la aseguradora; podemos ayudarte a confirmar los datos de facturación de tu cita.</p>
+        <p class="mt-4 text-muted leading-relaxed">Pregunta también cuánto te falta para cubrir el deducible fuera de la red, si debes completarlo antes de recibir reembolsos y qué monto o porcentaje te reembolsaría el plan. Confirma si necesitas autorización previa y cómo presentar tu factura detallada (superbill). Verificar los beneficios no garantiza el reembolso.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
