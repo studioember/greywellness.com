@@ -45,7 +45,7 @@ Individual therapy focused on what matters to you. We use evidence-based approac
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Individual Psychotherapy <span class="text-sm font-normal text-muted">· 45 min</span></p>
-      <span class="text-xl font-bold text-foreground">$150</span>
+      <span class="text-xl font-bold text-foreground">$160</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">A 45-minute session with space to talk through current concerns, reflect on your progress, and continue working toward your therapy goals.</p>
   </div>
@@ -53,7 +53,7 @@ Individual therapy focused on what matters to you. We use evidence-based approac
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Individual Psychotherapy <span class="text-sm font-normal text-muted">· 30 min</span></p>
-      <span class="text-xl font-bold text-foreground">$105</span>
+      <span class="text-xl font-bold text-foreground">$120</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">A shorter session with a focused agenda. Time to check in on your progress, discuss a specific concern, or follow up on what you’ve been practicing.</p>
   </div>

@@ -45,7 +45,7 @@ Terapia individual centrada en lo que es importante para ti. Trabajamos con enfo
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 45 min</span></p>
-      <span class="text-xl font-bold text-foreground">$150</span>
+      <span class="text-xl font-bold text-foreground">$160</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Una sesión de 45 minutos para conversar sobre lo que estás viviendo, revisar tus avances y seguir trabajando en tus objetivos de terapia.</p>
   </div>
@@ -53,7 +53,7 @@ Terapia individual centrada en lo que es importante para ti. Trabajamos con enfo
   <div class="rounded-xl border border-border bg-card px-6 py-4 shadow-sm">
     <div class="flex items-center justify-between">
       <p class="font-semibold text-foreground">Psicoterapia Individual <span class="text-sm font-normal text-muted">· 30 min</span></p>
-      <span class="text-xl font-bold text-foreground">$105</span>
+      <span class="text-xl font-bold text-foreground">$120</span>
     </div>
     <p class="text-sm text-muted mt-2 leading-relaxed">Una sesión más breve, centrada en un tema concreto. Un espacio para revisar tus avances, conversar sobre una preocupación puntual o retomar lo que has estado practicando.</p>
   </div>
