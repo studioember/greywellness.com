@@ -100,12 +100,12 @@ templateEngineOverride: njk,md
       "name": "¿Aceptan seguro médico?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Somos un proveedor fuera de la red, así que no facturamos directamente al seguro. Muchos planes ofrecen beneficios fuera de la red que reembolsan una parte del costo, y proporcionamos una superbill después de cada sesión que puedes presentar tú misma. También colaboramos con Mentaya para facilitar la verificación de tus beneficios."
+        "text": "Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico. No aceptamos seguros para las sesiones en Virginia; ofrecemos la opción de pago particular."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué debo preguntarle a mi aseguradora sobre el reembolso de las sesiones?",
+      "name": "¿Qué pasa si mi plan está fuera de la red?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Pregunta si tu plan cubre atención de salud mental por telesalud con profesionales fuera de la red. Es posible que te pidan los códigos de procedimiento (CPT). Estos son los códigos que puedes consultar según la cita: 90837: sesión de psicoterapia de 60 minutos. 90834: sesión de psicoterapia de 45 minutos. 90832: sesión de psicoterapia de 30 minutos. 90791: evaluación diagnóstica psiquiátrica inicial. En Grey Wellness, esta cita suele durar 90 minutos. Para las sesiones por video, pregunta si tu plan requiere el modificador 95. Los requisitos pueden variar según la aseguradora; podemos ayudarte a confirmar los datos de facturación de tu cita. Pregunta también cuánto te falta para cubrir el deducible fuera de la red, si debes completarlo antes de recibir reembolsos y qué monto o porcentaje te reembolsaría el plan. Confirma si necesitas autorización previa y cómo presentar tu factura detallada (superbill). Verificar los beneficios no garantiza el reembolso."
@@ -277,12 +277,12 @@ templateEngineOverride: njk,md
           ¿Aceptan seguro médico?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">Somos un proveedor fuera de la red, así que no facturamos directamente al seguro. Muchos planes ofrecen beneficios fuera de la red que reembolsan una parte del costo, y proporcionamos una superbill después de cada sesión que puedes presentar tú misma. También colaboramos con Mentaya para facilitar la verificación de tus beneficios. Consulta todos los detalles en la <a href="{{ '/es/pages/investment/' | url }}" class="text-primary hover:underline">página de tarifas</a>.</p>
+        <p class="mt-4 text-muted leading-relaxed">Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico. No aceptamos seguros para las sesiones en Virginia; ofrecemos la opción de pago particular. Consulta todos los detalles en la <a href="{{ '/es/rates/' | url }}" class="text-primary hover:underline">página de tarifas</a>.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
-          ¿Qué debo preguntarle a mi aseguradora sobre el reembolso de las sesiones?
+          ¿Qué pasa si mi plan está fuera de la red?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
         <p class="mt-4 text-muted leading-relaxed">Pregunta si tu plan cubre atención de salud mental por telesalud con profesionales fuera de la red. Es posible que te pidan los códigos de procedimiento (CPT). Estos son los códigos que puedes consultar según la cita:</p>
@@ -356,7 +356,7 @@ templateEngineOverride: njk,md
       { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
       { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
       { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
-      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "¿Quieres usar tu seguro? Incluye el nombre de tu aseguradora y de tu plan en el mensaje. Aceptamos seguros solo para clientes en Maryland; las sesiones en Virginia son de pago particular.", required: false },
       { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
       { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
       { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
