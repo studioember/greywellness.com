@@ -10,6 +10,9 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
+Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico. No aceptamos seguros para las sesiones en Virginia; ofrecemos la opción de pago particular. Incluye el nombre de tu aseguradora y de tu plan en el mensaje.
+
+
 ## Consulta Gratuita
 
 Comenzar con la terapia es un gran paso, y encontrar a la persona adecuada es importante. Por eso ofrezco una consulta gratuita de 15 minutos antes de cualquier otra cosa.
@@ -31,7 +34,7 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
   { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
   { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
   { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
-  { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false },
+  { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "¿Quieres usar tu seguro? Incluye el nombre de tu aseguradora y de tu plan en el mensaje. Aceptamos seguros solo para clientes en Maryland; las sesiones en Virginia son de pago particular.", required: false },
   { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
   { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
   { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }

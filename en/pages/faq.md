@@ -100,12 +100,12 @@ templateEngineOverride: njk,md
       "name": "Do you accept insurance?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We're an out-of-network provider, so we don't bill insurance directly. Many plans offer out-of-network benefits that reimburse a portion of the cost, and we provide a superbill after each session that you can submit yourself. We also partner with Mentaya to make checking your benefits easier."
+        "text": "We accept Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna, and Aetna for Maryland clients only. Please reach out to confirm whether your specific plan is accepted. We do not accept insurance for Virginia sessions; self-pay is available."
       }
     },
     {
       "@type": "Question",
-      "name": "What should I ask my insurance company about reimbursement for sessions?",
+      "name": "What if my plan is out of network?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask whether your plan covers out-of-network mental health care by telehealth. Your insurer may ask for the procedure (CPT) codes. These are the codes to ask about, depending on the appointment: 90837: 60-minute psychotherapy session. 90834: 45-minute psychotherapy session. 90832: 30-minute psychotherapy session. 90791: initial psychiatric diagnostic evaluation. At Grey Wellness, this appointment typically lasts 90 minutes. For video sessions, ask whether your plan requires modifier 95. The requirements can vary by insurer; we can help confirm the billing details for your appointment. Also ask how much of your out-of-network deductible remains, whether it must be met before reimbursement begins, and what amount or percentage your plan reimburses. Check whether prior authorization is required and how to submit your superbill. A benefits check is not a guarantee of payment."
@@ -277,12 +277,12 @@ templateEngineOverride: njk,md
           Do you accept insurance?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
-        <p class="mt-4 text-muted leading-relaxed">We're an out-of-network provider, so we don't bill insurance directly. Many plans offer out-of-network benefits that reimburse a portion of the cost, and we provide a superbill after each session that you can submit yourself. We also partner with Mentaya to make checking your benefits easier. See full details on the <a href="{{ '/en/pages/investment/' | url }}" class="text-primary hover:underline">rates page</a>.</p>
+        <p class="mt-4 text-muted leading-relaxed">We accept Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna, and Aetna for Maryland clients only. Please reach out to confirm whether your specific plan is accepted. We do not accept insurance for Virginia sessions; self-pay is available. See full details on the <a href="{{ '/en/rates/' | url }}" class="text-primary hover:underline">rates page</a>.</p>
       </details>
 
       <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
         <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
-          What should I ask my insurance company about reimbursement for sessions?
+          What if my plan is out of network?
           <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
         </summary>
         <p class="mt-4 text-muted leading-relaxed">Ask whether your plan covers out-of-network mental health care by telehealth. Your insurer may ask for the procedure (CPT) codes. These are the codes to ask about, depending on the appointment:</p>
@@ -356,7 +356,7 @@ templateEngineOverride: njk,md
       { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
       { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
       { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
-      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", required: false },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", help: "Using insurance? Include your insurance provider and plan name in your message. Insurance is accepted for Maryland clients only; Virginia sessions are self-pay.", required: false },
       { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
       { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
       { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }

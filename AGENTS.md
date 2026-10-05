@@ -67,3 +67,19 @@ No test suite or linter is configured.
 ### Deployment
 
 GitHub Actions (`.github/workflows/gh-pages.yml`) deploys on push to `main`. Note: the workflow currently references Hugo and needs updating to use Eleventy.
+
+## Estilo editorial para los artículos del blog
+
+- Escribe con un tono académico accesible: rigor clínico, lenguaje claro y una voz cercana y profesional. Evita la jerga innecesaria, el humor forzado y las frases ingeniosas que no aporten información.
+- Mantén los artículos breves y enfocados. Usa aproximadamente 600–700 palabras como referencia flexible; amplía solo cuando el tema lo necesite. Elimina redundancias y explicaciones repetidas.
+- Prioriza la perspectiva de salud mental y sueño, especialmente el insomnio. Evita que los consejos generales de bienestar desplacen el propósito del artículo.
+- Conserva mi voz como terapeuta. Puedes incorporar observaciones clínicas que yo haya compartido, pero no inventes experiencias en consulta, testimonios ni historias de pacientes.
+- Explica las distinciones clínicas con ejemplos claros. Ayuda a entender qué puede ser esperable, qué merece evaluación y qué tratamientos existen, sin diagnosticar al lector.
+- Usa lenguaje inclusivo y evita asumir género, estructura familiar, experiencias físicas, recursos o redes de apoyo.
+- Describe las experiencias de forma comprensiva y contextualizada. Evita encuadres alarmistas, culpabilizantes o innecesariamente negativos.
+- Verifica las afirmaciones clínicas con fuentes fiables y, cuando corresponda, prioriza organizaciones especializadas en sueño, guías clínicas e investigaciones originales. Distingue asociación de causalidad y expresa las limitaciones de la evidencia.
+- Incluye citas vinculadas a las afirmaciones relevantes y una lista de referencias al final.
+- Añade una sección práctica con un título directo, como “¿Qué puedo hacer?” o “Tratamiento”. Usa viñetas cuando faciliten la lectura y adapta las recomendaciones a las circunstancias reales del público.
+- Cierra con un mensaje de esperanza realista, sin prometer resultados. Si se incluye una llamada a la acción, que sea breve, natural y coherente con el formato del sitio.
+- El artículo también debe servir como base rigurosa para el contenido educativo que publicamos durante la semana.
+- Trabajamos primero el borrador en español. Prepara la versión en inglés después de revisar y aprobar el contenido en español.

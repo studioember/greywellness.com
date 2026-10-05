@@ -96,7 +96,7 @@ no_prose: true
           "name": "¿Cuánto cuesta? ¿Aceptas seguro médico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Las sesiones individuales y del programa TCC-I tienen una tarifa transparente. Emitimos facturas detalladas (superbills) para reembolso fuera de red y ofrecemos escala móvil. Ofrecemos una consulta inicial gratuita de 15 minutos."
+            "text": "Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico. No aceptamos seguros para las sesiones en Virginia; ofrecemos la opción de pago particular."
           }
         },
         {
@@ -410,7 +410,7 @@ no_prose: true
           <svg class="w-5 h-5 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
         </summary>
         <div class="px-6 pb-5 text-muted leading-relaxed text-sm border-t border-border pt-4">
-          Puedes encontrar todos los detalles en la <a href="{{ '/es/pages/investment/' | url }}" class="text-primary underline hover:no-underline">página de tarifas</a>. Con gusto respondemos preguntas específicas durante tu consulta gratuita.
+          Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico. No aceptamos seguros para las sesiones en Virginia; ofrecemos la opción de pago particular. Puedes encontrar todos los detalles en la <a href="{{ '/es/rates/' | url }}" class="text-primary underline hover:no-underline">página de tarifas</a>. Con gusto respondemos preguntas específicas durante tu consulta gratuita.
         </div>
       </details>
 
@@ -437,7 +437,7 @@ no_prose: true
         { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
         { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
         { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
-        { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", required: false },
+        { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "¿Quieres usar tu seguro? Incluye el nombre de tu aseguradora y de tu plan en el mensaje. Aceptamos seguros solo para clientes en Maryland; las sesiones en Virginia son de pago particular.", required: false },
         { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
         { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
         { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
