@@ -1,0 +1,29 @@
+{% if service_type %}
+{% set _service_lang = lang | default('en') %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": {{ (site.url ~ page.url ~ "#service") | dump | safe }},
+  "name": {{ service_type | dump | safe }},
+  "serviceType": {{ service_type | dump | safe }},
+  "url": {{ (site.url ~ page.url) | dump | safe }},
+  "description": {{ (description ~ " " ~ i18n[_service_lang].service_availability) | dump | safe }},
+  "provider": {
+    "@type": "MedicalOrganization",
+    "@id": {{ (site.url ~ "/#practice") | dump | safe }},
+    "name": {{ site.name | dump | safe }},
+    "url": {{ site.url | dump | safe }}
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Virginia" },
+    { "@type": "State", "name": "Maryland" }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": {{ (site.url ~ "/" ~ _service_lang ~ "/pages/contact/") | dump | safe }},
+    "availableLanguage": ["English", "Spanish"]
+  }
+}
+</script>
+{% endif %}

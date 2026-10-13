@@ -1,8 +1,8 @@
 ---
 title: What We Treat
 title_hidden: false
-meta_title: "Therapy for Insomnia, Trauma & Anxiety | Grey Wellness"
-description: "Bilingual therapy for insomnia, trauma, and anxiety. Learn what brings people to Grey Wellness and how life can look different."
+meta_title: "Therapy Services in Virginia & Maryland | Grey Wellness"
+description: "CBT-I, anxiety, and trauma therapy for adults in Virginia and Maryland, in English and Spanish. Virginia is self-pay; insurance accepted in Maryland only."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

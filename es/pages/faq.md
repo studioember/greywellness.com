@@ -2,7 +2,7 @@
 title: Preguntas Frecuentes
 title_hidden: false
 meta_title: "Preguntas Frecuentes sobre TCC-I y Terapia | Grey Wellness"
-description: "Respuestas sobre la TCC-I para el insomnio, tarifas, seguro y terapia virtual bilingüe en Virginia y Maryland."
+description: "Respuestas sobre terapia virtual bilingüe, TCC-I y tarifas en Virginia y Maryland. Pago particular sin seguros en Virginia; seguros solo en Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -69,6 +69,14 @@ templateEngineOverride: njk,md
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sí. El sueño, el trauma y la ansiedad suelen estar profundamente conectados, y gran parte de nuestro trabajo vive justo en esa intersección. Además de la TCC-I, ofrecemos psicoterapia individual para el trauma y la ansiedad. Durante tu consulta gratuita, definiremos juntos si la TCC-I, la psicoterapia individual, o una combinación de ambas se ajusta mejor a tus metas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Ofrecen terapia con pago particular en Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Grey Wellness ofrece TCC-I para el insomnio, terapia para la ansiedad y terapia para el trauma de forma virtual para personas adultas en todo Virginia, en español e inglés. Debes encontrarte físicamente en Virginia al momento de tu sesión. Las sesiones en Virginia son de pago particular; no aceptamos ni facturamos seguros para las sesiones en Virginia. Aceptamos seguros únicamente para clientes en Maryland."
       }
     },
     {
@@ -228,6 +236,11 @@ templateEngineOverride: njk,md
 
     </div>
   </details>
+
+  <section class="rounded-2xl border border-border bg-card p-6 shadow-sm" aria-labelledby="virginia-faq-heading">
+    <h2 id="virginia-faq-heading" class="text-xl font-semibold text-foreground">¿Ofrecen terapia con pago particular en Virginia?</h2>
+    <p class="mt-4 text-muted leading-relaxed">Sí. Grey Wellness ofrece TCC-I para el insomnio, terapia para la ansiedad y terapia para el trauma de forma virtual para personas adultas en todo Virginia, en español e inglés. Debes encontrarte físicamente en Virginia al momento de tu sesión. Las sesiones en Virginia son de pago particular; no aceptamos ni facturamos seguros para las sesiones en Virginia. Aceptamos seguros únicamente para clientes en Maryland. <a href="{{ '/es/rates/' | url }}" class="text-primary underline hover:no-underline">Consulta las tarifas de pago particular</a>.</p>
+  </section>
 
   <!-- Sessions & Logistics -->
   <details id="logistica" class="group/topic rounded-2xl border border-border bg-card shadow-sm">

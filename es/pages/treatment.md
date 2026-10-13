@@ -1,8 +1,8 @@
 ---
 title: Lo Que Tratamos
 title_hidden: false
-meta_title: "Terapia para el Insomnio, el Trauma y la Ansiedad | Grey Wellness"
-description: "Terapia bilingüe para el insomnio, el trauma y la ansiedad. Aprenda qué lleva a las personas a Grey Wellness."
+meta_title: "Terapia en Virginia y Maryland | Grey Wellness"
+description: "TCC-I y terapia para ansiedad y trauma en Virginia y Maryland, en español e inglés. Pago particular en Virginia; seguros solo en Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

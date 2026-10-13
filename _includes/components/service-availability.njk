@@ -1,0 +1,6 @@
+{% set _availability_lang = lang | default('en') %}
+{% set _availability_text = i18n[_availability_lang] %}
+<p class="text-sm text-muted leading-relaxed">
+  {{ _availability_text.service_availability }}
+  <a href="{{ ('/' ~ _availability_lang ~ '/rates/') | url }}" class="text-primary underline hover:no-underline">{{ _availability_text.service_availability_link }}</a>
+</p>

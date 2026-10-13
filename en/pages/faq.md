@@ -2,7 +2,7 @@
 title: FAQ
 title_hidden: false
 meta_title: "CBT-I, Insomnia & Therapy FAQs | Grey Wellness"
-description: "Answers about CBT-I for insomnia, fees, insurance, and bilingual telehealth therapy in Virginia and Maryland."
+description: "Answers about bilingual virtual therapy, CBT-I, and fees in Virginia and Maryland. Virginia is self-pay with no insurance; insurance accepted in Maryland only."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -69,6 +69,14 @@ templateEngineOverride: njk,md
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Sleep, trauma, and anxiety are often deeply connected, and much of our work lives right at that overlap. Alongside CBT-I, we offer individual psychotherapy for trauma and anxiety. During your free consultation, we'll figure out together whether CBT-I, individual psychotherapy, or a combination of both fits your goals best."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer self-pay therapy in Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Grey Wellness offers virtual CBT-I for insomnia, anxiety therapy, and trauma therapy for adults throughout Virginia in English and Spanish. You must be physically located in Virginia at the time of your session. Virginia sessions are self-pay (private pay); we do not accept or bill insurance for Virginia sessions. Insurance is accepted for Maryland clients only."
       }
     },
     {
@@ -228,6 +236,11 @@ templateEngineOverride: njk,md
 
     </div>
   </details>
+
+  <section class="rounded-2xl border border-border bg-card p-6 shadow-sm" aria-labelledby="virginia-faq-heading">
+    <h2 id="virginia-faq-heading" class="text-xl font-semibold text-foreground">Do you offer self-pay therapy in Virginia?</h2>
+    <p class="mt-4 text-muted leading-relaxed">Yes. Grey Wellness offers virtual CBT-I for insomnia, anxiety therapy, and trauma therapy for adults throughout Virginia in English and Spanish. You must be physically located in Virginia at the time of your session. Virginia sessions are self-pay (private pay); we do not accept or bill insurance for Virginia sessions. Insurance is accepted for Maryland clients only. <a href="{{ '/en/rates/' | url }}" class="text-primary underline hover:no-underline">View self-pay rates</a>.</p>
+  </section>
 
   <!-- Sessions & Logistics -->
   <details id="logistics" class="group/topic rounded-2xl border border-border bg-card shadow-sm">

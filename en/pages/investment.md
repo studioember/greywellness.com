@@ -2,8 +2,8 @@
 title: Insurance & Rates
 title_hidden: false
 description_hidden: true
-meta_title: "Insurance & Therapy Rates in Maryland and Virginia | Grey Wellness"
-description: "Transparent pricing for therapy at Grey Wellness. Session fees, accepted insurance plans in Maryland, self-pay in Virginia, and sliding scale options."
+meta_title: "Virginia Self-Pay Therapy & Maryland Insurance | Grey Wellness"
+description: "Self-pay therapy rates for Virginia and Maryland. No insurance accepted in Virginia; accepted Maryland plans, session fees, and sliding scale options."
 date: "git Last Modified"
 date_hidden: true
 permalink: /en/rates/
@@ -30,8 +30,8 @@ Explore insurance options for Maryland, self-pay rates for Maryland and Virginia
 </section>
 
 <aside class="not-prose text-foreground my-8 border-l-2 border-primary pl-5" aria-labelledby="virginia-heading">
-<h2 id="virginia-heading" class="text-lg font-semibold">Care in Virginia</h2>
-<p class="mt-2 text-muted">Virginia sessions are available through self-pay. Insurance is currently accepted only for Maryland clients.</p>
+<h2 id="virginia-heading" class="text-lg font-semibold">Self-pay therapy in Virginia (no insurance)</h2>
+<p class="mt-2 text-muted">We offer virtual CBT-I, anxiety therapy, and trauma therapy for adults physically located in Virginia at the time of their session, in English and Spanish. Virginia sessions are self-pay (private pay); we do not accept or bill insurance for Virginia sessions. See the self-pay rates below. Insurance is accepted only for Maryland clients.</p>
 </aside>
 
 ## Self-pay rates

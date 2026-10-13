@@ -2,7 +2,7 @@
 title: How We Work
 title_hidden: false
 meta_title: "CBT-I, Trauma-Informed & Evidence-Based Therapy | Grey Wellness"
-description: "The treatment approaches used at Grey Wellness: CBT-I for insomnia, trauma-informed care, cognitive behavioral therapy, mindfulness, BFRB support, and feminist therapy."
+description: "Explore CBT-I and psychotherapy approaches for adults in Virginia and Maryland. Bilingual virtual care; self-pay in Virginia, insurance in Maryland only."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

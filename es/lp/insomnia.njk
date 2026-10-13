@@ -1,10 +1,11 @@
 ---
 layout: layouts/landing.njk
 meta_title: "Terapeuta de TCC-I para el Insomnio | Virginia y Maryland"
-description: "Duerme mejor con TCC-I, el tratamiento de primera línea para el insomnio crónico. Terapia virtual bilingüe en Virginia y Maryland."
+description: "TCC-I virtual bilingüe para el insomnio en Virginia y Maryland. Sesiones de pago particular sin seguros en Virginia; seguros aceptados solo en Maryland."
 lp_noindex: false
 lang: es
 eleventyExcludeFromCollections: true
+service_type: "Terapia Cognitivo-Conductual para el Insomnio (TCC-I)"
 ---
 {% from 'macros/google-form.njk' import googleForm %}
 
@@ -22,6 +23,8 @@ eleventyExcludeFromCollections: true
         <p class="text-lg text-muted leading-relaxed mb-8">
           La Terapia Cognitivo-Conductual para el Insomnio (TCC-I) es el <strong class="text-foreground">tratamiento de primera línea recomendado</strong> para el insomnio crónico, avalado por la Academia Americana de Medicina del Sueño. Sin medicamentos, sin dependencia. Un enfoque probado para recuperar tus noches.
         </p>
+
+        {% include 'components/service-availability.njk' %}
 
         <!-- Quick stats -->
         <div class="flex gap-4 mb-8">

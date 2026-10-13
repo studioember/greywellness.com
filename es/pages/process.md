@@ -2,7 +2,7 @@
 title: Cómo Trabajamos
 title_hidden: false
 meta_title: "TCC-I, Atención Basada en Trauma y Terapia Basada en Evidencia | Grey Wellness"
-description: "Los enfoques de tratamiento en Grey Wellness: TCC-I para el insomnio, atención informada en trauma, terapia cognitivo-conductual, mindfulness y terapia feminista."
+description: "Conoce la TCC-I y los enfoques de psicoterapia para personas adultas en Virginia y Maryland. Terapia bilingüe; pago particular en Virginia, seguros solo en Maryland."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

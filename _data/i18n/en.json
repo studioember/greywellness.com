@@ -45,7 +45,7 @@
   "home_hero_img_alt": "Hummingbird in flight against a moody sky",
   "home_hero_h1_line1": "Better sleep",
   "home_hero_h1_line2": "is possible.",
-  "home_hero_subtitle": "Bilingual CBT-I for insomnia and related sleep problems. Virtual therapy throughout Virginia and Maryland in English and Spanish.",
+  "home_hero_subtitle": "Bilingual CBT-I for insomnia and related sleep problems. Virtual therapy throughout Virginia and Maryland in English and Spanish. Virginia sessions are self-pay; no insurance accepted.",
   "home_hero_cta_schedule": "Request Appointment",
   "home_hero_cta_services": "See Services",
   "home_authority_label": "Specialized training. Thoughtful care.",
@@ -92,5 +92,7 @@
   "home_schema_cbti_desc": "Gold-standard, evidence-based treatment to retrain your mind and body for deeper, more restorative sleep—often in 6–8 weeks.",
   "home_schema_anxiety_name": "Anxiety & Stress Therapy",
   "home_schema_anxiety_desc": "Therapy for adults whose anxiety, trauma, or stress is making sleep harder.",
-  "home_schema_job_title": "Licensed Therapist"
+  "home_schema_job_title": "Licensed Therapist",
+  "service_availability": "Virtual therapy in Virginia and Maryland in English and Spanish. Virginia sessions are self-pay; insurance is not accepted in Virginia. Accepted insurance plans are available for Maryland clients only.",
+  "service_availability_link": "View self-pay rates and Maryland insurance options"
 }

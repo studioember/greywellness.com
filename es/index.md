@@ -2,5 +2,5 @@
 layout: layouts/home.njk
 date: "git Last Modified"
 meta_title: "Grey Wellness | Terapeuta de TCC-I en Virginia y Maryland"
-description: "Grey Wellness ofrece terapia en español e inglés con Mónica Grey, MS, LCPC, NCC para personas adultas en Virginia y Maryland que viven con insomnio crónico, trauma o ansiedad."
+description: "TCC-I y terapia para ansiedad y trauma en Virginia y Maryland con Mónica Grey. En español e inglés. Pago particular en Virginia; seguros solo en Maryland."
 ---

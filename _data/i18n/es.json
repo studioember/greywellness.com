@@ -45,7 +45,7 @@
   "home_hero_img_alt": "Colibrí en vuelo contra un cielo oscuro",
   "home_hero_h1_line1": "Dormir mejor",
   "home_hero_h1_line2": "es posible.",
-  "home_hero_subtitle": "TCC-I bilingüe para el insomnio y problemas relacionados con el sueño. Terapia virtual en Virginia y Maryland, en español e inglés.",
+  "home_hero_subtitle": "TCC-I bilingüe para el insomnio y problemas relacionados con el sueño. Terapia virtual en Virginia y Maryland, en español e inglés. Sesiones en Virginia con pago particular; no aceptamos seguros.",
   "home_hero_cta_schedule": "Solicitar Cita",
   "home_hero_cta_services": "Ver Servicios",
   "home_authority_label": "Formación especializada. Atención con propósito.",
@@ -92,5 +92,7 @@
   "home_schema_cbti_desc": "Tratamiento de referencia basado en evidencia para reentrena tu mente y cuerpo hacia un sueño más profundo y reparador, a menudo en 6–8 semanas.",
   "home_schema_anxiety_name": "Terapia para la Ansiedad y el Estrés",
   "home_schema_anxiety_desc": "Terapia para adultos cuya ansiedad, trauma o estrés dificulta el sueño.",
-  "home_schema_job_title": "Terapeuta Licenciada"
+  "home_schema_job_title": "Terapeuta Licenciada",
+  "service_availability": "Terapia virtual en Virginia y Maryland en español e inglés. Las sesiones en Virginia son de pago particular; no aceptamos seguros en Virginia. Los seguros aceptados están disponibles únicamente para clientes en Maryland.",
+  "service_availability_link": "Consulta las tarifas de pago particular y los seguros en Maryland"
 }

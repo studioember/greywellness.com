@@ -1,8 +1,8 @@
 ---
 title: Contact
 title_hidden: false
-meta_title: "Contact & Free Consultation | Grey Wellness Bethesda"
-description: "Book a free 15-minute consultation with Mónica Grey, MS, LCPC, NCC, bilingual CBT-I therapist. No commitment required. New clients welcome in English and Spanish."
+meta_title: "Therapy Consultation in Virginia & Maryland | Grey Wellness"
+description: "Book a free 15-minute consultation for bilingual virtual therapy in Virginia and Maryland. Virginia is self-pay; insurance accepted in Maryland only."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true

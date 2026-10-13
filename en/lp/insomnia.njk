@@ -1,10 +1,11 @@
 ---
 layout: layouts/landing.njk
 meta_title: "CBT-I Therapist for Insomnia | Virginia & Maryland"
-description: "Finally sleep through the night with CBT-I, the recommended first-line treatment for chronic insomnia. Bilingual virtual therapy in Virginia and Maryland."
+description: "Bilingual virtual CBT-I for insomnia in Virginia and Maryland. Virginia sessions are self-pay with no insurance; accepted insurance plans in Maryland only."
 lp_noindex: false
 lang: en
 eleventyExcludeFromCollections: true
+service_type: "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
 ---
 {% from 'macros/google-form.njk' import googleForm %}
 
@@ -22,6 +23,8 @@ eleventyExcludeFromCollections: true
         <p class="text-lg text-muted leading-relaxed mb-8">
           Cognitive Behavioral Therapy for Insomnia (CBT-I) is the <strong class="text-foreground">recommended first-line treatment</strong> for chronic insomnia, endorsed by the American Academy of Sleep Medicine. No medication, no dependency. Just a proven approach that gives you back your nights.
         </p>
+
+        {% include 'components/service-availability.njk' %}
 
         <!-- Quick stats -->
         <div class="flex gap-4 mb-8">

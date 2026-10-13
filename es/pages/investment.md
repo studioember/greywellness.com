@@ -2,8 +2,8 @@
 title: Seguros y Tarifas
 title_hidden: false
 description_hidden: true
-meta_title: "Seguros y Tarifas de Terapia en Maryland y Virginia | Grey Wellness"
-description: "Conoce los honorarios de sesión, los seguros aceptados en Maryland, el pago particular en Virginia y las opciones de escala móvil en Grey Wellness."
+meta_title: "Pago particular en Virginia y seguros en Maryland | Grey Wellness"
+description: "Tarifas de terapia con pago particular en Virginia y Maryland. No aceptamos seguros en Virginia. Consulta los seguros de Maryland y la escala móvil."
 date: "git Last Modified"
 date_hidden: true
 permalink: /es/rates/
@@ -30,8 +30,8 @@ Consulta las opciones de seguro en Maryland, las tarifas de pago particular en M
 </section>
 
 <aside class="not-prose text-foreground my-8 border-l-2 border-primary pl-5" aria-labelledby="virginia-heading">
-<h2 id="virginia-heading" class="text-lg font-semibold">Atención en Virginia</h2>
-<p class="mt-2 text-muted">Las sesiones en Virginia están disponibles con pago particular. Actualmente aceptamos seguros únicamente para clientes en Maryland.</p>
+<h2 id="virginia-heading" class="text-lg font-semibold">Terapia con pago particular en Virginia (sin seguros)</h2>
+<p class="mt-2 text-muted">Ofrecemos TCC-I, terapia para la ansiedad y terapia para el trauma de forma virtual, en español e inglés, para personas adultas que se encuentren físicamente en Virginia al momento de su sesión. Las sesiones en Virginia son de pago particular; no aceptamos ni facturamos seguros para las sesiones en Virginia. Consulta las tarifas a continuación. Aceptamos seguros únicamente para clientes en Maryland.</p>
 </aside>
 
 ## Tarifas de pago particular
