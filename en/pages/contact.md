@@ -2,7 +2,7 @@
 title: Contact
 title_hidden: false
 meta_title: "Therapy Consultation in Virginia & Maryland | Grey Wellness"
-description: "Book a free 15-minute consultation for bilingual virtual therapy in Virginia and Maryland. Virginia is self-pay; insurance accepted in Maryland only."
+description: "Book a free 15-minute consultation for bilingual virtual therapy in Maryland and Virginia. Discuss your goals with Mónica Grey in English or Spanish."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true
@@ -10,7 +10,7 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-We accept Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna, and Aetna for Maryland clients only. Please reach out to confirm whether your specific plan is accepted. We do not accept insurance for Virginia sessions; self-pay is available. Include your insurance provider and plan name in your message.
+Virtual therapy for adults in Maryland and Virginia, in English and Spanish.
 
 
 ## Free Consultation
@@ -34,7 +34,7 @@ There is no pressure to make a decision on the call. I genuinely encourage you t
   { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
   { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
   { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
-  { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", help: "Using insurance? Include your insurance provider and plan name in your message. Insurance is accepted for Maryland clients only; Virginia sessions are self-pay.", required: false },
+  { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", help: "Share what you'd like help with and a few days and times that work for a consultation.", required: false },
   { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
   { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
   { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
