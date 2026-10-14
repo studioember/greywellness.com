@@ -17,6 +17,7 @@
     {% set _og_image  = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
 
     <title>{{ _page_title }}</title>
+    {% include 'components/service-schema.njk' %}
 
     {# ── Core SEO ── #}
     <meta name="description" content="{{ _page_desc }}">
@@ -107,7 +108,6 @@
   </head>
 
   <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
-    {% include 'components/insurance-banner.njk' %}
 {# Navigation - Start #}
     {% block navigation %}
     {% include 'components/navigation.njk' %}

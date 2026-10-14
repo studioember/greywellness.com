@@ -28,7 +28,6 @@
   "footer_social_instagram": "Síguenos en Instagram",
   "footer_social_linkedin": "Síguenos en LinkedIn",
   "footer_badge_pt": "Verificado por Psychology Today",
-  "footer_badge_mentaya": "Proveedora verificada por Mentaya",
   "footer_badge_latinx": "Incluida en el directorio de LatinX Therapy",
   "footer_badge_nbcc": "Certificada por NBCC (National Certified Counselor)",
   "lang_other_code": "EN",
@@ -57,10 +56,6 @@
   "home_about_body": "Imagínate despertar con más energía para las personas y las metas que te importan. Imagínate pasar el día con una mente más tranquila y sentir que lo que ocurrió en el pasado ya no controla tu presente. Quizás estás listx para algo más que simplemente sobrevivir el día. Soy Mónica Grey, MS, LCPC, NCC y ayudo a personas adultas motivadas a entender los patrones que las mantienen estancadas y trabajar hacia un mejor descanso, más calma y una vida que se sienta verdaderamente suya.",
   "home_about_ncc": "Consejera Certificada Nacionalmente (NCC)",
   "home_about_cta": "Conoce a Mónica",
-  "insurance_banner_label": "Noticias de la práctica",
-  "insurance_banner_dismiss": "Cerrar anuncio",
-  "insurance_banner_body": "¡Ahora aceptamos seguros solo en Maryland! · Sesiones en Virginia con pago particular.",
-  "insurance_banner_cta": "Consulta sobre tu plan",
   "home_services_eyebrow": "Áreas de Apoyo",
   "home_services_heading": "No tienes que resolver esto solo.",
   "home_services_subtitle": "Ya sea que no puedas dormir, te sientas atrapada en lo que pasó, o tu mente no deje de correr, el apoyo está aquí. Sesiones en inglés y español.",
@@ -92,5 +87,7 @@
   "home_schema_cbti_desc": "Tratamiento de referencia basado en evidencia para reentrena tu mente y cuerpo hacia un sueño más profundo y reparador, a menudo en 6–8 semanas.",
   "home_schema_anxiety_name": "Terapia para la Ansiedad y el Estrés",
   "home_schema_anxiety_desc": "Terapia para adultos cuya ansiedad, trauma o estrés dificulta el sueño.",
-  "home_schema_job_title": "Terapeuta Licenciada"
+  "home_schema_job_title": "Terapeuta Licenciada",
+  "service_availability": "Terapia virtual para personas adultas en todo Maryland y Virginia, en español e inglés.",
+  "service_availability_link": "Consulta las tarifas de las sesiones"
 }

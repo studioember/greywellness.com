@@ -2,7 +2,7 @@
 title: Cómo Trabajamos
 title_hidden: false
 meta_title: "TCC-I, Atención Basada en Trauma y Terapia Basada en Evidencia | Grey Wellness"
-description: "Los enfoques de tratamiento en Grey Wellness: TCC-I para el insomnio, atención informada en trauma, terapia cognitivo-conductual, mindfulness y terapia feminista."
+description: "Conoce la TCC-I, TCC, atención informada en trauma, mindfulness y terapia feminista para personas adultas en Maryland y Virginia. Sesiones virtuales bilingües."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -103,7 +103,7 @@ templateEngineOverride: njk,md
       { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
       { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
       { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
-      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "¿Quieres usar tu seguro? Incluye el nombre de tu aseguradora y de tu plan en el mensaje. Aceptamos seguros solo para clientes en Maryland; las sesiones en Virginia son de pago particular.", required: false },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan para una consulta.", required: false },
       { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
       { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
       { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }

@@ -17,6 +17,7 @@
     {% set _og_image  = site.url ~ "/assets/img/og-image.jpg" %}
 
     <title>{{ _page_title }}</title>
+    {% include 'components/service-schema.njk' %}
 
     <meta name="description" content="{{ _page_desc }}">
     {% if lp_noindex %}

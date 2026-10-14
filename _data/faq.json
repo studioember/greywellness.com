@@ -1,0 +1,222 @@
+{
+  "en": {
+    "intro": "Find answers about insurance and coverage, our treatment approaches, virtual sessions, and getting started with therapy in Maryland and Virginia.",
+    "cta": "Book a free consultation",
+    "sections": [
+      {
+        "id": "insurance",
+        "title": "Insurance & Coverage",
+        "questions": [
+          {
+            "question": "Do you accept insurance in Maryland or Virginia?",
+            "paragraphs": [
+              "We accept Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna, and Aetna for Maryland clients only. Contact us to confirm whether your specific plan is accepted.",
+              "Virginia sessions are self-pay (private pay). We do not accept or bill insurance for Virginia sessions."
+            ],
+            "resources": [
+              {
+                "path": "/rates/",
+                "label": "View session rates"
+              }
+            ]
+          },
+          {
+            "question": "How do I confirm what my plan covers?",
+            "paragraphs": [
+              "Contact us with your insurance provider and plan name to confirm participation. Ask your insurer whether your plan covers mental health care by telehealth, what copay or coinsurance applies, whether you have a deductible, and whether prior authorization is required. Your cost depends on your plan and benefits."
+            ]
+          },
+          {
+            "question": "Can I use out-of-network benefits?",
+            "paragraphs": [
+              "If your plan includes out-of-network benefits, we can provide a detailed receipt, called a superbill, for you to submit to your insurer. Ask about your remaining deductible, reimbursement amount, and submission requirements. Reimbursement depends on your plan; a benefits check does not guarantee payment.",
+              "If your insurer asks for billing codes, ask about 90837 (60-minute psychotherapy), 90834 (45 minutes), 90832 (30 minutes), or 90791 (initial diagnostic evaluation, typically 90 minutes at Grey Wellness). For video sessions, ask whether modifier 95 is required. We can help confirm the details for your appointment.",
+              "The Mentaya tool below checks out-of-network benefits. It does not confirm whether we accept your plan."
+            ],
+            "benefitsTool": true
+          }
+        ]
+      },
+      {
+        "id": "treatment",
+        "title": "Treatment Modalities",
+        "questions": [
+          {
+            "question": "What treatment approaches do you use?",
+            "paragraphs": [
+              "We offer Cognitive Behavioral Therapy for Insomnia (CBT-I), Cognitive Behavioral Therapy (CBT), trauma-informed care including Cognitive Processing Therapy (CPT), mindfulness-based approaches, and feminist therapy. We choose approaches together based on your concerns, goals, and circumstances."
+            ],
+            "resources": [
+              {
+                "path": "/pages/process/",
+                "label": "Explore how we work"
+              }
+            ]
+          },
+          {
+            "question": "What does CBT-I involve?",
+            "paragraphs": [
+              "CBT-I is a structured, evidence-based treatment for chronic insomnia. It addresses sleep-related thoughts and behaviors, using tools such as a sleep diary, changes to sleep habits, and practical exercises between sessions. The pace and treatment plan are tailored to your needs."
+            ],
+            "resources": [
+              {
+                "path": "/pages/sleep/",
+                "label": "Learn about CBT-I"
+              },
+              {
+                "url": "https://aasm.org/new-guideline-supports-behavioral-psychological-treatments-for-insomnia/",
+                "label": "AASM guidance on CBT-I"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sessions",
+        "title": "Virtual or In Person",
+        "questions": [
+          {
+            "question": "Are sessions virtual or in person?",
+            "paragraphs": [
+              "All therapy sessions are virtual; we do not offer in-person appointments. We work with adults who are physically located in Maryland or Virginia at the time of their session. Sessions are available in English and Spanish."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "getting-started",
+        "title": "How to Get Started",
+        "questions": [
+          {
+            "question": "How do I get started?",
+            "paragraphs": [
+              "Complete our contact form to request a free 15-minute consultation. Share what you'd like help with and a few days and times that work for you. We will respond within 1–2 business days."
+            ],
+            "resources": [
+              {
+                "path": "/pages/contact/",
+                "label": "Request a consultation"
+              }
+            ]
+          },
+          {
+            "question": "What happens during the free consultation?",
+            "paragraphs": [
+              "We meet briefly by video, or by phone if you prefer. You can share your goals, ask questions, and get a sense of how we work. We will discuss whether our services fit your needs. There is no obligation to continue or decide during the call."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "intro": "Encuentra respuestas sobre seguros y cobertura, nuestros enfoques de tratamiento, las sesiones virtuales y cómo comenzar terapia en Maryland y Virginia.",
+    "cta": "Reserva una consulta gratuita",
+    "sections": [
+      {
+        "id": "insurance",
+        "title": "Seguros y cobertura",
+        "questions": [
+          {
+            "question": "¿Aceptan seguros en Maryland o Virginia?",
+            "paragraphs": [
+              "Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico.",
+              "Las sesiones en Virginia son de pago particular. No aceptamos ni facturamos seguros para las sesiones en Virginia."
+            ],
+            "resources": [
+              {
+                "path": "/rates/",
+                "label": "Consulta las tarifas de las sesiones"
+              }
+            ]
+          },
+          {
+            "question": "¿Cómo confirmo qué cubre mi plan?",
+            "paragraphs": [
+              "Contáctanos con el nombre de tu aseguradora y de tu plan para confirmar nuestra participación. Pregunta a tu aseguradora si tu plan cubre atención de salud mental por telesalud, qué copago o coseguro corresponde, si tienes un deducible y si necesitas autorización previa. Tu costo depende de tu plan y sus beneficios."
+            ]
+          },
+          {
+            "question": "¿Puedo utilizar beneficios fuera de la red?",
+            "paragraphs": [
+              "Si tu plan incluye beneficios fuera de la red, podemos proporcionarte una factura detallada, conocida como superbill, para presentar a tu aseguradora. Pregunta por el deducible pendiente, el monto de reembolso y los requisitos de presentación. El reembolso depende de tu plan; verificar los beneficios no garantiza el pago.",
+              "Si tu aseguradora pide códigos de facturación, consulta sobre 90837 (psicoterapia de 60 minutos), 90834 (45 minutos), 90832 (30 minutos) o 90791 (evaluación diagnóstica inicial, generalmente de 90 minutos en Grey Wellness). Para sesiones por video, pregunta si se requiere el modificador 95. Podemos ayudarte a confirmar los detalles de tu cita.",
+              "La herramienta de Mentaya a continuación verifica beneficios fuera de la red. No confirma si aceptamos tu plan."
+            ],
+            "benefitsTool": true
+          }
+        ]
+      },
+      {
+        "id": "treatment",
+        "title": "Modalidades de tratamiento",
+        "questions": [
+          {
+            "question": "¿Qué enfoques de tratamiento utilizan?",
+            "paragraphs": [
+              "Ofrecemos Terapia Cognitivo-Conductual para el Insomnio (TCC-I), Terapia Cognitivo-Conductual (TCC), atención informada en trauma que incluye Terapia de Procesamiento Cognitivo (CPT), enfoques basados en mindfulness y terapia feminista. Elegimos los enfoques en conjunto según tus necesidades, metas y circunstancias."
+            ],
+            "resources": [
+              {
+                "path": "/pages/process/",
+                "label": "Conoce cómo trabajamos"
+              }
+            ]
+          },
+          {
+            "question": "¿En qué consiste la TCC-I?",
+            "paragraphs": [
+              "La TCC-I es un tratamiento estructurado y basado en evidencia para el insomnio crónico. Aborda los pensamientos y las conductas relacionados con el sueño mediante herramientas como un diario de sueño, cambios en los hábitos de descanso y ejercicios prácticos entre sesiones. El ritmo y el plan de tratamiento se adaptan a tus necesidades."
+            ],
+            "resources": [
+              {
+                "path": "/pages/sleep/",
+                "label": "Conoce la TCC-I"
+              },
+              {
+                "url": "https://aasm.org/new-guideline-supports-behavioral-psychological-treatments-for-insomnia/",
+                "label": "Guía de la AASM sobre TCC-I (en inglés)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sessions",
+        "title": "Sesiones virtuales o presenciales",
+        "questions": [
+          {
+            "question": "¿Las sesiones son virtuales o presenciales?",
+            "paragraphs": [
+              "Todas las sesiones de terapia son virtuales; no ofrecemos citas presenciales. Trabajamos con personas adultas que se encuentren físicamente en Maryland o Virginia al momento de su sesión. Las sesiones están disponibles en español e inglés."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "getting-started",
+        "title": "Cómo comenzar",
+        "questions": [
+          {
+            "question": "¿Cómo empiezo?",
+            "paragraphs": [
+              "Completa nuestro formulario de contacto para solicitar una consulta gratuita de 15 minutos. Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan. Nos pondremos en contacto en 1–2 días hábiles."
+            ],
+            "resources": [
+              {
+                "path": "/pages/contact/",
+                "label": "Solicita una consulta"
+              }
+            ]
+          },
+          {
+            "question": "¿Qué sucede durante la consulta gratuita?",
+            "paragraphs": [
+              "Nos reunimos brevemente por video, o por teléfono si lo prefieres. Puedes compartir tus metas, hacer preguntas y conocer nuestra forma de trabajar. Conversaremos sobre si nuestros servicios se ajustan a tus necesidades. No tienes obligación de continuar ni de decidir durante la llamada."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

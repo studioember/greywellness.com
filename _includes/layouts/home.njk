@@ -15,8 +15,9 @@ preload_hero: true
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "MedicalBusiness", "MedicalOrganization"],
+  "@id": "{{ site.url }}/#practice",
   "name": "Grey Wellness",
-  "description": "{{ site.description }}",
+  "description": {{ (description ~ " " ~ _t.service_availability) | dump | safe }},
   "url": "{{ site.url }}",
   "telephone": "+1-240-203-8879",
   "email": "contact@greywellness.com",
@@ -55,7 +56,6 @@ preload_hero: true
     "https://www.psychologytoday.com/profile/1256952",
     "https://www.latinxtherapy.com",
     "https://www.nbcc.org",
-    "https://mentaya.com",
     "https://www.instagram.com/grey_wellness/",
     "https://www.facebook.com/profile.php?id=61574329432986",
     "https://www.linkedin.com/company/grey-wellness"
@@ -93,7 +93,8 @@ preload_hero: true
         "itemOffered": {
           "@type": "Service",
           "name": "{{ _t.home_schema_cbti_name }}",
-          "description": "{{ _t.home_schema_cbti_desc }}",
+          "description": {{ (_t.home_schema_cbti_desc ~ " " ~ _t.service_availability) | dump | safe }},
+          "areaServed": [{ "@type": "State", "name": "Virginia" }, { "@type": "State", "name": "Maryland" }],
           "serviceType": "Cognitive Behavioral Therapy for Insomnia"
         }
       },
@@ -102,7 +103,8 @@ preload_hero: true
         "itemOffered": {
           "@type": "Service",
           "name": "{{ _t.home_schema_anxiety_name }}",
-          "description": "{{ _t.home_schema_anxiety_desc }}",
+          "description": {{ (_t.home_schema_anxiety_desc ~ " " ~ _t.service_availability) | dump | safe }},
+          "areaServed": [{ "@type": "State", "name": "Virginia" }, { "@type": "State", "name": "Maryland" }],
           "serviceType": "Anxiety & Stress Management"
         }
       }

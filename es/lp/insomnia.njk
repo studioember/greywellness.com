@@ -1,10 +1,11 @@
 ---
 layout: layouts/landing.njk
 meta_title: "Terapeuta de TCC-I para el Insomnio | Virginia y Maryland"
-description: "Duerme mejor con TCC-I, el tratamiento de primera línea para el insomnio crónico. Terapia virtual bilingüe en Virginia y Maryland."
+description: "TCC-I virtual bilingüe para el insomnio en Maryland y Virginia. Atención con Mónica Grey en español o inglés. Comienza con una consulta gratuita de 15 minutos."
 lp_noindex: false
 lang: es
 eleventyExcludeFromCollections: true
+service_type: "Terapia Cognitivo-Conductual para el Insomnio (TCC-I)"
 ---
 {% from 'macros/google-form.njk' import googleForm %}
 
@@ -22,6 +23,8 @@ eleventyExcludeFromCollections: true
         <p class="text-lg text-muted leading-relaxed mb-8">
           La Terapia Cognitivo-Conductual para el Insomnio (TCC-I) es el <strong class="text-foreground">tratamiento de primera línea recomendado</strong> para el insomnio crónico, avalado por la Academia Americana de Medicina del Sueño. Sin medicamentos, sin dependencia. Un enfoque probado para recuperar tus noches.
         </p>
+
+        {% include 'components/service-availability.njk' %}
 
         <!-- Quick stats -->
         <div class="flex gap-4 mb-8">
@@ -78,7 +81,7 @@ eleventyExcludeFromCollections: true
           { label: "Nombre", placeholder: "Tu nombre completo", type: "text", entry: "entry.1227396429", required: true },
           { label: "Correo electrónico", placeholder: "tu@correo.com", type: "email", entry: "entry.530090678", required: true },
           { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
-          { label: "¿Qué te quita el sueño?", placeholder: "Cuéntame un poco sobre tus problemas para dormir (opcional)", type: "textarea", entry: "entry.965605968", help: "¿Quieres usar tu seguro? Incluye el nombre de tu aseguradora y de tu plan en el mensaje. Aceptamos seguros solo para clientes en Maryland; las sesiones en Virginia son de pago particular.", required: false }
+          { label: "¿Qué te quita el sueño?", placeholder: "Cuéntame un poco sobre tus problemas para dormir (opcional)", type: "textarea", entry: "entry.965605968", help: "Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan para una consulta.", required: false }
         ] %}
         {{ googleForm(
           formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
