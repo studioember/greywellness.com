@@ -2,7 +2,7 @@
 title: Cómo Trabajamos
 title_hidden: false
 meta_title: "TCC-I, Atención Basada en Trauma y Terapia Basada en Evidencia | Grey Wellness"
-description: "Conoce la TCC-I, TCC, atención informada en trauma, mindfulness y terapia feminista para personas adultas en Maryland y Virginia. Sesiones virtuales bilingües."
+description: "Conoce la TCC-I, TCC, atención informada en trauma, mindfulness y terapia feminista para personas adultas en Maryland, Virginia y Washington, DC. Sesiones virtuales bilingües."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

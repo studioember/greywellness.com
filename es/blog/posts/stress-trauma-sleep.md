@@ -201,7 +201,7 @@ Y ese apoyo debe encontrarte tal como eres. No deberías tener que traducir tu i
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿El Estrés o el Trauma No Te Dejan Descansar?</p>
   <p class="text-foreground font-semibold text-base mb-1">Calma tu sistema de alerta y recupera un sueño reparador con terapia basada en evidencia.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">Ofrecemos terapia informada en trauma (incluyendo CPT) y TCC-I para el insomnio en español, ayudando a tu sistema nervioso a sentirse seguro para descansar. Sesiones virtuales en todo Maryland.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">Ofrecemos terapia informada en trauma (incluyendo CPT) y TCC-I para el insomnio en español, ayudando a tu sistema nervioso a sentirse seguro para descansar. Sesiones virtuales en Maryland, Virginia y Washington, DC.</p>
   <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda una Consulta Gratuita de 15 Minutos →</a>
 </div>
 

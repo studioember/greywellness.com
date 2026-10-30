@@ -67,6 +67,6 @@ Tener ansiedad e insomnio no significa que tengas que vivir con ellos. ¡Hay sol
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿La ansiedad nocturna no te deja descansar?</p>
   <p class="text-foreground font-semibold text-base mb-1">Rompe el ciclo entre angustia e insomnio con terapia basada en evidencia.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">Ayudamos a adultos a calmar su mente, regular su sistema nervioso y volver a dormir profundamente con TCC-I y terapia para la ansiedad. Sesiones virtuales en Maryland en español e inglés.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">Ayudamos a adultos a calmar su mente, regular su sistema nervioso y volver a dormir profundamente con TCC-I y terapia para la ansiedad. Sesiones virtuales en Maryland, Virginia y Washington, DC en español e inglés.</p>
   <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda tu Consulta Gratuita de 15 Minutos →</a>
 </div>

@@ -1,8 +1,8 @@
 ---
 title: What We Treat
 title_hidden: false
-meta_title: "Therapy Services in Virginia & Maryland | Grey Wellness"
-description: "CBT-I, anxiety, and trauma therapy for adults in Maryland and Virginia. Explore bilingual virtual therapy services in English and Spanish."
+meta_title: "Therapy Services in Virginia, Maryland & DC | Grey Wellness"
+description: "CBT-I, anxiety, and trauma therapy for adults in Maryland, Virginia, and Washington, DC. Explore bilingual virtual therapy services in English and Spanish."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

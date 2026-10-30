@@ -2,7 +2,7 @@
 title: Preguntas frecuentes
 title_hidden: false
 meta_title: "Preguntas frecuentes: cobertura y terapia | Grey Wellness"
-description: "Respuestas sobre seguros y cobertura, modalidades de tratamiento, terapia virtual y cómo comenzar con Grey Wellness en Maryland y Virginia."
+description: "Respuestas sobre seguros y cobertura, modalidades de tratamiento, terapia virtual y cómo comenzar con Grey Wellness en Maryland, Virginia y Washington, DC."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true

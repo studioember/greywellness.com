@@ -1,8 +1,26 @@
 {
   "name": "Grey Wellness",
   "url": "https://greywellness.com",
-  "description": "Bilingual virtual therapy for adults experiencing insomnia, anxiety, and trauma throughout Maryland and Virginia. Sessions in English and Spanish.",
+  "description": "Bilingual virtual therapy for adults experiencing insomnia, anxiety, and trauma throughout Maryland, Virginia, and Washington, DC. Sessions in English and Spanish.",
   "author": "Mónica Grey, MS, LCPC, NCC",
   "locale": "en_US",
-  "languages": ["en", "es"]
+  "languages": [
+    "en",
+    "es"
+  ],
+  "areasServed": [
+    {
+      "@type": "State",
+      "name": "Virginia"
+    },
+    {
+      "@type": "State",
+      "name": "Maryland"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "District of Columbia",
+      "alternateName": "Washington, DC"
+    }
+  ]
 }

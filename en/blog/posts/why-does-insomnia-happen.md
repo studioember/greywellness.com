@@ -94,7 +94,7 @@ For now, if you've read this far and thought "okay but this is literally my life
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Ready to Break the Perpetuating Cycle?</p>
   <p class="text-foreground font-semibold text-base mb-1">Your brain learned to be awake in bed. CBT-I unteaches it.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">CBT-I addresses the 3P perpetuating factors keeping you awake at night. Our structured 8-session program gives you lasting, medication-free sleep. Telehealth sessions across Maryland in English and Spanish.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">CBT-I addresses the 3P perpetuating factors keeping you awake at night. Our structured 8-session program gives you lasting, medication-free sleep. Telehealth sessions across Maryland, Virginia, and Washington, DC in English and Spanish.</p>
   <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Schedule a Free CBT-I Consultation →</a>
 </div>
 

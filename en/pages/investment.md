@@ -2,8 +2,8 @@
 title: "Session Rates"
 title_hidden: false
 description_hidden: true
-meta_title: "Therapy Rates in Maryland & Virginia | Grey Wellness"
-description: "Session rates for bilingual virtual therapy in Maryland and Virginia. View evaluation, individual and group therapy fees, and reduced-fee options."
+meta_title: "Therapy Rates in Maryland, Virginia & DC | Grey Wellness"
+description: "Session rates for bilingual virtual therapy in Maryland, Virginia, and Washington, DC. View evaluation, individual and group therapy fees, and reduced-fee options."
 date: "git Last Modified"
 date_hidden: true
 permalink: /en/rates/
@@ -11,7 +11,7 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Virtual therapy for adults throughout Maryland and Virginia, in English and Spanish. Below are the session fees at Grey Wellness.
+Virtual therapy for adults throughout Maryland, Virginia, and Washington, DC, in English and Spanish. Below are the session fees at Grey Wellness.
 
 ## Session fees
 

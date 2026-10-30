@@ -201,7 +201,7 @@ That support should meet you as you are. You shouldn't have to translate your id
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Stuck in Hyperarousal After Stress or Trauma?</p>
   <p class="text-foreground font-semibold text-base mb-1">Calm your alert system and restore deep sleep with evidence-based therapy.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">We provide bilingual trauma-informed care (including CPT) and gold-standard CBT-I for insomnia so your brain and body can finally feel safe enough to rest. Virtual sessions across Maryland in English and Spanish.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">We provide bilingual trauma-informed care (including CPT) and gold-standard CBT-I for insomnia so your brain and body can finally feel safe enough to rest. Virtual sessions across Maryland, Virginia, and Washington, DC in English and Spanish.</p>
   <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Schedule a Free 15-Minute Consultation →</a>
 </div>
 

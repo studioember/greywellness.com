@@ -1,58 +1,36 @@
-Every tag is rendering perfectly. Here's the full breakdown of what was done and what's left on the SEO roadmap:
+# SEO and answer-engine review
 
----
+Reviewed October 30, 2026. This is a source and generated-output audit, not a measurement of search rankings or AI citations.
 
-## ✅ Implemented now
+## Changes in this PR
 
-### Infrastructure
-| File | What changed |
-|---|---|
-| `_data/site.json` | **Created** — global `name`, `url`, `description`, `author`, `locale` used across all pages |
-| `_includes/layouts/base.njk` | **Updated head** — smart title logic, `<meta name="description">`, canonical, Open Graph (7 tags), Twitter Card, `robots: index, follow` |
-| `robots.njk` | **Created** — outputs `/robots.txt` with `Allow: /` and Sitemap pointer |
+- Added Washington, DC to English and Spanish homepages, service pages, biography, contact, rates, landing pages, blog consultation copy, FAQ, and AI context files. The client must be physically located in Maryland, Virginia, or DC for sessions. Insurance remains Maryland-only; Virginia and DC are self-pay.
+- Centralized structured service areas in `_data/site.json`; DC uses `AdministrativeArea`, not `State`. Kept the practice as `MedicalOrganization` without implying an in-person business location. Removed organization homepages that were incorrectly used as identity (`sameAs`) links.
+- Fixed category hreflang links that previously mixed unrelated categories and repeated language codes. Explicitly paired the two translated article URLs with different slugs. Navigation, HTML metadata, and sitemap now share the route mapping.
+- Included all paginated category archives and indexable insomnia landing pages in the sitemap; landing pages now have language alternate links.
+- Removed hard-coded 1200×630 social-image dimensions, which were incorrectly applied to different image sizes.
+- Added missing group-page headings. The Spanish group detail page is an untranslated placeholder: it now has `noindex`, is excluded from the sitemap, and is not advertised as an English-page translation.
+- Replaced independently maintained AI clinical assertions and fee lists with concise practice facts, official links, and FAQ answers generated from the same data as the public FAQ. This removes unsupported numerical success claims from those context files.
+- Added `yarn test:seo` to the production build.
 
-### Per-page meta
-| Page | `<title>` | Meta description |
-|---|---|---|
-| **Homepage** | `Grey Wellness \| Insomnia & CBT-I Therapist — English & Spanish` | Mentions Monica Grey, CBT-I, bilingual |
-| **Services** | `CBT-I Sleep Therapy & Counseling \| Grey Wellness` | 6–8 weeks, evidence-based, English & Spanish |
-| **Contact** | `Schedule an Appointment \| Grey Wellness` | New clients welcome, bilingual |
-| **Updates** | `Sleep Health Resources & Updates \| Grey Wellness` | Insomnia specialist framing |
+## Verification
 
-### JSON-LD Schema (homepage)
-`LocalBusiness` + `MedicalOrganization` with Monica Grey as `founder`, two `Service` offers (CBT-I, Anxiety & Stress), and bilingual `availableLanguage`.
+`yarn test:seo` checks 56 generated content pages (55 indexable): canonical URLs, nonempty titles/descriptions, one H1, Open Graph URLs/images, parseable JSON-LD, DC in all service-area schemas, local navigation/image targets, unique and reciprocal language links, exact sitemap coverage, sitemap/head alternate agreement, known translated route pairs, robots sitemap reference, and AI context links. Run after a clean production build to avoid testing obsolete generated files.
 
----
+The existing `yarn test:forms` can also run with `FORMS_STRICT=1` to verify live Google Form schemas without submitting data. The deployment workflow already builds Eleventy and runs the build checks before upload.
 
-## 📋 SEO Todo — still needed
+## Follow-up outside this PR
 
-### Technical
-- [ ] **OG/Social image** — Create a `1200×630px` branded image at `/assets/img/og-image.jpg` (all pages reference it, but the file doesn't exist yet)
-- [X] **Sitemap** — Add `@11ty/eleventy-plugin-sitemap` to `eleventy.config.js` and register it (robots.txt already points to `/sitemap.xml`)
-- [ ] **Submit to Search Console** — Verify domain ownership in Google Search Console, then submit sitemap
+- After merging/deploying, inspect representative English/Spanish URLs and the sitemap in Google Search Console. Indexing status, canonical selection, rich-result eligibility, search traffic, and Core Web Vitals require live tools/data; they are not established by these checks.
+- Review the closed April 2026 group page before reusing it: its description says six weeks while its session metadata says eight. Translate the Spanish page fully before removing `noindex` and enabling its language pairing.
+- A clinical editorial review of existing articles/service copy remains separate. Some older consultation copy promises outcomes too strongly. This PR changes geographic availability there, without rewriting approved clinical articles or certifying every medical claim.
+- Keep actual directory profiles consistent with DC licensure and Maryland-only insurance. No directory profiles or external listings were changed.
+- For new translated slugs, update `translatedRoutes` in `eleventy.config.js` and the semantic-pair assertions in `scripts/verify-seo.mjs`.
 
-### Content (highest SEO impact)
-- [ ] **Services page** — Currently empty; needs: CBT-I explained, what to expect session-by-session, session length/frequency, insurance/rates, bilingual availability, CTA
-- [ ] **About/Bio page** — Mónica's credentials, her Colombian Latina background, why CBT-I, bilingual identity — this page alone can rank for `[name] therapist` searches
-- [ ] **FAQ page** — "What is CBT-I?", "How many sessions?", "Do you take insurance?", "Do you offer therapy in Spanish?" — these are exact search queries
+## Search and answer-engine guidance
 
-### Blog (long-tail keyword capture)
-- [ ] "Why sleep hygiene advice alone doesn't work" (targets `sleep hygiene not working`)
-- [ ] "What is CBT-I and how is it different from regular therapy?"
-- [ ] "Anxiety and insomnia: which came first?" 
-- [ ] "Sleep therapy in Spanish" / "Terapia para el insomnio en español"
+Clear public answers, crawlable pages, accurate practice facts, and structured data matching visible content are the foundation. `llms.txt` is an optional context resource; it does not guarantee indexing or AI citations. Google states that its AI search features use ordinary SEO foundations and do not require special AI markup or files.
 
-### Off-page / Directories
-- [ ] **Psychology Today** — Update profile with CBT-I specialty + sleep focus
-- [ ] **TherapyDen** — Great visibility for BIPOC/Latina therapists
-- [ ] **Inclusive Therapists** — Culturally responsive directory
-- [ ] **Zencare** — Strong SEO, therapist-friendly
-- [ ] **Google Business Profile** — Needed for local map pack rankings
-
-### Keywords to weave into content
-| Primary | Secondary | Local |
-|---|---|---|
-| `CBT-I therapist` | `bilingual therapist` | `[City] insomnia therapist` |
-| `insomnia therapy` | `Spanish speaking therapist` | `[City] sleep therapy` |
-| `sleep therapist` | `anxiety and sleep` | `[State] CBT-I` |
-| `cognitive behavioral therapy for insomnia` | `Latina therapist` | — |
+Sources:
+- [Google: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google: Tell Google about localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions)

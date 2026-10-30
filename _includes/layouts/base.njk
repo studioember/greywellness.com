@@ -21,18 +21,10 @@
 
     {# ── Core SEO ── #}
     <meta name="description" content="{{ _page_desc }}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{{ 'noindex, follow' if noindex else 'index, follow' }}">
     <link rel="canonical" href="{{ _page_url }}">
 
-    {# ── hreflang (i18n alternate links) ── #}
-    <link rel="alternate" hreflang="{{ lang | default('en') }}" href="{{ _page_url }}">
-    {% set _locale_alternates = page.url | locale_links %}
-    {% for _alt in _locale_alternates %}
-    <link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}">
-    {% endfor %}
-    {% set _xdefault_url = page.url %}
-    {% for _alt in _locale_alternates %}{% if _alt.lang == "en" %}{% set _xdefault_url = _alt.url %}{% endif %}{% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ _xdefault_url }}">
+    {% include 'components/hreflang.njk' %}
 
     {# ── Open Graph ── #}
     <meta property="og:type"        content="{{ og_type or 'website' }}">
@@ -41,8 +33,6 @@
     <meta property="og:description" content="{{ _page_desc }}">
     <meta property="og:image"       content="{{ _og_image }}">
     <meta property="og:image:alt"   content="{{ image_alt or _page_title }}">
-    <meta property="og:image:width"  content="1200">
-    <meta property="og:image:height" content="630">
     <meta property="og:site_name"   content="{{ site.name }}">
     <meta property="og:locale"      content="{{ locale | default('en_US') }}">
     {% for _alt in _locale_alternates %}

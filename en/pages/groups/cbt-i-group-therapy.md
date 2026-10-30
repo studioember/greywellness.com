@@ -275,7 +275,7 @@ topics:
       <span class="line-plain">Deeply.</span>
     </div>
 
-    <p class="subhead">CBT-I Group Therapy</p>
+    <h1 class="subhead">CBT-I Group Therapy</h1>
     <div class="accent-rule"></div>
 
     <p class="body-copy">

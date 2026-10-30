@@ -2,8 +2,8 @@
 title: "Tarifas de las sesiones"
 title_hidden: false
 description_hidden: true
-meta_title: "Tarifas de terapia en Maryland y Virginia | Grey Wellness"
-description: "Tarifas de terapia virtual bilingüe en Maryland y Virginia. Consulta los honorarios de evaluación, psicoterapia individual, grupos y las opciones de tarifa reducida."
+meta_title: "Tarifas de terapia en Maryland, Virginia y Washington, DC | Grey Wellness"
+description: "Tarifas de terapia virtual bilingüe en Maryland, Virginia y Washington, DC. Consulta los honorarios de evaluación, psicoterapia individual, grupos y las opciones de tarifa reducida."
 date: "git Last Modified"
 date_hidden: true
 permalink: /es/rates/
@@ -11,7 +11,7 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Terapia virtual para personas adultas en todo Maryland y Virginia, en español e inglés. A continuación encontrarás los honorarios de las sesiones en Grey Wellness.
+Terapia virtual para personas adultas en todo Maryland, Virginia y Washington, DC, en español e inglés. A continuación encontrarás los honorarios de las sesiones en Grey Wellness.
 
 ## Honorarios por sesión
 
