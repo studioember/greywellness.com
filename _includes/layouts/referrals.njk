@@ -1,0 +1,55 @@
+{% extends 'layouts/base.njk' %}
+{% block content %}
+{% set _lang = lang | default('en') %}
+{% set _r = referrals[_lang] %}
+<article class="referral-guide">
+  <header class="referral-header">
+    <p class="referral-eyebrow">{{ _r.eyebrow }}</p>
+    <h1>{{ title }}</h1>
+    <p class="referral-intro referral-screen-only">{{ _r.intro }}</p>
+    <div class="referral-print-controls">
+      <button type="button" class="referral-button" data-print-referral hidden>{{ _r.print }}</button>
+      <p>{{ _r.print_help }}</p>
+    </div>
+    <p class="referral-print-url">{{ site.url }}/{{ _lang }}/for-providers/</p>
+  </header>
+  <section class="referral-clinical">
+    <h2>{{ _r.clinician_heading }}</h2>
+    <p><strong>{{ _r.clinician }}</strong></p>
+    <ul>{% for item in _r.eligibility %}<li>{{ item }}</li>{% endfor %}</ul>
+    <p class="referral-screen-links"><a href="{{ ('/' ~ _lang ~ '/pages/about/') | url }}">{{ _r.bio }}</a> · <a href="{{ ('/' ~ _lang ~ '/rates/') | url }}">{{ _r.rates }}</a></p>
+  </section>
+  <div class="referral-options">
+    <section class="referral-card">
+      <h2>{{ _r.patient_heading }}</h2>
+      <p class="referral-screen-only">{{ _r.patient }}</p>
+      <p class="referral-print-only">{{ _r.patient_print }}</p>
+      <a href="tel:+12402038879" class="referral-call">{{ _r.call }}</a>
+    </section>
+    <section class="referral-card">
+      <h2>{{ _r.provider_heading }}</h2>
+      <p class="referral-screen-only">{{ _r.provider }}</p>
+      <p class="referral-print-only">{{ _r.provider_print }}</p>
+      <p class="referral-fax"><strong>{{ _r.fax_label }}:</strong> {{ _r.fax }}</p>
+    </section>
+  </div>
+  {% for section in _r.sections %}
+  <section class="referral-detail">
+    <h2>{{ section.heading }}</h2>
+    <p class="referral-screen-only">{{ section.text }}</p>
+    <p class="referral-print-only">{{ section.print_text }}</p>
+  </section>
+  {% endfor %}
+</article>
+<script src="{{ '/assets/js/referrals.js' | url }}" defer></script>
+{% endblock %}
+
+{# Keep the public page free of the standard footer's remote badge script,
+   unconfirmed fax instructions, and general contact-form CTA. #}
+{% block footer %}
+{% set _lang = lang | default('en') %}
+<footer class="referral-footer">
+  <p>{{ referrals[_lang].footer }}</p>
+  <a href="{{ ('/' ~ _lang ~ '/') | url }}">{{ referrals[_lang].home }}</a>
+</footer>
+{% endblock %}

@@ -1,0 +1,46 @@
+/* Local fonts only: this page deliberately makes no third-party requests. */
+.referral-guide { max-width: 52rem; margin: auto; font-family: system-ui, sans-serif; line-height: 1.7; }
+.referral-header { margin-bottom: 2rem; }
+.referral-eyebrow { color: hsl(var(--primary)); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.referral-guide h1 { margin: .6rem 0 1rem; font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 700; line-height: 1.15; }
+.referral-intro { font-size: 1.125rem; }
+.referral-guide h2 { margin: 0 0 .6rem; font-size: 1.2rem; font-weight: 700; line-height: 1.35; }
+.referral-guide p { margin-bottom: .85rem; }
+.referral-guide ul { padding-left: 1.3rem; list-style: disc; }
+.referral-guide li { margin: .5rem 0; }
+.referral-guide a, .referral-footer a { color: hsl(var(--primary)); text-decoration: underline; text-underline-offset: .2em; }
+.referral-print-controls { margin-top: 1.5rem; }
+.referral-print-controls p { margin-top: .6rem; font-size: .85rem; color: hsl(var(--muted)); }
+.referral-button { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); border-radius: .5rem; padding: .7rem 1.1rem; font-weight: 600; cursor: pointer; }
+.referral-button:focus-visible, .referral-guide a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.referral-clinical { margin-bottom: 1.75rem; }
+.referral-options { display: grid; gap: 1rem; margin-bottom: 2rem; }
+.referral-card { border: 1px solid hsl(var(--border)); background: hsl(var(--card)); border-radius: 1rem; padding: 1.5rem; }
+.referral-call { font-weight: 700; }
+.referral-fax { border-top: 1px solid hsl(var(--border)); padding-top: .75rem; font-size: .95rem; }
+.referral-detail { margin: 1.5rem 0; }
+.referral-footer { border-top: 1px solid hsl(var(--border)); text-align: center; padding: 1.5rem; font-family: system-ui, sans-serif; font-size: .85rem; }
+.referral-print-url, .referral-print-only { display: none; }
+@media (min-width: 720px) { .referral-options { grid-template-columns: 1fr 1fr; } }
+@media print {
+  @page { size: auto; margin: 12mm; }
+  html, body { background: white !important; color: black !important; color-scheme: light !important; min-height: 0 !important; display: block !important; }
+  body > nav, .referral-print-controls, .referral-screen-links, .referral-screen-only, .referral-footer { display: none !important; }
+  main#content { padding: 0 !important; margin: 0 !important; max-width: none !important; width: auto !important; }
+  .referral-guide { max-width: none; font-size: 10pt; line-height: 1.3; }
+  .referral-header { margin-bottom: 9pt; }
+  .referral-guide h1 { font-size: 23pt; margin: 4pt 0 7pt; }
+  .referral-guide h2 { font-size: 11pt; margin-bottom: 4pt; break-after: avoid; }
+  .referral-eyebrow { font-size: 8pt; color: black; }
+  .referral-intro { font-size: 10pt; }
+  .referral-guide p { margin-bottom: 5pt; }
+  .referral-guide li { margin: 3pt 0; }
+  .referral-clinical, .referral-options { margin-bottom: 9pt; }
+  .referral-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }
+  .referral-card { background: white; border: 1px solid #aaa; border-radius: 0; padding: 7pt; margin: 0; break-inside: avoid; }
+  .referral-fax { font-size: 9pt; padding-top: 5pt; }
+  .referral-detail { margin: 7pt 0; break-inside: avoid; }
+  .referral-guide a { color: black; }
+  .referral-print-only { display: block; }
+  .referral-print-url { display: block; font-size: 8pt; }
+}
