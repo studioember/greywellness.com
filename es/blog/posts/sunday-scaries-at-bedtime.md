@@ -7,7 +7,7 @@ author: "Mónica Grey, MS, LCPC, NCC"
 category: "Ansiedad"
 locale: "es_CO"
 image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
-image_alt: "Una persona permanece despierta en la cama durante la noche"
+image_alt: "Mujer con los ojos abiertos asomándose por encima de un edredón blanco"
 hero_hidden: true
 title_hidden: true
 date_hidden: true

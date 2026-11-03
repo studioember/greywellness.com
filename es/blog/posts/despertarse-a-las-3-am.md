@@ -6,7 +6,7 @@ date: 2026-07-27
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/waking-up-at-3am.jpg"
-image_alt: "Hombre despierto en la cama de noche leyendo un libro para volver a dormirse"
+image_alt: "Hombre con gafas leyendo en la cama de noche"
 image_icon: "⏰"
 layout: layouts/blog-post.njk
 date_hidden: true

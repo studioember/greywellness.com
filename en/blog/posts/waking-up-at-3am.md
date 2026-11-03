@@ -6,7 +6,7 @@ date: 2026-07-27
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnia"
 image: "/assets/img/blog/waking-up-at-3am.jpg"
-image_alt: "Man lying awake in bed at night reading a book to fall back asleep"
+image_alt: "Man wearing glasses reading in bed at night"
 image_icon: "⏰"
 layout: layouts/blog-post.njk
 date_hidden: true

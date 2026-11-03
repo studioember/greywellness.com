@@ -6,7 +6,7 @@ date: "2026-10-20"
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Anxiety"
 image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
-image_alt: "A person lying awake in bed at night"
+image_alt: "Woman peeking over a white duvet with her eyes open"
 hero_hidden: true
 title_hidden: true
 date_hidden: true

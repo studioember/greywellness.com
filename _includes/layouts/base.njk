@@ -37,7 +37,7 @@
     <meta property="og:title"       content="{{ _page_title }}">
     <meta property="og:description" content="{{ _page_desc }}">
     <meta property="og:image"       content="{{ _og_image }}">
-    <meta property="og:image:alt"   content="{{ image_alt or _page_title }}">
+    <meta property="og:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
     <meta property="og:site_name"   content="{{ site.name }}">
     <meta property="og:locale"      content="{{ locale | default('en_US') }}">
     {% for _alt in _locale_alternates %}
@@ -49,7 +49,7 @@
     <meta name="twitter:title"       content="{{ _page_title }}">
     <meta name="twitter:description" content="{{ _page_desc }}">
     <meta name="twitter:image"       content="{{ _og_image }}">
-    <meta name="twitter:image:alt"   content="{{ image_alt or _page_title }}">
+    <meta name="twitter:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">

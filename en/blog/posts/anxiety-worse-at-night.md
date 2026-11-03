@@ -6,7 +6,7 @@ date: 2026-08-09
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Anxiety"
 image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
-image_alt: "Woman lying awake in bed at night pressing a pillow over her face, unable to sleep because of anxiety"
+image_alt: "Person in bed holding a pillow over their face"
 image_icon: "🌙"
 og_type: "article"
 hero_hidden: true
@@ -16,7 +16,7 @@ title_hidden: true
 ---
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Woman lying awake in bed at night pressing a pillow over her face, unable to sleep because of anxiety" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Person in bed holding a pillow over their face" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 It's 3am. All day long you didn't think about the bills you have to pay, the car that's been 6 months past maintenance, or that screenshot you sent to the wrong person. But the second your head touches the pillow, these thoughts rush 1000 mph. Intrusive thoughts that showed up with no warning and no invitation. And we already know there's nothing worse than a guest you didn't invite. That guest arrived, and arrived loud, and shows no sign of leaving anytime soon.
@@ -30,7 +30,7 @@ In our [previous blog on why you wake up at 3 am](https://greywellness.com/en/bl
 ## The Prefrontal Cortex Clocked Out Hours Ago
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Woman lying in bed at night with the duvet pulled up over her face, eyes wide open and unable to sleep" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Woman with wide-open eyes peeking over a white duvet" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 For anyone not familiar with the prefrontal cortex, think of it as the logical part of the brain, the one that puts the brakes on impulses and keeps things in perspective. The amygdala, on the other hand, is that fire alarm that sometimes goes off without any actual fire. What usually happens is that your prefrontal cortex needs to recharge by the end of the day, and the more tired you get, the less logical and reasonable you are. The amygdala, meanwhile, runs 24/7, because its job is to detect threats. Studies estimate the amygdala becomes up to 60% more reactive to negative stimuli when a person is sleep deprived, with less connection to the rational part of the brain, the one that's able to tell a false alarm from real danger.
@@ -59,7 +59,7 @@ Anxiety that keeps you up is a loop, which means improving your sleep cycle is o
 - **Only get into bed when you're actually drowsy and ready to sleep:** I know, I sound like a broken record, but it's one of the most effective techniques out there.
 
 <figure class="not-prose clear-both mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-2">
-  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Woman in a robe reading a book by candlelight with a cup of tea, a calm wind-down routine before bed" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Woman in a robe reading beside a candle and a cup of tea" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Having anxiety and insomnia doesn't mean you have to live with them. There's a way out. Don't live in the loop. You deserve so much more.

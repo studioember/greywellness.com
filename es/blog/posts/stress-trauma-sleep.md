@@ -6,7 +6,7 @@ date: 2026-08-23
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
-image_alt: "Mujer despierta en la cama durante la noche, físicamente agotada pero sin poder relajarse después de una experiencia estresante"
+image_alt: "Mujer acostada de lado con los ojos abiertos en un dormitorio con poca luz"
 image_icon: "🧠"
 og_type: "article"
 layout: layouts/blog-post.njk
@@ -63,7 +63,7 @@ Una habitación más fresca, menos tiempo frente a las pantallas o una mejor rut
 ## ¿Y Qué Ocurre con el Estrés Crónico?
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Mujer inclinada frente a una computadora con una mano sobre la frente, abrumada por el estrés laboral crónico" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Mujer inclinada frente a una computadora portátil con una mano sobre la frente" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Aquí aparece una tercera categoría que muchas veces se queda por fuera de la conversación.
@@ -167,7 +167,7 @@ La consistencia suele ayudar más que esforzarte muchísimo en una sola noche. N
 ## Deja de Mirar el Reloj —Sí, Esa También Cuenta
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Hombre acostado en la cama revisando su teléfono en vez de descansar" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Hombre recostado en la cama mirando su teléfono" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Hay un comportamiento pequeño que merece su propia sección porque es muy común: revisar la hora cada vez que despiertas.

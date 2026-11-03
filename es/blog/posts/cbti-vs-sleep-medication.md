@@ -6,7 +6,7 @@ date: 2026-09-07
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
-image_alt: "Mujer despierta en la cama durante la noche"
+image_alt: "Mujer con los ojos abiertos asomándose por encima de un edredón blanco"
 image_icon: "💊"
 layout: layouts/blog-post.njk
 permalink: "/es/blog/posts/tcc-i-vs-medicamentos-insomnio/index.html"
