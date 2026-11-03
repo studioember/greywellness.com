@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if privacy_page %}
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'">
+    <link rel="stylesheet" href="{{ '/assets/css/referrals.css' | url }}">
+    {% endif %}
 
     {# ── Page title ── #}
     {% if meta_title %}
@@ -50,12 +55,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | url }}">
     <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | url }}">
+    {% if not privacy_page %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--Fonts (non-blocking) -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
+
+    {% endif %}
 
     {% if preload_hero %}
     <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" type="image/webp" fetchpriority="high">
@@ -82,6 +90,7 @@
       })();
     </script>
 
+    {% if not privacy_page %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020466610"></script>
     <script>
@@ -91,6 +100,8 @@
       gtag('config', 'G-4B4KP12KBL');
       gtag('config', 'AW-18020466610');
     </script>
+
+    {% endif %}
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="{{ '/assets/css/generated/tailwind.css' | url }}">

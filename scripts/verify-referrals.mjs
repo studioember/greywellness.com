@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+const root = 'output/site';
+for (const lang of ['en', 'es']) {
+  const html = await readFile(`${root}/${lang}/for-providers/index.html`, 'utf8');
+  assert.doesNotMatch(html, /googletagmanager|google-analytics|gtag\(|dataLayer|facebook\.net|verified-seal\.js|fonts\.googleapis|fonts\.gstatic/i, `${lang}: no tracking or remote font resources`);
+  assert.doesNotMatch(html, /<(form|iframe|input|textarea)\b/i, `${lang}: no patient data collection`);
+  const resources = [...html.matchAll(/<(?:script|img|link)\b[^>]*>/gi)].map(m => m[0]).filter(tag => !/rel="(?:canonical|alternate)"/.test(tag)).join('\n');
+  assert.doesNotMatch(resources, /(?:src|href)=["'](?:https?:)?\/\//i, `${lang}: no automatic third-party resources`);
+  assert.match(html, /name="referrer"\s+content="no-referrer"/);
+  assert.match(html, /connect-src 'none'/);
+  assert.match(html, /form-action 'none'/);
+  assert.match(html, /frame-src 'none'/);
+  assert.match(html, new RegExp(`rel="canonical"\\s+href="https://greywellness.com/${lang}/for-providers/"`));
+  const other = lang === 'en' ? 'es' : 'en';
+  assert.match(html, new RegExp(`hreflang="${other}"\\s+href="https://greywellness.com/${other}/for-providers/"`));
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.match(html, /tel:\+12402038879/);
+  assert.match(html, /Washington, DC/);
+  assert.match(html, /fax/i);
+  assert.doesNotMatch(html, /240-627-2513/, 'Fax remains a placeholder on the referral page');
+  assert.match(html, /data-print-referral/);
+  assert.match(html, /assets\/css\/referrals\.css/);
+  assert.match(html, /hosting|alojamiento/);
+  assert.match(html, /self-pay|pago particular/);
+  assert.match(html, /No referral fees|No hay pagos por referidos/);
+  const home = await readFile(`${root}/${lang}/index.html`, 'utf8');
+  assert.match(home, new RegExp(`href="/${lang}/for-providers/"`), 'Discoverable from footer');
+  assert.match(home, /googletagmanager/, 'Existing pages retain their analytics configuration');
+  assert.match(await readFile(`${root}/sitemap.xml`, 'utf8'), new RegExp(`https://greywellness.com/${lang}/for-providers/`));
+}
+const css = await readFile(`${root}/assets/css/referrals.css`, 'utf8');
+assert.match(css, /@media print/);
+assert.match(css, /break-inside: avoid/);
+assert.match(await readFile(`${root}/assets/js/referrals.js`, 'utf8'), /window\.print\(\)/);
+console.log('Referral checks passed: both languages, privacy boundaries, fax placeholder, print support, discovery, and metadata.');
