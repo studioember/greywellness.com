@@ -1,6 +1,6 @@
 {
   "en": {
-    "intro": "Find answers about insurance and coverage, our treatment approaches, virtual sessions, and getting started with therapy in Maryland and Virginia.",
+    "intro": "Find answers about insurance and coverage, our treatment approaches, virtual sessions, and getting started with therapy in Maryland, Virginia, and Washington, DC.",
     "cta": "Book a free consultation",
     "sections": [
       {
@@ -8,10 +8,10 @@
         "title": "Insurance & Coverage",
         "questions": [
           {
-            "question": "Do you accept insurance in Maryland or Virginia?",
+            "question": "Do you accept insurance in Maryland, Virginia, or Washington, DC?",
             "paragraphs": [
               "We accept Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna, and Aetna for Maryland clients only. Contact us to confirm whether your specific plan is accepted.",
-              "Virginia sessions are self-pay (private pay). We do not accept or bill insurance for Virginia sessions."
+              "Virginia and Washington, DC sessions are self-pay (private pay). We do not accept or bill insurance for sessions in Virginia or Washington, DC."
             ],
             "resources": [
               {
@@ -78,7 +78,7 @@
           {
             "question": "Are sessions virtual or in person?",
             "paragraphs": [
-              "All therapy sessions are virtual; we do not offer in-person appointments. We work with adults who are physically located in Maryland or Virginia at the time of their session. Sessions are available in English and Spanish."
+              "All therapy sessions are virtual; we do not offer in-person appointments. We work with adults who are physically located in Maryland, Virginia, or Washington, DC at the time of their session. Sessions are available in English and Spanish."
             ]
           }
         ]
@@ -110,7 +110,7 @@
     ]
   },
   "es": {
-    "intro": "Encuentra respuestas sobre seguros y cobertura, nuestros enfoques de tratamiento, las sesiones virtuales y cómo comenzar terapia en Maryland y Virginia.",
+    "intro": "Encuentra respuestas sobre seguros y cobertura, nuestros enfoques de tratamiento, las sesiones virtuales y cómo comenzar terapia en Maryland, Virginia y Washington, DC.",
     "cta": "Reserva una consulta gratuita",
     "sections": [
       {
@@ -118,10 +118,10 @@
         "title": "Seguros y cobertura",
         "questions": [
           {
-            "question": "¿Aceptan seguros en Maryland o Virginia?",
+            "question": "¿Aceptan seguros en Maryland, Virginia o Washington, DC?",
             "paragraphs": [
               "Aceptamos Carelon Behavioral Health, CareFirst BlueCross BlueShield, Oscar (Optum), United Healthcare (Optum), Oxford (Optum), Cigna y Aetna únicamente para clientes en Maryland. Contáctanos para confirmar si aceptamos tu plan específico.",
-              "Las sesiones en Virginia son de pago particular. No aceptamos ni facturamos seguros para las sesiones en Virginia."
+              "Las sesiones en Virginia y Washington, DC son de pago particular. No aceptamos ni facturamos seguros para las sesiones en Virginia o Washington, DC."
             ],
             "resources": [
               {
@@ -188,7 +188,7 @@
           {
             "question": "¿Las sesiones son virtuales o presenciales?",
             "paragraphs": [
-              "Todas las sesiones de terapia son virtuales; no ofrecemos citas presenciales. Trabajamos con personas adultas que se encuentren físicamente en Maryland o Virginia al momento de su sesión. Las sesiones están disponibles en español e inglés."
+              "Todas las sesiones de terapia son virtuales; no ofrecemos citas presenciales. Trabajamos con personas adultas que se encuentren físicamente en Maryland, Virginia o Washington, DC al momento de su sesión. Las sesiones están disponibles en español e inglés."
             ]
           }
         ]

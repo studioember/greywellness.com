@@ -1,8 +1,8 @@
 ---
 title: Contacto
 title_hidden: false
-meta_title: "Consulta de terapia en Virginia y Maryland | Grey Wellness"
-description: "Reserva una consulta gratuita de 15 minutos para terapia virtual en Maryland y Virginia. Conversa sobre tus metas con Mónica Grey en español o inglés."
+meta_title: "Consulta de terapia en Virginia, Maryland y Washington, DC | Grey Wellness"
+description: "Reserva una consulta gratuita de 15 minutos para terapia virtual en Maryland, Virginia y Washington, DC. Conversa sobre tus metas con Mónica Grey en español o inglés."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true
@@ -10,7 +10,7 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Terapia virtual para personas adultas en Maryland y Virginia, en español e inglés.
+Terapia virtual para personas adultas en Maryland, Virginia y Washington, DC, en español e inglés.
 
 
 ## Consulta Gratuita
@@ -24,6 +24,10 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
 ---
 
 <div class="max-w-2xl mx-auto px-6">
+  <a href="{{ '/es/for-providers/' | url }}" class="not-prose mb-8 block rounded-2xl border-2 border-primary bg-card p-6 font-semibold text-primary no-underline shadow-sm transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+    <span class="block text-lg">Para profesionales de la salud</span>
+    <span class="mt-2 block underline underline-offset-4">Ver información para referidos &rarr;</span>
+  </a>
   <p class="text-lg text-muted mb-8">
     Cuando te sientas listo, completa el formulario a continuación y nos pondremos en contacto contigo en 1–2 días hábiles.
   </p>

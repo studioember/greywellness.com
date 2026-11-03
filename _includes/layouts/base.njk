@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if privacy_page %}
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'">
+    <link rel="stylesheet" href="{{ '/assets/css/referrals.css' | url }}">
+    {% endif %}
 
     {# ── Page title ── #}
     {% if meta_title %}
@@ -21,18 +26,10 @@
 
     {# ── Core SEO ── #}
     <meta name="description" content="{{ _page_desc }}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{{ 'noindex, follow' if noindex else 'index, follow' }}">
     <link rel="canonical" href="{{ _page_url }}">
 
-    {# ── hreflang (i18n alternate links) ── #}
-    <link rel="alternate" hreflang="{{ lang | default('en') }}" href="{{ _page_url }}">
-    {% set _locale_alternates = page.url | locale_links %}
-    {% for _alt in _locale_alternates %}
-    <link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}">
-    {% endfor %}
-    {% set _xdefault_url = page.url %}
-    {% for _alt in _locale_alternates %}{% if _alt.lang == "en" %}{% set _xdefault_url = _alt.url %}{% endif %}{% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ _xdefault_url }}">
+    {% include 'components/hreflang.njk' %}
 
     {# ── Open Graph ── #}
     <meta property="og:type"        content="{{ og_type or 'website' }}">
@@ -40,9 +37,7 @@
     <meta property="og:title"       content="{{ _page_title }}">
     <meta property="og:description" content="{{ _page_desc }}">
     <meta property="og:image"       content="{{ _og_image }}">
-    <meta property="og:image:alt"   content="{{ image_alt or _page_title }}">
-    <meta property="og:image:width"  content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
     <meta property="og:site_name"   content="{{ site.name }}">
     <meta property="og:locale"      content="{{ locale | default('en_US') }}">
     {% for _alt in _locale_alternates %}
@@ -54,18 +49,21 @@
     <meta name="twitter:title"       content="{{ _page_title }}">
     <meta name="twitter:description" content="{{ _page_desc }}">
     <meta name="twitter:image"       content="{{ _og_image }}">
-    <meta name="twitter:image:alt"   content="{{ image_alt or _page_title }}">
+    <meta name="twitter:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | url }}">
     <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | url }}">
+    {% if not privacy_page %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--Fonts (non-blocking) -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
+
+    {% endif %}
 
     {% if preload_hero %}
     <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" type="image/webp" fetchpriority="high">
@@ -92,6 +90,7 @@
       })();
     </script>
 
+    {% if not privacy_page %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020466610"></script>
     <script>
@@ -101,6 +100,8 @@
       gtag('config', 'G-4B4KP12KBL');
       gtag('config', 'AW-18020466610');
     </script>
+
+    {% endif %}
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="{{ '/assets/css/generated/tailwind.css' | url }}">

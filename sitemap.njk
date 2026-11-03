@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
          "README" not in item.url and
          "workshops" not in item.url and
          "__" not in item.url %}
-  {%- set _itemAlternates = item.url | locale_links %}
+  {%- set _itemAlternates = item.url | siteLocaleLinks %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
     {# hreflang: self reference #}
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}"/>
     {%- endfor %}
     {# hreflang: x-default points to English version #}
-    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ item.url | locale_url('en') }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ item.url | siteDefaultUrl }}"/>
     {%- if item.date %}
     <lastmod>{{ item.date | dateISO }}</lastmod>
     {%- endif %}

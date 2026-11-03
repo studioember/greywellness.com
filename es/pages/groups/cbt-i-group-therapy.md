@@ -1,7 +1,9 @@
 ---
 layout: layouts/base.njk
 title: Terapia Grupal TCC-I
-title_hidden: true
+title_hidden: false
+noindex: true
+sitemap: false
 no_prose: true
 full_width: true
 hidden_from_nav: true

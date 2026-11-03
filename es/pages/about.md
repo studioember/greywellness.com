@@ -2,7 +2,7 @@
 title: Quién Soy
 title_hidden: true
 meta_title: "Quién Soy | Mónica Grey, MS, LCPC, NCC | Terapeuta TCC-I | Grey Wellness"
-description: "Conoce a Mónica Grey, terapeuta bilingüe de TCC-I, ansiedad y trauma para personas adultas en Maryland y Virginia. Atención virtual en español e inglés."
+description: "Conoce a Mónica Grey, terapeuta bilingüe de TCC-I, ansiedad y trauma para personas adultas en Maryland, Virginia y Washington, DC. Atención virtual en español e inglés."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk
@@ -28,7 +28,7 @@ no_prose: true
       <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Psicoterapeuta</p>
       <h1 class="text-4xl font-bold text-foreground mb-3">Mónica Grey, MS, LCPC, NCC</h1>
       <p class="text-lg text-muted leading-relaxed">Terapeuta. Viajera. Mamá gatuna.</p>
-      <p class="mt-4 text-muted leading-relaxed">Terapia virtual bilingüe en español e inglés para personas adultas que navegan el insomnio, el trauma, la ansiedad y la vida entre culturas en Virginia y Maryland.</p>
+      <p class="mt-4 text-muted leading-relaxed">Terapia virtual bilingüe en español e inglés para personas adultas que navegan el insomnio, el trauma, la ansiedad y la vida entre culturas en Virginia, Maryland y Washington, DC.</p>
       <a href="{{ '/es/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
     </div>
   </div>
@@ -78,7 +78,7 @@ no_prose: true
       </div>
       <div class="rounded-xl border border-border bg-card px-6 py-5">
         <p class="text-2xl mb-3">📍</p>
-        <p class="font-semibold text-foreground text-sm">Licenciada en Virginia y Maryland</p>
+        <p class="font-semibold text-foreground text-sm">Licenciada en Virginia, Maryland y Washington, DC</p>
         <p class="text-muted text-sm mt-0.5">Psicoterapia virtual para personas adultas</p>
       </div>
     </div>

@@ -6,7 +6,7 @@ date: 2026-08-09
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Ansiedad"
 image: "/assets/img/blog/why-anxiety-gets-worse-at-night.jpg"
-image_alt: "Mujer despierta en la cama de noche apretando una almohada sobre su cara, sin poder dormir por la ansiedad"
+image_alt: "Persona en la cama que se cubre la cara con una almohada"
 image_icon: "🌙"
 og_type: "article"
 hero_hidden: true
@@ -16,7 +16,7 @@ title_hidden: true
 ---
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Mujer despierta en la cama de noche apretando una almohada sobre su cara, sin poder dormir por la ansiedad" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/why-anxiety-gets-worse-at-night.jpg" alt="Persona en la cama que se cubre la cara con una almohada" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Son las 3am. Durante todo el día no pensaste en las cuentas por pagar, en el carro que hace 6 meses tenías que llevar a mantenimiento, o en ese pantallazo que enviaste a la persona equivocada. Pero en el momento en que tu cabeza toca la almohada, aquí vienen estos pensamientos a mil por hora. Pensamientos intrusivos que llegaron sin alerta y sin invitación. Y ya sabemos que no hay nada peor que una visita que no has invitado. Esa visita llegó, y llegó bien ruidosa, y no da señales de querer irse pronto.
@@ -30,7 +30,7 @@ En [nuestro blog anterior sobre por qué te despiertas a las 3 am](https://greyw
 ## La corteza prefrontal terminó su turno hace horas
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Mujer acostada en la cama de noche tapándose la cara con el edredón, con los ojos bien abiertos y sin poder dormir" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg" alt="Mujer con los ojos bien abiertos asomándose por encima de un edredón blanco" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Para quienes no están familiarizados con la corteza prefrontal, piensen en esta como la parte lógica del cerebro, la que frena los impulsos y pone las cosas en perspectiva. La amígdala, en cambio, es esa alarma contra incendios que a veces se dispara sin que haya fuego real. Lo que sucede por lo general es que tu corteza prefrontal necesita recargar al final del día, y entre más cansadx te sientas, menos lógicx y razonable eres. La amígdala, en cambio, tiene horario 24/7, porque su trabajo es detectar alertas. Estudios estiman que la amígdala se vuelve hasta un 60% más reactiva a estímulos negativos cuando a una persona le falta sueño, y que además hay menos conexión con la parte racional, la que es capaz de distinguir una falsa alarma de un peligro real.
@@ -59,7 +59,7 @@ La ansiedad que no te deja dormir es un bucle, lo que significa que mejorar tu c
 - **Ve a la cama solo cuando estés somnolientx y listx para dormir:** ya sé que sueno como disco rayado, pero es una de las técnicas más efectivas que existen.
 
 <figure class="not-prose clear-both mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-2">
-  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Mujer en bata leyendo un libro a la luz de las velas con una taza de té, una rutina de transición tranquila antes de dormir" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/bedtime-wind-down-routine-reading-by-candlelight.jpg" alt="Mujer en bata leyendo junto a una vela y una taza de té" width="1400" height="933" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 Tener ansiedad e insomnio no significa que tengas que vivir con ellos. ¡Hay solución! No vivas en un bucle. Mereces mucho más.
@@ -67,6 +67,6 @@ Tener ansiedad e insomnio no significa que tengas que vivir con ellos. ¡Hay sol
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿La ansiedad nocturna no te deja descansar?</p>
   <p class="text-foreground font-semibold text-base mb-1">Rompe el ciclo entre angustia e insomnio con terapia basada en evidencia.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">Ayudamos a adultos a calmar su mente, regular su sistema nervioso y volver a dormir profundamente con TCC-I y terapia para la ansiedad. Sesiones virtuales en Maryland en español e inglés.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">Ayudamos a adultos a calmar su mente, regular su sistema nervioso y volver a dormir profundamente con TCC-I y terapia para la ansiedad. Sesiones virtuales en Maryland, Virginia y Washington, DC en español e inglés.</p>
   <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda tu Consulta Gratuita de 15 Minutos →</a>
 </div>

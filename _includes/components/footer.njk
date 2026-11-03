@@ -21,7 +21,7 @@
           <p class="text-sm font-semibold text-foreground">{{ _t.footer_contact_label }}</p>
           <ul class="space-y-2 text-sm text-muted">
             <li><a href="tel:+12402038879" class="hover:text-primary transition-colors">Office: 240-203-8879</a></li>
-            <li class="hover:text-primary transition-colors">Fax: 240-627-2513</li>
+            <li><a href="{{ '/' + _lang + '/for-providers/' | url }}" class="hover:text-primary transition-colors">Fax: 240-627-2513</a></li>
             <li><a href="mailto:contact@greywellness.com?subject=Inquiry" class="hover:text-primary transition-colors">contact@greywellness.com</a></li>
           </ul>
         </div>
@@ -33,6 +33,9 @@
             </li>
             <li>
               <a href="{{ '/' + _lang + '/pages/treatment/' | url }}" class="hover:text-primary transition-colors">{{ _t.footer_services }}</a>
+            </li>
+            <li>
+              <a href="{{ '/' + _lang + '/for-providers/' | url }}" class="hover:text-primary transition-colors">{{ 'For Providers' if _lang == 'en' else 'Para profesionales' }}</a>
             </li>
             <li>
               <a href="{{ '/' + _lang + '/free-tools/' | url }}" class="hover:text-primary transition-colors">{{ _t.footer_tools }}</a>
@@ -57,11 +60,15 @@
           <a href="https://www.psychologytoday.com/profile/1256952" class="sx-verified-seal" aria-label="{{ _t.footer_badge_pt }}"></a>
           {# LatinX Therapy directory badge #}
           <a href="https://www.latinxtherapy.com" target="_blank" rel="noopener noreferrer" aria-label="{{ _t.footer_badge_latinx }}">
-            <img src="{{ '/assets/img/badges/latinx-therapy.png' | url }}" alt="LatinX Therapy Directory" class="h-12 w-auto">
+            <img src="{{ '/assets/img/badges/latinx-therapy.png' | url }}" alt="{{ _t.footer_badge_latinx }}" class="h-12 w-auto">
           </a>
           {# NBCC Board Certified (NCC) badge #}
           <a href="https://www.nbcc.org" target="_blank" rel="noopener noreferrer" aria-label="{{ _t.footer_badge_nbcc }}">
-            <img src="{{ '/assets/img/badges/nbcc-ncc.png' | url }}" alt="NBCC Board Certified, NCC" class="h-12 w-auto">
+            <img src="{{ '/assets/img/badges/nbcc-ncc.png' | url }}" alt="{{ _t.footer_badge_nbcc }}" class="h-12 w-auto">
+          </a>
+          {# TherapyDen directory badge #}
+          <a href="https://www.therapyden.com/therapist/monica-grey" target="_blank" rel="noopener noreferrer">
+            <img src="{{ '/assets/img/badges/therapyden.png' | url }}" width="175" height="173" alt="{{ _t.footer_badge_therapyden }}" class="h-12 w-auto">
           </a>
         </div>
       </div>

@@ -14,7 +14,7 @@ preload_hero: true
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MedicalBusiness", "MedicalOrganization"],
+  "@type": "MedicalOrganization",
   "@id": "{{ site.url }}/#practice",
   "name": "Grey Wellness",
   "description": {{ (description ~ " " ~ _t.service_availability) | dump | safe }},
@@ -24,38 +24,9 @@ preload_hero: true
   "priceRange": "$$",
   "image": "{{ site.url }}/assets/img/og-image.jpg",
   "medicalSpecialty": ["SleepMedicine", "Psychiatric", "CommunityHealth"],
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "Virginia",
-      "sameAs": "https://en.wikipedia.org/wiki/Virginia"
-    },
-    {
-      "@type": "State",
-      "name": "Maryland",
-      "sameAs": "https://en.wikipedia.org/wiki/Maryland"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Montgomery County, Maryland"
-    },
-    {
-      "@type": "City",
-      "name": "Bethesda"
-    },
-    {
-      "@type": "City",
-      "name": "Rockville"
-    },
-    {
-      "@type": "City",
-      "name": "Silver Spring"
-    }
-  ],
+  "areaServed": {{ site.areasServed | dump | safe }},
   "sameAs": [
     "https://www.psychologytoday.com/profile/1256952",
-    "https://www.latinxtherapy.com",
-    "https://www.nbcc.org",
     "https://www.instagram.com/grey_wellness/",
     "https://www.facebook.com/profile.php?id=61574329432986",
     "https://www.linkedin.com/company/grey-wellness"
@@ -94,7 +65,7 @@ preload_hero: true
           "@type": "Service",
           "name": "{{ _t.home_schema_cbti_name }}",
           "description": {{ (_t.home_schema_cbti_desc ~ " " ~ _t.service_availability) | dump | safe }},
-          "areaServed": [{ "@type": "State", "name": "Virginia" }, { "@type": "State", "name": "Maryland" }],
+          "areaServed": {{ site.areasServed | dump | safe }},
           "serviceType": "Cognitive Behavioral Therapy for Insomnia"
         }
       },
@@ -104,7 +75,7 @@ preload_hero: true
           "@type": "Service",
           "name": "{{ _t.home_schema_anxiety_name }}",
           "description": {{ (_t.home_schema_anxiety_desc ~ " " ~ _t.service_availability) | dump | safe }},
-          "areaServed": [{ "@type": "State", "name": "Virginia" }, { "@type": "State", "name": "Maryland" }],
+          "areaServed": {{ site.areasServed | dump | safe }},
           "serviceType": "Anxiety & Stress Management"
         }
       }
@@ -226,7 +197,7 @@ preload_hero: true
     <div class="mx-auto w-full max-w-sm">
       <picture class="block aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
         <source srcset="{{ '/assets/img/monica-homepage.webp' | url }}" type="image/webp">
-        <img src="{{ '/assets/img/monica-homepage.jpg' | url }}" alt="Mónica Grey, MS, LCPC, NCC smiling in her office" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" width="900" height="1200">
+        <img src="{{ '/assets/img/monica-homepage.jpg' | url }}" alt="{{ _t.home_portrait_img_alt }}" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" width="900" height="1200">
       </picture>
     </div>
     <div>

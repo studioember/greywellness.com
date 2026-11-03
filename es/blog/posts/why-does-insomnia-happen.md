@@ -94,7 +94,7 @@ Por ahora, si has llegado hasta aquí leyendo y pensaste "vale, pero esto es lit
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿Listx para romper el ciclo del insomnio?</p>
   <p class="text-foreground font-semibold text-base mb-1">Tu cerebro aprendió a estar alerta en la cama. La TCC-I le enseña a descansar.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">La TCC-I desactiva los factores perpetuantes que te mantienen despiertx. Nuestro programa estructurado de 8 sesiones te ayuda a recuperar un sueño profundo sin depender de pastillas. Sesiones virtuales en Maryland en español e inglés.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">La TCC-I desactiva los factores perpetuantes que te mantienen despiertx. Nuestro programa estructurado de 8 sesiones te ayuda a recuperar un sueño profundo sin depender de pastillas. Sesiones virtuales en Maryland, Virginia y Washington, DC en español e inglés.</p>
   <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Agenda tu Consulta Gratuita de TCC-I →</a>
 </div>
 

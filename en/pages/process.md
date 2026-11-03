@@ -2,7 +2,7 @@
 title: How We Work
 title_hidden: false
 meta_title: "CBT-I, Trauma-Informed & Evidence-Based Therapy | Grey Wellness"
-description: "Explore CBT-I, CBT, trauma-informed care, mindfulness, and feminist therapy for adults in Maryland and Virginia. Bilingual virtual sessions."
+description: "Explore CBT-I, CBT, trauma-informed care, mindfulness, and feminist therapy for adults in Maryland, Virginia, and Washington, DC. Bilingual virtual sessions."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

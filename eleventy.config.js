@@ -20,6 +20,35 @@ export default async function (eleventyConfig) {
     errorMode: "allow-fallback",
   });
 
+  // Match translated routes by meaning, not pagination position or source filename.
+  const translatedRoutes = [
+    ["/en/blog/category/anxiety/", "/es/blog/category/ansiedad/"],
+    ["/en/blog/category/insomnia/", "/es/blog/category/insomnio/"],
+    ["/en/blog/posts/waking-up-at-3am/", "/es/blog/posts/despertarse-a-las-3-am/"],
+    ["/en/blog/posts/cbti-vs-sleep-medication/", "/es/blog/posts/tcc-i-vs-medicamentos-insomnio/"],
+  ];
+  let publishedUrls = new Set();
+  eleventyConfig.on("eleventy.contentMap", ({ urlToInputPath }) => {
+    publishedUrls = new Set(Object.keys(urlToInputPath));
+  });
+  const localeLinks = (url) => {
+    const untranslated = "/es/pages/groups/cbt-i-group-therapy/";
+    if (url === untranslated) return [];
+    const lang = url?.split("/")[1];
+    if (!["en", "es"].includes(lang)) return [];
+    const pair = translatedRoutes.find((routes) => routes.includes(url));
+    const alternate = pair
+      ? pair.find((route) => route !== url)
+      : url.replace(/^\/(en|es)\//, lang === "en" ? "/es/" : "/en/");
+    if (alternate === untranslated || !publishedUrls.has(alternate)) return [];
+    const alternateLang = lang === "en" ? "es" : "en";
+    return [{ url: alternate, lang: alternateLang, label: alternateLang === "en" ? "English" : "Español" }];
+  };
+  eleventyConfig.addFilter("siteLocaleLinks", localeLinks);
+  eleventyConfig.addFilter("siteDefaultUrl", (url) =>
+    localeLinks(url).find((link) => link.lang === "en")?.url || url,
+  );
+
   // Collections — locale-specific pages for use in navigation
   eleventyConfig.addCollection("pages_en", function (collectionApi) {
     return collectionApi

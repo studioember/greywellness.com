@@ -1,0 +1,98 @@
+{
+  "en": {
+    "eyebrow": "Grey Wellness · For healthcare professionals",
+    "intro": "Refer adults for bilingual virtual therapy focused on insomnia, anxiety, and trauma. We welcome appropriate referrals from primary care clinicians, sleep specialists, psychiatrists, therapists, and other healthcare professionals.",
+    "print": "Print referral guide / Save as PDF",
+    "print_help": "The print version includes the referral instructions and contact information. You can also use your browser’s Print menu.",
+    "clinician_heading": "Clinical care & eligibility",
+    "clinician": "Mónica Grey, MS, LCPC, NCC.",
+    "eligibility": [
+      "Adults seeking Cognitive Behavioral Therapy for Insomnia (CBT-I), anxiety therapy, or trauma-informed care, including Cognitive Processing Therapy (CPT) when appropriate.",
+      "Virtual sessions in English and Spanish. Patients must be physically located in Maryland, Virginia, or Washington, DC at the time of the session.",
+      "Insurance is accepted only for Maryland clients, subject to confirmation of the specific plan and benefits. Virginia and Washington, DC sessions are self-pay."
+    ],
+    "bio": "About Mónica",
+    "rates": "Rates & insurance information",
+    "patient_heading": "Patient-initiated contact",
+    "patient": "Share this guide with the patient. They can call 240-203-8879 to ask about a free 15-minute consultation, current availability, fees, and whether the practice may be a fit. A professional referral is not required.",
+    "call": "Call 240-203-8879",
+    "provider_heading": "Provider-to-provider referral",
+    "provider": "Discuss the referral with the patient first. Call the office to confirm availability and arrange an appropriate channel before sending identifying or clinical information. Confirm the intended recipient and any authorization required for the records involved.",
+    "fax_label": "Fax referrals",
+    "fax": "(240) 627-2513",
+    "sections": [
+      {
+        "heading": "Care coordination & records",
+        "text": "Coordination with a referring clinician is based on the patient’s preferences and applicable confidentiality requirements. Confirm the authority for disclosure and obtain any required authorization before sharing information. Send only information relevant to the referral; do not send psychotherapy notes or a full record unless specifically requested and legally authorized.",
+        "print_text": "Coordinate care according to patient preferences and applicable confidentiality requirements. Confirm disclosure authority and obtain required authorizations. Send only relevant information. Do not send psychotherapy notes or full records unless requested and legally authorized."
+      },
+      {
+        "heading": "No referral fees",
+        "text": "Grey Wellness does not offer or accept fees, gifts, or other compensation in exchange for patient referrals. Referrals do not require a reciprocal referral arrangement.",
+        "print_text": "No fees, gifts, compensation, or reciprocal referral commitments are exchanged for referrals."
+      },
+      {
+        "heading": "Privacy on this page",
+        "text": "This referral information page does not load analytics or advertising trackers and has no form for collecting patient information. Do not send diagnoses, records, or other sensitive information through ordinary email or public website forms. The hosting provider may retain technical access logs. Other pages and linked services have their own tracking and privacy practices; this notice applies only to this page.",
+        "print_text": "The referral webpage has no analytics, advertising trackers, or patient-information form. Do not send sensitive information by ordinary email or public forms. Hosting access logs may exist; other pages and services have separate privacy practices."
+      },
+      {
+        "heading": "Not an emergency service",
+        "text": "Do not use routine referral channels for urgent or emergency care. For an immediate medical emergency, call 911 or go to the nearest emergency department.",
+        "print_text": "Routine referral channels are not for urgent care. For an immediate medical emergency, call 911 or go to the nearest emergency department."
+      }
+    ],
+    "footer": "Grey Wellness · Referral information · 240-203-8879",
+    "home": "Return to Grey Wellness",
+    "patient_print": "Patients may call 240-203-8879 to ask about a free 15-minute consultation, availability, fees, and clinical fit. No professional referral is required.",
+    "provider_print": "Discuss the referral with the patient. Call before sending identifying or clinical information to confirm availability, recipient, and the appropriate transfer channel and authorizations."
+  },
+  "es": {
+    "eyebrow": "Grey Wellness · Para profesionales de la salud",
+    "intro": "Refiera a personas adultas para terapia virtual bilingüe enfocada en el insomnio, la ansiedad y el trauma. Recibimos referidos de atención primaria, medicina del sueño, psiquiatría, psicoterapia y otros profesionales de la salud.",
+    "print": "Imprimir guía / Guardar como PDF",
+    "print_help": "La versión impresa incluye las instrucciones y la información de contacto. También puede usar la opción Imprimir de su navegador.",
+    "clinician_heading": "Atención clínica y requisitos",
+    "clinician": "Mónica Grey, MS, LCPC, NCC.",
+    "eligibility": [
+      "Personas adultas que buscan Terapia Cognitivo Conductual para el Insomnio (TCC-I), terapia para la ansiedad o atención informada en trauma, incluida la Terapia de Procesamiento Cognitivo (TPC) cuando sea apropiada.",
+      "Sesiones virtuales en español e inglés. La persona debe encontrarse físicamente en Maryland, Virginia o Washington, DC al momento de la sesión.",
+      "Aceptamos seguros únicamente para clientes en Maryland, previa confirmación del plan y sus beneficios. Las sesiones en Virginia y Washington, DC son de pago particular."
+    ],
+    "bio": "Conozca a Mónica",
+    "rates": "Tarifas e información sobre seguros",
+    "patient_heading": "Contacto iniciado por la persona",
+    "patient": "Comparta esta guía con la persona interesada. Puede llamar al 240-203-8879 para preguntar por una consulta gratuita de 15 minutos, la disponibilidad, los honorarios y si los servicios se ajustan a sus necesidades. No se requiere un referido profesional.",
+    "call": "Llamar al 240-203-8879",
+    "provider_heading": "Referido entre profesionales",
+    "provider": "Converse primero con la persona sobre el referido. Llame a la oficina para confirmar disponibilidad y acordar un canal apropiado antes de enviar información personal o clínica. Confirme quién recibirá la información y las autorizaciones necesarias para los documentos correspondientes.",
+    "fax_label": "Referidos por fax",
+    "fax": "(240) 627-2513",
+    "sections": [
+      {
+        "heading": "Coordinación de atención y documentos",
+        "text": "La coordinación con quien refiere depende de las preferencias de la persona y de las normas de confidencialidad aplicables. Confirme la base que permite compartir la información y obtenga las autorizaciones necesarias. Envíe solo información pertinente al referido; no envíe notas de psicoterapia ni el expediente completo salvo que se soliciten expresamente y su divulgación esté legalmente autorizada.",
+        "print_text": "Coordine la atención según las preferencias de la persona y las normas de confidencialidad. Confirme la base para divulgar información y obtenga las autorizaciones necesarias. Envíe solo información pertinente. No envíe notas de psicoterapia ni expedientes completos sin solicitud y autorización legal."
+      },
+      {
+        "heading": "No hay pagos por referidos",
+        "text": "Grey Wellness no ofrece ni acepta pagos, regalos u otras compensaciones a cambio de referidos de pacientes. Los referidos no requieren un acuerdo de reciprocidad.",
+        "print_text": "No se intercambian pagos, regalos, compensaciones ni compromisos de reciprocidad por referidos."
+      },
+      {
+        "heading": "Privacidad en esta página",
+        "text": "Esta página informativa no carga herramientas de analítica ni rastreadores publicitarios y no contiene formularios para recopilar información de pacientes. No envíe diagnósticos, expedientes u otra información sensible por correo electrónico convencional ni por formularios públicos. El proveedor de alojamiento puede conservar registros técnicos de acceso. Otras páginas y servicios enlazados tienen sus propias prácticas de seguimiento y privacidad; este aviso solo se aplica a esta página.",
+        "print_text": "La página de referidos no tiene analítica, rastreadores publicitarios ni formularios de pacientes. No envíe información sensible por correo convencional ni formularios públicos. Puede haber registros técnicos de alojamiento; otras páginas y servicios tienen prácticas de privacidad propias."
+      },
+      {
+        "heading": "No es un servicio de emergencias",
+        "text": "No utilice los canales habituales de referidos para atención urgente o de emergencia. Ante una emergencia médica inmediata, llame al 911 o acuda al servicio de urgencias más cercano.",
+        "print_text": "Los canales habituales no son para atención urgente. Ante una emergencia médica inmediata, llame al 911 o acuda al servicio de urgencias más cercano."
+      }
+    ],
+    "footer": "Grey Wellness · Información para referidos · 240-203-8879",
+    "home": "Volver a Grey Wellness",
+    "patient_print": "La persona puede llamar al 240-203-8879 para preguntar por una consulta gratuita de 15 minutos, disponibilidad, honorarios y atención adecuada a sus necesidades. No se requiere referido profesional.",
+    "provider_print": "Converse con la persona sobre el referido. Llame antes de enviar información personal o clínica para confirmar disponibilidad, destinatario, canal de envío y autorizaciones necesarias."
+  }
+}

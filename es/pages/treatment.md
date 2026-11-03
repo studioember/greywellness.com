@@ -1,8 +1,8 @@
 ---
 title: Lo Que Tratamos
 title_hidden: false
-meta_title: "Terapia en Virginia y Maryland | Grey Wellness"
-description: "TCC-I y terapia para ansiedad y trauma para personas adultas en Maryland y Virginia. Conoce nuestros servicios de terapia virtual en español e inglés."
+meta_title: "Terapia en Virginia, Maryland y Washington, DC | Grey Wellness"
+description: "TCC-I y terapia para ansiedad y trauma para personas adultas en Maryland, Virginia y Washington, DC. Conoce nuestros servicios de terapia virtual en español e inglés."
 date: "git Last Modified"
 date_hidden: true
 layout: layouts/base.njk

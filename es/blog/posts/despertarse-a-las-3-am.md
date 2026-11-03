@@ -6,7 +6,7 @@ date: 2026-07-27
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Insomnio"
 image: "/assets/img/blog/waking-up-at-3am.jpg"
-image_alt: "Hombre despierto en la cama de noche leyendo un libro para volver a dormirse"
+image_alt: "Hombre con gafas leyendo en la cama de noche"
 image_icon: "⏰"
 layout: layouts/blog-post.njk
 date_hidden: true
@@ -53,6 +53,6 @@ Despertarte a las 3 am de vez en cuando no significa que tengas un problema. ¡S
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 ¿Despertándote a las 3 AM noche tras noche?</p>
   <p class="text-foreground font-semibold text-base mb-1">No tienes que seguir lidiando con esto a solas.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">La Terapia Cognitivo Conductual para el Insomnio (TCC-I) es el tratamiento de referencia sin medicamentos para romper el ciclo de desvelos en solo 6 a 8 semanas. Sesiones virtuales en Maryland en español e inglés.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">La Terapia Cognitivo Conductual para el Insomnio (TCC-I) es el tratamiento de referencia sin medicamentos para romper el ciclo de desvelos en solo 6 a 8 semanas. Sesiones virtuales en Maryland, Virginia y Washington, DC en español e inglés.</p>
   <a href="/es/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Conoce la Terapia para el Insomnio (TCC-I) →</a>
 </div>

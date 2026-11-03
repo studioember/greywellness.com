@@ -6,7 +6,7 @@ date: 2026-08-23
 author: "Mónica Grey, MS, LCPC, NCC"
 category: "Trauma"
 image: "/assets/img/blog/stress-trauma-sleep.jpg"
-image_alt: "Woman lying awake in bed at night, physically exhausted but unable to relax after a stressful experience"
+image_alt: "Woman lying on her side with her eyes open in a dim bedroom"
 image_icon: "🧠"
 og_type: "article"
 layout: layouts/blog-post.njk
@@ -63,7 +63,7 @@ A cooler room, less screen time, or a better bedtime routine may help, but they 
 ## What About Chronic Stress?
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Woman leaning over a laptop with one hand on her forehead while feeling overwhelmed by chronic work stress" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/chronic-stress-affects-sleep.jpg" alt="Woman leaning over a laptop with one hand on her forehead" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 There's a third category that often gets left out of this conversation.
@@ -167,7 +167,7 @@ Consistency is usually more helpful than putting in enormous effort for one nigh
 ## Stop Checking the Clock—Yes, That Counts Too
 
 <figure class="not-prose mb-6 md:float-right md:w-2/5 md:ml-8 md:mt-1">
-  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Man lying in bed and checking his phone instead of resting" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
+  <img src="/assets/img/blog/checking-phone-during-night-awakenings.jpg" alt="Man propped up in bed looking at his phone" width="1920" height="1280" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl">
 </figure>
 
 There's one small behavior that deserves its own section because it's so common: checking the time whenever you wake up.
@@ -201,7 +201,7 @@ That support should meet you as you are. You shouldn't have to translate your id
 <div class="not-prose my-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">🌙 Stuck in Hyperarousal After Stress or Trauma?</p>
   <p class="text-foreground font-semibold text-base mb-1">Calm your alert system and restore deep sleep with evidence-based therapy.</p>
-  <p class="text-muted text-sm leading-relaxed mb-4">We provide bilingual trauma-informed care (including CPT) and gold-standard CBT-I for insomnia so your brain and body can finally feel safe enough to rest. Virtual sessions across Maryland in English and Spanish.</p>
+  <p class="text-muted text-sm leading-relaxed mb-4">We provide bilingual trauma-informed care (including CPT) and gold-standard CBT-I for insomnia so your brain and body can finally feel safe enough to rest. Virtual sessions across Maryland, Virginia, and Washington, DC in English and Spanish.</p>
   <a href="/en/pages/sleep/#contact-form" class="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Schedule a Free 15-Minute Consultation →</a>
 </div>
 

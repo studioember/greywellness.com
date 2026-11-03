@@ -1,8 +1,8 @@
 ---
 title: Contact
 title_hidden: false
-meta_title: "Therapy Consultation in Virginia & Maryland | Grey Wellness"
-description: "Book a free 15-minute consultation for bilingual virtual therapy in Maryland and Virginia. Discuss your goals with Mónica Grey in English or Spanish."
+meta_title: "Therapy Consultation in Virginia, Maryland & DC | Grey Wellness"
+description: "Book a free 15-minute consultation for bilingual virtual therapy in Maryland, Virginia, and Washington, DC. Discuss your goals with Mónica Grey in English or Spanish."
 description_hidden: true
 date: "git Last Modified"
 date_hidden: true
@@ -10,7 +10,7 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Virtual therapy for adults in Maryland and Virginia, in English and Spanish.
+Virtual therapy for adults in Maryland, Virginia, and Washington, DC, in English and Spanish.
 
 
 ## Free Consultation
@@ -24,6 +24,10 @@ There is no pressure to make a decision on the call. I genuinely encourage you t
 ---
 
 <div class="max-w-2xl mx-auto px-6">
+  <a href="{{ '/en/for-providers/' | url }}" class="not-prose mb-8 block rounded-2xl border-2 border-primary bg-card p-6 font-semibold text-primary no-underline shadow-sm transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+    <span class="block text-lg">For healthcare professionals</span>
+    <span class="mt-2 block underline underline-offset-4">View referral information &rarr;</span>
+  </a>
   <p class="text-lg text-muted mb-8">
     When you feel ready, fill out the form below and we will be in touch within 1–2 business days.
   </p>

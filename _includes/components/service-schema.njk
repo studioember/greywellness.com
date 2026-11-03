@@ -15,10 +15,7 @@
     "name": {{ site.name | dump | safe }},
     "url": {{ site.url | dump | safe }}
   },
-  "areaServed": [
-    { "@type": "State", "name": "Virginia" },
-    { "@type": "State", "name": "Maryland" }
-  ],
+  "areaServed": {{ site.areasServed | dump | safe }},
   "availableChannel": {
     "@type": "ServiceChannel",
     "serviceUrl": {{ (site.url ~ "/" ~ _service_lang ~ "/pages/contact/") | dump | safe }},
