@@ -18,19 +18,24 @@ for (const lang of ['en', 'es']) {
   assert.match(html, /tel:\+12402038879/);
   assert.match(html, /Washington, DC/);
   assert.match(html, /fax/i);
-  assert.doesNotMatch(html, /240-627-2513/, 'Fax remains a placeholder on the referral page');
+  assert.match(html, /\(240\) 627-2513/, 'Referral page includes the fax number');
   assert.match(html, /data-print-referral/);
+  assert.match(html, /class="referral-print-only referral-website"/);
+  assert.match(html, /src="\/assets\/img\/website-qr\.png"/);
+  assert.match(html, /href="https:\/\/greywellness\.com">https:\/\/greywellness\.com<\/a>/);
   assert.match(html, /assets\/css\/referrals\.css/);
   assert.match(html, /hosting|alojamiento/);
   assert.match(html, /self-pay|pago particular/);
   assert.match(html, /No referral fees|No hay pagos por referidos/);
   const home = await readFile(`${root}/${lang}/index.html`, 'utf8');
   assert.match(home, new RegExp(`href="/${lang}/for-providers/"`), 'Discoverable from footer');
+  assert.match(home, new RegExp(`href="/${lang}/for-providers/"[^>]*>Fax: 240-627-2513</a>`), 'Footer fax links to the matching referral page');
   assert.match(home, /googletagmanager/, 'Existing pages retain their analytics configuration');
   assert.match(await readFile(`${root}/sitemap.xml`, 'utf8'), new RegExp(`https://greywellness.com/${lang}/for-providers/`));
 }
 const css = await readFile(`${root}/assets/css/referrals.css`, 'utf8');
+assert.ok((await readFile(`${root}/assets/img/website-qr.png`)).length > 0, 'Website QR asset is included');
 assert.match(css, /@media print/);
 assert.match(css, /break-inside: avoid/);
 assert.match(await readFile(`${root}/assets/js/referrals.js`, 'utf8'), /window\.print\(\)/);
-console.log('Referral checks passed: both languages, privacy boundaries, fax placeholder, print support, discovery, and metadata.');
+console.log('Referral checks passed: both languages, privacy boundaries, fax number and footer links, print support, discovery, and metadata.');

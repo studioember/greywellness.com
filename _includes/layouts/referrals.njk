@@ -25,6 +25,7 @@
       <p class="referral-screen-only">{{ _r.patient }}</p>
       <p class="referral-print-only">{{ _r.patient_print }}</p>
       <a href="tel:+12402038879" class="referral-call">{{ _r.call }}</a>
+      <p><a href="mailto:contact@greywellness.com">contact@greywellness.com</a></p>
     </section>
     <section class="referral-card">
       <h2>{{ _r.provider_heading }}</h2>
@@ -40,12 +41,16 @@
     <p class="referral-print-only">{{ section.print_text }}</p>
   </section>
   {% endfor %}
+  <div class="referral-print-only referral-website">
+    <img src="{{ '/assets/img/website-qr.png' | url }}" width="120" height="120" alt="{{ 'QR code for the Grey Wellness website' if _lang == 'en' else 'Código QR del sitio web de Grey Wellness' }}">
+    <p><a href="{{ site.url }}">{{ site.url }}</a></p>
+  </div>
 </article>
 <script src="{{ '/assets/js/referrals.js' | url }}" defer></script>
 {% endblock %}
 
-{# Keep the public page free of the standard footer's remote badge script,
-   unconfirmed fax instructions, and general contact-form CTA. #}
+{# Keep the public page free of the standard footer's remote badge script
+   and general contact-form CTA. #}
 {% block footer %}
 {% set _lang = lang | default('en') %}
 <footer class="referral-footer">

@@ -5,7 +5,7 @@
     "print": "Print referral guide / Save as PDF",
     "print_help": "The print version includes the referral instructions and contact information. You can also use your browser’s Print menu.",
     "clinician_heading": "Clinical care & eligibility",
-    "clinician": "Mónica Grey, MS, LCPC, NCC · Master of Science, Johns Hopkins University.",
+    "clinician": "Mónica Grey, MS, LCPC, NCC.",
     "eligibility": [
       "Adults seeking Cognitive Behavioral Therapy for Insomnia (CBT-I), anxiety therapy, or trauma-informed care, including Cognitive Processing Therapy (CPT) when appropriate.",
       "Virtual sessions in English and Spanish. Patients must be physically located in Maryland, Virginia, or Washington, DC at the time of the session.",
@@ -19,17 +19,12 @@
     "provider_heading": "Provider-to-provider referral",
     "provider": "Discuss the referral with the patient first. Call the office to confirm availability and arrange an appropriate channel before sending identifying or clinical information. Confirm the intended recipient and any authorization required for the records involved.",
     "fax_label": "Fax referrals",
-    "fax": "Fax instructions coming soon. Please call before sending records.",
+    "fax": "(240) 627-2513",
     "sections": [
       {
         "heading": "Care coordination & records",
         "text": "Coordination with a referring clinician is based on the patient’s preferences and applicable confidentiality requirements. Confirm the authority for disclosure and obtain any required authorization before sharing information. Send only information relevant to the referral; do not send psychotherapy notes or a full record unless specifically requested and legally authorized.",
         "print_text": "Coordinate care according to patient preferences and applicable confidentiality requirements. Confirm disclosure authority and obtain required authorizations. Send only relevant information. Do not send psychotherapy notes or full records unless requested and legally authorized."
-      },
-      {
-        "heading": "Patient choice & next steps",
-        "text": "Patients choose whether and where to seek care. A referral or inquiry does not guarantee an appointment, insurance coverage, or a particular outcome, and does not by itself establish a therapist–client relationship. Clinical fit and availability are reviewed before care begins. Continue existing care and follow-up arrangements until a transition is agreed.",
-        "print_text": "Patients choose their provider. A referral does not guarantee an appointment, coverage, or results, or itself establish a therapist–client relationship. Continue existing care until a transition is agreed."
       },
       {
         "heading": "No referral fees",
@@ -58,7 +53,7 @@
     "print": "Imprimir guía / Guardar como PDF",
     "print_help": "La versión impresa incluye las instrucciones y la información de contacto. También puede usar la opción Imprimir de su navegador.",
     "clinician_heading": "Atención clínica y requisitos",
-    "clinician": "Mónica Grey, MS, LCPC, NCC · Maestría en Ciencias, Johns Hopkins University.",
+    "clinician": "Mónica Grey, MS, LCPC, NCC.",
     "eligibility": [
       "Personas adultas que buscan Terapia Cognitivo Conductual para el Insomnio (TCC-I), terapia para la ansiedad o atención informada en trauma, incluida la Terapia de Procesamiento Cognitivo (TPC) cuando sea apropiada.",
       "Sesiones virtuales en español e inglés. La persona debe encontrarse físicamente en Maryland, Virginia o Washington, DC al momento de la sesión.",
@@ -72,17 +67,12 @@
     "provider_heading": "Referido entre profesionales",
     "provider": "Converse primero con la persona sobre el referido. Llame a la oficina para confirmar disponibilidad y acordar un canal apropiado antes de enviar información personal o clínica. Confirme quién recibirá la información y las autorizaciones necesarias para los documentos correspondientes.",
     "fax_label": "Referidos por fax",
-    "fax": "Instrucciones para el fax próximamente. Llame antes de enviar documentos.",
+    "fax": "(240) 627-2513",
     "sections": [
       {
         "heading": "Coordinación de atención y documentos",
         "text": "La coordinación con quien refiere depende de las preferencias de la persona y de las normas de confidencialidad aplicables. Confirme la base que permite compartir la información y obtenga las autorizaciones necesarias. Envíe solo información pertinente al referido; no envíe notas de psicoterapia ni el expediente completo salvo que se soliciten expresamente y su divulgación esté legalmente autorizada.",
         "print_text": "Coordine la atención según las preferencias de la persona y las normas de confidencialidad. Confirme la base para divulgar información y obtenga las autorizaciones necesarias. Envíe solo información pertinente. No envíe notas de psicoterapia ni expedientes completos sin solicitud y autorización legal."
-      },
-      {
-        "heading": "Elección y próximos pasos",
-        "text": "Cada persona decide si desea recibir atención y con quién. Un referido o una consulta inicial no garantiza una cita, cobertura del seguro ni un resultado específico, y por sí solo no establece una relación terapéutica. Antes de iniciar la atención se revisan las necesidades clínicas y la disponibilidad. Mantenga los acuerdos de atención y seguimiento existentes hasta acordar una transición.",
-        "print_text": "Cada persona elige con quién recibir atención. Un referido no garantiza cita, cobertura ni resultados, ni establece por sí solo una relación terapéutica. Mantenga la atención existente hasta acordar una transición."
       },
       {
         "heading": "No hay pagos por referidos",

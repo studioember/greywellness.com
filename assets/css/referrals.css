@@ -43,4 +43,6 @@
   .referral-guide a { color: black; }
   .referral-print-only { display: block; }
   .referral-print-url { display: block; font-size: 8pt; }
+  .referral-website { break-inside: avoid; text-align: center; margin-top: 9pt; }
+  .referral-website img { display: block; width: 25mm; height: 25mm; margin: 0 auto 4pt; }
 }
