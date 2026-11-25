@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="{{ lang | default('en') }}" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if privacy_page %}
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'">
+    <link rel="stylesheet" href="{{ '/assets/css/referrals.css' | url }}">
+    {% endif %}
+
+    {# ── Page title ── #}
+    {% if meta_title %}
+      {% set _page_title = meta_title %}
+    {% elif title %}
+      {% set _page_title = title ~ " · " ~ site.name %}
+    {% else %}
+      {% set _page_title = site.name %}
+    {% endif %}
+    {% set _page_desc = description or site.description %}
+    {% set _page_url  = site.url ~ page.url %}
+    {% set _og_image  = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
+
+    <title>{{ _page_title }}</title>
+    {% include 'components/service-schema.njk' %}
+
+    {# ── Core SEO ── #}
+    <meta name="description" content="{{ _page_desc }}">
+    <meta name="robots" content="{{ 'noindex, follow' if noindex else 'index, follow' }}">
+    <link rel="canonical" href="{{ _page_url }}">
+
+    {% include 'components/hreflang.njk' %}
+
+    {# ── Open Graph ── #}
+    <meta property="og:type"        content="{{ og_type or 'website' }}">
+    <meta property="og:url"         content="{{ _page_url }}">
+    <meta property="og:title"       content="{{ _page_title }}">
+    <meta property="og:description" content="{{ _page_desc }}">
+    <meta property="og:image"       content="{{ _og_image }}">
+    <meta property="og:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
+    <meta property="og:site_name"   content="{{ site.name }}">
+    <meta property="og:locale"      content="{{ locale | default('en_US') }}">
+    {% for _alt in _locale_alternates %}
+    <meta property="og:locale:alternate" content="{{ 'en_US' if _alt.lang == 'en' else 'es_ES' }}">
+    {% endfor %}
+
+    {# ── Twitter Card (X) ── #}
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="{{ _page_title }}">
+    <meta name="twitter:description" content="{{ _page_desc }}">
+    <meta name="twitter:image"       content="{{ _og_image }}">
+    <meta name="twitter:image:alt"   content="{{ image_alt or i18n[lang | default('en')].social_img_alt }}">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | url }}">
+    <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | url }}">
+    {% if not privacy_page %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Fonts (non-blocking) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
+
+    {% endif %}
+
+    {% if preload_hero %}
+    <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" type="image/webp" fetchpriority="high">
+    {% endif %}
+
+    <!-- Color Scheme -->
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const applyTheme = () => {
+          const theme = media.matches ? "dark" : "light";
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+        };
+
+        applyTheme();
+        media.addEventListener("change", applyTheme);
+
+        // Safari fallback: hide wave dividers, use straight-line section breaks
+        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+          root.classList.add("is-safari");
+        }
+      })();
+    </script>
+
+    {% if not privacy_page %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020466610"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4B4KP12KBL');
+      gtag('config', 'AW-18020466610');
+    </script>
+
+    {% endif %}
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="{{ '/assets/css/generated/tailwind.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/theme/theme.css' | url }}">
+  </head>
+
+  <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
+{# Navigation - Start #}
+    {% block navigation %}
+    {% include 'components/navigation.njk' %}
+    {% endblock %}
+    {# Navigation - End #}
+
+    {% if full_width %}
+    <main id="content" class="mx-auto px-4 sm:px-6 py-10 flex-1 w-full">
+    {% else %}
+    <main id="content" class="mx-auto max-w-5xl px-4 sm:px-6 py-10 flex-1 w-full">
+    {% endif %}
+      {# Title - Start #}
+      {% if title and title_hidden != true %}
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight">{{ title }}</h1>
+        {# Description #}
+        {% if description and description_hidden != true %}
+          <p class="mt-8 text-muted">{{ description }}</p>
+        {% endif %}
+        {# Date #}
+        {% if date_hidden != true %}
+          <p class="text-muted">{{ page.date | dateSimple(lang | default('en')) }}</p>
+        {% endif %}
+        {# -------- #}
+        <hr class="mt-8 border-border">
+      </header>
+      {% endif %}
+      {# Title - End #}
+
+      {# Content - Start #}
+      {% block content %}
+      {% if no_prose %}
+        {{ content | safe }}
+      {% else %}
+        <article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
+          {{ content | safe }}
+        </article>
+      {% endif %}
+      {% endblock %}
+      {# Content - End #}
+    </main>
+
+    {# Footer - Start #}
+    {% block footer %}
+    {% include 'components/footer.njk' %}
+    {% endblock %}
+    {# Footer - End #}
+    <style>
+      .sp-schedule-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        color: hsl(var(--primary-foreground)) !important;
+        background: hsl(var(--primary));
+        border: 0;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+      .sp-schedule-btn:hover { opacity: 0.9; }
+      .sp-schedule-btn:active { opacity: 0.75; }
+    </style>
+  </body>
+</html>

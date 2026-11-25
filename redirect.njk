@@ -10,9 +10,14 @@ sitemap: false
     <title>{{ site.name }}</title>
     <meta property="og:site_name" content="{{ site.name }}">
     {% include 'components/website-schema.njk' %}
-    <meta http-equiv="refresh" content="0; url=/en/">
+    <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
     <link rel="canonical" href="{{ site.url }}/en/">
-    <script>window.location.replace("/en/");</script>
+    <script>
+      const preferences = navigator.languages?.length ? navigator.languages : [navigator.language];
+      const preferred = preferences.find(language => /^(en|es)(-|$)/i.test(language));
+      const home = /^es/i.test(preferred || '') ? '/es/' : '/en/';
+      window.location.replace(home + window.location.search + window.location.hash);
+    </script>
   </head>
   <body>
     <p>Redirecting to <a href="/en/">/en/</a>…</p>

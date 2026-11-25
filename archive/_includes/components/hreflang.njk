@@ -1,0 +1,9 @@
+    {# ── hreflang (i18n alternate links) ── #}
+    <link rel="alternate" hreflang="{{ lang | default('en') }}" href="{{ _page_url }}">
+    {% set _locale_alternates = page.url | siteLocaleLinks %}
+    {% for _alt in _locale_alternates %}
+    <link rel="alternate" hreflang="{{ _alt.lang }}" href="{{ site.url }}{{ _alt.url }}">
+    {% endfor %}
+    {% set _xdefault_url = page.url %}
+    {% for _alt in _locale_alternates %}{% if _alt.lang == "en" %}{% set _xdefault_url = _alt.url %}{% endif %}{% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ _xdefault_url }}">

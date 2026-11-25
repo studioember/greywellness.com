@@ -1,0 +1,53 @@
+{% extends 'layouts/base.njk' %}
+{% block navigation %}
+<link rel="stylesheet" href="/assets/css/daylight.css">
+<script>
+  document.documentElement.classList.add('logo-pending');
+  document.addEventListener('DOMContentLoaded', () => document.documentElement.classList.remove('logo-pending'), {once: true});
+</script>
+<div class="logo-opening" aria-hidden="true">
+  <img class="opening-lockup" src="/assets/img/grey-wellness-horizontal-purple.png" width="1080" height="540" alt="" fetchpriority="high">
+</div>
+<nav class="glass" aria-label="Main navigation">
+  <a class="signature" href="/en/" aria-label="Grey Wellness home"><img src="/assets/img/grey-wellness-horizontal-purple.png" width="1080" height="540" alt=""></a>
+  <span class="navlinks"><a href="#specialties">Specialties</a><a href="#about">Our practice</a></span>
+  <a class="nav-language" href="{{ '/es/' | url }}" lang="es" hreflang="es" aria-label="Ver esta página en español" hidden>Español</a>
+  <a class="navcta" href="#contact">Get in touch ↗</a>
+</nav>
+{% endblock %}
+{% block content %}
+{% set _t = i18n.en %}
+{% include 'components/home-schema.njk' %}
+<div class="daylight">
+  <div class="sky" aria-hidden="true"><div class="sky-orb"></div></div>
+  <section class="night">
+    <div class="night-photo"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Therapy for adults · English &amp; Spanish</p>
+      <h1>What keeps you<br><em>up at night?</em></h1>
+      <p class="lead">Maybe it’s a worry you keep turning over, a memory that feels close again, or another night of watching the clock. At Grey Wellness, our approach to therapy starts with a conversation about what’s on your mind during the day and how you’re resting at night.</p>
+      <a class="pill" href="mailto:contact@greywellness.com?subject=Therapy%20consultation">Talk with our team <span>↗</span></a>
+    </div>
+    <div class="horizon"><a href="#specialties">↓ &nbsp; Explore care</a><span>Virtual therapy · MD, VA &amp; DC</span></div>
+  </section>
+  <section id="specialties" class="dawn">
+    <div><p class="eyebrow">Specialties</p><h2>What brings you<br><em>to therapy?</em></h2></div>
+    <div class="services">
+      <article><h3>Sleep &amp; insomnia</h3><p>If getting to sleep or staying asleep is the hardest part, we can work on it directly with cognitive behavioral therapy for insomnia (CBT-I).</p></article>
+      <article><h3>Anxiety</h3><p>Anxiety can show up in a meeting, in a conversation you replay afterward, or just as you turn out the light. We’ll look at where worry gets in your way and practice ways to respond.</p></article>
+      <article><h3>Trauma</h3><p>Find space to process difficult experiences at your own pace, with care that respects what you carry.</p></article>
+    </div>
+  </section>
+  <section id="about" class="morning">
+    <img src="/assets/img/monica-homepage.webp" alt="Mónica Grey" width="900" height="1200" loading="lazy">
+    <div><p class="eyebrow">Meet your therapist</p><h2>Mónica Grey</h2><p class="credentials">MS, LCPC, NCC · Founder, Grey Wellness</p><p>When we meet, I’ll ask what brought you in and what you hope will feel different. I ask about sleep, too. Knowing how you’re resting helps me understand what an ordinary day asks of you and shape our work around what matters to you.</p><p>Our practice offers virtual therapy in English and Spanish throughout Maryland, Virginia, and Washington, DC.</p><a href="#contact">Let’s talk <span>↗</span></a></div>
+  </section>
+  <section id="contact" class="sunrise">
+    <p class="eyebrow">Free 15-minute consultation</p>
+    <h2>How would you like<br><em>your days to feel?</em></h2>
+    <p>Maybe you’d like to wake up rested, feel more at ease with someone you love, or get through a hard day with a little more steadiness. Share what matters to you in a free consultation. We’ll answer your questions and talk through the next steps together.</p>
+    <a class="pill" href="mailto:contact@greywellness.com?subject=Free%20consultation">Request a free consultation <span>↗</span></a>
+  </section>
+</div>
+<script src="/assets/js/daylight.js" defer></script>
+{% endblock %}

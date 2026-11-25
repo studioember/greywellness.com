@@ -2,7 +2,7 @@ import typography from "@tailwindcss/typography";
 
 export default {
   content: [
-    "./**/*.{html,md,njk}", // adjust if your Eleventy input dir is different
+    "./{_includes,en,es}/**/*.{html,md,njk}",
   ],
   theme: {
     extend: {

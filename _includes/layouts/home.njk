@@ -9,84 +9,7 @@ preload_hero: true
 {% set _lang = lang | default("en") %}
 {% set _t = i18n[_lang] %}
 
-{% include 'components/website-schema.njk' %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalOrganization",
-  "@id": "{{ site.url }}/#practice",
-  "name": "Grey Wellness",
-  "description": {{ (description ~ " " ~ _t.service_availability) | dump | safe }},
-  "url": "{{ site.url }}",
-  "telephone": "+1-240-203-8879",
-  "email": "contact@greywellness.com",
-  "priceRange": "$$",
-  "image": "{{ site.url }}/assets/img/og-image.jpg",
-  "medicalSpecialty": ["SleepMedicine", "Psychiatric", "CommunityHealth"],
-  "areaServed": {{ site.areasServed | dump | safe }},
-  "sameAs": [
-    "https://www.psychologytoday.com/profile/1256952",
-    "https://www.instagram.com/grey_wellness/",
-    "https://www.facebook.com/profile.php?id=61574329432986",
-    "https://www.linkedin.com/company/grey-wellness"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Mónica Grey",
-    "jobTitle": "{{ _t.home_schema_job_title }}",
-    "honorificSuffix": "MS, LCPC, NCC",
-    "knowsLanguage": ["en", "es"],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Johns Hopkins University"
-    },
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Society of Behavioral Sleep Medicine"
-      },
-      {
-        "@type": "Organization",
-        "name": "National Board for Certified Counselors"
-      }
-    ],
-    "sameAs": [
-      "https://www.psychologytoday.com/profile/1256952"
-    ]
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "{{ _t.home_schema_offer_catalog }}",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "{{ _t.home_schema_cbti_name }}",
-          "description": {{ (_t.home_schema_cbti_desc ~ " " ~ _t.service_availability) | dump | safe }},
-          "areaServed": {{ site.areasServed | dump | safe }},
-          "serviceType": "Cognitive Behavioral Therapy for Insomnia"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "{{ _t.home_schema_anxiety_name }}",
-          "description": {{ (_t.home_schema_anxiety_desc ~ " " ~ _t.service_availability) | dump | safe }},
-          "areaServed": {{ site.areasServed | dump | safe }},
-          "serviceType": "Anxiety & Stress Management"
-        }
-      }
-    ]
-  },
-  "availableLanguage": [
-    { "@type": "Language", "name": "English" },
-    { "@type": "Language", "name": "Spanish" }
-  ]
-}
-</script>
+{% include 'components/home-schema.njk' %}
 
 <!-- Hero -->
 <section class="relative bg-hero overflow-hidden -mx-4 sm:-mx-6 -mt-10">
@@ -123,9 +46,9 @@ preload_hero: true
         {{ _t.home_hero_subtitle }}
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <div><a href="{{ '/' + _lang + '/pages/contact/' | url }}" class="sp-schedule-btn">{{ _t.home_hero_cta_schedule }}</a></div>
+        <div><a href="#contact" class="sp-schedule-btn">{{ _t.home_hero_cta_schedule }}</a></div>
         <a
-          href="{{ '/' + _lang + '/pages/treatment/' }}"
+          href="#specialties"
           class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center"
         >
           {{ _t.home_hero_cta_services }}
@@ -143,7 +66,7 @@ preload_hero: true
 </div>
 
 <!-- Services -->
-<section class="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+<section id="specialties" class="scroll-mt-24 py-20 px-4 sm:px-6 max-w-7xl mx-auto">
   <div class="mb-12 text-center">
     <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">{{ _t.home_services_eyebrow }}</p>
     <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-foreground">{{ _t.home_services_heading }}</h2>
@@ -153,38 +76,32 @@ preload_hero: true
   </div>
 
   <div class="space-y-6">
-    <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+    <div class="relative rounded-2xl shadow-sm border border-border overflow-hidden">
       <img src="{{ '/assets/img/services/sleep.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
       <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(260 45% 12% / 0.92), hsl(260 45% 12% / 0.5) 55%, hsl(260 45% 12% / 0.1) 100%)"></div>
-      <a href="{{ '/' + _lang + '/pages/sleep/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_sleep_aria }}"></a>
       <div class="absolute top-0 left-0 right-0 h-1.5 bg-primary z-10"></div>
       <div class="relative min-h-[320px] md:min-h-[360px] flex flex-col justify-end p-8 md:p-10">
         <h3 class="text-2xl font-bold text-white mb-3">{{ _t.home_sleep_title }}</h3>
-        <p class="text-white/85 leading-relaxed mb-5 max-w-2xl">{{ _t.home_sleep_desc }}</p>
-        <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+        <p class="text-white/85 leading-relaxed max-w-2xl">{{ _t.home_sleep_desc }}</p>
       </div>
     </div>
     <div class="grid sm:grid-cols-2 gap-6">
-      <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+      <div class="relative rounded-2xl shadow-sm border border-border overflow-hidden">
         <img src="{{ '/assets/img/services/trauma.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(340 30% 10% / 0.92), hsl(340 30% 10% / 0.5) 55%, hsl(340 30% 10% / 0.1) 100%)"></div>
-        <a href="{{ '/' + _lang + '/pages/trauma/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_trauma_aria }}"></a>
         <div class="absolute top-0 left-0 right-0 h-1.5 bg-accent z-10"></div>
         <div class="relative min-h-[300px] flex flex-col justify-end p-8">
           <h3 class="text-xl font-bold text-white mb-3">{{ _t.home_trauma_title }}</h3>
-          <p class="text-white/85 leading-relaxed mb-5">{{ _t.home_trauma_desc }}</p>
-          <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+          <p class="text-white/85 leading-relaxed">{{ _t.home_trauma_desc }}</p>
         </div>
       </div>
-      <div class="group relative rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-200 overflow-hidden">
+      <div class="relative rounded-2xl shadow-sm border border-border overflow-hidden">
         <img src="{{ '/assets/img/services/anxiety.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0" style="background: linear-gradient(to top, hsl(215 30% 10% / 0.92), hsl(215 30% 10% / 0.5) 55%, hsl(215 30% 10% / 0.1) 100%)"></div>
-        <a href="{{ '/' + _lang + '/pages/anxiety/' | url }}" class="absolute inset-0 z-10" aria-label="{{ _t.home_anxiety_aria }}"></a>
         <div class="absolute top-0 left-0 right-0 h-1.5 z-10" style="background: hsl(215 30% 20%)"></div>
         <div class="relative min-h-[300px] flex flex-col justify-end p-8">
           <h3 class="text-xl font-bold text-white mb-3">{{ _t.home_anxiety_title }}</h3>
-          <p class="text-white/85 leading-relaxed mb-5">{{ _t.home_anxiety_desc }}</p>
-          <span class="text-white text-sm font-semibold tracking-wide group-hover:underline">{{ _t.home_learn_more }}</span>
+          <p class="text-white/85 leading-relaxed">{{ _t.home_anxiety_desc }}</p>
         </div>
       </div>
     </div>
@@ -192,7 +109,7 @@ preload_hero: true
 </section>
 
 <!-- Meet Mónica -->
-<section class="py-20 px-4 sm:px-6 -mx-4 sm:-mx-6 bg-surface">
+<section id="about" class="scroll-mt-24 py-20 px-4 sm:px-6 -mx-4 sm:-mx-6 bg-surface">
   <div class="max-w-5xl mx-auto grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-center">
     <div class="mx-auto w-full max-w-sm">
       <picture class="block aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
@@ -210,7 +127,6 @@ preload_hero: true
         <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">📋</span><span class="text-sm font-semibold text-foreground">{{ _t.home_about_ncc }}</span></li>
         <li class="flex items-start gap-3 rounded-xl border border-border bg-card p-4"><span aria-hidden="true">📍</span><span class="text-sm font-semibold text-foreground">{{ _t.home_authority_licensed }}</span></li>
       </ul>
-      <a href="{{ '/' + _lang + '/pages/about/' | url }}" class="mt-7 inline-block text-sm font-bold uppercase tracking-wide text-primary hover:underline">{{ _t.home_about_cta }} →</a>
     </div>
   </div>
 </section>
@@ -244,7 +160,7 @@ preload_hero: true
 </section>
 
 <!-- CTA Banner -->
-<section class="cta-banner bg-surface-warm -mx-4 sm:-mx-6 -mb-10">
+<section id="contact" class="cta-banner scroll-mt-24 bg-surface-warm -mx-4 sm:-mx-6 -mb-10">
   <!-- Wave at top of CTA -->
   <div class="wave-divider -mt-16 relative z-10 overflow-hidden" aria-hidden="true">
     <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="block w-full h-16">
@@ -256,7 +172,7 @@ preload_hero: true
     <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">{{ _t.home_cta_heading }}</h2>
     <p class="text-muted text-lg mb-8">{{ _t.home_cta_subtitle }}</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="{{ '/' + _lang + '/pages/contact/' | url }}" class="sp-schedule-btn">{{ _t.home_cta_schedule }}</a>
+      <a href="mailto:contact@greywellness.com?subject=Inquiry" class="sp-schedule-btn">{{ _t.home_cta_schedule }}</a>
     </div>
   </div>
   <!-- Wave: CTA bottom → Footer -->

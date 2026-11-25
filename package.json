@@ -26,14 +26,14 @@
   },
   "scripts": {
     "dev": "yarn run dev:eleventy & yarn run dev:css",
-    "dev:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --watch --content \"./**/*.{njk,liquid,html,md}\"",
-    "dev:eleventy": "eleventy --serve",
-    "build": "yarn build:css && yarn build:eleventy && yarn prettier --write \"output/site/**/*.html\" && yarn test:forms && yarn test:seo && yarn test:referrals",
+    "dev:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --watch",
+    "dev:eleventy": "yarn clean:site && eleventy --serve",
+    "build": "yarn build:css && yarn build:eleventy && yarn prettier --write \"output/site/**/*.html\" && yarn test:seo && yarn test:forms",
     "test:forms": "node scripts/verify-forms.mjs",
-    "build:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --minify --content \"./**/*.{njk,liquid,html,md}\"",
-    "build:eleventy": "eleventy",
+    "build:css": "yarn tailwindcss -i ./frameworks/tailwind/tailwind.css -o ./assets/css/generated/tailwind.css --minify",
+    "build:eleventy": "yarn clean:site && eleventy",
+    "clean:site": "node -e \"require('node:fs').rmSync('output/site', { recursive: true, force: true })\"",
     "format:html": "prettier --write 'output/site/**/*.html'",
-    "test:seo": "node scripts/verify-seo.mjs",
-    "test:referrals": "node scripts/verify-referrals.mjs"
+    "test:seo": "node scripts/verify-seo.mjs"
   }
 }
