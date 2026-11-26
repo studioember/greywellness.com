@@ -11,11 +11,11 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Virtual therapy for adults throughout Maryland, Virginia, and Washington, DC, in English and Spanish. Below are the session fees at Grey Wellness.
+<p class="chapter-intro text-lg">Virtual therapy for adults throughout Maryland, Virginia, and Washington, DC, in English and Spanish. Below are the session fees at Grey Wellness.</p>
 
 ## Session fees
 
-<div class="not-prose text-foreground my-6">
+<div class="not-prose rate-list text-foreground my-6">
 <p class="text-right text-sm text-muted mb-2">Rate</p>
 <dl>
 <div class="flex items-center justify-between gap-6 border-b border-border py-5"><dt class="font-medium"><a href="#contact-form" class="text-primary underline">Free consultation</a><span class="block mt-1 text-sm font-normal text-muted">15 min</span></dt><dd class="shrink-0 text-xl font-semibold">$0</dd></div>
@@ -37,7 +37,7 @@ A limited number of reduced-fee spots are available on a case-by-case basis. If 
     <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Questions about session fees?</h2>
     <p class="text-muted max-w-xl mx-auto">Fill out the form below and we'll be in touch within 1–2 business days.</p>
   </div>
-  <div class="max-w-lg mx-auto">
+  <div class="entry-panel max-w-lg mx-auto">
     {% from 'macros/google-form.njk' import googleForm %}
     {% set contactFields = [
       { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },

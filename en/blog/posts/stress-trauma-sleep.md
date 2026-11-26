@@ -10,6 +10,7 @@ image_alt: "Woman lying on her side with her eyes open in a dim bedroom"
 image_icon: "🧠"
 og_type: "article"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

@@ -1,0 +1,32 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# Grey Wellness — Practice Information
+
+Grey Wellness provides virtual therapy for adults physically located in Maryland, Virginia, or Washington, DC (District of Columbia), in English and Spanish. Mónica Grey, MS, LCPC, NCC is licensed to provide therapy in these jurisdictions. Sessions are virtual; no in-person appointments are offered.
+
+Insurance is accepted only in Maryland, subject to plan confirmation. Sessions in Virginia and Washington, DC are self-pay.
+
+## Official sources
+- Practice overview: {{ site.url }}/llms.txt
+- Therapist biography: {{ site.url }}/en/pages/about/
+- Current fees: {{ site.url }}/en/rates/
+- Contact and free 15-minute consultation: {{ site.url }}/en/pages/contact/
+- Phone: +1-240-203-8879
+- Email: contact@greywellness.com
+
+## Practice FAQ
+The questions and answers below use the same source as the public FAQ pages.
+{% for language in site.languages %}
+### {{ 'English' if language == 'en' else 'Español' }}
+Source: {{ site.url }}/{{ language }}/pages/faq/
+{% for section in faq[language].sections %}
+{% for item in section.questions %}
+**{{ item.question }}**
+{% for paragraph in item.paragraphs %}
+{{ paragraph }}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}

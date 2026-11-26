@@ -1,0 +1,23 @@
+{% if articles.length %}
+<div class="blog-list">
+  {% for post in articles %}
+  <article class="blog-card{% if not post.data.image %} blog-card-text{% elif loop.first and not category %} blog-card-featured{% endif %}">
+    {% if post.data.image %}
+    <a href="{{ post.url | url }}" class="blog-card-media" tabindex="-1" aria-hidden="true">
+      <img src="{{ post.data.image | url }}" alt="" class="blog-card-image" loading="lazy" width="480" height="300">
+    </a>
+    {% endif %}
+    <div class="blog-card-copy">
+      {% if not category and post.data.category %}
+      <a href="{{ (blogUrl ~ 'category/' ~ (post.data.category | slugify) ~ '/') | url }}" class="blog-topic">{{ post.data.category }}</a>
+      {% endif %}
+      <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+      <p class="blog-byline">{{ post.data.author }} {{ siteText.blog_author_on }} {{ post.date | dateLong(siteLang) }}</p>
+      {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-muted">{{ siteText.blog_empty_category if category else siteText.blog_empty }}</p>
+{% endif %}

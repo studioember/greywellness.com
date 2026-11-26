@@ -11,11 +11,11 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
-Terapia virtual para personas adultas en todo Maryland, Virginia y Washington, DC, en español e inglés. A continuación encontrarás los honorarios de las sesiones en Grey Wellness.
+<p class="chapter-intro text-lg">Terapia virtual para personas adultas en todo Maryland, Virginia y Washington, DC, en español e inglés. A continuación encontrarás los honorarios de las sesiones en Grey Wellness.</p>
 
 ## Honorarios por sesión
 
-<div class="not-prose text-foreground my-6">
+<div class="not-prose rate-list text-foreground my-6">
 <p class="text-right text-sm text-muted mb-2">Tarifa</p>
 <dl>
 <div class="flex items-center justify-between gap-6 border-b border-border py-5"><dt class="font-medium"><a href="#contact-form" class="text-primary underline">Consulta gratuita</a><span class="block mt-1 text-sm font-normal text-muted">15 min</span></dt><dd class="shrink-0 text-xl font-semibold">$0</dd></div>
@@ -37,7 +37,7 @@ Disponemos de un número limitado de plazas con tarifa reducida, según cada cas
     <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Conversemos.</h2>
     <p class="text-muted max-w-xl mx-auto">Completa el formulario y nos pondremos en contacto en 1–2 días hábiles.</p>
   </div>
-  <div class="max-w-lg mx-auto">
+  <div class="entry-panel max-w-lg mx-auto">
     {% from 'macros/google-form.njk' import googleForm %}
     {% set contactFields = [
       { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },

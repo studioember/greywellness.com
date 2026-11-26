@@ -8,6 +8,7 @@ image: "/assets/img/blog/why-does-insomnia-happen.jpg"
 image_alt: "Mujer sentada con las piernas cruzadas en su cama de noche, completamente despierta y mirando hacia la ventana"
 image_icon: "😴"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

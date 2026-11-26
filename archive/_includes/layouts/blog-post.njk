@@ -1,0 +1,126 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set _lang = lang | default('en') %}
+{% set _t = i18n[_lang] %}
+{% set _blogUrl = '/' + _lang + '/blog/' %}
+{% set _contactUrl = '/' + _lang + '/pages/contact/' | url %}
+{% set _authorBio = author_bio or _t.blog_default_author_bio %}
+{% set _postImage = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (description or "") | dump | safe }},
+  "image": {{ _postImage | dump | safe }},
+  "inLanguage": {{ _lang | dump | safe }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "datePublished": "{{ page.date | dateISO }}",
+  "dateModified": "{{ page.date | dateISO }}",
+  "articleSection": {{ (category or "Insomnia & Sleep") | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": {{ (author or "Mónica Grey, MS, LCPC, NCC") | dump | safe }},
+    "jobTitle": "CBT-I Therapist & Licensed Clinical Professional Counselor",
+    "url": "{{ site.url }}/{{ _lang }}/pages/about/",
+    "sameAs": "https://www.psychologytoday.com/profile/1256952"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Grey Wellness",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/logo.png"
+    }
+  }
+}
+</script>
+
+<div class="not-prose mb-6">
+  <a href="{{ _blogUrl | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    {{ _t.blog_back }}
+  </a>
+</div>
+
+<header class="not-prose mb-8">
+  {% if category %}
+  <a href="{{ (_blogUrl + 'category/' + (category | slugify) + '/') | url }}" class="inline-block w-fit text-xs font-bold uppercase tracking-widest text-primary hover:underline mb-3">{{ category }}</a>
+  {% endif %}
+  <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-foreground">{{ title }}</h1>
+  {% if author or date %}
+  <p class="mt-3 text-muted">
+    {% if author %}{{ author }}{% endif %}{% if author and date %} {{ _t.blog_author_on }} {% endif %}{% if date %}{{ page.date | dateLong(_lang) }}{% endif %}
+  </p>
+  {% endif %}
+  <hr class="mt-8 border-border">
+</header>
+
+{# `image` still drives og:image / the listing card even when the post opts out
+   of the full-width hero and places it inline instead. #}
+{% if image and hero_hidden != true %}
+<div class="not-prose mb-10 rounded-2xl overflow-hidden">
+  <img
+    src="{{ image | url }}"
+    alt="{{ image_alt | default('') }}"
+    class="w-full h-auto object-cover"
+    width="1920"
+    height="1080"
+    loading="eager"
+    fetchpriority="high"
+  />
+</div>
+{% endif %}
+
+<article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
+  {{ content | safe }}
+</article>
+
+{# Author bio box #}
+{% if author %}
+<div class="not-prose mt-14 rounded-2xl border border-border bg-card p-6 sm:p-8">
+  <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+    <picture class="block h-20 w-20 shrink-0 rounded-full overflow-hidden shadow-sm">
+      <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+      <img
+        src="{{ '/assets/img/headshot.jpg' | url }}"
+        alt="{{ author }}"
+        class="w-full h-full object-cover object-top"
+        width="80"
+        height="80"
+      />
+    </picture>
+    <div>
+      <p class="font-semibold text-foreground">{{ author }}</p>
+      <p class="mt-2 text-sm text-muted leading-relaxed">{{ _authorBio }}</p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="not-prose mt-12 pt-8 border-t border-border">
+  <a href="{{ _blogUrl | url }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-75 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+    {{ _t.blog_back }}
+  </a>
+</div>
+{# CTA #}
+<div class="not-prose mt-8 rounded-2xl bg-foreground text-background px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <div>
+    <p class="text-xl font-bold">{{ _t.blog_cta_heading }}</p>
+    <p class="opacity-70 mt-1 text-sm">{{ _t.blog_cta_subtitle }}</p>
+  </div>
+  <a href="{{ _contactUrl }}" class="shrink-0 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">{{ _t.blog_cta_button }}</a>
+</div>
+
+{% endblock %}

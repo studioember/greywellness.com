@@ -1,5 +1,5 @@
 {% macro googleForm(formResponseId, fields, uid="gf", submitLabel="Submit", successTitle="You're on the list!", successBody="We'll be in touch.", gaEventName="", gaEventCategory="contact", gaEventLabel="", adsConversion="") %}
-<form id="gf-{{ uid }}-form" class="w-full max-w-lg mx-auto space-y-4">
+<form id="gf-{{ uid }}-form" class="consultation-form w-full max-w-lg mx-auto space-y-4">
 {% for field in fields %}{% set fieldId = "gf-" + uid + "-" + loop.index0 %}
 <div>
 <label class="block text-sm font-medium text-foreground mb-1" for="{{ fieldId }}">{{ field.label }}{% if field.required %}<span class="text-red-500 ml-0.5">*</span>{% endif %}</label>
@@ -15,17 +15,27 @@
 <p class="text-foreground font-semibold text-lg">{{ successTitle }}</p>
 <p class="text-muted text-sm mt-1">{{ successBody }}</p>
 </div>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   (() => {
     const isLocal = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
     const form = document.getElementById('gf-{{ uid }}-form');
+    if (!form) return;
     const success = document.getElementById('gf-{{ uid }}-success');
     const tsError = document.getElementById('gf-{{ uid }}-ts-error');
     const tsWidget = form.querySelector('.cf-turnstile');
-    if (!form) return;
-    if (isLocal && tsWidget) tsWidget.style.display = 'none';
+    if (isLocal) {
+      tsWidget.hidden = true;
+    } else {
+      tsWidget.dataset.size = form.clientWidth < 300 ? 'compact' : 'normal';
+      tsWidget.dataset.language = document.documentElement.lang;
+      if (!document.querySelector('script[data-turnstile]')) {
+        const script = document.createElement('script');
+        script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+        script.dataset.turnstile = '';
+        document.head.append(script);
+      }
+    }
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       if (!isLocal) {

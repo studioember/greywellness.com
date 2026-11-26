@@ -1,6 +1,7 @@
 ---
-layout: layouts/home.njk
+layout: layouts/daylight.njk
+page_style: home
 date: "git Last Modified"
-meta_title: "Grey Wellness | Virginia, Maryland & DC CBT-I Therapist"
-description: "Bilingual CBT-I, anxiety, and trauma therapy for adults in Maryland, Virginia, and Washington, DC with Mónica Grey. Virtual sessions available in English and Spanish."
+meta_title: "Grey Wellness | Therapy for Anxiety, Trauma & Insomnia in MD, VA & DC"
+description: "Grey Wellness is a bilingual therapy practice offering virtual care for adults navigating anxiety, trauma, and insomnia, with attention to sleep throughout care. Sessions in English and Spanish in Maryland, Virginia, and Washington, DC."
 ---

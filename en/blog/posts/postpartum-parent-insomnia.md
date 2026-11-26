@@ -9,6 +9,7 @@ image: "/assets/img/blog/parent-awake-baby-asleep-insomnia.jpg"
 image_alt: "An awake parent looking at their sleeping baby"
 hero_hidden: true
 layout: "layouts/blog-post.njk"
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

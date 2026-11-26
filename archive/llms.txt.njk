@@ -1,0 +1,32 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Grey Wellness
+
+> Grey Wellness provides bilingual virtual therapy for adults in Maryland, Virginia, and Washington, DC (District of Columbia). Mónica Grey, MS, LCPC, NCC offers care for insomnia, anxiety, and trauma in English and Spanish.
+
+## Practice facts
+- Sessions are virtual; no in-person appointments are offered.
+- Clients must be physically located in Maryland, Virginia, or Washington, DC at the time of their session.
+- Insurance is accepted only for Maryland clients, subject to plan confirmation. Virginia and Washington, DC sessions are self-pay.
+- Treatment approaches include Cognitive Behavioral Therapy for Insomnia (CBT-I), CBT, trauma-informed care including Cognitive Processing Therapy (CPT), and mindfulness-based approaches. Treatment is individualized.
+- Phone: +1-240-203-8879
+- Email: contact@greywellness.com
+
+## Official pages
+- [Homepage (English)]({{ site.url }}/en/)
+- [Inicio (español)]({{ site.url }}/es/)
+{% for language in site.languages %}
+- [About Mónica Grey ({{ language }})]({{ site.url }}/{{ language }}/pages/about/)
+- [Sleep and insomnia therapy ({{ language }})]({{ site.url }}/{{ language }}/pages/sleep/)
+- [Anxiety therapy ({{ language }})]({{ site.url }}/{{ language }}/pages/anxiety/)
+- [Trauma therapy ({{ language }})]({{ site.url }}/{{ language }}/pages/trauma/)
+- [FAQ and insurance ({{ language }})]({{ site.url }}/{{ language }}/pages/faq/)
+- [Session rates ({{ language }})]({{ site.url }}/{{ language }}/rates/)
+- [Request a free 15-minute consultation ({{ language }})]({{ site.url }}/{{ language }}/pages/contact/)
+- [Sleep health articles ({{ language }})]({{ site.url }}/{{ language }}/blog/)
+{% endfor %}
+- [Expanded practice FAQ]({{ site.url }}/llms-full.txt)
+
+Consult the linked pages for current services, fees, and coverage. Educational content does not diagnose a reader or promise treatment results.

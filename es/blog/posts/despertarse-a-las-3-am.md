@@ -9,6 +9,7 @@ image: "/assets/img/blog/waking-up-at-3am.jpg"
 image_alt: "Hombre con gafas leyendo en la cama de noche"
 image_icon: "⏰"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

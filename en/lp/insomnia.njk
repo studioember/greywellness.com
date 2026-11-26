@@ -1,5 +1,6 @@
 ---
 layout: layouts/landing.njk
+page_style: landing
 meta_title: "CBT-I Therapist for Insomnia | Virginia, Maryland & DC"
 description: "Bilingual virtual CBT-I for insomnia in Maryland, Virginia, and Washington, DC. Work with Mónica Grey in English or Spanish and start with a free 15-minute consultation."
 lp_noindex: false
@@ -9,15 +10,15 @@ service_type: "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
 {% from 'macros/google-form.njk' import googleForm %}
 
 <!-- Hero + Form -->
-<section class="py-14 px-4 sm:px-6">
+<section class="horizon-hero landing-masthead px-4 sm:px-6">
   <div class="max-w-5xl mx-auto">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start landing-grid">
 
       <!-- Left: Copy -->
-      <div>
+      <div class="landing-intro">
         <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">CBT-I Specialist · Virginia, Maryland & DC</p>
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight mb-6">
-          Finally sleep<br>through the night.
+          Finally sleep<br><em>through the night.</em>
         </h1>
         <p class="text-lg text-muted leading-relaxed mb-8">
           Cognitive Behavioral Therapy for Insomnia (CBT-I) is the <strong class="text-foreground">recommended first-line treatment</strong> for chronic insomnia, endorsed by the American Academy of Sleep Medicine. No medication, no dependency. Just a proven approach that gives you back your nights.
@@ -27,11 +28,11 @@ service_type: "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
 
         <!-- Quick stats -->
         <div class="flex gap-4 mb-8">
-          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+          <div class="flex-1 landing-stat py-4">
             <p class="text-2xl font-bold text-primary">2–3 weeks</p>
             <p class="text-xs text-muted mt-1">Many feel early improvement</p>
           </div>
-          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+          <div class="flex-1 landing-stat py-4">
             <p class="text-2xl font-bold text-primary">6–8 sessions</p>
             <p class="text-xs text-muted mt-1">Typical complete course</p>
           </div>
@@ -72,7 +73,7 @@ service_type: "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
       </div>
 
       <!-- Right: Form -->
-      <div id="contact" class="bg-card rounded-2xl border border-border p-8 shadow-sm lg:sticky lg:top-8">
+      <div id="contact" class="entry-panel lg:sticky lg:top-28">
         <h2 class="text-xl font-bold text-foreground mb-2">Request your free consultation</h2>
         <p class="text-sm text-muted mb-6">Fill out the form and I'll be in touch within 1–2 business days.</p>
 

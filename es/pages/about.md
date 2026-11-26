@@ -13,8 +13,16 @@ no_prose: true
 <div class="not-prose">
 
   <!-- Hero -->
-  <div class="flex flex-col md:flex-row items-center gap-10 py-12">
-    <picture class="block h-52 w-52 shrink-0 rounded-full overflow-hidden shadow-lg">
+  <div class="profile-hero chapter-hero horizon-hero">
+    <div>
+      <p class="chapter-kicker mb-3">Psicoterapeuta</p>
+      <h1 class="profile-heading mb-3">Mónica Grey</h1>
+      <p class="profile-credentials">MS, LCPC, NCC</p>
+      <p class="chapter-lead mt-5">Terapeuta. Viajera. Mamá gatuna.</p>
+      <p class="chapter-lead mt-4">Terapia virtual bilingüe en español e inglés para personas adultas que navegan el insomnio, el trauma, la ansiedad y la vida entre culturas en Virginia, Maryland y Washington, DC.</p>
+      <a href="{{ '/es/pages/contact/' | url }}" class="mt-6 horizon-button">Reserva una Consulta Gratuita</a>
+    </div>
+    <picture class="profile-portrait">
       <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
       <img
         src="{{ '/assets/img/headshot.jpg' | url }}"
@@ -24,13 +32,6 @@ no_prose: true
         height="208"
       />
     </picture>
-    <div>
-      <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Psicoterapeuta</p>
-      <h1 class="text-4xl font-bold text-foreground mb-3">Mónica Grey, MS, LCPC, NCC</h1>
-      <p class="text-lg text-muted leading-relaxed">Terapeuta. Viajera. Mamá gatuna.</p>
-      <p class="mt-4 text-muted leading-relaxed">Terapia virtual bilingüe en español e inglés para personas adultas que navegan el insomnio, el trauma, la ansiedad y la vida entre culturas en Virginia, Maryland y Washington, DC.</p>
-      <a href="{{ '/es/pages/contact/' | url }}" class="mt-6 inline-block px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">Reserva una Consulta Gratuita</a>
-    </div>
   </div>
 
   <hr class="border-border my-2" />

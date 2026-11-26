@@ -9,6 +9,7 @@ image: "/assets/img/blog/parent-awake-baby-asleep-insomnia.jpg"
 image_alt: "Una persona despierta observa a su bebé mientras duerme"
 hero_hidden: true
 layout: "layouts/blog-post.njk"
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

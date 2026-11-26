@@ -9,6 +9,7 @@ image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
 image_alt: "Woman peeking over a white duvet with her eyes open"
 image_icon: "💊"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

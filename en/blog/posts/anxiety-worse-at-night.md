@@ -11,6 +11,7 @@ image_icon: "🌙"
 og_type: "article"
 hero_hidden: true
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

@@ -10,6 +10,9 @@ layout: layouts/base.njk
 templateEngineOverride: njk,md
 ---
 
+<div class="contact-layout">
+<div class="contact-story">
+
 Terapia virtual para personas adultas en Maryland, Virginia y Washington, DC, en español e inglés.
 
 
@@ -21,18 +24,18 @@ Nos reuniremos por videollamada, a menos que prefieras de otra manera, y este ti
 
 No hay presión para tomar una decisión en la llamada. Genuinamente te animo a tomarte tu tiempo, y si se siente bien, a hablar con otros terapeutas antes de comprometerte. Este es un proceso profundamente personal y mereces sentirte seguro y cómodo con quien elijas trabajar.
 
----
-
-<div class="max-w-2xl mx-auto px-6">
-  <a href="{{ '/es/for-providers/' | url }}" class="not-prose mb-8 block rounded-2xl border-2 border-primary bg-card p-6 font-semibold text-primary no-underline shadow-sm transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+  <a href="{{ '/es/for-providers/' | url }}" class="not-prose mt-8 block dawn-callout font-semibold text-primary no-underline transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
     <span class="block text-lg">Para profesionales de la salud</span>
     <span class="mt-2 block underline underline-offset-4">Ver información para referidos &rarr;</span>
   </a>
-  <p class="text-lg text-muted mb-8">
+</div>
+
+<div class="contact-details">
+  <p class="contact-note text-muted">
     Cuando te sientas listo, completa el formulario a continuación y nos pondremos en contacto contigo en 1–2 días hábiles.
   </p>
 
-<div class="rounded-2xl border border-border bg-card p-8 shadow-sm">
+<div id="contact-form" class="entry-panel">
 {% from 'macros/google-form.njk' import googleForm %}
 {% set contactFields = [
   { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
@@ -56,5 +59,5 @@ No hay presión para tomar una decisión en la llamada. Genuinamente te animo a 
   adsConversion=""
 ) }}
 </div>
-
+</div>
 </div>

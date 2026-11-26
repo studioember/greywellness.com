@@ -1,11 +1,10 @@
 ---
 layout: layouts/base.njk
 title: Terapia Grupal TCC-I
-title_hidden: false
+date_hidden: true
 noindex: true
 sitemap: false
 no_prose: true
-full_width: true
 hidden_from_nav: true
 description: Terapia Grupal TCC-I con Grey Wellness — un programa virtual de 6 semanas para superar el insomnio crónico sin medicación.
 tagline: Supera el insomnio crónico sin medicación

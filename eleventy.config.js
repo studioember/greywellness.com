@@ -5,8 +5,9 @@ import moment from "moment";
 import "moment/locale/es.js";
 
 export default async function (eleventyConfig) {
-  // Configure Eleventy
-  eleventyConfig.setOutputDirectory("output/site");
+  // Allow a production build to run while the preview server is watching.
+  const isPreview = process.env.ELEVENTY_RUN_MODE === "serve";
+  eleventyConfig.setOutputDirectory(isPreview ? "output/dev" : "output/site");
 
   // Copy `assets` to `output/site/assets`
   eleventyConfig.addPassthroughCopy("assets");

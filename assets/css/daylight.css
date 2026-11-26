@@ -1,0 +1,136 @@
+.site-home { background: var(--night); }
+.daylight { font-family: Nunito, system-ui, sans-serif; }
+.logo-opening { display:none; }
+@media (prefers-reduced-motion:no-preference) {
+  .logo-pending .logo-opening, .logo-opening.is-playing {
+    position:fixed; inset:0; z-index:30; display:grid; place-items:center;
+    pointer-events:none; background:#29212d;
+    -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  }
+  .opening-lockup { width:min(80vw,510px); height:auto; filter:brightness(0) invert(94%) sepia(9%); }
+  .logo-opening.is-playing ~ .glass .signature img { visibility:hidden; }
+}
+.daylight a { text-decoration: none; }
+.daylight {
+  --day:0;
+  position:relative;
+  overflow:clip;
+  isolation:isolate;
+  color:#352936;
+  background:linear-gradient(180deg,#c6b4ca 10%,#d4c0ce 44%,#edcfc5 69%,#f8ebdb 95%);
+}
+/* The sky stays in the viewport while the page passes in front of it. */
+.sky {
+  position:sticky;
+  top:0;
+  height:100svh;
+  margin-bottom:-100svh;
+  z-index:-1;
+  overflow:hidden;
+  pointer-events:none;
+}
+.sky-orb {
+  position:absolute;
+  left:4vw;
+  top:70svh;
+  width:clamp(44px,5vw,78px);
+  aspect-ratio:1;
+  color:color-mix(in srgb,#f4e8ff,#ffdfa3 calc(var(--day) * 100%));
+  /* Ease the crescent in from beyond the frame during the first part of the rise. */
+  --entry-offset:calc((-4vw - 100% - 28px) * max(0, 1 - 10 * var(--day)));
+  transform:translate(calc(var(--entry-offset) + (92vw - 100%) * var(--orbit-x,0)),calc(-50svh * var(--orbit-rise,0))) scale(calc(1 + var(--day) * .45));
+  filter:drop-shadow(0 0 9px currentColor);
+}
+.sky-orb::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  background:currentColor;
+  mask-image:radial-gradient(circle at calc(72% + var(--day) * 105%) 34%,transparent 0 48%,black 50%);
+}
+.sky-orb::after {
+  content:'';
+  position:absolute;
+  inset:-110%;
+  background:radial-gradient(circle,#ffdfac99,transparent 70%);
+  opacity:var(--day);
+}
+.daylight h1,.daylight h2,.daylight h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.055em; margin:0; line-height:1.03; }
+.daylight em { font-weight:400; }
+.night { position:relative; display:flex; align-items:center; min-height:96svh; overflow:hidden; background:transparent; color:#fcf5e9; padding:140px 8vw 112px; }
+.night-photo { position:absolute; z-index:-3; inset:-28% 0 0; background:url('/assets/img/og-image.jpg') center / cover; transform:scaleX(-1); }
+.night::before { content:''; position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,#211a25f5,#2b202bda 29%,#30253680 54%,transparent 85%),linear-gradient(0deg,#251b29bb,transparent 23%); }
+/* Feather the room and its vignette together, leaving the content crisp. */
+.night-photo,.night::before {
+  mask-image:linear-gradient(to bottom,black 68%,rgba(0,0,0,.95) 77%,rgba(0,0,0,.65) 88%,transparent 100%);
+}
+.hero-copy { max-width:760px; }
+.eyebrow,.horizon,.credentials { font-size:.75rem; letter-spacing:.16em; text-transform:uppercase; font-weight:700; }
+.eyebrow { display:flex; align-items:center; gap:12px; margin:0 0 26px; }
+.daylight h1 { font-size:clamp(3.2rem,7.7vw,8rem); }
+.night em { color:#e7cadc; }
+.lead,.sunrise>p:not(.eyebrow) { max-width:440px; font-size:clamp(1rem,1.3vw,1.22rem); line-height:1.6; margin:24px 0 30px; }
+.pill { display:inline-flex; gap:20px; align-items:center; padding:14px 22px; border-radius:40px; color:#32212b; background:#edb39c; font-weight:700; }
+.pill:hover { background:#fff5e8; box-shadow:0 0 0 2px #b69aae; }
+.horizon { position:absolute; bottom:24px; left:8vw; right:8vw; padding-top:15px; color:#312435; border-top:1px solid #45354d55; display:flex; justify-content:space-between; gap:16px; font-size:.65rem; }
+.dawn,.morning,.sunrise { scroll-margin-top:84px; padding:clamp(80px,10vw,160px) 8vw; }
+.dawn,.morning { display:grid; grid-template-columns:1fr 1fr; gap:8vw; align-items:start; }
+
+.daylight h2 { font-size:clamp(48px,5.8vw,94px); }
+.daylight h3 { font-size:clamp(26px,2.5vw,42px); }
+.services article { border-top:1px solid #57455365; padding:22px 0; }
+.services p,.morning p:not(.eyebrow,.credentials) { line-height:1.7; max-width:490px; margin:12px 0; }
+.morning { align-items:center; }
+.morning img { width:100%; max-height:610px; object-fit:cover; object-position:center 35%; border-radius:48% 48% 6px 6px; }
+.morning a { display:inline-block; margin-top:16px; border-bottom:1px solid; }
+.sunrise { text-align:center; background:linear-gradient(transparent 78%,#f8ebdb); }
+.sunrise .eyebrow { justify-content:center; }
+.sunrise>p:not(.eyebrow) { margin:24px auto; }
+.sunrise .pill { background:#483546; color:#fff6eb; }
+@media(max-width:700px) {
+  .night { min-height:92svh; padding-inline:6vw; }
+  .night::before { background:linear-gradient(90deg,#251c29f5,#302436db 74%,#302436a0); }
+  .dawn,.morning { grid-template-columns:1fr; gap:38px; }
+  .horizon { left:6vw; right:6vw; letter-spacing:.07em; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  .sky { position:absolute; inset:0; height:auto; margin:0; }
+  .sky-orb { top:auto; left:auto; right:4vw; bottom:5%; transform:none; }
+  .sky::before { content:""; position:absolute; left:4vw; top:105svh; width:52px; aspect-ratio:1; border-radius:50%; background:#f4e8ff; mask-image:radial-gradient(circle at 72% 34%,transparent 48%,black 50%); }
+}
+/* The moonlit room warms as the reader approaches the dawn section. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .night { view-timeline-name: --night; }
+    .night-photo {
+      animation: first-light linear both;
+      animation-timeline: --night;
+      animation-range: exit 0% exit 100%;
+    }
+    @keyframes first-light {
+      from { filter:brightness(1) sepia(0); transform:scaleX(-1); }
+      to { filter:brightness(1.38) sepia(.5); transform:scaleX(-1); }
+    }
+  }
+}
+
+.daylight a:focus-visible { outline-offset: 5px; }
+.daylight .values { align-items: start; }
+.daylight .values h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); }
+.values-copy { max-width: 60ch; }
+.values-copy p { margin-top: 1rem; line-height: 1.7; }
+.home-credentials { margin-top: 1.4rem; padding-block: .8rem; border-block: 1px solid #57455352; }
+.home-credentials li { margin: .45rem 0; font-size: .95rem; }
+.service-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.service-link:hover h3 { text-decoration: underline; text-underline-offset: .15em; }
+.daylight .home-services-link { display: inline-block; margin-top: 1rem; border-bottom: 1px solid; }
+@media (max-width: 700px) {
+  .night .hero-copy { max-width: min(100%, 34rem); }
+}

@@ -9,6 +9,7 @@ image: "/assets/img/blog/wide-awake-in-bed-with-nighttime-anxiety.jpg"
 image_alt: "Mujer con los ojos abiertos asomándose por encima de un edredón blanco"
 image_icon: "💊"
 layout: layouts/blog-post.njk
+page_style: article
 permalink: "/es/blog/posts/tcc-i-vs-medicamentos-insomnio/index.html"
 date_hidden: true
 title_hidden: true

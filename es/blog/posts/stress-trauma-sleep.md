@@ -10,6 +10,7 @@ image_alt: "Mujer acostada de lado con los ojos abiertos en un dormitorio con po
 image_icon: "🧠"
 og_type: "article"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

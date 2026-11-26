@@ -1,0 +1,64 @@
+{% set _faq_lang = lang | default('en') %}
+{% set _faq = faq[_faq_lang] %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ (site.url ~ page.url ~ "#faq") | dump | safe }},
+  "inLanguage": {{ _faq_lang | dump | safe }},
+  "mainEntity": [
+    {% for section in _faq.sections %}
+      {% for item in section.questions %}
+      {
+        "@type": "Question",
+        "name": {{ item.question | dump | safe }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ (item.paragraphs | join(' ')) | dump | safe }}
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<div class="not-prose">
+  <p class="text-muted text-lg leading-relaxed">{{ _faq.intro }}</p>
+
+  <div class="mt-12 space-y-8">
+    {% for section in _faq.sections %}
+    <section id="{{ section.id }}" aria-labelledby="faq-{{ section.id }}-heading">
+      <h2 id="faq-{{ section.id }}-heading" class="text-2xl font-bold text-foreground mb-4">{{ section.title }}</h2>
+      <div class="space-y-3">
+        {% for item in section.questions %}
+        <details class="group rounded-2xl border border-border bg-card p-6 shadow-sm">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-foreground">
+            {{ item.question }}
+            <svg class="w-4 h-4 shrink-0 text-muted transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+          </summary>
+          {% for paragraph in item.paragraphs %}
+          <p class="mt-4 text-muted leading-relaxed">{{ paragraph }}</p>
+          {% endfor %}
+          {% if item.resources %}
+          <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+            {% for resource in item.resources %}
+            <a href="{{ resource.url if resource.url else (('/' ~ _faq_lang ~ resource.path) | url) }}" class="text-primary underline hover:no-underline">{{ resource.label }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if item.benefitsTool %}
+          <iframe width="100%" height="590" class="mt-6" style="border:none;border-radius:20px;max-width:600px;margin-inline:auto;display:block;" loading="lazy" onload="const resize=() => this.height=this.clientWidth >= 600?350:590;resize();window.addEventListener('resize', resize);" src="https://app.mentaya.com/public/practices/Pq2FnJsy2h701kzicyOz/eligibility/widget" title="{{ 'Check out-of-network benefits with Mentaya' if _faq_lang == 'en' else 'Verifica beneficios fuera de la red con Mentaya' }}"></iframe>
+          {% endif %}
+        </details>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  <div class="mt-12">
+    <a href="{{ ('/' ~ _faq_lang ~ '/pages/contact/') | url }}" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity">{{ _faq.cta }}</a>
+  </div>
+</div>

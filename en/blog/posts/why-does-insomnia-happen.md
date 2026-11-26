@@ -8,6 +8,7 @@ image: "/assets/img/blog/why-does-insomnia-happen.jpg"
 image_alt: "Woman sitting cross-legged on her bed at night, wide awake and staring toward the window"
 image_icon: "😴"
 layout: layouts/blog-post.njk
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

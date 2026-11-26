@@ -10,6 +10,7 @@ image: "/assets/img/blog/sleep-aging-awake-in-bed.jpg"
 image_alt: "An older adult lying awake with their head on a pillow"
 hero_hidden: true
 layout: "layouts/blog-post.njk"
+page_style: article
 date_hidden: true
 title_hidden: true
 ---

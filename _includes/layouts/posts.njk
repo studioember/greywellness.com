@@ -5,9 +5,9 @@
 {{ content | safe }}
 
 {% if collections[page.url] is defined %}
-  <h2 class="text-2xl font-bold mb-4">Recent Posts</h2>
+  <h2 class="text-2xl font-bold mb-4">{{ 'Publicaciones recientes' if siteLang == 'es' else 'Recent Posts' }}</h2>
 {% else %}
-  <h2 class="text-2xl font-bold mb-4">No Posts Found</h2>
+  <h2 class="text-2xl font-bold mb-4">{{ 'No hay publicaciones' if siteLang == 'es' else 'No Posts Found' }}</h2>
 {% endif %}
 
 <ul>

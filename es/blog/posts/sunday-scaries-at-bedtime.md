@@ -13,6 +13,7 @@ title_hidden: true
 date_hidden: true
 og_type: "article"
 layout: "layouts/blog-post.njk"
+page_style: article
 ---
 
 El domingo iba bien. Tomaste tinto, hiciste algunas vueltas y hasta alcanzaste a descansar un rato. Pero apenas apagas la luz y te acomodas en la cama, empiezas a pensar en todo lo que viene.

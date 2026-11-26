@@ -22,8 +22,6 @@ topics:
   - Cognitive restructuring
 ---
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap">
-
 <style>
   .cbti-flyer {
     --plum:    #1b0d1d;
@@ -66,7 +64,7 @@ topics:
   }
 
   .cbti-flyer .headline {
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito, system-ui, sans-serif;
     line-height: 1.0;
     margin-bottom: 0.75rem;
   }
@@ -86,7 +84,7 @@ topics:
   }
 
   .cbti-flyer .subhead {
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito, system-ui, sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
     color: var(--gray-mid);
@@ -132,7 +130,7 @@ topics:
     margin-bottom: 0.2rem;
   }
   .cbti-flyer .card-value {
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito, system-ui, sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: var(--plum);
@@ -198,7 +196,7 @@ topics:
     margin-bottom: 0.4rem;
   }
   .cbti-flyer .cta-name {
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito, system-ui, sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: #ffffff;
@@ -225,7 +223,7 @@ topics:
     padding: 8px 20px;
     background: var(--lavender);
     color: var(--plum);
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito, system-ui, sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.06em;

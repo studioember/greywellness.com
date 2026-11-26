@@ -11,22 +11,21 @@ hidden_from_nav: true
 templateEngineOverride: njk,md
 ---
 
-<div class="rounded-2xl overflow-hidden mb-4 -mx-4 sm:-mx-6 px-6 sm:px-10 py-20 relative">
-  <img src="{{ '/assets/img/services/groups.jpg' | url }}" alt="" class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0" style="background: linear-gradient(to right, hsl(150 25% 10% / 0.94), hsl(150 25% 10% / 0.72) 50%, hsl(150 25% 10% / 0.25) 80%, transparent 100%)"></div>
-  <div class="relative z-10 max-w-2xl">
-    <p class="text-sm font-semibold tracking-widest uppercase mb-4" style="color: hsl(150 40% 70%)">Groups</p>
-    <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+<div class="chapter-hero horizon-hero has-photo hero-groups">
+  <img src="{{ '/assets/img/services/groups.jpg' | url }}" alt="" fetchpriority="high">
+  <div class="relative max-w-2xl">
+    <p class="chapter-kicker mb-4">Groups</p>
+    <h1 class="mb-6">
       Group Therapy
     </h1>
-    <p class="text-white/70 text-lg leading-relaxed mb-8">
+    <p class="chapter-lead mb-8">
       Group therapy offers something individual therapy cannot: the experience of working through something alongside people who truly get it. Groups at Grey Wellness are small, structured, and led by a licensed therapist.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <a href="#contact-form" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity text-center">
+    <div class="hero-actions">
+      <a href="#contact-form" class="horizon-button">
         Schedule Free Consultation
       </a>
-      <a href="#what-to-expect" class="inline-block px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white border border-white/30 rounded-md hover:bg-white/10 transition-colors text-center">
+      <a href="#what-to-expect" class="horizon-link">
         What to Expect →
       </a>
     </div>
@@ -67,7 +66,7 @@ templateEngineOverride: njk,md
 
 {% else %}
 
-<div id="contact-form" class="mt-10 rounded-2xl border border-border bg-card p-10 shadow-sm">
+<div id="contact-form" class="mt-10 entry-panel">
   <div class="text-center mb-6">
     <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/15 text-3xl mb-5">🌿</span>
     <h2 class="text-2xl font-bold text-foreground mb-3">No groups running right now.</h2>
@@ -113,8 +112,8 @@ templateEngineOverride: njk,md
   </div>
 </div>
 
-<div class="mt-16 rounded-2xl px-8 py-10 text-center" style="background: hsl(var(--hero-overlay))">
-  <h3 class="text-2xl font-bold text-white mb-4">Questions about group therapy?</h3>
-  <p class="text-white/70 mb-8 max-w-xl mx-auto">Not sure if group therapy is right for you? Reach out and we are happy to talk it through.</p>
+<div class="mt-16 dawn-callout text-center">
+  <h3 class="text-2xl font-bold text-foreground mb-4">Questions about group therapy?</h3>
+  <p class="text-muted mb-8 max-w-xl mx-auto">Not sure if group therapy is right for you? Reach out and we are happy to talk it through.</p>
   {% scheduleButton "Schedule Free Consultation" %}
 </div>

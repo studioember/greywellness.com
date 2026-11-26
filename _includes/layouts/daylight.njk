@@ -1,0 +1,96 @@
+{% extends 'layouts/base.njk' %}
+
+{% block navigation %}
+<script>
+  document.documentElement.classList.add('logo-pending');
+  document.addEventListener('DOMContentLoaded', () => document.documentElement.classList.remove('logo-pending'), { once: true });
+</script>
+<div class="logo-opening" aria-hidden="true">
+  <img class="opening-lockup" src="{{ '/assets/img/grey-wellness-horizontal-purple.png' | url }}" width="1080" height="540" alt="" fetchpriority="high">
+</div>
+{% include 'components/navigation.njk' %}
+{% endblock %}
+
+{% block content %}
+{% set _t = siteText %}
+{% set home = _t.daylight_home %}
+{% set contact = (localeHome ~ 'pages/contact/#contact-form') | url %}
+{% include 'components/home-schema.njk' %}
+<div class="daylight">
+  <div class="sky" aria-hidden="true"><div class="sky-orb"></div></div>
+  <section class="night">
+    <div class="night-photo"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">{{ home.eyebrow }}</p>
+      <h1>{{ home.headline }}<br><em>{{ home.headline_em }}</em></h1>
+      <p class="lead">{{ home.lead }}</p>
+      <a class="pill" href="{{ contact }}">{{ home.talk }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="horizon"><a href="#specialties"><span aria-hidden="true">↓ &nbsp;</span>{{ home.explore }}</a><span>{{ home.service_area }}</span></div>
+  </section>
+
+  <section id="specialties" class="dawn">
+    <div>
+      <p class="eyebrow">{{ _t.nav_specialties }}</p>
+      <h2>{{ home.services_heading }}<br><em>{{ home.services_heading_em }}</em></h2>
+      <a class="home-services-link" href="{{ (localeHome ~ 'pages/treatment/') | url }}">{{ _t.nav_services_what_we_treat }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="services">
+      {% set services = [
+        ['sleep', _t.nav_specialties_sleep, home.sleep],
+        ['anxiety', _t.nav_specialties_anxiety, home.anxiety],
+        ['trauma', _t.nav_specialties_trauma, home.trauma]
+      ] %}
+      {% for service in services %}
+      <article>
+        <a class="service-link" href="{{ (localeHome ~ 'pages/' ~ service[0] ~ '/') | url }}">
+          <h3>{{ service[1] }}</h3><span aria-hidden="true">↗</span>
+        </a>
+        <p>{{ service[2] }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="about" class="morning">
+    <img src="{{ '/assets/img/monica-homepage.webp' | url }}" alt="{{ _t.home_portrait_img_alt }}" width="900" height="1200" loading="lazy">
+    <div>
+      <p class="eyebrow">{{ home.therapist }}</p>
+      <h2>Mónica Grey</h2>
+      <p class="credentials">{{ home.credentials }}</p>
+      <p>{{ home.about }}</p>
+      <p>{{ _t.service_availability }}</p>
+      <ul class="home-credentials" aria-label="{{ _t.home_authority_label }}">
+        <li>{{ _t.home_authority_hopkins }}</li>
+        <li>{{ _t.home_authority_stanford }}</li>
+        <li>{{ _t.home_about_ncc }}</li>
+        <li>{{ _t.home_authority_licensed }}</li>
+      </ul>
+      <a href="{{ (localeHome ~ 'pages/about/') | url }}">{{ _t.home_about_cta }} <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="dawn values">
+    <div>
+      <p class="eyebrow">{{ _t.home_values_eyebrow }}</p>
+      <h2>{{ _t.home_values_heading }}</h2>
+    </div>
+    <div class="values-copy">
+      <h3>{{ _t.home_values_card_title }}</h3>
+      <p>{{ _t.home_values_p1 }}</p>
+      <p>{{ _t.home_values_p2 }}</p>
+      <p>{{ _t.home_values_p3 }}</p>
+      <p>{{ _t.home_values_p4 }}</p>
+      <p>{{ _t.home_values_p5 }}</p>
+    </div>
+  </section>
+
+  <section id="contact" class="sunrise">
+    <p class="eyebrow">{{ home.consultation }}</p>
+    <h2>{{ home.contact_heading }}<br><em>{{ home.contact_heading_em }}</em></h2>
+    <p>{{ home.contact }}</p>
+    <a class="pill" href="{{ contact }}">{{ home.request }} <span aria-hidden="true">↗</span></a>
+  </section>
+</div>
+<script src="{{ '/assets/js/daylight.js' | url }}" defer></script>
+{% endblock %}

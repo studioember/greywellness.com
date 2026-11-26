@@ -12,6 +12,7 @@ title_hidden: true
 date_hidden: true
 og_type: "article"
 layout: "layouts/blog-post.njk"
+page_style: article
 ---
 
 Sunday was going well. You had coffee, ran some errands, and even found a little time to rest. But as soon as you turn off the light and settle into bed, you start thinking about everything ahead.

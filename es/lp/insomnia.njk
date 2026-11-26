@@ -1,5 +1,6 @@
 ---
 layout: layouts/landing.njk
+page_style: landing
 meta_title: "Terapeuta de TCC-I para el Insomnio | Virginia, Maryland y Washington, DC"
 description: "TCC-I virtual bilingüe para el insomnio en Maryland, Virginia y Washington, DC. Atención con Mónica Grey en español o inglés. Comienza con una consulta gratuita de 15 minutos."
 lp_noindex: false
@@ -9,15 +10,15 @@ service_type: "Terapia Cognitivo-Conductual para el Insomnio (TCC-I)"
 {% from 'macros/google-form.njk' import googleForm %}
 
 <!-- Hero + Form -->
-<section class="py-14 px-4 sm:px-6">
+<section class="horizon-hero landing-masthead px-4 sm:px-6">
   <div class="max-w-5xl mx-auto">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start landing-grid">
 
       <!-- Left: Copy -->
-      <div>
+      <div class="landing-intro">
         <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Especialista en TCC-I · Virginia, Maryland y Washington, DC</p>
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight mb-6">
-          Por fin, duerme<br>toda la noche.
+          Por fin, duerme<br><em>toda la noche.</em>
         </h1>
         <p class="text-lg text-muted leading-relaxed mb-8">
           La Terapia Cognitivo-Conductual para el Insomnio (TCC-I) es el <strong class="text-foreground">tratamiento de primera línea recomendado</strong> para el insomnio crónico, avalado por la Academia Americana de Medicina del Sueño. Sin medicamentos, sin dependencia. Un enfoque probado para recuperar tus noches.
@@ -27,11 +28,11 @@ service_type: "Terapia Cognitivo-Conductual para el Insomnio (TCC-I)"
 
         <!-- Quick stats -->
         <div class="flex gap-4 mb-8">
-          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+          <div class="flex-1 landing-stat py-4">
             <p class="text-2xl font-bold text-primary">2–3 semanas</p>
             <p class="text-xs text-muted mt-1">Muchas personas sienten mejoría pronto</p>
           </div>
-          <div class="flex-1 rounded-xl bg-primary/10 px-4 py-5 text-center">
+          <div class="flex-1 landing-stat py-4">
             <p class="text-2xl font-bold text-primary">6–8 sesiones</p>
             <p class="text-xs text-muted mt-1">Curso completo típico</p>
           </div>
@@ -72,7 +73,7 @@ service_type: "Terapia Cognitivo-Conductual para el Insomnio (TCC-I)"
       </div>
 
       <!-- Right: Form -->
-      <div id="contacto" class="bg-card rounded-2xl border border-border p-8 shadow-sm lg:sticky lg:top-8">
+      <div id="contacto" class="entry-panel lg:sticky lg:top-28">
         <h2 class="text-xl font-bold text-foreground mb-2">Solicita tu consulta gratuita</h2>
         <p class="text-sm text-muted mb-6">Completa el formulario y me pondré en contacto contigo en 1–2 días hábiles.</p>
 
