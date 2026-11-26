@@ -10,14 +10,9 @@ async function walk(dir) {
 }
 const attrs = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*["']([^"']*)["']/g)].map(m => [m[1], m[2]]));
 const tags = (html, name) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, 'g'))].map(m => attrs(m[0]));
-const htmlFiles = (await walk(root)).filter(path => path.endsWith('.html')).sort();
-assert.deepEqual(htmlFiles, [
-  `${root}/en/index.html`,
-  `${root}/es/index.html`,
-  `${root}/index.html`,
-], 'The homepage build should contain only the two localized homepages and the root redirect');
 const pages = new Map();
-for (const path of htmlFiles) {
+const fragments = [];
+for (const path of (await walk(root)).filter(p => p.endsWith('.html'))) {
   const url = origin + path.slice(root.length).replace(/index\.html$/, '');
   const html = await readFile(path, 'utf8');
   if (url === origin + '/') continue; // Locale redirect, intentionally excluded from sitemap.
@@ -47,18 +42,23 @@ for (const path of htmlFiles) {
     };
     check(schema);
   }
-  // Homepage section links and local navigation and image targets must exist.
   const ids = new Set([...html.matchAll(/\sid=["']([^"']+)["']/g)].map(([, id]) => id));
-  for (const tag of [...tags(html, 'a'), ...tags(html, 'img')]) {
+  const resources = [...tags(html, 'a'), ...tags(html, 'img'), ...tags(html, 'link'), ...tags(html, 'script')];
+  for (const tag of resources) {
     const target = tag.href || tag.src;
-    if (target?.startsWith('#') && target.length > 1) {
-      assert.ok(ids.has(target.slice(1)), `Missing section ${target}: ${url}`);
+    if (!target) continue;
+    const resolved = new URL(target, url);
+    if (resolved.origin !== origin) continue;
+    const path = decodeURI(resolved.pathname);
+    await access(root + path + (path.endsWith('/') ? 'index.html' : ''));
+    if (tag.href && resolved.hash.length > 1 && (path.endsWith('/') || path.endsWith('.html'))) {
+      fragments.push({ from: url, to: origin + path.replace(/index\.html$/, ''), id: decodeURIComponent(resolved.hash.slice(1)) });
     }
-    if (!target || (!target.startsWith('/') && !target.startsWith(origin + '/')) || target.startsWith('//')) continue;
-    const path = new URL(target, origin).pathname;
-    await access(root + decodeURI(path) + (path.endsWith('/') ? 'index.html' : ''));
   }
-  pages.set(url, { alternates, lang, noindex });
+  pages.set(url, { alternates, lang, noindex, ids });
+}
+for (const { from, to, id } of fragments) {
+  assert.ok(pages.get(to)?.ids.has(id), `Missing fragment ${to}#${id} linked from ${from}`);
 }
 for (const [url, { alternates, lang }] of pages) {
   for (const alt of alternates) {
@@ -80,8 +80,25 @@ for (const [, entry] of entries) {
   const expected = pages.get(url).alternates.map(a => [a.hreflang, a.href]).sort();
   assert.deepEqual(actual, expected, `Sitemap/head alternates differ: ${url}`);
 }
+for (const [en, es] of [
+  ['category/anxiety', 'category/ansiedad'],
+  ['category/insomnia', 'category/insomnio'],
+  ['category/trauma', 'category/trauma'],
+  ['posts/waking-up-at-3am', 'posts/despertarse-a-las-3-am'],
+  ['posts/cbti-vs-sleep-medication', 'posts/tcc-i-vs-medicamentos-insomnio'],
+]) {
+  assert.equal(pages.get(`${origin}/en/blog/${en}/`).alternates.find(a => a.hreflang === 'es')?.href, `${origin}/es/blog/${es}/`);
+}
 for (const [lang, other] of [['en', 'es'], ['es', 'en']]) {
   assert.equal(pages.get(`${origin}/${lang}/`).alternates.find(a => a.hreflang === other)?.href, `${origin}/${other}/`);
 }
+for (const file of ['llms.txt', 'llms-full.txt']) {
+  const content = await readFile(`${root}/${file}`, 'utf8');
+  assert.ok(content.includes('Washington, DC'));
+  for (const match of content.matchAll(/https:\/\/greywellness\.com\/[^\s)]+/g)) {
+    const path = new URL(match[0]).pathname;
+    await access(root + path + (path.endsWith('/') ? 'index.html' : ''));
+  }
+}
 assert.match(await readFile(root + '/robots.txt', 'utf8'), /Sitemap: https:\/\/greywellness\.com\/sitemap.xml/);
-console.log(`SEO checks passed for ${pages.size} homepages: metadata, H1s, JSON-LD, DC service areas, local links, reciprocal translations, and sitemap.`);
+console.log(`SEO checks passed for ${pages.size} pages: metadata, H1s, JSON-LD, DC service areas, local targets, reciprocal translations, sitemap, and AI context links.`);

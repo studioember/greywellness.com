@@ -92,5 +92,27 @@
   "home_schema_anxiety_desc": "Therapy for adults whose anxiety, trauma, or stress is making sleep harder.",
   "home_schema_job_title": "Licensed Therapist",
   "service_availability": "Virtual therapy for adults throughout Maryland, Virginia, and Washington, DC, in English and Spanish.",
-  "service_availability_link": "View session rates"
+  "service_availability_link": "View session rates",
+  "daylight_home": {
+    "eyebrow": "Therapy for adults · English & Spanish",
+    "headline": "What keeps you",
+    "headline_em": "up at night?",
+    "lead": "Maybe it’s a worry you keep turning over, a memory that feels close again, or another night of watching the clock. At Grey Wellness, our approach to therapy starts with a conversation about what’s on your mind during the day and how you’re resting at night.",
+    "talk": "Talk with our team",
+    "explore": "Explore care",
+    "service_area": "Virtual therapy · MD, VA & DC",
+    "services_heading": "What brings you",
+    "services_heading_em": "to therapy?",
+    "sleep": "If getting to sleep or staying asleep is the hardest part, we can work on it directly with cognitive behavioral therapy for insomnia (CBT-I).",
+    "anxiety": "Anxiety can show up in a meeting, in a conversation you replay afterward, or just as you turn out the light. We’ll look at where worry gets in your way and practice ways to respond.",
+    "trauma": "Find space to process difficult experiences at your own pace, with care that respects what you carry.",
+    "therapist": "Meet your therapist",
+    "credentials": "MS, LCPC, NCC · Founder, Grey Wellness",
+    "about": "When we meet, I’ll ask what brought you in and what you hope will feel different. I ask about sleep, too. Knowing how you’re resting helps me understand what an ordinary day asks of you and shape our work around what matters to you.",
+    "consultation": "Free 15-minute consultation",
+    "contact_heading": "How would you like",
+    "contact_heading_em": "your days to feel?",
+    "contact": "Maybe you’d like to wake up rested, feel more at ease with someone you love, or get through a hard day with a little more steadiness. Share what matters to you in a free consultation. We’ll answer your questions and talk through the next steps together.",
+    "request": "Request a free consultation"
+  }
 }

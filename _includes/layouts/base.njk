@@ -1,3 +1,6 @@
+{% set siteLang = lang | default('en') %}
+{% set siteText = i18n[siteLang] %}
+{% set localeHome = '/' ~ siteLang ~ '/' %}
 <!doctype html>
 <html lang="{{ lang | default('en') }}" class="scroll-smooth">
   <head>
@@ -6,7 +9,6 @@
     {% if privacy_page %}
     <meta name="referrer" content="no-referrer">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'">
-    <link rel="stylesheet" href="{{ '/assets/css/referrals.css' | url }}">
     {% endif %}
 
     {# ── Page title ── #}
@@ -26,7 +28,7 @@
 
     {# ── Core SEO ── #}
     <meta name="description" content="{{ _page_desc }}">
-    <meta name="robots" content="{{ 'noindex, follow' if noindex else 'index, follow' }}">
+    <meta name="robots" content="{{ 'noindex, follow' if (noindex or lp_noindex) else 'index, follow' }}">
     <link rel="canonical" href="{{ _page_url }}">
 
     {% include 'components/hreflang.njk' %}
@@ -60,13 +62,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--Fonts (non-blocking) -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Nunito:wght@300;400;500;600;700;900&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"></noscript>
 
     {% endif %}
 
-    {% if preload_hero %}
-    <link rel="preload" href="{{ '/assets/img/hero.webp' | url }}" as="image" type="image/webp" fetchpriority="high">
+    {% if page_style == 'home' %}
+    <link rel="preload" href="{{ '/assets/img/og-image.jpg' | url }}" as="image" fetchpriority="high">
     {% endif %}
 
     <!-- Color Scheme -->
@@ -82,11 +84,6 @@
 
         applyTheme();
         media.addEventListener("change", applyTheme);
-
-        // Safari fallback: hide wave dividers, use straight-line section breaks
-        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-          root.classList.add("is-safari");
-        }
       })();
     </script>
 
@@ -106,75 +103,55 @@
     <!-- Style Sheets -->
     <link rel="stylesheet" href="{{ '/assets/css/generated/tailwind.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/theme/theme.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/footer.css' | url }}">
+    {% if page_style == 'home' %}
+    <link rel="stylesheet" href="{{ '/assets/css/daylight.css' | url }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ '/assets/css/interior.css' | url }}">
+    {% endif %}
+    {% if privacy_page %}
+    <link rel="stylesheet" href="{{ '/assets/css/referrals.css' | url }}">
+    {% endif %}
   </head>
-
-  <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
-{# Navigation - Start #}
+  <body class="site-body{% if page_style %} site-{{ page_style }}{% endif %}{% if privacy_page %} site-private{% endif %}">
+    <a class="skip-link" href="#content">{{ 'Ir al contenido' if siteLang == 'es' else 'Skip to content' }}</a>
     {% block navigation %}
     {% include 'components/navigation.njk' %}
     {% endblock %}
-    {# Navigation - End #}
 
-    {% if full_width %}
-    <main id="content" class="mx-auto px-4 sm:px-6 py-10 flex-1 w-full">
-    {% else %}
-    <main id="content" class="mx-auto max-w-5xl px-4 sm:px-6 py-10 flex-1 w-full">
-    {% endif %}
-      {# Title - Start #}
+    <main id="content" tabindex="-1" class="site-main{% if full_width or page_style == 'home' or page_style == 'landing' %} site-main-wide{% endif %}">
+      {% if page_style != 'home' and page_style != 'landing' %}
+      <div class="site-frame{% if full_width %} site-frame-wide{% endif %}">
+      {% endif %}
       {% if title and title_hidden != true %}
-      <header class="mb-8">
-        <h1 class="text-3xl md:text-5xl font-bold tracking-tight">{{ title }}</h1>
-        {# Description #}
+      <header class="page-header horizon-hero">
+        <h1>{{ title }}</h1>
         {% if description and description_hidden != true %}
-          <p class="mt-8 text-muted">{{ description }}</p>
+        <p>{{ description }}</p>
         {% endif %}
-        {# Date #}
         {% if date_hidden != true %}
-          <p class="text-muted">{{ page.date | dateSimple(lang | default('en')) }}</p>
+        <p>{{ page.date | dateSimple(siteLang) }}</p>
         {% endif %}
-        {# -------- #}
-        <hr class="mt-8 border-border">
       </header>
       {% endif %}
-      {# Title - End #}
 
-      {# Content - Start #}
       {% block content %}
       {% if no_prose %}
         {{ content | safe }}
       {% else %}
-        <article class="prose max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-a:text-primary prose-hr:border-border prose-blockquote:text-foreground prose-code:text-foreground prose-li:text-foreground prose-th:text-foreground prose-td:text-foreground">
+        <div class="prose reading-copy">
           {{ content | safe }}
-        </article>
+        </div>
       {% endif %}
       {% endblock %}
-      {# Content - End #}
+      {% if page_style != 'home' and page_style != 'landing' %}
+      </div>
+      {% endif %}
     </main>
 
-    {# Footer - Start #}
     {% block footer %}
     {% include 'components/footer.njk' %}
     {% endblock %}
-    {# Footer - End #}
-    <style>
-      .sp-schedule-btn {
-        display: inline-block;
-        padding: 14px 32px;
-        color: hsl(var(--primary-foreground)) !important;
-        background: hsl(var(--primary));
-        border: 0;
-        border-radius: 6px;
-        font-size: 1rem;
-        font-weight: 600;
-        text-decoration: none;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        transition: opacity 0.15s;
-        cursor: pointer;
-      }
-      .sp-schedule-btn:hover { opacity: 0.9; }
-      .sp-schedule-btn:active { opacity: 0.75; }
-    </style>
   </body>
 </html>

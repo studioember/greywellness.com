@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set blogUrl = localeHome ~ 'blog/' %}
+{% set categories = collections.blogCategories_es if siteLang == 'es' else collections.blogCategories_en %}
+{% set allArticles = collections.blog_es if siteLang == 'es' else collections.blog_en %}
+{% set articles = allArticles | reverse %}
+
+<nav class="blog-topics" aria-label="{{ 'Temas del blog' if siteLang == 'es' else 'Blog topics' }}">
+  {% for topic in categories %}
+  <a href="{{ (blogUrl ~ 'category/' ~ (topic | slugify) ~ '/') | url }}">{{ topic }}</a>
+  {% endfor %}
+</nav>
+
+{% include 'components/blog-list.njk' %}
+{% endblock %}

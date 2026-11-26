@@ -1,34 +1,63 @@
-{% set es = lang == 'es' %}
-{% set home = '/' ~ (lang or 'en') ~ '/' %}
-{% set alternates = page.url | siteLocaleLinks %}
+{% macro linkArrow(external = false) %}
+  <svg class="footer-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    {% if external %}
+    <path d="M7 17 17 7M7 7h10v10"/>
+    {% else %}
+    <path d="M5 12h14m-7-7 7 7-7 7"/>
+    {% endif %}
+  </svg>
+{% endmacro %}
 <footer id="footer" class="practice-footer">
   <div class="footer-intro">
-    <a href="{{ home | url }}" aria-label="{{ 'Grey Wellness, inicio' if es else 'Grey Wellness home' }}"><img src="/assets/img/grey-wellness-horizontal-purple.png" width="1080" height="540" alt="Grey Wellness"></a>
-    <p>{{ i18n[lang or 'en'].service_availability }}</p>
+    <a href="{{ localeHome | url }}"><img src="{{ '/assets/img/grey-wellness-horizontal-purple.png' | url }}" width="1080" height="540" alt="{{ 'Grey Wellness, inicio' if siteLang == 'es' else 'Grey Wellness home' }}"></a>
+    <div>
+      <p>{{ siteText.footer_tagline }}</p>
+      <p>{{ siteText.service_availability }} <a href="{{ (localeHome ~ 'rates/') | url }}">{{ siteText.service_availability_link }}</a></p>
+    </div>
   </div>
   <div class="footer-directory">
     <section>
-      <h2>{{ 'Contacto' if es else 'Contact' }}</h2>
-      <a href="mailto:contact@greywellness.com">{{ 'Escríbenos' if es else 'Email the practice' }} ↗</a>
+      <h2>{{ siteText.footer_contact_label }}</h2>
+      <a class="footer-icon-link" href="{{ (localeHome ~ 'pages/contact/') | url }}">{{ siteText.footer_send_message }} {{ linkArrow() }}</a>
       <a href="tel:+12402038879">240-203-8879</a>
-      <a href="https://monicagrey.clientsecure.me/sign-in">{{ 'Portal del cliente' if es else 'Client portal' }} ↗</a>
+      <a href="{{ (localeHome ~ 'for-providers/') | url }}">Fax: 240-627-2513</a>
+      <a href="mailto:contact@greywellness.com">contact@greywellness.com</a>
+      <a class="footer-icon-link" href="https://monicagrey.clientsecure.me/sign-in">{{ siteText.nav_client_portal }} {{ linkArrow(true) }}</a>
     </section>
     <section>
-      <h2>{{ 'La práctica' if es else 'The practice' }}</h2>
-      <a href="{{ home | url }}#about">{{ 'Conoce a Mónica' if es else 'Meet Mónica' }}</a>
-      <a href="{{ home | url }}#specialties">{{ 'Especialidades' if es else 'Therapy specialties' }}</a>
-      <a href="{{ home | url }}#contact">{{ 'Consulta gratuita' if es else 'Free consultation' }}</a>
+      <h2>{{ 'La práctica' if siteLang == 'es' else 'The practice' }}</h2>
+      <a href="{{ (localeHome ~ 'pages/about/') | url }}">{{ siteText.footer_about }}</a>
+      <a href="{{ (localeHome ~ 'pages/treatment/') | url }}">{{ siteText.footer_services }}</a>
+      <a href="{{ (localeHome ~ 'pages/faq/') | url }}">{{ siteText.nav_faq }}</a>
+      <a href="{{ (localeHome ~ 'for-providers/') | url }}">{{ 'Para profesionales' if siteLang == 'es' else 'For Providers' }}</a>
     </section>
     <section>
-      <h2>{{ 'Recursos' if es else 'Resources' }}</h2>
-      <a href="{{ ('/assets/resources/sleep-diary-' ~ (lang or 'en') ~ '.pdf') | url }}">{{ 'Diario de sueño de 14 días' if es else '14-day sleep diary' }} <small>PDF</small></a>
-      <a href="https://www.psychologytoday.com/profile/1256952">Psychology Today ↗</a>
-      <a href="https://www.therapyden.com/therapist/monica-grey">TherapyDen ↗</a>
+      <h2>{{ 'Recursos' if siteLang == 'es' else 'Resources' }}</h2>
+      <a href="{{ (localeHome ~ 'blog/') | url }}">{{ siteText.nav_blog }}</a>
+      <a href="{{ (localeHome ~ 'free-tools/') | url }}">{{ siteText.footer_tools }}</a>
+      <a href="{{ (localeHome ~ 'free-tools/sleep-diary/') | url }}">{{ 'Diario de sueño' if siteLang == 'es' else 'Sleep Diary' }}</a>
     </section>
   </div>
+  <div class="footer-affiliations">
+    <a class="footer-icon-link" href="https://www.psychologytoday.com/profile/1256952">{{ siteText.footer_badge_pt }} {{ linkArrow(true) }}</a>
+    <div>
+      <a href="https://www.latinxtherapy.com"><img src="{{ '/assets/img/badges/latinx-therapy.png' | url }}" width="600" height="600" alt="{{ siteText.footer_badge_latinx }}" loading="lazy"></a>
+      <a href="https://www.nbcc.org"><img src="{{ '/assets/img/badges/nbcc-ncc.png' | url }}" width="600" height="600" alt="{{ siteText.footer_badge_nbcc }}" loading="lazy"></a>
+      <a href="https://www.therapyden.com/therapist/monica-grey"><img src="{{ '/assets/img/badges/therapyden.png' | url }}" width="175" height="173" alt="{{ siteText.footer_badge_therapyden }}" loading="lazy"></a>
+    </div>
+  </div>
   <div class="footer-base">
-    <span>© Grey Wellness LLC</span>
-    <div><a href="https://www.instagram.com/grey_wellness/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61574329432986">Facebook</a><a href="https://www.linkedin.com/company/grey-wellness">LinkedIn</a></div>
-    {% for alt in alternates %}<a href="{{ alt.url | url }}" lang="{{ alt.lang }}" hreflang="{{ alt.lang }}">{{ alt.label }}</a>{% endfor %}
+    <div class="footer-credit">
+      <span>© Grey Wellness LLC. {{ siteText.footer_rights }}</span>
+      <span>{{ siteText.footer_built_with }}</span>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/grey_wellness/" aria-label="{{ siteText.footer_social_instagram }}">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61574329432986" aria-label="{{ siteText.footer_social_facebook }}">Facebook</a>
+      <a href="https://www.linkedin.com/company/grey-wellness" aria-label="{{ siteText.footer_social_linkedin }}">LinkedIn</a>
+    </div>
+    {% for alt in page.url | siteLocaleLinks %}
+    <a href="{{ alt.url | url }}" lang="{{ alt.lang }}" hreflang="{{ alt.lang }}">{{ alt.label }}</a>
+    {% endfor %}
   </div>
 </footer>

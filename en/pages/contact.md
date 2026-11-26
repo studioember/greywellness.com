@@ -1,0 +1,63 @@
+---
+title: Contact
+title_hidden: false
+meta_title: "Therapy Consultation in Virginia, Maryland & DC | Grey Wellness"
+description: "Book a free 15-minute consultation for bilingual virtual therapy in Maryland, Virginia, and Washington, DC. Discuss your goals with Mónica Grey in English or Spanish."
+description_hidden: true
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+templateEngineOverride: njk,md
+---
+
+<div class="contact-layout">
+<div class="contact-story">
+
+Virtual therapy for adults in Maryland, Virginia, and Washington, DC, in English and Spanish.
+
+
+## Free Consultation
+
+Getting started with therapy is a big step, and finding the right person matters. That is why I offer a free 15-minute consultation before anything else.
+
+We will meet over video call, unless you prefer otherwise, and this time is simply for us to get to know each other a little. You will have the chance to share what is bringing you to therapy, ask any questions you have, and get a feel for how I work. I will share a bit about my background and experience so you can get a sense of who I am and how I approach the work.
+
+There is no pressure to make a decision on the call. I genuinely encourage you to take your time, and if it feels right, to speak with a few other therapists before committing. This is a deeply personal process and you deserve to feel confident and comfortable with whoever you choose to work with.
+
+  <a href="{{ '/en/for-providers/' | url }}" class="not-prose mt-8 block dawn-callout font-semibold text-primary no-underline transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+    <span class="block text-lg">For healthcare professionals</span>
+    <span class="mt-2 block underline underline-offset-4">View referral information &rarr;</span>
+  </a>
+</div>
+
+<div class="contact-details">
+  <p class="contact-note text-muted">
+    When you feel ready, fill out the form below and we will be in touch within 1–2 business days.
+  </p>
+
+<div id="contact-form" class="entry-panel">
+{% from 'macros/google-form.njk' import googleForm %}
+{% set contactFields = [
+  { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+  { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+  { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+  { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", help: "Share what you'd like help with and a few days and times that work for a consultation.", required: false },
+  { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+  { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+  { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
+] %}
+{{ googleForm(
+  formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+  fields=contactFields,
+  uid="contact-en",
+  submitLabel="Send Message",
+  successTitle="Message sent!",
+  successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+  gaEventName="contact_form_submitted",
+  gaEventCategory="contact",
+  gaEventLabel="contact_page_en",
+  adsConversion=""
+) }}
+</div>
+</div>
+</div>

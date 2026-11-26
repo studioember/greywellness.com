@@ -1,0 +1,10 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set blogUrl = localeHome ~ 'blog/' %}
+{% set allArticles = collections.blog_es if siteLang == 'es' else collections.blog_en %}
+{% set articles = allArticles | reverse | byCategory(category) %}
+
+<a class="blog-back" href="{{ blogUrl | url }}"><span aria-hidden="true">←</span> {{ siteText.blog_back }}</a>
+{% include 'components/blog-list.njk' %}
+{% endblock %}

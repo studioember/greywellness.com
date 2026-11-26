@@ -21,14 +21,6 @@ addEventListener('resize', scheduleUpdate);
 reducedMotion.addEventListener('change', scheduleUpdate);
 updateDaylight();
 
-const languageLink = document.querySelector('.nav-language');
-function updateLanguageLink() {
-  const languages = navigator.languages?.length ? navigator.languages : [navigator.language];
-  languageLink.hidden = !languages.some(language => /^es(?:-|$)/i.test(language));
-}
-addEventListener('languagechange', updateLanguageLink);
-updateLanguageLink();
-
 function playLogoOpening() {
   if (reducedMotion.matches) return;
   const opening = document.querySelector('.logo-opening');

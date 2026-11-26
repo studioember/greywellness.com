@@ -1,142 +1,54 @@
-{% from "macros/logo.njk" import logo %}
-{% block navigation %}
-  {# Resolve locale-specific data for this render #}
-  {% set _lang = lang | default("en") %}
-  {% set _t = i18n[_lang] %}
-  {% set _homeUrl = "/" + _lang + "/" %}
-  {# Language switcher: get alternate locale links for the current page #}
-  {% set _langAlternates = page.url | siteLocaleLinks %}
-
-  <nav aria-label="Main navigation" class="block bg-nav-bg shadow-sm border-b border-border sticky top-0 z-50">
-    <div class="flex items-center h-14 md:h-20 max-w-7xl mx-auto px-4 md:pr-8 md:pl-0">
-      <a href="{{ _homeUrl | url }}" class="flex items-center ml-4 hover:opacity-80 transition-opacity shrink-0">
-        {{ logo() }}
-      </a>
-      <div class="flex-1"></div>
-
-      {# Desktop nav items #}
-      <div class="hidden md:flex items-center gap-6">
-        <a href="#about" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
-          {{ _t.nav_about }}
-        </a>
-        <a href="#specialties" class="text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors tracking-wide uppercase">
-          {{ _t.nav_specialties }}
-        </a>
-
-        <a
-          href="#contact"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
-        >
-          {{ _t.nav_contact }}
-        </a>
-
-        <a
-          href="https://monicagrey.clientsecure.me/sign-in"
-          class="px-4 py-2 text-sm font-medium tracking-wide uppercase text-nav-fg/50 border border-border rounded-md hover:text-nav-fg hover:border-nav-fg/30 transition-colors"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ _t.nav_client_portal }}
-        </a>
-
-        {# Language switcher #}
-        {% if _langAlternates.length %}
-          <div class="flex items-center gap-1 border-l border-nav-fg/20 pl-4">
-            <span class="text-xs font-bold text-nav-fg uppercase tracking-wider">{{ _lang | upper }}</span>
-            {% for _alt in _langAlternates %}
-            <span class="text-nav-fg/30 text-xs">|</span>
-            <a
-              href="{{ _alt.url | url }}"
-              hreflang="{{ _alt.lang }}"
-              class="text-xs font-bold text-nav-fg/50 uppercase tracking-wider hover:text-nav-fg transition-colors"
-              aria-label="{{ _t.lang_other_label }}"
-            >{{ _alt.lang | upper }}</a>
-            {% endfor %}
-          </div>
-        {% endif %}
+<nav class="glass" aria-label="{{ 'Navegación principal' if siteLang == 'es' else 'Main navigation' }}">
+  <a class="signature" href="{{ localeHome | url }}" aria-label="{{ 'Grey Wellness, inicio' if siteLang == 'es' else 'Grey Wellness home' }}">
+    <img src="{{ '/assets/img/grey-wellness-horizontal-purple.png' | url }}" width="1080" height="540" alt="">
+  </a>
+  {% if page_style == 'landing' %}
+  <a class="navcta" href="tel:+12402038879">240-203-8879</a>
+  {% else %}
+  <div class="navlinks">
+    <a href="{{ (localeHome ~ 'pages/treatment/') | url }}">{{ siteText.nav_specialties }}</a>
+    <a href="{{ (localeHome ~ 'pages/about/') | url }}" {% if page.url == localeHome ~ 'pages/about/' %}aria-current="page"{% endif %}>{{ 'Nuestra práctica' if siteLang == 'es' else 'Our practice' }}</a>
+  </div>
+  {% for alternate in page.url | siteLocaleLinks %}
+  <a class="nav-language" href="{{ alternate.url | url }}" lang="{{ alternate.lang }}" hreflang="{{ alternate.lang }}">{{ alternate.label }}</a>
+  {% endfor %}
+  <a class="navcta" href="{{ (localeHome ~ 'pages/contact/') | url }}">{{ 'Contacto' if siteLang == 'es' else 'Get in touch' }} <span aria-hidden="true">↗</span></a>
+  <details class="site-menu">
+    <summary>{{ 'Menú' if siteLang == 'es' else 'Menu' }}</summary>
+    <div class="site-menu-panel">
+      <div class="site-menu-column">
+        <p>{{ siteText.nav_specialties }}</p>
+        {% set specialtyLinks = [
+          ['pages/treatment/', siteText.nav_services_what_we_treat],
+          ['pages/sleep/', siteText.nav_specialties_sleep],
+          ['pages/anxiety/', siteText.nav_specialties_anxiety],
+          ['pages/trauma/', siteText.nav_specialties_trauma],
+          ['pages/groups/', siteText.nav_services_groups],
+          ['pages/process/', siteText.nav_services_how_we_work]
+        ] %}
+        {% for link in specialtyLinks %}
+        <a href="{{ (localeHome ~ link[0]) | url }}" {% if page.url == localeHome ~ link[0] %}aria-current="page"{% endif %}>{{ link[1] }}</a>
+        {% endfor %}
       </div>
-
-      {# Mobile nav items: language switcher + hamburger only #}
-      <div class="flex md:hidden items-center gap-2">
-        {% if _langAlternates.length %}
-          {% for _alt in _langAlternates %}
-          <a
-            href="{{ _alt.url | url }}"
-            hreflang="{{ _alt.lang }}"
-            class="px-2 py-1 text-xs font-bold text-nav-fg/50 uppercase tracking-wider border border-border rounded hover:text-nav-fg hover:border-nav-fg/40 transition-colors"
-            aria-label="{{ _t.lang_other_label }}"
-          >{{ _alt.lang | upper }}</a>
-          {% endfor %}
-        {% endif %}
-        <button
-          type="button"
-          class="flex items-center justify-center w-9 h-9 text-nav-fg/70 hover:text-nav-fg transition-colors rounded-md hover:bg-nav-fg/8"
-          aria-label="{{ 'Menú' if _lang == 'es' else 'Menu' }}"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-mobile-toggle
-        >
-          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-open-icon>
-            <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-          </svg>
-          <svg class="w-5 h-5 hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-mobile-close-icon>
-            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-          </svg>
-        </button>
+      <div class="site-menu-column">
+        <p>Grey Wellness</p>
+        {% set practiceLinks = [
+          ['pages/about/', siteText.nav_about],
+          ['rates/', siteText.nav_investment],
+          ['blog/', siteText.nav_blog],
+          ['free-tools/', siteText.nav_tools],
+          ['pages/faq/', siteText.nav_faq],
+          ['pages/contact/', siteText.nav_contact]
+        ] %}
+        {% for link in practiceLinks %}
+        <a href="{{ (localeHome ~ link[0]) | url }}" {% if page.url == localeHome ~ link[0] %}aria-current="page"{% endif %}>{{ link[1] }}</a>
+        {% endfor %}
+        <a href="https://monicagrey.clientsecure.me/sign-in">{{ siteText.nav_client_portal }} <span aria-hidden="true">↗</span></a>
       </div>
     </div>
-
-    {# Mobile dropdown menu — mirrors desktop structure #}
-    <nav id="mobile-menu" aria-label="Mobile navigation" class="hidden md:hidden border-t border-border bg-nav-bg shadow-lg" data-mobile-menu>
-      <ul class="py-2 px-4">
-        <li>
-          <a href="#about" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
-            {{ _t.nav_about }}
-          </a>
-        </li>
-        <li>
-          <a href="#specialties" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
-            {{ _t.nav_specialties }}
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="block py-3 text-sm font-medium text-nav-fg/70 hover:text-nav-fg transition-colors border-b border-border tracking-wide uppercase">
-            {{ _t.nav_contact }}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://monicagrey.clientsecure.me/sign-in"
-            class="block py-3 text-sm font-medium text-nav-fg/50 hover:text-nav-fg transition-colors tracking-wide uppercase"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ _t.nav_client_portal }}
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </nav>
-
-  <script>
-    (() => {
-      const mobileToggle = document.querySelector("[data-mobile-toggle]");
-      const mobileMenu = document.querySelector("[data-mobile-menu]");
-      const openIcon = document.querySelector("[data-mobile-open-icon]");
-      const closeIcon = document.querySelector("[data-mobile-close-icon]");
-
-      const setMenuOpen = (open) => {
-        mobileMenu.classList.toggle("hidden", !open);
-        mobileToggle.setAttribute("aria-expanded", String(open));
-        openIcon.classList.toggle("hidden", open);
-        closeIcon.classList.toggle("hidden", !open);
-      };
-      mobileToggle.addEventListener("click", () => {
-        setMenuOpen(mobileToggle.getAttribute("aria-expanded") === "false");
-      });
-      mobileMenu.addEventListener("click", (event) => {
-        if (event.target.closest("a")) setMenuOpen(false);
-      });
-    })();
-  </script>
-{% endblock %}
+  </details>
+  {% endif %}
+</nav>
+{% if page_style != 'landing' %}
+<script src="{{ '/assets/js/navigation.js' | url }}" defer></script>
+{% endif %}

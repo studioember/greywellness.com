@@ -1,0 +1,119 @@
+---
+title: Cómo Trabajamos
+title_hidden: false
+meta_title: "TCC-I, Atención Basada en Trauma y Terapia Basada en Evidencia | Grey Wellness"
+description: "Conoce la TCC-I, TCC, atención informada en trauma, mindfulness y terapia feminista para personas adultas en Maryland, Virginia y Washington, DC. Sesiones virtuales bilingües."
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+hidden_from_nav: true
+templateEngineOverride: njk,md
+---
+
+<p class="chapter-intro text-muted text-lg leading-relaxed">Utilizamos enfoques basados en evidencia, lo que significa que los métodos que usamos han sido estudiados y demostrados que funcionan. A continuación encontrará un resumen de las modalidades de las que nos valemos y lo que cada una implica.</p>
+
+<div class="not-prose mt-10 method-list">
+
+  <!-- TCC-I -->
+  <div id="cbt-i" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Para el insomnio</p>
+      <h2 class="text-foreground">Terapia Cognitivo-Conductual para el Insomnio (TCC-I)</h2>
+    </div>
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>La TCC-I es el tratamiento de referencia para el insomnio crónico. Se recomienda como primer enfoque antes de la medicación para dormir, y la investigación muestra consistentemente que produce resultados más duraderos.</p>
+      <p>En lugar de tratar el síntoma, la TCC-I aborda los pensamientos y comportamientos que te mantienen despierto. Funciona reentrenando la asociación del cerebro con el sueño, reduciendo la ansiedad a la hora de dormir y construyendo hábitos que realmente favorecen el descanso.</p>
+      <p>El programa en Grey Wellness se realiza en 4 sesiones a lo largo de 8 semanas, con citas cada dos semanas. La mayoría de las personas notan una mejora significativa durante el programa, y las habilidades permanecen contigo mucho después de que termine.</p>
+    </div>
+  </div>
+
+  <!-- TCC -->
+  <div id="cbt" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Para la ansiedad, el estrés y los patrones</p>
+      <h2 class="text-foreground">Terapia Cognitivo-Conductual (TCC)</h2>
+    </div>
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>La TCC es una de las formas de terapia más utilizadas y estudiadas. Trabaja sobre la conexión entre pensamientos, sentimientos y comportamientos — la idea de que cómo pensamos sobre una situación moldea cómo nos sentimos y lo que hacemos.</p>
+      <p>En la práctica, significa aprender a reconocer patrones de pensamiento poco útiles, cuestionarlos y reemplazarlos por otros más precisos y menos angustiantes. Es estructurada, práctica y colaborativa. No solo hablarás sobre lo que está mal. Construirás herramientas para cambiarlo.</p>
+    </div>
+  </div>
+
+  <!-- Atención Informada en Trauma -->
+  <div id="trauma-informed" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Para el trauma y las experiencias de la infancia</p>
+      <h2 class="text-foreground">Atención Informada en Trauma</h2>
+    </div>
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>La atención informada en trauma no es una técnica única. Es una forma de trabajar que comprende cómo el trauma afecta al cerebro, el cuerpo y el comportamiento. Moldea todo sobre cómo nos presentamos en las sesiones contigo: el ritmo, la dinámica de poder, el lenguaje, la manera en que abordamos los momentos difíciles.</p>
+      <p>Significa que nunca te empujamos más rápido de lo que se siente seguro. Significa que tu experiencia siempre es creída y respetada. Significa que entendemos que las reacciones que podrían parecer "resistencia" suelen ser solo protección, y trabajamos con eso, no en su contra.</p>
+      <p>Dentro de este marco, nos apoyamos en enfoques como la conciencia somática, el trabajo de partes y la terapia narrativa, según lo que mejor se adapte a ti.</p>
+    </div>
+  </div>
+
+  <!-- Mindfulness -->
+  <div id="mindfulness" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Para el estrés, el agotamiento y la regulación</p>
+      <h2 class="text-foreground">Enfoques Basados en Mindfulness</h2>
+    </div>
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>El mindfulness es la práctica de prestar atención a lo que está sucediendo en este momento, sin juzgar. En terapia, esto se traduce en aprender a observar tus pensamientos y sentimientos sin dejarte arrastrar por ellos.</p>
+      <p>Para las personas que lidian con estrés crónico o agotamiento, los enfoques basados en mindfulness ayudan a interrumpir el ciclo de reactividad. Construyen la capacidad de pausar, notar y elegir una respuesta en lugar de funcionar en piloto automático. Con el tiempo, esto cambia el punto de partida. Te vuelves más difícil de desequilibrar.</p>
+    </div>
+  </div>
+
+  <!-- Terapia Feminista -->
+  <div id="feminist-therapy" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Presente en todo nuestro trabajo</p>
+      <h2 class="text-foreground">Terapia Feminista</h2>
+    </div>
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>La terapia feminista reconoce que los sistemas en los que vivimos moldean cómo nos sentimos con nosotros mismos. Toma en serio la manera en que el género, la raza, la clase, la cultura y el poder se manifiestan en la vida interior y las circunstancias externas de una persona.</p>
+      <p>Esta no es una perspectiva que requiere que te identifiques con ninguna etiqueta o posición política. Simplemente significa que nunca trataremos tus dificultades como si existieran en el vacío. Miramos el panorama completo, incluido lo que el mundo te ha pedido, lo que te ha negado y lo que mereces recuperar.</p>
+      <p>En Grey Wellness, esta perspectiva está tejida en todo. No es un complemento. Es la base que hace que el resto del trabajo sea más honesto.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="not-prose mt-16 dawn-callout text-center">
+  <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">¿Lista para dar el siguiente paso?</p>
+  <h3 class="text-2xl font-bold text-foreground mb-4">Encontremos el enfoque adecuado para ti.</h3>
+  <p class="text-muted mb-8 max-w-xl mx-auto">Cada persona es diferente. En tu consulta gratuita, hablaremos sobre lo que estás experimentando y qué enfoques tienen más sentido para tus objetivos.</p>
+  {% scheduleButton "Agendar Consulta Gratuita" %}
+</div>
+
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Lista cuando lo estés.</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Comencemos la conversación.</h2>
+    <p class="text-muted max-w-xl mx-auto">Completa el formulario y nos pondremos en contacto en 1–2 días hábiles.</p>
+  </div>
+  <div class="entry-panel max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan para una consulta.", required: false },
+      { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
+      { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
+      { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="process-es",
+      submitLabel="Enviar Mensaje",
+      successTitle="¡Mensaje enviado!",
+      successBody="Gracias por escribir. Me pondré en contacto en 1–2 días hábiles.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="process_page_es",
+      adsConversion=""
+    ) }}
+  </div>
+</div>

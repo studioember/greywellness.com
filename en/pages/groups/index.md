@@ -1,0 +1,119 @@
+---
+title: Groups
+title_hidden: true
+meta_title: "Group Therapy | Grey Wellness"
+description: "Small-group therapy sessions at Grey Wellness. Evidence-based, therapist-led groups on specific topics. See current and upcoming offerings."
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+no_prose: true
+hidden_from_nav: true
+templateEngineOverride: njk,md
+---
+
+<div class="chapter-hero horizon-hero has-photo hero-groups">
+  <img src="{{ '/assets/img/services/groups.jpg' | url }}" alt="" fetchpriority="high">
+  <div class="relative max-w-2xl">
+    <p class="chapter-kicker mb-4">Groups</p>
+    <h1 class="mb-6">
+      Group Therapy
+    </h1>
+    <p class="chapter-lead mb-8">
+      Group therapy offers something individual therapy cannot: the experience of working through something alongside people who truly get it. Groups at Grey Wellness are small, structured, and led by a licensed therapist.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact-form" class="horizon-button">
+        Schedule Free Consultation
+      </a>
+      <a href="#what-to-expect" class="horizon-link">
+        What to Expect →
+      </a>
+    </div>
+  </div>
+</div>
+
+{% set activeGroups = collections.groups_en %}
+
+{% if activeGroups | length > 0 %}
+
+<div class="mt-10 space-y-6">
+  {% for group in activeGroups %}
+  <div class="rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
+    <div class="px-8 py-6 flex items-start justify-between gap-4" style="background: hsl(var(--hero-overlay))">
+      <div class="flex items-center gap-4">
+        {% if group.data.emoji %}<span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 text-2xl shrink-0">{{ group.data.emoji }}</span>{% endif %}
+        <div>
+          <p class="text-xs font-semibold text-white/50 uppercase tracking-widest mb-1">Group Program</p>
+          <h2 class="text-xl font-bold text-white leading-tight">{{ group.data.title }}</h2>
+          {% if group.data.tagline %}<p class="text-white/60 text-sm mt-1">{{ group.data.tagline }}</p>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="px-8 py-5 flex items-center justify-between gap-6">
+      <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted">
+        {% if group.data.start_date %}<span>📅 {{ group.data.start_date }}</span>{% endif %}
+        {% if group.data.sessions %}<span>🗓 {{ group.data.sessions }} weeks</span>{% endif %}
+        {% if group.data.format %}<span>💻 {{ group.data.format }}</span>{% endif %}
+        {% if group.data.price %}<span>💰 {{ group.data.price }}</span>{% endif %}
+      </div>
+      <a href="{{ group.url | url }}" class="shrink-0 inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity">
+        Learn More →
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% else %}
+
+<div id="contact-form" class="mt-10 entry-panel">
+  <div class="text-center mb-6">
+    <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/15 text-3xl mb-5">🌿</span>
+    <h2 class="text-2xl font-bold text-foreground mb-3">No groups running right now.</h2>
+    <p class="text-muted leading-relaxed max-w-md mx-auto">We offer new groups periodically. Leave your info below and we will reach out when something opens up.</p>
+  </div>
+  {% from 'macros/google-form.njk' import googleForm %}
+  {% set waitlistFields = [
+    { label: "Name and last name", placeholder: "Your full name", type: "text", entry: "entry.1808749521", required: true },
+    { label: "Phone number", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1028409400", required: false },
+    { label: "Email address", placeholder: "you@example.com", type: "email", entry: "entry.734005541", required: true }
+  ] %}
+  {{ googleForm(
+    formResponseId="1FAIpQLScvmC31qtendNyPLQbQ4h-uWnCCyFI0r7okga1hnUGHYBN7_A",
+    fields=waitlistFields,
+    uid="groups-waitlist",
+    submitLabel="Be the First to Know",
+    successTitle="You're on the list!",
+    successBody="We'll reach out as soon as a new group becomes available."
+  ) }}
+</div>
+
+{% endif %}
+
+<div id="what-to-expect" class="mt-14">
+  <h2 class="text-xl font-bold text-foreground mb-6">What to expect from a group</h2>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <p class="font-semibold text-foreground mb-2">Small and intentional</p>
+      <p class="text-sm text-muted leading-relaxed">Groups are kept small on purpose. You will have space to speak, to listen, and to actually know the people in the room.</p>
+    </div>
+    <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <p class="font-semibold text-foreground mb-2">Therapist-led</p>
+      <p class="text-sm text-muted leading-relaxed">Every session is facilitated by a licensed therapist. The group has structure and a clear focus, not just open conversation.</p>
+    </div>
+    <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <p class="font-semibold text-foreground mb-2">Topic-focused</p>
+      <p class="text-sm text-muted leading-relaxed">Each group centers on a specific theme. You will always know exactly what you are signing up for.</p>
+    </div>
+    <div class="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <p class="font-semibold text-foreground mb-2">Time-limited</p>
+      <p class="text-sm text-muted leading-relaxed">Groups run for a set number of sessions with a clear beginning and end. No open-ended commitments.</p>
+    </div>
+  </div>
+</div>
+
+<div class="mt-16 dawn-callout text-center">
+  <h3 class="text-2xl font-bold text-foreground mb-4">Questions about group therapy?</h3>
+  <p class="text-muted mb-8 max-w-xl mx-auto">Not sure if group therapy is right for you? Reach out and we are happy to talk it through.</p>
+  {% scheduleButton "Schedule Free Consultation" %}
+</div>

@@ -1,0 +1,99 @@
+---
+title: Recursos Gratuitos
+title_hidden: true
+meta_title: "Recursos Gratuitos para el Sueño y la Ansiedad | Grey Wellness"
+description: "Recursos bilingües y gratuitos de Grey Wellness para entender mejor tu sueño, hacerle espacio a las preocupaciones y dar un próximo paso con calma. Sin crear una cuenta."
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+no_prose: true
+---
+
+<div class="not-prose">
+  <section class="chapter-hero horizon-hero">
+    <div class="relative max-w-3xl">
+      <p class="chapter-kicker mb-4">Recursos Gratuitos</p>
+      <h1>Entiende lo que está pasando. <em>Encuentra tu próximo paso.</em></h1>
+    </div>
+  </section>
+
+  <section class="tool-overview">
+    <div class="mb-10 max-w-2xl">
+      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary">Elige un Recurso</p>
+      <h2 class="tool-overview-title mb-3 text-foreground">¿Qué te ayudaría hoy?</h2>
+      <p class="leading-relaxed text-muted">Explora recursos sencillos para entender mejor tu sueño, cuidar tu salud mental y descubrir qué podría ayudarte ahora.</p>
+    </div>
+
+    <div class="tool-list">
+      <a href="{{ '/es/free-tools/sleep-diary/' | url }}" aria-label="Comenzar el Diario de Sueño de siete días" class="tool-row">
+        <div>
+          <div class="mb-3">
+            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Disponible</span>
+          </div>
+          <p class="mb-2 text-xs font-bold uppercase tracking-widest text-primary">Sueño</p>
+          <h3 class="text-foreground">Diario de Sueño</h3>
+        </div>
+        <div>
+          <p class="leading-relaxed text-muted">Registra tus noches durante siete mañanas y descubre patrones difíciles de notar cuando cada noche se siente como un enredo.</p>
+          <span class="mt-6 inline-flex items-center text-primary font-bold underline underline-offset-4">Comenzar Diario de Sueño →</span>
+        </div>
+      </a>
+
+      <article class="tool-row">
+        <div>
+          <div class="mb-3">
+            <span class="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">Próximamente</span>
+          </div>
+          <p class="mb-2 text-xs font-bold uppercase tracking-widest text-primary">Ansiedad</p>
+          <h3 class="text-foreground">Programa un Momento para Preocuparte</h3>
+        </div>
+        <div>
+          <p class="mb-3 text-sm font-semibold text-primary">Un estacionamiento para esas preocupaciones que siguen dando vueltas</p>
+          <p class="leading-relaxed text-muted">Dale un lugar donde aterrizar a ese pensamiento que sigue dando vueltas. Separa lo que necesita una acción, lo que puede esperar hasta mañana y lo que no tienes que resolver desde la cama.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <aside class="mb-12 flex max-w-3xl items-start gap-3 border-l-2 border-primary/40 pl-4 text-sm leading-relaxed text-muted">
+    <span aria-hidden="true">🔒</span>
+    <p><span class="font-semibold text-foreground">Tus reflexiones te pertenecen.</span> Puedes usar estos recursos sin crear una cuenta, y tus respuestas personales permanecen en tu navegador.</p>
+  </aside>
+
+  <section class="mb-16 grid gap-10 rounded-2xl border border-border bg-card px-7 py-10 shadow-sm md:grid-cols-[0.85fr_1.15fr] md:px-10 md:py-12">
+    <div>
+      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary">¿Hablamos?</p>
+      <h2 class="mb-4 text-2xl font-bold text-foreground md:text-3xl">No tienes que resolverlo solx.</h2>
+      <p class="leading-relaxed text-muted">Ofrezco una consulta gratuita de 15 minutos para hablar de lo que está pasando, responder tus preguntas y ver si trabajar juntxs se siente bien para ti. No tienes que tomar ninguna decisión durante la llamada.</p>
+      <p class="mt-4 text-sm leading-relaxed text-muted">Completa el formulario y me pondré en contacto contigo en 1–2 días hábiles.</p>
+    </div>
+    <div class="rounded-xl border border-border bg-background p-6">
+      {% from 'macros/google-form.njk' import googleForm %}
+      {% set contactFields = [
+        { label: "Nombre", placeholder: "Tu nombre completo", type: "text", entry: "entry.1227396429", required: true },
+        { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+        { label: "Correo electrónico", placeholder: "tu@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+        { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan para una consulta.", required: false },
+        { label: "Mejor hora para llamarte", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
+        { label: "Idioma preferido", placeholder: "Selecciona uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
+        { label: "¿Cómo te enteraste de nosotros?", placeholder: "Selecciona uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
+      ] %}
+      {{ googleForm(
+        formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+        fields=contactFields,
+        uid="free-tools-contact-es",
+        submitLabel="Solicitar Consulta Gratuita",
+        successTitle="¡Mensaje enviado!",
+        successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles.",
+        gaEventName="contact_form_submitted",
+        gaEventCategory="contact",
+        gaEventLabel="free_tools_es",
+        adsConversion=""
+      ) }}
+    </div>
+  </section>
+
+  <aside class="mb-8 border-t border-border pt-8 text-sm leading-relaxed text-muted">
+    <p><span class="font-semibold text-foreground">Una nota importante:</span> Estos recursos ofrecen educación general y espacios de reflexión. No son un diagnóstico, consejo médico, apoyo para una crisis ni un reemplazo de la atención de unx profesional calificadx.</p>
+  </aside>
+</div>

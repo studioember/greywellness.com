@@ -1,0 +1,63 @@
+---
+title: Contacto
+title_hidden: false
+meta_title: "Consulta de terapia en Virginia, Maryland y Washington, DC | Grey Wellness"
+description: "Reserva una consulta gratuita de 15 minutos para terapia virtual en Maryland, Virginia y Washington, DC. Conversa sobre tus metas con Mónica Grey en español o inglés."
+description_hidden: true
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+templateEngineOverride: njk,md
+---
+
+<div class="contact-layout">
+<div class="contact-story">
+
+Terapia virtual para personas adultas en Maryland, Virginia y Washington, DC, en español e inglés.
+
+
+## Consulta Gratuita
+
+Comenzar con la terapia es un gran paso, y encontrar a la persona adecuada es importante. Por eso ofrezco una consulta gratuita de 15 minutos antes de cualquier otra cosa.
+
+Nos reuniremos por videollamada, a menos que prefieras de otra manera, y este tiempo es simplemente para conocernos un poco. Tendrás la oportunidad de compartir lo que te trae a la terapia, hacer cualquier pregunta que tengas y hacerte una idea de cómo trabajo. Compartiré un poco sobre mi experiencia y formación para que puedas conocer quién soy y cómo me acerco al trabajo terapéutico.
+
+No hay presión para tomar una decisión en la llamada. Genuinamente te animo a tomarte tu tiempo, y si se siente bien, a hablar con otros terapeutas antes de comprometerte. Este es un proceso profundamente personal y mereces sentirte seguro y cómodo con quien elijas trabajar.
+
+  <a href="{{ '/es/for-providers/' | url }}" class="not-prose mt-8 block dawn-callout font-semibold text-primary no-underline transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+    <span class="block text-lg">Para profesionales de la salud</span>
+    <span class="mt-2 block underline underline-offset-4">Ver información para referidos &rarr;</span>
+  </a>
+</div>
+
+<div class="contact-details">
+  <p class="contact-note text-muted">
+    Cuando te sientas listo, completa el formulario a continuación y nos pondremos en contacto contigo en 1–2 días hábiles.
+  </p>
+
+<div id="contact-form" class="entry-panel">
+{% from 'macros/google-form.njk' import googleForm %}
+{% set contactFields = [
+  { label: "Nombre", placeholder: "Su nombre completo", type: "text", entry: "entry.1227396429", required: true },
+  { label: "Teléfono", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+  { label: "Correo electrónico", placeholder: "usted@ejemplo.com", type: "email", entry: "entry.530090678", required: true },
+  { label: "Mensaje / Nota", placeholder: "¿Qué tienes en mente?", type: "textarea", entry: "entry.965605968", help: "Cuéntanos en qué te gustaría recibir apoyo y qué días y horarios te funcionan para una consulta.", required: false },
+  { label: "Mejor hora para contactarle", placeholder: "ej. mañanas entre semana", type: "text", entry: "entry.653282957", required: false },
+  { label: "Idioma preferido", placeholder: "Seleccione uno", type: "select", entry: "entry.1926704313", required: false, default: "Español", options: [{ value: "Español", label: "Español" }, { value: "English", label: "English" }] },
+  { label: "¿Cómo se enteró de nosotros?", placeholder: "Seleccione uno", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Búsqueda de Google" }, { value: "Ad/Aviso publicitario", label: "Anuncio" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Amigx" }, { value: "Doc Referral / Referido", label: "Referido por un doctor" }, { value: "Other", label: "Otro" }] }
+] %}
+{{ googleForm(
+  formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+  fields=contactFields,
+  uid="contact-es",
+  submitLabel="Enviar Mensaje",
+  successTitle="¡Mensaje enviado!",
+  successBody="Gracias por escribir. Me pondré en contacto contigo en 1–2 días hábiles.",
+  gaEventName="contact_form_submitted",
+  gaEventCategory="contact",
+  gaEventLabel="contact_page_es",
+  adsConversion=""
+) }}
+</div>
+</div>
+</div>

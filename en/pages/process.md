@@ -1,0 +1,124 @@
+---
+title: How We Work
+title_hidden: false
+meta_title: "CBT-I, Trauma-Informed & Evidence-Based Therapy | Grey Wellness"
+description: "Explore CBT-I, CBT, trauma-informed care, mindfulness, and feminist therapy for adults in Maryland, Virginia, and Washington, DC. Bilingual virtual sessions."
+date: "git Last Modified"
+date_hidden: true
+layout: layouts/base.njk
+hidden_from_nav: true
+templateEngineOverride: njk,md
+---
+
+<p class="chapter-intro text-muted text-lg leading-relaxed">We use evidence-based approaches, which means the methods we use have been studied and shown to work. Below is an overview of the modalities we draw from and what each one involves.</p>
+
+<div class="not-prose mt-10 method-list">
+
+  <!-- CBT-I -->
+  <div id="cbt-i" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">For insomnia</p>
+      <h2 class="text-foreground">Cognitive Behavioral Therapy for Insomnia (CBT-I)</h2>
+    </div>
+
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>CBT-I is the gold-standard treatment for chronic insomnia. It is recommended as the first-line approach before sleep medication, and research consistently shows it produces longer-lasting results.</p>
+      <p>Rather than treating the symptom, CBT-I addresses the thoughts and behaviors that are keeping you awake. It works by retraining the brain's association with sleep, reducing the anxiety around bedtime, and building habits that actually support rest.</p>
+      <p>The program at Grey Wellness runs for 8 sessions. Most people notice meaningful improvement within the program, and the skills stay with you long after it ends.</p>
+    </div>
+  </div>
+
+  <!-- CBT -->
+  <div id="cbt" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">For anxiety, stress & patterns</p>
+      <h2 class="text-foreground">Cognitive Behavioral Therapy (CBT)</h2>
+    </div>
+
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>CBT is one of the most widely used and well-researched forms of therapy. It works on the connection between thoughts, feelings, and behaviors — the idea that how we think about a situation shapes how we feel and what we do.</p>
+      <p>In practice, it means learning to recognize unhelpful thought patterns, question them, and replace them with ones that are more accurate and less distressing. It is structured, practical, and collaborative. You will not just talk about what's wrong. You will build tools to change it.</p>
+    </div>
+  </div>
+
+  <!-- Trauma-Informed Care -->
+  <div id="trauma-informed" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">For trauma & childhood experiences</p>
+      <h2 class="text-foreground">Trauma-Informed Care</h2>
+    </div>
+
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>Trauma-informed care is not a single technique. It is a way of working that understands how trauma affects the brain, the body, and behavior. It shapes everything about how we show up in sessions with you: the pace, the power dynamic, the language, the way we handle hard moments.</p>
+      <p>It means we never push you faster than feels safe. It means your experience is always believed and respected. It means we understand that reactions that might look like "resistance" are often just protection, and we work with that, not against it.</p>
+      <p>Within this framework, we draw on approaches such as somatic awareness, parts work, and narrative therapy depending on what fits you best.</p>
+    </div>
+  </div>
+
+  <!-- Mindfulness -->
+  <div id="mindfulness" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">For stress, burnout & regulation</p>
+      <h2 class="text-foreground">Mindfulness-Based Approaches</h2>
+    </div>
+
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>Mindfulness is the practice of paying attention to what is happening right now, without judgment. In therapy, this translates into learning to observe your thoughts and feelings without being swept away by them.</p>
+      <p>For people dealing with chronic stress or burnout, mindfulness-based approaches help interrupt the cycle of reactivity. They build the capacity to pause, notice, and choose a response rather than running on autopilot. Over time, this changes the baseline. You become harder to knock off balance.</p>
+    </div>
+  </div>
+
+  <!-- Feminist Therapy -->
+  <div id="feminist-therapy" class="method-row">
+    <div class="mb-1">
+      <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-1">Woven throughout all our work</p>
+      <h2 class="text-foreground">Feminist Therapy</h2>
+    </div>
+
+    <div class="space-y-4 text-muted leading-relaxed">
+      <p>Feminist therapy recognizes that the systems we live in shape how we feel about ourselves. It takes seriously the way gender, race, class, culture, and power show up in a person's inner life and outer circumstances.</p>
+      <p>This is not a lens that requires you to identify with any label or political position. It simply means we will never treat your struggles as existing in a vacuum. We look at the full picture, including what the world has asked of you, what it has denied you, and what you deserve to reclaim.</p>
+      <p>At Grey Wellness, this perspective is woven into everything. It is not an add-on. It is the foundation that makes the rest of the work more honest.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="not-prose mt-16 dawn-callout text-center">
+  <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Ready to take the next step?</p>
+  <h3 class="text-2xl font-bold text-foreground mb-4">Let's find the right approach for you.</h3>
+  <p class="text-muted mb-8 max-w-xl mx-auto">Every person is different. In your free consultation, we will talk through what you are experiencing and which approaches make the most sense for your goals.</p>
+  {% scheduleButton "Schedule Free Consultation" %}
+</div>
+
+<div id="contact-form" class="not-prose mt-12">
+  <div class="text-center mb-8">
+    <p class="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Ready when you are.</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">Start the conversation.</h2>
+    <p class="text-muted max-w-xl mx-auto">Fill out the form below and we'll be in touch within 1–2 business days.</p>
+  </div>
+  <div class="entry-panel max-w-lg mx-auto">
+    {% from 'macros/google-form.njk' import googleForm %}
+    {% set contactFields = [
+      { label: "Name", placeholder: "Your full name", type: "text", entry: "entry.1227396429", required: true },
+      { label: "Phone", placeholder: "(555) 555-5555", type: "tel", entry: "entry.1797015219", required: true },
+      { label: "Email", placeholder: "you@example.com", type: "email", entry: "entry.530090678", required: true },
+      { label: "Message / Note", placeholder: "What's on your mind?", type: "textarea", entry: "entry.965605968", help: "Share what you'd like help with and a few days and times that work for a consultation.", required: false },
+      { label: "Best time to call", placeholder: "e.g. weekday mornings", type: "text", entry: "entry.653282957", required: false },
+      { label: "Preferred language", placeholder: "Select one", type: "select", entry: "entry.1926704313", required: false, default: "English", options: [{ value: "English", label: "English" }, { value: "Español", label: "Español" }] },
+      { label: "How did you hear about us?", placeholder: "Select one", type: "select", entry: "entry.384378261", required: false, options: [{ value: "Google search/Busqueda de Google", label: "Google search" }, { value: "Ad/Aviso publicitario", label: "Ad" }, { value: "Instagram", label: "Instagram" }, { value: "Facebook", label: "Facebook" }, { value: "Friend / Amigx", label: "Friend" }, { value: "Doc Referral / Referido", label: "Doctor referral" }, { value: "Other", label: "Other" }] }
+    ] %}
+    {{ googleForm(
+      formResponseId="1FAIpQLSch3XOLgnmjGqzqAhU-N6z-JEa6gAB-QYBP7JQFpcoTLmAi7g",
+      fields=contactFields,
+      uid="process-en",
+      submitLabel="Send Message",
+      successTitle="Message sent!",
+      successBody="Thank you for reaching out. I'll be in touch within 1–2 business days.",
+      gaEventName="contact_form_submitted",
+      gaEventCategory="contact",
+      gaEventLabel="process_page_en",
+      adsConversion=""
+    ) }}
+  </div>
+</div>

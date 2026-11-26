@@ -92,5 +92,27 @@
   "home_schema_anxiety_desc": "Terapia para adultos cuya ansiedad, trauma o estrés dificulta el sueño.",
   "home_schema_job_title": "Terapeuta Licenciada",
   "service_availability": "Terapia virtual para personas adultas en todo Maryland, Virginia y Washington, DC, en español e inglés.",
-  "service_availability_link": "Consulta las tarifas de las sesiones"
+  "service_availability_link": "Consulta las tarifas de las sesiones",
+  "daylight_home": {
+    "eyebrow": "Terapia para personas adultas · Español e inglés",
+    "headline": "¿Qué te quita",
+    "headline_em": "el sueño?",
+    "lead": "Tal vez sea una preocupación a la que le das vueltas, un recuerdo que vuelve a sentirse cercano o una noche más pendiente del reloj. En Grey Wellness, la terapia empieza con una conversación sobre lo que te preocupa durante el día y cómo descansas por la noche.",
+    "talk": "Habla con nuestro equipo",
+    "explore": "Explora los servicios",
+    "service_area": "Terapia virtual · MD, VA y DC",
+    "services_heading": "¿Qué te trae",
+    "services_heading_em": "a terapia?",
+    "sleep": "Si lo más difícil es conciliar el sueño o mantenerlo, podemos trabajar en ello con terapia cognitivo-conductual para el insomnio (TCC-I).",
+    "anxiety": "La ansiedad puede aparecer en una reunión, al repasar una conversación o justo al apagar la luz. Exploraremos cuándo la preocupación interfiere en tu vida y practicaremos formas de responder.",
+    "trauma": "Encuentra un espacio para procesar experiencias difíciles a tu ritmo, con atención que respeta lo que has vivido.",
+    "therapist": "Conoce a tu terapeuta",
+    "credentials": "MS, LCPC, NCC · Fundadora de Grey Wellness",
+    "about": "Cuando nos conozcamos, te preguntaré qué te trae a terapia y qué esperas que cambie. También te preguntaré por tu sueño. Saber cómo descansas me ayuda a entender qué te exige un día cualquiera y a orientar nuestro trabajo hacia lo que te importa.",
+    "consultation": "Consulta gratuita de 15 minutos",
+    "contact_heading": "¿Cómo te gustaría",
+    "contact_heading_em": "sentirte cada día?",
+    "contact": "Tal vez quieras despertar con más energía, sentirte con más calma con alguien que quieres o afrontar un día difícil con un poco más de estabilidad. Cuéntanos qué te importa en una consulta gratuita. Responderemos tus preguntas y hablaremos sobre los próximos pasos.",
+    "request": "Solicita una consulta gratuita"
+  }
 }

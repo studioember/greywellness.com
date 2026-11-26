@@ -7,8 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Poppins"', "ui-sans-serif", "system-ui", "sans-serif"],
-        logo: ['"Poppins"', '"Nunito"', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['"Nunito"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--bg))",
@@ -45,8 +44,6 @@ export default {
         surface: "hsl(var(--surface))",
         "surface-warm": "hsl(var(--surface-warm))",
         sage: "hsl(var(--sage))",
-        "nav-bg": "hsl(var(--nav-bg))",
-        "nav-fg": "hsl(var(--nav-fg))",
       },
     },
   },

@@ -1,0 +1,19 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{{ content | safe }}
+{% endblock %}
+
+{% block footer %}
+<footer class="landing-footer">
+  <p>© Grey Wellness LLC. {{ siteText.footer_rights }}</p>
+  {% if siteLang == 'es' %}
+  <p>Si estás en crisis o tienes una emergencia psiquiátrica, llama o envía un mensaje de texto al <a href="tel:988">988</a> o acude a la sala de emergencias más cercana.</p>
+  {% else %}
+  <p>If you are in crisis or experiencing a psychiatric emergency, call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.</p>
+  {% endif %}
+  {% for alternate in page.url | siteLocaleLinks %}
+  <a href="{{ alternate.url | url }}" lang="{{ alternate.lang }}" hreflang="{{ alternate.lang }}">{{ alternate.label }}</a>
+  {% endfor %}
+</footer>
+{% endblock %}

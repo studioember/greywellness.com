@@ -1,0 +1,114 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{% set _lang = lang | default('en') %}
+{% set _t = i18n[_lang] %}
+{% set _blogUrl = '/' + _lang + '/blog/' %}
+{% set _contactUrl = (localeHome ~ 'pages/contact/#contact-form') | url %}
+{% set _authorBio = author_bio or _t.blog_default_author_bio %}
+{% set _postImage = (site.url ~ image) if image else (site.url ~ "/assets/img/og-image.jpg") %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (description or "") | dump | safe }},
+  "image": {{ _postImage | dump | safe }},
+  "inLanguage": {{ _lang | dump | safe }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "datePublished": "{{ page.date | dateISO }}",
+  "dateModified": "{{ page.date | dateISO }}",
+  "articleSection": {{ (category or "Insomnia & Sleep") | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": {{ (author or "Mónica Grey, MS, LCPC, NCC") | dump | safe }},
+    "jobTitle": "CBT-I Therapist & Licensed Clinical Professional Counselor",
+    "url": "{{ site.url }}/{{ _lang }}/pages/about/",
+    "sameAs": "https://www.psychologytoday.com/profile/1256952"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Grey Wellness",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/logo.png"
+    }
+  }
+}
+</script>
+
+{# Articles that carry their lead illustration inline keep that editorial placement. #}
+{% set hasHero = image and hero_hidden != true %}
+<header class="horizon-hero article-header">
+  <div class="article-masthead{% if hasHero %} has-photo{% endif %}">
+    <div>
+      <a href="{{ _blogUrl | url }}" class="blog-back"><span aria-hidden="true">←</span> {{ _t.blog_back }}</a>
+      {% if category %}
+      <a href="{{ (_blogUrl + 'category/' + (category | slugify) + '/') | url }}" class="blog-topic">{{ category }}</a>
+      {% endif %}
+      <h1>{{ title }}</h1>
+      {% if author or date %}
+      <p class="blog-byline">
+        {% if author %}{{ author }}{% endif %}{% if author and date %} {{ _t.blog_author_on }} {% endif %}{% if date %}{{ page.date | dateLong(_lang) }}{% endif %}
+      </p>
+      {% endif %}
+    </div>
+    {% if hasHero %}
+    <img
+      src="{{ image | url }}"
+      alt="{{ image_alt | default('') }}"
+      width="1920"
+      height="1080"
+      fetchpriority="high"
+    >
+    {% endif %}
+  </div>
+</header>
+
+<article class="prose reading-copy">
+  {{ content | safe }}
+</article>
+
+{# Author bio box #}
+{% if author %}
+<div class="not-prose article-author mt-14 py-7 border-y border-border">
+  <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+    <picture class="block h-24 w-20 shrink-0 overflow-hidden article-author-portrait">
+      <source srcset="{{ '/assets/img/headshot.webp' | url }}" type="image/webp">
+      <img
+        src="{{ '/assets/img/headshot.jpg' | url }}"
+        alt="{{ author }}"
+        class="w-full h-full object-cover object-top"
+        width="80"
+        height="80"
+      />
+    </picture>
+    <div>
+      <p class="font-semibold text-foreground">{{ author }}</p>
+      <p class="mt-2 text-sm text-muted leading-relaxed">{{ _authorBio }}</p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="not-prose mt-12 pt-8 border-t border-border">
+  <a href="{{ _blogUrl | url }}" class="blog-back">
+    <span aria-hidden="true">←</span>
+    {{ _t.blog_back }}
+  </a>
+</div>
+{# CTA #}
+<div class="not-prose dawn-callout mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+  <div>
+    <h2>{{ _t.blog_cta_heading }}</h2>
+    <p class="opacity-70 mt-1 text-sm">{{ _t.blog_cta_subtitle }}</p>
+  </div>
+  <a href="{{ _contactUrl }}" class="inline-block px-5 py-3 text-center rounded-full bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wide hover:opacity-90 transition-opacity">{{ _t.blog_cta_button }}</a>
+</div>
+
+{% endblock %}
